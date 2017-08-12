@@ -1,0 +1,17 @@
+;; Object gnu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gnu/"
+  :tables
+  (list
+    (semanticdb-table "stubs.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("gnu/stubs-32.h" include (:system-flag t) nil [195 221]))          
+      :file "stubs.h"
+      :pointmax 385
+      :fsize 384
+      :lastmodtime '(22619 60538 370123 773000)
+      :unmatched-syntax nil))
+  :file "!usr!local!include!gnu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

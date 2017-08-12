@@ -1,0 +1,416 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MYSQL_CLIENT_PLUGIN_INCLUDED" variable (:constant-flag t) nil [903 931])
+            ("stdarg.h" include (:system-flag t) nil [957 976])
+            ("stdlib.h" include (:system-flag t) nil [977 996])
+            ("MYSQL_PLUGIN_EXPORT" variable (:constant-flag t) nil [1660 1679])
+            ("mysql_plugin_options" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "int"
+                :arguments 
+                  ( ("plugin" variable
+                       (:pointer 1
+                        :type ("st_mysql_client_plugin" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6318 6356])
+                    ("option" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6382 6401])
+                    ("value" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6402 6420]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6293 6421])
+            ("mysql_client_register_plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("st_mysql_client_plugin" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("st_mysql" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5836 5859])
+                    ("plugin" variable
+                       (:pointer 1
+                        :type ("st_mysql_client_plugin" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5889 5927]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5775 5928])
+            ("mysql_client_find_plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("st_mysql_client_plugin" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("st_mysql" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5178 5201])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5202 5219])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [5220 5229]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5121 5230])
+            ("mysql_load_plugin_v" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("st_mysql_client_plugin" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("st_mysql" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4749 4772])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4773 4790])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4791 4800])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4821 4830])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4831 4844]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4697 4845])
+            ("mysql_load_plugin" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("st_mysql_client_plugin" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("mysql" variable
+                       (:pointer 1
+                        :type ("st_mysql" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4048 4071])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4072 4089])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [4090 4099])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [4118 4127])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [4128 4132]))                  
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3998 4133])
+            ("st_mysql_client_plugin_AUTHENTICATION" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [3415 3441])
+                    ("interface_version" variable (:type "unsigned int") (reparse-symbol classsubparts) [3415 3441])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3415 3441])
+                    ("author" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3415 3441])
+                    ("desc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3415 3441])
+                    ("version" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3415 3441])
+                    ("license" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3415 3441])
+                    ("mysql_api" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3415 3441])
+                    ("authenticate_user" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("vio" variable
+                               (:pointer 1
+                                :type ("MYSQL_PLUGIN_VIO" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3469 3491])
+                            ("mysql" variable
+                               (:pointer 1
+                                :type ("st_mysql" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [3492 3515]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [3444 3516]))                  )
+                (reparse-symbol extern-c-contents) [3366 3519])
+            ("plugin_auth_common.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [3333 3364])
+            ("st_mysql" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [3250 3266])
+            ("st_mysql_client_plugin" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("type" variable (:type "int") (reparse-symbol classsubparts) [3219 3245])
+                    ("interface_version" variable (:type "unsigned int") (reparse-symbol classsubparts) [3219 3245])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3219 3245])
+                    ("author" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3219 3245])
+                    ("desc" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3219 3245])
+                    ("version" variable
+                       (:dereference 1
+                        :type "unsigned int")
+                        (reparse-symbol classsubparts) [3219 3245])
+                    ("license" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [3219 3245])
+                    ("mysql_api" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3219 3245]))                  )
+                (reparse-symbol extern-c-contents) [3185 3248])
+            ("MYSQL_CLIENT_PLUGIN_HEADER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2502 2528])
+            ("mysql_end_client_plugin" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2417 2440])
+            ("mysql_declare_client_plugin" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2138 2165])
+            ("MYSQL_CLIENT_MAX_PLUGINS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2090 2114])
+            ("MYSQL_CLIENT_TRACE_PLUGIN_INTERFACE_VERSION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2020 2063])
+            ("MYSQL_CLIENT_AUTHENTICATION_PLUGIN_INTERFACE_VERSION" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1951 2003])
+            ("MYSQL_CLIENT_TRACE_PLUGIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1903 1928])
+            ("MYSQL_CLIENT_AUTHENTICATION_PLUGIN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1856 1890])
+            ("MYSQL_CLIENT_reserved2" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1809 1831])
+            ("MYSQL_CLIENT_reserved1" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1762 1784]))          
+      :file "client_plugin.h"
+      :pointmax 6461
+      :fsize 6460
+      :lastmodtime '(22732 58762 0 0)
+      :unmatched-syntax '((punctuation ";" 3415 . 3441) (semantic-list "(const char *option, const void *)" 3415 . 3441) (semantic-list "(*options)" 3415 . 3441) (INT "int" 3415 . 3441) (punctuation ";" 3415 . 3441) (semantic-list "(void)" 3415 . 3441) (semantic-list "(*deinit)" 3415 . 3441) (INT "int" 3415 . 3441) (punctuation ";" 3415 . 3441) (semantic-list "(char *, size_t, int, va_list)" 3415 . 3441) (semantic-list "(*init)" 3415 . 3441) (INT "int" 3415 . 3441) (punctuation ";" 3219 . 3245) (semantic-list "(const char *option, const void *)" 3219 . 3245) (semantic-list "(*options)" 3219 . 3245) (INT "int" 3219 . 3245) (punctuation ";" 3219 . 3245) (semantic-list "(void)" 3219 . 3245) (semantic-list "(*deinit)" 3219 . 3245) (INT "int" 3219 . 3245) (punctuation ";" 3219 . 3245) (semantic-list "(char *, size_t, int, va_list)" 3219 . 3245) (semantic-list "(*init)" 3219 . 3245) (INT "int" 3219 . 3245))
+      :lexical-table 
+        '(("MYSQL_CLIENT_PLUGIN_INCLUDED")
+          ("MYSQL_CLIENT_MAX_PLUGINS" . ((number "4" 2127 . 2128)))
+          ("MYSQL_CLIENT_AUTHENTICATION_PLUGIN" . ((number "2" 1893 . 1894)))
+          ("MYSQL_PLUGIN_EXPORT")
+          ("MYSQL_CLIENT_TRACE_PLUGIN" . ((number "3" 1940 . 1941)))
+          ("MYSQL_CLIENT_reserved1" . ((number "0" 1799 . 1800)))
+          ("MYSQL_CLIENT_reserved2" . ((number "1" 1846 . 1847)))
+          ("mysql_end_client_plugin" . ((close-paren "}" 2453 . 2454)))
+          ("MYSQL_CLIENT_PLUGIN_HEADER" . 
+              ((INT "int" 2554 . 2557) (symbol "type" 2558 . 2562) (punctuation ";" 2562 . 2563) (UNSIGNED "unsigned" 2612 . 2620) (INT "int" 2621 . 2624) (symbol "interface_version" 2625 . 2642) (punctuation ";" 2642 . 2643) (CONST "const" 2670 . 2675) (CHAR "char" 2676 . 2680) (punctuation "*" 2681 . 2682) (symbol "name" 2682 . 2686) (punctuation ";" 2686 . 2687) (CONST "const" 2728 . 2733) (CHAR "char" 2734 . 2738) (punctuation "*" 2739 . 2740) (symbol "author" 2740 . 2746) (punctuation ";" 2746 . 2747) (CONST "const" 2786 . 2791) (CHAR "char" 2792 . 2796) (punctuation "*" 2797 . 2798) (symbol "desc" 2798 . 2802) (punctuation ";" 2802 . 2803) (UNSIGNED "unsigned" 2844 . 2852) (INT "int" 2853 . 2856) (symbol "version" 2857 . 2864) (semantic-list "[3]" 2864 . 2867) (punctuation ";" 2867 . 2868) (CONST "const" 2902 . 2907) (CHAR "char" 2908 . 2912) (punctuation "*" 2913 . 2914) (symbol "license" 2914 . 2921) (punctuation ";" 2921 . 2922) (VOID "void" 2960 . 2964) (punctuation "*" 2965 . 2966) (symbol "mysql_api" 2966 . 2975) (punctuation ";" 2975 . 2976) (INT "int" 3018 . 3021) (semantic-list "(*init)" 3022 . 3029) (semantic-list "(char *, size_t, int, va_list)" 3029 . 3059) (punctuation ";" 3059 . 3060) (INT "int" 3076 . 3079) (semantic-list "(*deinit)" 3080 . 3089) (semantic-list "(void)" 3089 . 3095) (punctuation ";" 3095 . 3096) (INT "int" 3134 . 3137) (semantic-list "(*options)" 3138 . 3148) (semantic-list "(const char *option, const void *)" 3148 . 3182) (punctuation ";" 3182 . 3183)))
+          ("mysql_declare_client_plugin" (spp-arg-list ("X") 2165 . 2168) . 
+              ((symbol "MYSQL_PLUGIN_EXPORT" 2185 . 2204) (STRUCT "struct" 2205 . 2211) (spp-symbol-merge ((symbol "st_mysql_client_plugin_" 2212 . 2235) (symbol "X" 2239 . 2240)) 2212 . 2240) (symbol "_mysql_client_plugin_declaration_" 2258 . 2291) (punctuation "=" 2292 . 2293) (open-paren "{" 2294 . 2295) (spp-symbol-merge ((spp-symbol-merge ((symbol "MYSQL_CLIENT_" 2310 . 2323) (symbol "X" 2327 . 2328)) 2310 . 2328) (symbol "_PLUGIN" 2332 . 2339)) 2310 . 2339) (punctuation "," 2339 . 2340) (spp-symbol-merge ((spp-symbol-merge ((symbol "MYSQL_CLIENT_" 2360 . 2373) (symbol "X" 2377 . 2378)) 2360 . 2378) (symbol "_PLUGIN_INTERFACE_VERSION" 2382 . 2407)) 2360 . 2407) (punctuation "," 2407 . 2408)))
+          ("MYSQL_CLIENT_AUTHENTICATION_PLUGIN_INTERFACE_VERSION" . ((number "0x0100" 2005 . 2011)))
+          ("MYSQL_CLIENT_TRACE_PLUGIN_INTERFACE_VERSION" . ((number "0x0100" 2074 . 2080)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("MYSQL_PLUGIN_AUTH_COMMON_INCLUDED" variable (:constant-flag t) nil [939 972])
+            ("MYSQL_USERNAME_LENGTH" variable (:constant-flag t) nil [1028 1049])
+            ("CR_AUTH_PLUGIN_ERROR" variable (:constant-flag t) nil [1343 1363])
+            ("CR_AUTH_HANDSHAKE" variable (:constant-flag t) nil [1588 1605])
+            ("CR_AUTH_USER_CREDENTIALS" variable (:constant-flag t) nil [1804 1828])
+            ("CR_ERROR" variable (:constant-flag t) nil [2275 2283])
+            ("CR_OK" variable (:constant-flag t) nil [2645 2650])
+            ("CR_OK_HANDSHAKE_COMPLETE" variable (:constant-flag t) nil [3192 3216])
+            ("PROXY_FLAG" variable (:constant-flag t) nil [3371 3381])
+            ("st_plugin_vio_info" type
+               (:members 
+                  ( ("protocol" variable (:type ("" type
+                         (:members 
+                            ( ("MYSQL_VIO_INVALID" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [3681 3699])
+                              ("MYSQL_VIO_TCP" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [3700 3714])
+                              ("MYSQL_VIO_SOCKET" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [3715 3732])
+                              ("MYSQL_VIO_PIPE" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [3742 3757])
+                              ("MYSQL_VIO_MEMORY" variable
+                                 (:constant-flag t
+                                  :type "int")
+                                  (reparse-symbol enumsubparts) [3758 3776]))                            
+                          :type "enum")
+                          nil nil)) (reparse-symbol classsubparts) [3674 3786])
+                    ("socket" variable (:type "int") (reparse-symbol classsubparts) [3789 3800]))                  
+                :type "struct")
+                nil [3636 3971])
+            ("MYSQL_PLUGIN_VIO_INFO" type
+               (:typedef ("st_plugin_vio_info" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [3636 3971])
+            ("st_plugin_vio" type
+               (:members 
+                  ( ("read_packet" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("vio" variable
+                               (:pointer 1
+                                :type ("st_plugin_vio" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4272 4298])
+                            ("buf" variable
+                               (:pointer 2
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [4321 4341]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4253 4342])
+                    ("write_packet" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("vio" variable
+                               (:pointer 1
+                                :type ("st_plugin_vio" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4513 4539])
+                            ("packet" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "unsigned char")
+                                (reparse-symbol arg-sub-list) [4563 4591])
+                            ("packet_len" variable (:type "int") (reparse-symbol arg-sub-list) [4615 4630]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [4493 4631])
+                    ("info" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("vio" variable
+                               (:pointer 1
+                                :type ("st_plugin_vio" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4756 4782])
+                            ("info" variable
+                               (:pointer 1
+                                :type ("st_plugin_vio_info" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [4783 4815]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4743 4816]))                  
+                :type "struct")
+                nil [4030 4837])
+            ("MYSQL_PLUGIN_VIO" type
+               (:typedef ("st_plugin_vio" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [4030 4837]))          
+      :file "plugin_auth_common.h"
+      :pointmax 4847
+      :fsize 4846
+      :lastmodtime '(22732 58762 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("CR_ERROR" . ((number "0" 2284 . 2285)))
+          ("MYSQL_PLUGIN_AUTH_COMMON_INCLUDED")
+          ("MYSQL_USERNAME_LENGTH" . ((number "96" 1050 . 1052)))
+          ("CR_AUTH_HANDSHAKE" . ((number "2" 1606 . 1607)))
+          ("CR_AUTH_PLUGIN_ERROR" . ((number "3" 1364 . 1365)))
+          ("CR_OK" . ((punctuation "-" 2651 . 2652) (number "1" 2652 . 2653)))
+          ("CR_AUTH_USER_CREDENTIALS" . ((number "1" 1829 . 1830)))
+          ("CR_OK_HANDSHAKE_COMPLETE" . ((punctuation "-" 3217 . 3218) (number "2" 3218 . 3219)))
+          ("PROXY_FLAG" . ((number "0" 3382 . 3383)))
+          )
+))
+  :file "!usr!include!mysql!mysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

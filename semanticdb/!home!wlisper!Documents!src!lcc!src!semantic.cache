@@ -1,0 +1,373 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "lex.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("c.h" include nil nil [1 15])
+            ("float.h" include (:system-flag t) nil [16 34])
+            ("errno.h" include (:system-flag t) nil [35 53])
+            ("rcsid" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "\"$Id$\""
+                :type "char")
+                nil [55 84])
+            ("MAXTOKEN" variable (:constant-flag t) nil [94 102])
+            ("" type
+               (:members 
+                  ( ("BLANK" variable
+                       (:constant-flag t
+                        :default-value (122 124)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [114 124])
+                    ("NEWLINE" variable
+                       (:constant-flag t
+                        :default-value (137 139)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [127 139])
+                    ("LETTER" variable
+                       (:constant-flag t
+                        :default-value (150 152)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [141 152])
+                    ("DIGIT" variable
+                       (:constant-flag t
+                        :default-value (169 172)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [161 172])
+                    ("HEX" variable
+                       (:constant-flag t
+                        :default-value (180 183)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [174 183])
+                    ("OTHER" variable
+                       (:constant-flag t
+                        :default-value (196 199)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [188 199]))                  
+                :type "enum")
+                nil [107 202])
+            ("map" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{ /* 000 nul */	0,
+				   /* 001 soh */	0,
+				   /* 002 stx */	0,
+				   /* 003 etx */	0,
+				   /* 004 eot */	0,
+				   /* 005 enq */	0,
+				   /* 006 ack */	0,
+				   /* 007 bel */	0,
+				   /* 010 bs  */	0,
+				   /* 011 ht  */	BLANK,
+				   /* 012 nl  */	NEWLINE,
+				   /* 013 vt  */	BLANK,
+				   /* 014 ff  */	BLANK,
+				   /* 015 cr  */	0,
+				   /* 016 so  */	0,
+				   /* 017 si  */	0,
+				   /* 020 dle */	0,
+				   /* 021 dc1 */	0,
+				   /* 022 dc2 */	0,
+				   /* 023 dc3 */	0,
+				   /* 024 dc4 */	0,
+				   /* 025 nak */	0,
+				   /* 026 syn */	0,
+				   /* 027 etb */	0,
+				   /* 030 can */	0,
+				   /* 031 em  */	0,
+				   /* 032 sub */	0,
+				   /* 033 esc */	0,
+				   /* 034 fs  */	0,
+				   /* 035 gs  */	0,
+				   /* 036 rs  */	0,
+				   /* 037 us  */	0,
+				   /* 040 sp  */	BLANK,
+				   /* 041 !   */	OTHER,
+				   /* 042 \"   */	OTHER,
+				   /* 043 #   */	OTHER,
+				   /* 044 $   */	0,
+				   /* 045 %   */	OTHER,
+				   /* 046 &   */	OTHER,
+				   /* 047 '   */	OTHER,
+				   /* 050 (   */	OTHER,
+				   /* 051 )   */	OTHER,
+				   /* 052 *   */	OTHER,
+				   /* 053 +   */	OTHER,
+				   /* 054 ,   */	OTHER,
+				   /* 055 -   */	OTHER,
+				   /* 056 .   */	OTHER,
+				   /* 057 /   */	OTHER,
+				   /* 060 0   */	DIGIT,
+				   /* 061 1   */	DIGIT,
+				   /* 062 2   */	DIGIT,
+				   /* 063 3   */	DIGIT,
+				   /* 064 4   */	DIGIT,
+				   /* 065 5   */	DIGIT,
+				   /* 066 6   */	DIGIT,
+				   /* 067 7   */	DIGIT,
+				   /* 070 8   */	DIGIT,
+				   /* 071 9   */	DIGIT,
+				   /* 072 :   */	OTHER,
+				   /* 073 ;   */	OTHER,
+				   /* 074 <   */	OTHER,
+				   /* 075 =   */	OTHER,
+				   /* 076 >   */	OTHER,
+				   /* 077 ?   */	OTHER,
+				   /* 100 @   */	0,
+				   /* 101 A   */	LETTER|HEX,
+				   /* 102 B   */	LETTER|HEX,
+				   /* 103 C   */	LETTER|HEX,
+				   /* 104 D   */	LETTER|HEX,
+				   /* 105 E   */	LETTER|HEX,
+				   /* 106 F   */	LETTER|HEX,
+				   /* 107 G   */	LETTER,
+				   /* 110 H   */	LETTER,
+				   /* 111 I   */	LETTER,
+				   /* 112 J   */	LETTER,
+				   /* 113 K   */	LETTER,
+				   /* 114 L   */	LETTER,
+				   /* 115 M   */	LETTER,
+				   /* 116 N   */	LETTER,
+				   /* 117 O   */	LETTER,
+				   /* 120 P   */	LETTER,
+				   /* 121 Q   */	LETTER,
+				   /* 122 R   */	LETTER,
+				   /* 123 S   */	LETTER,
+				   /* 124 T   */	LETTER,
+				   /* 125 U   */	LETTER,
+				   /* 126 V   */	LETTER,
+				   /* 127 W   */	LETTER,
+				   /* 130 X   */	LETTER,
+				   /* 131 Y   */	LETTER,
+				   /* 132 Z   */	LETTER,
+				   /* 133 [   */	OTHER,
+				   /* 134 \\   */	OTHER,
+				   /* 135 ]   */	OTHER,
+				   /* 136 ^   */	OTHER,
+				   /* 137 _   */	LETTER,
+				   /* 140 `   */	0,
+				   /* 141 a   */	LETTER|HEX,
+				   /* 142 b   */	LETTER|HEX,
+				   /* 143 c   */	LETTER|HEX,
+				   /* 144 d   */	LETTER|HEX,
+				   /* 145 e   */	LETTER|HEX,
+				   /* 146 f   */	LETTER|HEX,
+				   /* 147 g   */	LETTER,
+				   /* 150 h   */	LETTER,
+				   /* 151 i   */	LETTER,
+				   /* 152 j   */	LETTER,
+				   /* 153 k   */	LETTER,
+				   /* 154 l   */	LETTER,
+				   /* 155 m   */	LETTER,
+				   /* 156 n   */	LETTER,
+				   /* 157 o   */	LETTER,
+				   /* 160 p   */	LETTER,
+				   /* 161 q   */	LETTER,
+				   /* 162 r   */	LETTER,
+				   /* 163 s   */	LETTER,
+				   /* 164 t   */	LETTER,
+				   /* 165 u   */	LETTER,
+				   /* 166 v   */	LETTER,
+				   /* 167 w   */	LETTER,
+				   /* 170 x   */	LETTER,
+				   /* 171 y   */	LETTER,
+				   /* 172 z   */	LETTER,
+				   /* 173 {   */	OTHER,
+				   /* 174 |   */	OTHER,
+				   /* 175 }   */	OTHER,
+				   /* 176 ~   */	OTHER, }"
+                :type "unsigned char")
+                nil [204 3768])
+            ("tval" variable
+               (:typemodifiers ("static")
+                :type ("symbol" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3769 3795])
+            ("cbuf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [3796 3824])
+            ("wcbuf" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned int")
+                nil [3825 3862])
+            ("src" variable (:type ("Coordinate" type (:type "class") nil nil)) nil [3864 3879])
+            ("t" variable (:type "int") nil [3913 3919])
+            ("token" variable
+               (:pointer 1
+                :type "char")
+                nil [3920 3932])
+            ("tsym" variable (:type ("Symbol" type (:type "class") nil nil)) nil [3954 3966])
+            ("cput" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4030 4036])
+                    ("cl" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4037 4046]))                  
+                :type "void")
+                nil [4012 4047])
+            ("wcput" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [4067 4073])
+                    ("cl" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4074 4083]))                  
+                :type "void")
+                nil [4048 4084])
+            ("scon" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("q" variable (:type "int") (reparse-symbol arg-sub-list) [4103 4109])
+                    ("put" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4110 4136])
+                    ("cl" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4138 4147]))                  
+                :type "void")
+                nil [4085 4148])
+            ("backslash" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("q" variable (:type "int") (reparse-symbol arg-sub-list) [4170 4176]))                  
+                :type "int")
+                nil [4149 4177])
+            ("fcon" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4197 4202]))                  
+                :type ("Symbol" type (:type "class") nil nil))
+                nil [4178 4203])
+            ("icon" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4223 4237])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4238 4242])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4243 4247]))                  
+                :type ("Symbol" type (:type "class") nil nil))
+                nil [4204 4248])
+            ("ppnumber" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4270 4277]))                  
+                :type "void")
+                nil [4249 4278])
+            ("gettok" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4291 4296]))                  
+                :type "int")
+                nil [4280 16185])
+            ("icon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("n" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [16205 16221])
+                    ("overflow" variable (:type "int") (reparse-symbol arg-sub-list) [16222 16235])
+                    ("base" variable (:type "int") (reparse-symbol arg-sub-list) [16236 16245]))                  
+                :type ("Symbol" type (:type "class") nil nil))
+                nil [16186 17575])
+            ("ppnumber" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("which" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17597 17609]))                  
+                :type "void")
+                nil [17576 17904])
+            ("fcon" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [17924 17929]))                  
+                :type ("Symbol" type (:type "class") nil nil))
+                nil [17905 18861])
+            ("cput" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [18881 18887])
+                    ("cl" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18888 18897]))                  
+                :type "void")
+                nil [18863 19035])
+            ("wcput" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [19056 19062])
+                    ("cl" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19063 19072]))                  
+                :type "void")
+                nil [19037 19122])
+            ("scon" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("q" variable (:type "int") (reparse-symbol arg-sub-list) [19142 19148])
+                    ("put" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19149 19175])
+                    ("cl" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [19177 19186]))                  
+                :type "void")
+                nil [19124 20267])
+            ("getchr" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [20279 20284]))                  
+                :type "int")
+                nil [20268 20435])
+            ("backslash" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("q" variable (:type "int") (reparse-symbol arg-sub-list) [20457 20463]))                  
+                :type "int")
+                nil [20436 21756]))          
+      :file "lex.c"
+      :pointmax 21757
+      :fsize 21756
+      :lastmodtime '(22674 36502 819327 132000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXTOKEN" . ((number "32" 103 . 105)))
+          )
+)
+    (semanticdb-table "c.h"
+      :file "c.h"
+      :fsize 14013
+      :lastmodtime '(22666 8913 998938 239000)))
+  :file "!home!wlisper!Documents!src!lcc!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

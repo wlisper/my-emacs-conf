@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("string.h" include (:system-flag t) nil [204 223])
+            ("arpa/inet.h" include (:system-flag t) nil [224 246])
+            ("sock_ntop" function
+               (:pointer 1
+                :arguments 
+                  ( ("sa" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [264 290])
+                    ("salen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [291 307]))                  
+                :type "char")
+                nil [248 961]))          
+      :file "sock_ntop.c"
+      :pointmax 962
+      :fsize 961
+      :lastmodtime '(22883 36207 876754 935000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/types.h" include (:system-flag t) nil [185 207])
+            ("stdio.h" include (:system-flag t) nil [208 226])
+            ("unistd.h" include (:system-flag t) nil [227 246])
+            ("errno.h" include (:system-flag t) nil [247 265])
+            ("readn" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [281 288])
+                    ("vptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [289 300])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [301 310]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [267 671])
+            ("writen" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [688 695])
+                    ("vptr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [696 713])
+                    ("n" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [714 723]))                  
+                :type ("ssize_t" type (:type "class") nil nil))
+                nil [673 1071]))          
+      :file "readn.c"
+      :pointmax 1072
+      :fsize 1071
+      :lastmodtime '(22883 36795 263781 685000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!unp!ch3!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

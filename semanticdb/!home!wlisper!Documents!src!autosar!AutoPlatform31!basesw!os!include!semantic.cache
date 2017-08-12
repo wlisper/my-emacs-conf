@@ -1,0 +1,921 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "osekResource.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_OSEK_RESOURCE_H" variable (:constant-flag t) nil [667 683])
+            ("DeclareResource" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5263 5278])
+            ("T_OSEK_RESOURCE_ControlBlock_Struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("ceilingPriority" variable (:type ("OSPRIOTYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4849 4881])
+                    ("currentPriority" variable (:type ("OSPRIOTYPE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4951 4979])
+                    ("nextResource" variable (:type ("ResourceType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5001 5030])
+                    ("resourceConfigBlock" variable
+                       (:pointer 1
+                        :type ("T_AUTOSAR_RESOURCE_ConfigTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5094 5146]))                  )
+                (reparse-symbol extern-c-contents) [4385 5226])
+            ("T_AUTOSAR_RESOURCE_ConfigTable_Struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("ownerId" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3879 3903])
+                    ("appAccessingMask" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4043 4067]))                  )
+                (reparse-symbol extern-c-contents) [3567 4078])
+            ("MemMap.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [2083 2102])
+            ("OS_STOP_SEC_OS_CODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2063 2082])
+            ("ReleaseResource" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("resId" variable (:type ("ResourceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2032 2052]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2004 2053])
+            ("GetResource" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("resId" variable (:type ("ResourceType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1558 1578]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1534 1579])
+            ("int_vector_save" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1199 1219]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1171 1220])
+            ("int_fit_restore" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1150 1169]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1122 1170])
+            ("int_mask_restore" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1101 1120]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1072 1121])
+            ("int_mask_save" function
+               (:type "void"
+                :arguments 
+                  ( ("value" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [1050 1070]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1024 1071])
+            ("osekResource_Initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [994 1000]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [964 1001])
+            ("MemMap.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [931 950])
+            ("OS_START_SEC_OS_CODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [910 930]))          
+      :file "osekResource.h"
+      :pointmax 5960
+      :fsize 6211
+      :lastmodtime '(20419 2110 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OS_STOP_SEC_OS_CODE")
+          ("DeclareResource" (spp-arg-list ("resource") 5278 . 5288))
+          ("OS_START_SEC_OS_CODE")
+          ("_OSEK_RESOURCE_H")
+          )
+)
+    (semanticdb-table "osekMessage.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_OSEK_MESSAGE_H" variable (:constant-flag t) nil [698 713])
+            ("C" extern nil nil [810 8591]))          
+      :file "osekMessage.h"
+      :pointmax 8689
+      :fsize 8972
+      :lastmodtime '(20419 2110 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_OSEK_MESSAGE_H")
+          )
+)
+    (semanticdb-table "osekAlarm.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_OSEK_ALARM_H" variable (:constant-flag t) nil [646 659])
+            ("DeclareAlarm" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [5888 5900])
+            ("T_OSEK_ALARM_AutoTypeConfigTable_Struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("alarmId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4780 4804])
+                    ("startTick" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4834 4860])
+                    ("periodTick" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4895 4922]))                  )
+                (reparse-symbol extern-c-contents) [4710 5104])
+            ("T_OSEK_ALARM_ControlBlock_Struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("nextAlarm" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4262 4288])
+                    ("prevAlarm" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4322 4348])
+                    ("expirationTick" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4520 4551])
+                    ("periodTick" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4580 4607])
+                    ("configTable" variable (:type ("T_OSEK_ALARM_ConfigTable" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4634 4671]))                  )
+                (reparse-symbol extern-c-contents) [4187 4675])
+            ("T_OSEK_ALARM_ConfigTable_Struct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("taskId" variable (:type ("TaskType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3275 3298])
+                    ("ctrId" variable (:type ("CtrType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3624 3646])
+                    ("ownerId" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3965 3989])
+                    ("appAccessingMask" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4129 4153]))                  )
+                (reparse-symbol extern-c-contents) [3212 4164])
+            ("MemMap.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [3064 3083])
+            ("OS_STOP_SEC_OS_CODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3044 3063])
+            ("osekAlarm_Initialize" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3027 3033]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3000 3034])
+            ("osekAlarm_Check2" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("almId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2944 2960])
+                    ("ctrPtr" variable
+                       (:pointer 1
+                        :type ("T_OSEK_COUNTER_ControlBlock" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2961 2998]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2916 2999])
+            ("osekAlarm_Check1" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("FlagValue" type (:type "class") nil nil)
+                :arguments 
+                  ( ("ctrId" variable (:type ("CtrType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2899 2914]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2872 2915])
+            ("CancelAlarm" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("almId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2840 2857]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2816 2858])
+            ("SetAbsAlarm" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("almId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2542 2558])
+                    ("start" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2559 2574])
+                    ("cycle" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2575 2591]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2517 2592])
+            ("GetAlarmBase" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("almId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2053 2069])
+                    ("info" variable (:type ("AlarmBaseRefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2070 2093]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2028 2094])
+            ("GetAlarm" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("almId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1763 1779])
+                    ("tick" variable (:type ("TickRefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1780 1798]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1742 1799])
+            ("SetRelAlarm" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("almId" variable (:type ("AlarmType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1415 1431])
+                    ("increment" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1432 1451])
+                    ("cycle" variable (:type ("TickType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1452 1468]))                  
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1391 1469])
+            ("MemMap.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [907 926])
+            ("OS_START_SEC_OS_CODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [886 906]))          
+      :file "osekAlarm.h"
+      :pointmax 5987
+      :fsize 6212
+      :lastmodtime '(20419 2109 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_OSEK_ALARM_H")
+          ("DeclareAlarm" (spp-arg-list ("alarm") 5900 . 5907))
+          ("OS_STOP_SEC_OS_CODE")
+          ("OS_START_SEC_OS_CODE")
+          )
+)
+    (semanticdb-table "osapi.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_OS_API_H" variable (:constant-flag t) nil [484 493])
+            ("Trusted_fct" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("StatusType" type (:type "class") nil nil)
+                :arguments 
+                  ( ("FunctionIndex" variable (:type ("TrustedFunctionIndexType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8656 8695])
+                    ("FunctionParams" variable (:type ("TrustedFunctionParameterRefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8695 8742]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [8629 8743])
+            ("TrustedFunctionParameterRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [8451 8497])
+            ("TrustedFunctionIndexType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSBYTE" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [8308 8348])
+            ("OsAppHooksType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("OsAppHooksStruct" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [8215 8256])
+            ("OsAppHooksStruct" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OsAppHooks" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [8171 8214])
+            ("ObjectID" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [8143 8168])
+            ("ApplicationType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [8101 8133])
+            ("ISRType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("signed short"))
+                (reparse-symbol extern-c-contents) [8051 8081])
+            ("OSSERVICEIDTYPE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSBYTE" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [8006 8038])
+            ("AlarmBaseRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("AlarmBaseType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7934 7979])
+            ("AlarmBaseType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_COUNTER_ConfigTable" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7833 7893])
+            ("AlarmType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("T_OSEK_ALARM_ControlBlock" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7740 7796])
+            ("T_OSEK_ALARM_CallBackEntry" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7698 7704]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [7653 7705])
+            ("ALARMCALLBACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [7568 7581])
+            ("CtrInfoRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("CtrInfoType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7465 7508])
+            ("CtrInfoType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_COUNTER_ConfigTable" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7373 7424])
+            ("CounterType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [7298 7334])
+            ("CtrType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [7261 7297])
+            ("TickRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("TickType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7191 7231])
+            ("TickType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [7133 7170])
+            ("T_OSEK_MESSAGE_ConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_MESSAGE_ConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [7036 7113])
+            ("MsgType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("T_OSEK_MESSAGE_ControlBlock" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [6937 6989])
+            ("T_OSEK_MESSAGE_ControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_MESSAGE_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6841 6920])
+            ("OsScheduleTableRef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("OsScheduleTable" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [6750 6794])
+            ("OsScheduleTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("ScheduleTable" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6692 6737])
+            ("ScheduleTableConfigType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("ScheduleTableConfig" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6620 6679])
+            ("EventSettingType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("EventSetting" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6562 6607])
+            ("ExpirePointTypeRef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("ExpirePointType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [6506 6550])
+            ("ExpirePointType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("ExpirePoint" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6452 6495])
+            ("SyncStrategyConfigTypeRef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("SyncStrategyConfigType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [6383 6441])
+            ("SyncStrategyConfigType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("SyncStrategyConfig" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6313 6370])
+            ("AutoStartConfigTypeRef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("AutoStartConfigType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [6248 6300])
+            ("AutoStartConfigType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("AutoStartConfig" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6183 6234])
+            ("T_OSEK_ALARM_AutoTypeConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_ALARM_AutoTypeConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [6068 6156])
+            ("T_OSEK_ALARM_ConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_ALARM_ConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5936 6008])
+            ("T_OSEK_ALARM_ControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_ALARM_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5814 5888])
+            ("T_OSEK_COUNTER_ConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_COUNTER_ConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5688 5764])
+            ("T_OSEK_COUNTER_ControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_COUNTER_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5557 5636])
+            ("T_OSEK_TASK_ConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_TASK_ConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5433 5503])
+            ("T_AUTOSAR_RESOURCE_ConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_AUTOSAR_RESOURCE_ConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5304 5389])
+            ("T_AUTOSAR_ISR_ConfigTable" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_AUTOSAR_ISR_ConfigTable_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5181 5255])
+            ("T_AUTOSAR_ISR_ControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_AUTOSAR_ISR_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [5061 5137])
+            ("T_OSEK_TASK_ReadyBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_TASK_ReadyBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4945 5013])
+            ("T_OSEK_TASK_ControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_TASK_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4872 4944])
+            ("T_OSEK_TARGET_ExceptionFrame" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_TARGET_ExceptionFrame_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4746 4826])
+            ("T_OSEK_TARGET_TaskContext" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_TARGET_TaskContext_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4621 4695])
+            ("T_AUTOSAR_RESOURCE_TPControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_AUTOSAR_RESOURCE_TPControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4485 4575])
+            ("T_OSEK_RESOURCE_ControlBlock" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("T_OSEK_RESOURCE_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4344 4424])
+            ("ResourceType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("T_OSEK_RESOURCE_ControlBlock_Struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                (reparse-symbol extern-c-contents) [4241 4306])
+            ("DeclareISR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4157 4167])
+            ("DeclareTask" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4096 4107])
+            ("T_OSEK_TASK_Entry" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [4053 4059]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4026 4060])
+            ("TASK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3947 3951])
+            ("TRUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3908 3912])
+            ("FALSE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3861 3866])
+            ("AccessNameRef" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("void"))
+                (reparse-symbol extern-c-contents) [3799 3841])
+            ("OSMSGIDTYPE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSBYTE" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3727 3767])
+            ("FlagValue" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [3672 3710])
+            ("FlagType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [3616 3653])
+            ("OSCALLBACK" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3573 3579]))                  
+                :function-pointer t
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3544 3580])
+            ("IntMaskType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3485 3515])
+            ("EventMaskRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("EventMaskType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3443 3483])
+            ("EventMaskType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3385 3417])
+            ("TaskStateRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("TaskStateType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3321 3361])
+            ("TaskStateType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSBYTE" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3264 3295])
+            ("TaskRefType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("TaskType" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3210 3241])
+            ("TaskType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [3162 3189])
+            ("StatusType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [3016 3051])
+            ("AppModeType" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSBYTE" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2967 2996])
+            ("OSTASKTYPE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("OSDWORD" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [2906 2945])
+            ("OSPRIOTYPE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("signed short"))
+                (reparse-symbol extern-c-contents) [2846 2886])
+            ("OSSIGNEDDWORD" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("signed int"))
+                (reparse-symbol extern-c-contents) [2784 2826])
+            ("OSCARDINAL" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [2722 2761])
+            ("OSDWORD" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned int"))
+                (reparse-symbol extern-c-contents) [2685 2721])
+            ("OSWORDPTR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("unsigned short"))
+                (reparse-symbol extern-c-contents) [2629 2668])
+            ("OSWORD" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned short"))
+                (reparse-symbol extern-c-contents) [2575 2610])
+            ("OSBYTEPTR" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :pointer 1
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [2521 2559])
+            ("OSBYTE" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("unsigned char"))
+                (reparse-symbol extern-c-contents) [2467 2502])
+            ("NULLPTR" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2417 2424])
+            ("INVALID_TASK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2373 2385])
+            ("E_OS_SYS_ISRSTACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1951 1968])
+            ("E_OS_SYS_MAINSTACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1879 1897])
+            ("E_OS_SYS_ORDER" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1807 1821])
+            ("E_OS_SYS_STACK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1730 1744])
+            ("E_COM_NOMSG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1637 1648])
+            ("E_COM_LOCKED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1562 1574])
+            ("E_COM_LIMIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1489 1500])
+            ("E_COM_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1418 1426])
+            ("E_COM_BUSY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1345 1355])
+            ("E_OS_VALUE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1255 1265])
+            ("E_OS_STATE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1192 1202])
+            ("E_OS_RESOURCE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1127 1140])
+            ("E_OS_NOFUNC" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1063 1074])
+            ("E_OS_LIMIT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [999 1009])
+            ("E_OS_ID" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [937 944])
+            ("E_OS_CALLEVEL" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [870 883])
+            ("E_OS_ACCESS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [805 816])
+            ("E_OK" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [722 726])
+            ("osekTurboConfig.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [618 646])
+            ("osprop.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [535 554])
+            ("mpc5634intr.h" include (:system-flag t) nil [15878 15902])
+            ("osekTarget.h" include (:system-flag t) nil [15937 15960])
+            ("osekInterrupt.h" include (:system-flag t) nil [15977 16003])
+            ("osekHook.h" include (:system-flag t) nil [16022 16043])
+            ("osekTask.h" include (:system-flag t) nil [16060 16081])
+            ("osekResource.h" include (:system-flag t) nil [16098 16123])
+            ("osekExecution.h" include (:system-flag t) nil [16142 16168])
+            ("osekCounter.h" include (:system-flag t) nil [16186 16210])
+            ("osekAlarm.h" include (:system-flag t) nil [16227 16249])
+            ("osekEvent.h" include (:system-flag t) nil [16266 16288])
+            ("osekDebug.h" include (:system-flag t) nil [16305 16327])
+            ("osekScheduleTable.h" include (:system-flag t) nil [16388 16418])
+            ("autosarTimingProtection.h" include (:system-flag t) nil [16434 16470])
+            ("autosarOsApplication.h" include (:system-flag t) nil [16494 16527])
+            ("autosarTrustedFunction.h" include (:system-flag t) nil [16529 16564])
+            ("autosarOsTrap.h" include (:system-flag t) nil [16566 16592])
+            ("MMUInitial.h" include (:system-flag t) nil [16594 16617]))          
+      :file "osapi.h"
+      :pointmax 16627
+      :fsize 18417
+      :lastmodtime '(20419 2110 0 0)
+      :unmatched-syntax '((TYPEDEF 8621 . 8628) (TYPEDEF 7645 . 7652) (TYPEDEF 4018 . 4025) (TYPEDEF 3536 . 3543))
+      :lexical-table 
+        '(("E_OS_NOFUNC" . ((semantic-list "( (StatusType)5 )" 1076 . 1093)))
+          ("DeclareTask" (spp-arg-list ("TaskID") 4107 . 4115) . ((symbol "TASK" 4120 . 4124) (semantic-list "(TaskID)" 4124 . 4132)))
+          ("E_OK" . ((semantic-list "( (StatusType)0 )" 731 . 748)))
+          ("E_OS_SYS_MAINSTACK" . ((semantic-list "( (StatusType)19 )" 1899 . 1917)))
+          ("TRUE" . ((semantic-list "((FlagValue)1)" 3922 . 3936)))
+          ("ALARMCALLBACK" (spp-arg-list ("alarmCallback") 7581 . 7596) . 
+              ((VOID "void" 7598 . 7602) (symbol "alarmCallback" 7603 . 7616) (semantic-list "( void )" 7616 . 7624)))
+          ("E_OS_LIMIT" . ((semantic-list "( (StatusType)4 )" 1012 . 1029)))
+          ("FALSE" . ((semantic-list "((FlagValue)0)" 3875 . 3889)))
+          ("_OS_API_H")
+          ("E_OS_ACCESS" . ((semantic-list "( (StatusType)1 )" 818 . 835)))
+          ("E_COM_LIMIT" . ((semantic-list "( (StatusType)(3 + 32) )" 1502 . 1526)))
+          ("NULLPTR" . ((semantic-list "((void *)0)" 2426 . 2437)))
+          ("E_OS_SYS_STACK" . ((semantic-list "( (StatusType)17 )" 1750 . 1768)))
+          ("E_OS_SYS_ORDER" . ((semantic-list "( (StatusType)18 )" 1827 . 1845)))
+          ("TASK" (spp-arg-list ("TaskName") 3951 . 3963) . 
+              ((VOID "void" 3964 . 3968) (spp-symbol-merge ((symbol "Func" 3969 . 3973) (symbol "TaskName" 3975 . 3983)) 3969 . 3983) (semantic-list "( void )" 3983 . 3991)))
+          ("E_OS_RESOURCE" . ((semantic-list "( (StatusType)6 )" 1142 . 1159)))
+          ("E_OS_ID" . ((semantic-list "( (StatusType)3 )" 947 . 964)))
+          ("E_COM_NOMSG" . ((semantic-list "( (StatusType)(5 + 32) )" 1650 . 1674)))
+          ("DeclareISR" (spp-arg-list ("isrName") 4167 . 4176) . 
+              ((VOID "void" 4181 . 4185) (symbol "isrName" 4186 . 4193) (semantic-list "(void)" 4193 . 4199)))
+          ("E_COM_ID" . ((semantic-list "( (StatusType)(2 + 32) )" 1429 . 1453)))
+          ("E_OS_CALLEVEL" . ((semantic-list "( (StatusType)2 )" 885 . 902)))
+          ("E_COM_LOCKED" . ((semantic-list "( (StatusType)(4 + 32) )" 1576 . 1600)))
+          ("INVALID_TASK" . ((semantic-list "((OSDWORD)0xFFFFFFFF)" 2386 . 2407)))
+          ("E_OS_STATE" . ((semantic-list "( (StatusType)7 )" 1205 . 1222)))
+          ("E_COM_BUSY" . ((semantic-list "( (StatusType)(1 + 32) )" 1358 . 1382)))
+          ("E_OS_VALUE" . ((semantic-list "( (StatusType)8 )" 1268 . 1285)))
+          ("E_OS_SYS_ISRSTACK" . ((semantic-list "( (StatusType)20 )" 1971 . 1989)))
+          )
+)
+    (semanticdb-table "osekTarget.h"
+      :file "osekTarget.h"
+      :fsize 12188
+      :lastmodtime '(20419 2110 0 0))
+    (semanticdb-table "osekInterrupt.h"
+      :file "osekInterrupt.h"
+      :fsize 3654
+      :lastmodtime '(20419 2110 0 0))
+    (semanticdb-table "osekHook.h"
+      :file "osekHook.h"
+      :fsize 3932
+      :lastmodtime '(20419 2109 0 0))
+    (semanticdb-table "osekTask.h"
+      :file "osekTask.h"
+      :fsize 18033
+      :lastmodtime '(20419 2110 0 0))
+    (semanticdb-table "osekExecution.h"
+      :file "osekExecution.h"
+      :fsize 1887
+      :lastmodtime '(20419 2109 0 0))
+    (semanticdb-table "osekCounter.h"
+      :file "osekCounter.h"
+      :fsize 5670
+      :lastmodtime '(20419 2109 0 0))
+    (semanticdb-table "osekEvent.h"
+      :file "osekEvent.h"
+      :fsize 2758
+      :lastmodtime '(20419 2109 0 0))
+    (semanticdb-table "osekDebug.h"
+      :file "osekDebug.h"
+      :fsize 1951
+      :lastmodtime '(20419 2109 0 0))
+    (semanticdb-table "osekScheduleTable.h"
+      :file "osekScheduleTable.h"
+      :fsize 7959
+      :lastmodtime '(20419 2110 0 0))
+    (semanticdb-table "autosarTimingProtection.h"
+      :file "autosarTimingProtection.h"
+      :fsize 5045
+      :lastmodtime '(20419 2109 0 0)))
+  :file "!home!wlisper!Documents!src!autosar!AutoPlatform31!basesw!os!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

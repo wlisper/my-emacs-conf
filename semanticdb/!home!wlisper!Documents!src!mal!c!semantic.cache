@@ -1,0 +1,3935 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables
+  (list
+    (semanticdb-table "step3_env.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [172 184])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [185 194]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [159 195])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [218 232])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [233 243]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [205 530])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [557 569])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [570 579]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [540 1895])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1910 1922])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1923 1932]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1897 3673])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3696 3708]))                  
+                :type "char")
+                nil [3684 3908])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3947 3956])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3957 3970])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3971 3981]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3936 4200])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [4240 4254])
+            ("init_repl_env" function (:type "void") nil [4360 4702])
+            ("main" function (:type "int") nil [4704 5307]))          
+      :file "step3_env.c"
+      :pointmax 5308
+      :fsize 5307
+      :lastmodtime '(22611 39303 799290 438000)
+      :unmatched-syntax nil)
+    (semanticdb-table "types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__MAL_TYPES__" variable (:constant-flag t) nil [31 44])
+            ("__MAL_TYPES__" variable (:constant-flag t) nil [31 44])
+            ("__MAL_TYPES__" variable (:constant-flag t) nil [31 44])
+            ("glib.h" include (:system-flag t) nil [46 63])
+            ("string.h" include (:system-flag t) nil [320 339])
+            ("MAL_GC_SETUP" variable (:constant-flag t) nil [348 360])
+            ("MAL_GC_MALLOC" variable (:constant-flag t) nil [371 384])
+            ("MAL_GC_FREE" variable (:constant-flag t) nil [402 413])
+            ("MAL_GC_STRDUP" variable (:constant-flag t) nil [431 444])
+            ("MalVal" type
+               (:prototype t
+                :type "struct")
+                nil [463 477])
+            ("Env" type
+               (:members 
+                  ( ("outer" variable
+                       (:pointer 1
+                        :type ("Env" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [552 570])
+                    ("table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [575 593]))                  
+                :type "struct")
+                nil [527 600])
+            ("Env" type
+               (:typedef ("Env" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [527 600])
+            ("new_env" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("outer" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [615 626])
+                    ("binds" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [627 648])
+                    ("exprs" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [649 670]))                  
+                :type ("Env" type (:type "class") nil nil))
+                nil [602 671])
+            ("env_find" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [686 695])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [696 715]))                  
+                :type ("Env" type (:type "class") nil nil))
+                nil [672 716])
+            ("env_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [740 749])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [750 769]))                  
+                :type ("MalVal" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [717 770])
+            ("env_set" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [784 793])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [794 813])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [814 833]))                  
+                :type ("Env" type (:type "class") nil nil))
+                nil [771 834])
+            ("g_hash_table_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hash_table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [882 905]))                  
+                :type "void")
+                nil [858 906])
+            ("g_hash_table_copy" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src_table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [937 959]))                  
+                :type ("GHashTable" type (:type "class") nil nil))
+                nil [907 960])
+            ("mal_error" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("MalVal" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [985 1017])
+            ("_error" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1030 1046])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [1047 1051]))                  
+                :type "void")
+                nil [1018 1052])
+            ("abort" variable (:constant-flag t) nil [1062 1067])
+            ("assert" variable (:constant-flag t) nil [1144 1150])
+            ("assert_type" variable (:constant-flag t) nil [1272 1283])
+            ("MalType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MAL_NIL" variable
+                             (:constant-flag t
+                              :default-value (1442 1443)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1432 1443])
+                          ("MAL_TRUE" variable
+                             (:constant-flag t
+                              :default-value (1460 1461)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1449 1461])
+                          ("MAL_FALSE" variable
+                             (:constant-flag t
+                              :default-value (1479 1480)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1467 1480])
+                          ("MAL_INTEGER" variable
+                             (:constant-flag t
+                              :default-value (1500 1501)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1486 1501])
+                          ("MAL_FLOAT" variable
+                             (:constant-flag t
+                              :default-value (1519 1521)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1507 1521])
+                          ("MAL_SYMBOL" variable
+                             (:constant-flag t
+                              :default-value (1540 1542)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1527 1542])
+                          ("MAL_STRING" variable
+                             (:constant-flag t
+                              :default-value (1561 1563)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1548 1563])
+                          ("MAL_LIST" variable
+                             (:constant-flag t
+                              :default-value (1580 1583)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1569 1583])
+                          ("MAL_VECTOR" variable
+                             (:constant-flag t
+                              :default-value (1602 1605)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1589 1605])
+                          ("MAL_HASH_MAP" variable
+                             (:constant-flag t
+                              :default-value (1626 1629)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1611 1629])
+                          ("MAL_ATOM" variable
+                             (:constant-flag t
+                              :default-value (1646 1650)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1635 1650])
+                          ("MAL_FUNCTION_C" variable
+                             (:constant-flag t
+                              :default-value (1673 1677)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1656 1677])
+                          ("MAL_FUNCTION_MAL" variable
+                             (:constant-flag t
+                              :default-value (1702 1706)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1683 1706]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1413 1718])
+            ("MalVal" type
+               (:members 
+                  ( ("type" variable (:type ("MalType" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1748 1761])
+                    ("metadata" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [1766 1790])
+                    ("val" variable (:type ("" type
+                         (:members 
+                            ( ("intnum" variable (:type ("gint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1811 1825])
+                              ("floatnum" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1834 1851])
+                              ("string" variable
+                                 (:pointer 1
+                                  :type "char")
+                                  (reparse-symbol classsubparts) [1860 1873])
+                              ("array" variable
+                                 (:pointer 1
+                                  :type ("GArray" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [1882 1896])
+                              ("hash_table" variable
+                                 (:pointer 1
+                                  :type ("GHashTable" type (:type "class") nil nil))
+                                  (reparse-symbol classsubparts) [1905 1928])
+                              ("atom_val" variable
+                                 (:pointer 1
+                                  :type ("MalVal" type
+                                       (:prototype t
+                                        :type "struct")
+                                        nil nil))
+                                  (reparse-symbol classsubparts) [1937 1961])
+                              ("f0" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [1970 1985])
+                              ("f1" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2007 2013]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [1994 2014])
+                              ("f2" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2036 2042])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2042 2048]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2023 2049])
+                              ("f3" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2071 2077])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2077 2083])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2083 2089]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2058 2090])
+                              ("f4" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2112 2118])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2118 2124])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2124 2130])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2130 2136]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2099 2137])
+                              ("f5" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2159 2165])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2165 2171])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2171 2177])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2177 2183])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2183 2189]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2146 2190])
+                              ("f6" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2212 2218])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2218 2224])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2224 2230])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2230 2236])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2236 2242])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2242 2248]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2199 2249])
+                              ("f7" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2271 2277])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2277 2283])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2283 2289])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2289 2295])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2295 2301])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2301 2307])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2307 2313]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2258 2314])
+                              ("f8" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2336 2342])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2342 2348])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2348 2354])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2354 2360])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2360 2366])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2366 2372])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2372 2378])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2378 2384]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2323 2385])
+                              ("f9" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2407 2413])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2413 2419])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2419 2425])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2425 2431])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2431 2437])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2437 2443])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2443 2449])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2449 2455])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2455 2461]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2394 2462])
+                              ("f10" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2484 2490])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2490 2496])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2496 2502])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2502 2508])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2508 2514])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2514 2520])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2520 2526])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2526 2532])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2532 2538])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2538 2544]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2471 2545])
+                              ("f11" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2567 2573])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2573 2579])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2579 2585])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2585 2591])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2591 2597])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2597 2603])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2603 2609])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2609 2615])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2615 2621])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2621 2627])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2649 2655]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2554 2656])
+                              ("f12" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2678 2684])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2684 2690])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2690 2696])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2696 2702])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2702 2708])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2708 2714])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2714 2720])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2720 2726])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2726 2732])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2732 2738])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2760 2766])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2766 2772]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2665 2773])
+                              ("f13" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2795 2801])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2801 2807])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2807 2813])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2813 2819])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2819 2825])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2825 2831])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2831 2837])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2837 2843])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2843 2849])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2849 2855])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2877 2883])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2883 2889])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2889 2895]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2782 2896])
+                              ("f14" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2918 2924])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2924 2930])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2930 2936])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2936 2942])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2942 2948])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2948 2954])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2954 2960])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2960 2966])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2966 2972])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [2972 2978])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3000 3006])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3006 3012])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3012 3018])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3018 3024]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [2905 3025])
+                              ("f15" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3047 3053])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3053 3059])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3059 3065])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3065 3071])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3071 3077])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3077 3083])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3083 3089])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3089 3095])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3095 3101])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3101 3107])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3129 3135])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3135 3141])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3141 3147])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3147 3153])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3153 3159]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [3034 3160])
+                              ("f16" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3182 3188])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3188 3194])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3194 3200])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3200 3206])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3206 3212])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3212 3218])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3218 3224])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3224 3230])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3230 3236])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3236 3242])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3264 3270])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3270 3276])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3276 3282])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3282 3288])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3288 3294])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3294 3300]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [3169 3301])
+                              ("f17" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3323 3329])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3329 3335])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3335 3341])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3341 3347])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3347 3353])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3353 3359])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3359 3365])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3365 3371])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3371 3377])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3377 3383])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3405 3411])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3411 3417])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3417 3423])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3423 3429])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3429 3435])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3435 3441])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3441 3447]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [3310 3448])
+                              ("f18" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3470 3476])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3476 3482])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3482 3488])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3488 3494])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3494 3500])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3500 3506])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3506 3512])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3512 3518])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3518 3524])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3524 3530])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3552 3558])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3558 3564])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3564 3570])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3570 3576])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3576 3582])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3582 3588])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3588 3594])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3594 3600]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [3457 3601])
+                              ("f19" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3623 3629])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3629 3635])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3635 3641])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3641 3647])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3647 3653])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3653 3659])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3659 3665])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3665 3671])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3671 3677])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3677 3683])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3705 3711])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3711 3717])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3717 3723])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3723 3729])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3729 3735])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3735 3741])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3741 3747])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3747 3753])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3753 3759]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [3610 3760])
+                              ("f20" function
+                                 (:prototype-flag t
+                                  :pointer 1
+                                  :function-pointer t
+                                  :arguments 
+                                    ( ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3782 3788])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3788 3794])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3794 3800])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3800 3806])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3806 3812])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3812 3818])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3818 3824])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3824 3830])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3830 3836])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3836 3842])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3864 3870])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3870 3876])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3876 3882])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3882 3888])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3888 3894])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3894 3900])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3900 3906])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3906 3912])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3912 3918])
+                                      ("" variable
+                                         (:pointer 1
+                                          :type "void")
+                                          (reparse-symbol arg-sub-list) [3918 3924]))                                    
+                                  :type "void")
+                                  (reparse-symbol classsubparts) [3769 3925])
+                              ("func" variable (:type ("" type
+                                   (:members 
+                                      ( ("evaluator" function
+                                           (:prototype-flag t
+                                            :pointer 1
+                                            :function-pointer t
+                                            :arguments 
+                                              ( ("" variable
+                                                   (:pointer 1
+                                                    :type ("MalVal" type
+                                                         (:prototype t
+                                                          :type "struct")
+                                                          nil nil))
+                                                    (reparse-symbol arg-sub-list) [3983 3999])
+                                                ("" variable
+                                                   (:pointer 1
+                                                    :type ("Env" type (:type "class") nil nil))
+                                                    (reparse-symbol arg-sub-list) [4000 4006]))                                              
+                                            :type ("MalVal" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [3955 4007])
+                                        ("args" variable
+                                           (:pointer 1
+                                            :type ("MalVal" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [4020 4040])
+                                        ("body" variable
+                                           (:pointer 1
+                                            :type ("MalVal" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [4053 4073])
+                                        ("env" variable
+                                           (:pointer 1
+                                            :type ("Env" type
+                                                 (:prototype t
+                                                  :type "struct")
+                                                  nil nil))
+                                            (reparse-symbol classsubparts) [4086 4105]))                                      
+                                    :type "struct")
+                                    nil nil)) (reparse-symbol classsubparts) [3934 4121]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [1795 4132])
+                    ("func_arg_cnt" variable (:type "int") (reparse-symbol classsubparts) [4137 4154])
+                    ("ismacro" variable (:type "int") (reparse-symbol classsubparts) [4159 4171]))                  
+                :type "struct")
+                nil [1720 4181])
+            ("MalVal" type
+               (:typedef ("MalVal" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [1720 4181])
+            ("mal_nil" variable
+               (:typemodifiers ("extern")
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4197 4219])
+            ("mal_true" variable
+               (:typemodifiers ("extern")
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4220 4243])
+            ("mal_false" variable
+               (:typemodifiers ("extern")
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4244 4268])
+            ("malval_new" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("type" variable (:type ("MalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4399 4412])
+                    ("metadata" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4413 4430]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4380 4431])
+            ("malval_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("mv" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4449 4460]))                  
+                :type "void")
+                nil [4432 4461])
+            ("malval_new_integer" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable (:type ("gint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4489 4500]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4462 4501])
+            ("malval_new_float" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4527 4539]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4502 4540])
+            ("malval_new_string" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4567 4577]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4541 4578])
+            ("malval_new_symbol" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4605 4615]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4579 4616])
+            ("malval_new_keyword" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4644 4654]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4617 4655])
+            ("malval_new_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("type" variable (:type ("MalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4680 4693])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("GArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4694 4706]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4656 4707])
+            ("malval_new_hash_map" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4736 4752]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4708 4753])
+            ("malval_new_atom" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4778 4790]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4754 4791])
+            ("malval_new_function" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4820 4833])
+                    ("arg_cnt" variable (:type "int") (reparse-symbol arg-sub-list) [4843 4855]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4792 4856])
+            ("WRAP_INTEGER_OP" variable (:constant-flag t) nil [4877 4892])
+            ("WRAP_INTEGER_CMP_OP" variable (:constant-flag t) nil [5050 5069])
+            ("_listX" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("count" variable (:type "int") (reparse-symbol arg-sub-list) [5255 5265])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5266 5270]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5240 5271])
+            ("_list" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5286 5299]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5272 5300])
+            ("_vector" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5317 5330]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5301 5331])
+            ("_hash_map" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5350 5363]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5332 5364])
+            ("_assoc_BANG" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("hm" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5385 5396])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5397 5410]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5365 5411])
+            ("_dissoc_BANG" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("hm" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5433 5444])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5445 5458]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5412 5459])
+            ("_apply" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5476 5486])
+                    ("el" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5487 5498]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5461 5499])
+            ("_pr_str" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5515 5528])
+                    ("print_readably" variable (:type "int") (reparse-symbol arg-sub-list) [5529 5548]))                  
+                :type "char")
+                nil [5501 5549])
+            ("_slice" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5566 5578])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [5579 5589])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [5590 5598]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5551 5599])
+            ("_nth" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5613 5625])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [5626 5634]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5600 5635])
+            ("_first" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5651 5663]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5636 5664])
+            ("_rest" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5679 5691]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5665 5692])
+            ("_last" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5707 5719]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5693 5720])
+            ("_count" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5732 5744]))                  
+                :type "int")
+                nil [5721 5745])
+            ("_atom_Q" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5759 5771]))                  
+                :type "int")
+                nil [5747 5772])
+            ("_sequential_Q" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5791 5803]))                  
+                :type "int")
+                nil [5773 5804])
+            ("_list_Q" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5817 5829]))                  
+                :type "int")
+                nil [5805 5830])
+            ("_vector_Q" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5845 5857]))                  
+                :type "int")
+                nil [5831 5858])
+            ("_hash_map_Q" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5875 5887]))                  
+                :type "int")
+                nil [5859 5888])
+            ("_equal_Q" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5902 5912])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5913 5923]))                  
+                :type "int")
+                nil [5889 5924])
+            ("_map2" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5940 5955])
+                    ("lst" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5971 5983])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5984 5995]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5926 5996]))          
+      :file "types.h"
+      :pointmax 6005
+      :fsize 6004
+      :lastmodtime '(22614 15812 327097 265000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__MAL_TYPES__")
+          )
+)
+    (semanticdb-table "readline.h"
+      :file "readline.h"
+      :fsize 92
+      :lastmodtime '(22608 62496 859188 452000))
+    (semanticdb-table "reader.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__MAL_READER__" variable (:constant-flag t) nil [32 46])
+            ("glib.h" include (:system-flag t) nil [48 65])
+            ("glib-object.h" include (:system-flag t) nil [66 90])
+            ("types.h" include nil nil [92 110])
+            ("Reader" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("array" variable
+                             (:pointer 1
+                              :type ("GArray" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [133 147])
+                          ("position" variable (:type "int") (reparse-symbol classsubparts) [152 165]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [112 175])
+            ("reader_new" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("Reader" type (:type "class") nil nil))
+                nil [177 198])
+            ("reader_append" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("reader" variable
+                       (:pointer 1
+                        :type ("Reader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [217 232])
+                    ("token" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [233 245]))                  
+                :type "int")
+                nil [199 246])
+            ("reader_peek" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("reader" variable
+                       (:pointer 1
+                        :type ("Reader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [265 280]))                  
+                :type "char")
+                nil [247 281])
+            ("reader_next" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("reader" variable
+                       (:pointer 1
+                        :type ("Reader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [300 315]))                  
+                :type "char")
+                nil [282 316])
+            ("reader_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("reader" variable
+                       (:pointer 1
+                        :type ("Reader" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [334 349]))                  
+                :type "void")
+                nil [317 350])
+            ("_readline" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [369 383]))                  
+                :type "char")
+                nil [352 384])
+            ("read_str" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [385 405]))          
+      :file "reader.h"
+      :pointmax 414
+      :fsize 413
+      :lastmodtime '(22608 62496 859188 452000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__MAL_READER__")
+          )
+)
+    (semanticdb-table "step4_if_fn_do.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190 202])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 212]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [177 213])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 250])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [251 261]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [223 548])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [575 587])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [588 597]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [558 1913])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1928 1940])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1941 1950]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1915 4989])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5012 5024]))                  
+                :type "char")
+                nil [5000 5224])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5263 5272])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5273 5286])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5287 5297]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5252 5516])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [5556 5570])
+            ("init_repl_env" function (:type "void") nil [5572 6020])
+            ("main" function (:type "int") nil [6022 6625]))          
+      :file "step4_if_fn_do.c"
+      :pointmax 6626
+      :fsize 6625
+      :lastmodtime '(22608 62496 859188 452000)
+      :unmatched-syntax nil)
+    (semanticdb-table "core.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__MAL_CORE__" variable (:constant-flag t) nil [30 42])
+            ("glib.h" include (:system-flag t) nil [44 61])
+            ("core_ns_entry" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [115 126])
+                          ("func" function
+                             (:prototype-flag t
+                              :pointer 1
+                              :function-pointer t
+                              :arguments 
+                                ( ("" variable
+                                     (:pointer 1
+                                      :type "void")
+                                      (reparse-symbol arg-sub-list) [145 151]))                                
+                              :type "void")
+                              (reparse-symbol classsubparts) [131 152])
+                          ("arg_cnt" variable (:type "int") (reparse-symbol classsubparts) [157 169]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [94 186])
+            ("core_ns" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :type ("core_ns_entry" type (:type "class") nil nil))
+                nil [188 221]))          
+      :file "core.h"
+      :pointmax 230
+      :fsize 229
+      :lastmodtime '(22733 22523 821340 612000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__MAL_CORE__")
+          )
+)
+    (semanticdb-table "step5_tco.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190 202])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 212]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [177 213])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 250])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [251 261]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [223 548])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [575 587])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [588 597]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [558 1913])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1928 1940])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1941 1950]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1915 5275])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5298 5310]))                  
+                :type "char")
+                nil [5286 5510])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5549 5558])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5559 5572])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5573 5583]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5538 5802])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [5842 5856])
+            ("init_repl_env" function (:type "void") nil [5858 6306])
+            ("main" function (:type "int") nil [6308 6911]))          
+      :file "step5_tco.c"
+      :pointmax 6912
+      :fsize 6911
+      :lastmodtime '(22608 62496 859188 452000)
+      :unmatched-syntax nil)
+    (semanticdb-table "step6_file.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190 202])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 212]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [177 213])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 250])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [251 261]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [223 504])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [531 543])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [544 553]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [514 1761])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1776 1788])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1789 1798]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1763 4961])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4984 4996]))                  
+                :type "char")
+                nil [4972 5174])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5213 5222])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5223 5236])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5237 5247]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5202 5448])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [5488 5502])
+            ("do_eval" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5520 5532]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5504 5564])
+            ("init_repl_env" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5585 5594])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5595 5608]))                  
+                :type "void")
+                nil [5566 6449])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6460 6469])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6470 6483]))                  
+                :type "int")
+                nil [6451 7148]))          
+      :file "step6_file.c"
+      :pointmax 7149
+      :fsize 7148
+      :lastmodtime '(22611 44328 895533 208000)
+      :unmatched-syntax nil)
+    (semanticdb-table "types.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdarg.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [80 98])
+            ("printer.h" include nil nil [99 119])
+            ("mal_error" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [734 759])
+            ("_error" function
+               (:arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [799 815])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [816 820]))                  
+                :type "void")
+                nil [787 931])
+            ("mal_nil" variable
+               (:default-value "{MAL_NIL, NULL, {0}, 0}"
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [960 1001])
+            ("mal_true" variable
+               (:default-value "{MAL_TRUE, NULL, {0}, 0}"
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1002 1045])
+            ("mal_false" variable
+               (:default-value "{MAL_FALSE, NULL, {0}, 0}"
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1046 1091])
+            ("glib-object.h" include (:system-flag t) nil [1138 1162])
+            ("g_hash_table_print" function
+               (:arguments 
+                  ( ("hash_table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1187 1210]))                  
+                :type "void")
+                nil [1163 1489])
+            ("g_hash_table_copy" function
+               (:pointer 1
+                :arguments 
+                  ( ("src_table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1521 1543]))                  
+                :type ("GHashTable" type (:type "class") nil nil))
+                nil [1491 1855])
+            ("min" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1865 1871])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1872 1878]))                  
+                :type "int")
+                nil [1857 1904])
+            ("max" function
+               (:arguments 
+                  ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [1913 1919])
+                    ("b" variable (:type "int") (reparse-symbol arg-sub-list) [1920 1926]))                  
+                :type "int")
+                nil [1905 1952])
+            ("_count" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1965 1977]))                  
+                :type "int")
+                nil [1954 2365])
+            ("malval_new" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable (:type ("MalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2434 2447])
+                    ("metadata" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2448 2465]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2415 2591])
+            ("malval_free" function
+               (:arguments 
+                  ( ("mv" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2610 2621]))                  
+                :type "void")
+                nil [2593 2745])
+            ("malval_new_integer" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable (:type ("gint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2774 2785]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2747 2878])
+            ("malval_new_float" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2905 2917]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2880 3010])
+            ("malval_new_string" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3038 3048]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3012 3140])
+            ("malval_new_symbol" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3168 3178]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3142 3270])
+            ("malval_new_keyword" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3299 3309]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3272 3428])
+            ("malval_new_list" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable (:type ("MalType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3454 3467])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("GArray" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3468 3480]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3430 3565])
+            ("malval_new_hash_map" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3595 3611]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3567 3709])
+            ("malval_new_atom" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3735 3747]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3711 3839])
+            ("malval_new_function" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3870 3883])
+                    ("arg_cnt" variable (:type "int") (reparse-symbol arg-sub-list) [3893 3905]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3842 7773])
+            ("_apply" function
+               (:pointer 1
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7790 7800])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7801 7814]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [7775 12515])
+            ("_equal_Q" function
+               (:arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12531 12541])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12542 12552]))                  
+                :type "int")
+                nil [12518 14566])
+            ("_listX" function
+               (:pointer 1
+                :arguments 
+                  ( ("count" variable (:type "int") (reparse-symbol arg-sub-list) [14593 14603])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [14604 14608]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [14578 14998])
+            ("_list" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15014 15027]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [15000 15173])
+            ("_list_Q" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15187 15199]))                  
+                :type "int")
+                nil [15175 15236])
+            ("_vector" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15266 15279]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [15250 15429])
+            ("_vector_Q" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15445 15457]))                  
+                :type "int")
+                nil [15431 15496])
+            ("_hash_map" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15530 15543]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [15512 15804])
+            ("_hash_map_Q" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15822 15834]))                  
+                :type "int")
+                nil [15806 15875])
+            ("_assoc_BANG" function
+               (:pointer 1
+                :arguments 
+                  ( ("hm" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15897 15908])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15909 15922]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [15877 16408])
+            ("_dissoc_BANG" function
+               (:pointer 1
+                :arguments 
+                  ( ("hm" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16431 16442])
+                    ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16443 16456]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [16410 16795])
+            ("_atom_Q" function
+               (:arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16819 16831]))                  
+                :type "int")
+                nil [16807 16868])
+            ("_slice" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16908 16920])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [16921 16931])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [16932 16940]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [16893 17334])
+            ("_sequential_Q" function
+               (:arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17355 17367]))                  
+                :type "int")
+                nil [17337 17417])
+            ("_nth" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17432 17444])
+                    ("idx" variable (:type "int") (reparse-symbol arg-sub-list) [17445 17453]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [17419 17685])
+            ("_first" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17702 17714]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [17687 17935])
+            ("_last" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17951 17963]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [17937 18187])
+            ("_rest" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18204 18216]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [18190 18260])
+            ("_map2" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18277 18292])
+                    ("lst" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18308 18320])
+                    ("arg2" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [18321 18332]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [18263 18798]))          
+      :file "types.c"
+      :pointmax 18799
+      :fsize 18798
+      :lastmodtime '(22614 15845 328532 533000)
+      :unmatched-syntax nil)
+    (semanticdb-table "printer.h"
+      :file "printer.h"
+      :fsize 190
+      :lastmodtime '(22608 62496 859188 452000))
+    (semanticdb-table "core.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdarg.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("string.h" include (:system-flag t) nil [60 79])
+            ("sys/stat.h" include (:system-flag t) nil [80 101])
+            ("sys/time.h" include (:system-flag t) nil [102 123])
+            ("fcntl.h" include (:system-flag t) nil [124 142])
+            ("unistd.h" include (:system-flag t) nil [143 162])
+            ("./types.h" include nil nil [164 184])
+            ("./core.h" include nil nil [185 204])
+            ("./reader.h" include nil nil [205 226])
+            ("./printer.h" include nil nil [227 249])
+            ("equal_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("a" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [360 370])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [371 381]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [344 479])
+            ("nil_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [517 529]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [503 588])
+            ("true_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [605 617]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [590 677])
+            ("false_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [695 707]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [679 768])
+            ("string_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [787 799]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [770 945])
+            ("symbol" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [982 995]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [967 1162])
+            ("symbol_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1181 1193]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1164 1257])
+            ("keyword" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1296 1309]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1280 1538])
+            ("keyword_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1558 1570]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1540 1682])
+            ("pr_str" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1865 1878]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1850 2042])
+            ("str" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2194 2207]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2182 2367])
+            ("prn" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2519 2532]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2507 2740])
+            ("println" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2875 2888]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2859 3100])
+            ("mal_readline" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3123 3135]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3102 3330])
+            ("read_string" function
+               (:pointer 1
+                :arguments 
+                  ( ("str" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3352 3364]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3332 3469])
+            ("slurp_raw" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3487 3498]))                  
+                :type "char")
+                nil [3471 3948])
+            ("slurp" function
+               (:pointer 1
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3963 3976]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3949 4165])
+            ("time_ms" function
+               (:pointer 1
+                :arguments 
+                  ( ("_" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4419 4429]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4403 4596])
+            ("list" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4631 4644]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4618 4668])
+            ("list_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4684 4696]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4669 4746])
+            ("vector" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4785 4798]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4770 4824])
+            ("vector_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4842 4854]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4825 4906])
+            ("hash_map_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4951 4963]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [4932 5017])
+            ("assoc" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5033 5046]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5019 5395])
+            ("dissoc" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5412 5425]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5397 5591])
+            ("keys" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5606 5618]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [5593 6193])
+            ("vals" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6208 6220]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [6195 6739])
+            ("get" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6787 6799])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6800 6812]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [6775 7337])
+            ("contains_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7358 7370])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7371 7383]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [7339 7848])
+            ("sequential_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7895 7907]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [7874 7967])
+            ("cons" function
+               (:pointer 1
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7982 7992])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7993 8005]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [7969 8461])
+            ("concat" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8478 8491]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [8463 9054])
+            ("nth" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9068 9080])
+                    ("idx" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9081 9093]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [9056 9136])
+            ("empty_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9154 9166]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [9138 9330])
+            ("count" function
+               (:pointer 1
+                :arguments 
+                  ( ("seq" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9346 9358]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [9332 9406])
+            ("apply" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9422 9435]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [9408 10255])
+            ("map" function
+               (:pointer 1
+                :arguments 
+                  ( ("mvf" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10269 10281])
+                    ("lst" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10282 10294]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [10257 11245])
+            ("sconj" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11261 11274]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [11247 12191])
+            ("seq" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12205 12217]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [12193 13255])
+            ("with_meta" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13299 13311])
+                    ("meta" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13312 13325]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [13281 13429])
+            ("meta" function
+               (:pointer 1
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13444 13456]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [13431 13754])
+            ("atom" function
+               (:pointer 1
+                :arguments 
+                  ( ("val" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13780 13792]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [13767 13829])
+            ("atom_Q" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13846 13858]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [13831 13908])
+            ("deref" function
+               (:pointer 1
+                :arguments 
+                  ( ("atm" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13924 13936]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [13910 14046])
+            ("reset_BANG" function
+               (:pointer 1
+                :arguments 
+                  ( ("atm" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14067 14079])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14080 14092]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [14048 14220])
+            ("swap_BANG" function
+               (:pointer 1
+                :arguments 
+                  ( ("args" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14240 14253]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [14222 14755])
+            ("core_ns" variable
+               (:dereference 1
+                :default-value "{
+    {\"=\", (void*(*)(void*))equal_Q, 2},
+    {\"throw\", (void*(*)(void*))throw, 1},
+    {\"nil?\", (void*(*)(void*))nil_Q, 1},
+    {\"true?\", (void*(*)(void*))true_Q, 1},
+    {\"false?\", (void*(*)(void*))false_Q, 1},
+    {\"string?\", (void*(*)(void*))string_Q, 1},
+    {\"symbol\", (void*(*)(void*))symbol, 1},
+    {\"symbol?\", (void*(*)(void*))symbol_Q, 1},
+    {\"keyword\", (void*(*)(void*))keyword, 1},
+    {\"keyword?\", (void*(*)(void*))keyword_Q, 1},
+
+    {\"pr-str\", (void*(*)(void*))pr_str, -1},
+    {\"str\", (void*(*)(void*))str, -1},
+    {\"prn\", (void*(*)(void*))prn, -1},
+    {\"println\", (void*(*)(void*))println, -1},
+    {\"readline\", (void*(*)(void*))mal_readline, 1},
+    {\"read-string\", (void*(*)(void*))read_string, 1},
+    {\"slurp\", (void*(*)(void*))slurp, 1},
+    {\"<\", (void*(*)(void*))int_lt, 2},
+    {\"<=\", (void*(*)(void*))int_lte, 2},
+    {\">\", (void*(*)(void*))int_gt, 2},
+    {\">=\", (void*(*)(void*))int_gte, 2},
+    {\"+\", (void*(*)(void*))int_plus, 2},
+    {\"-\", (void*(*)(void*))int_minus, 2},
+    {\"*\", (void*(*)(void*))int_multiply, 2},
+    {\"/\", (void*(*)(void*))int_divide, 2},
+    {\"time-ms\", (void*(*)(void*))time_ms, 0},
+
+    {\"list\", (void*(*)(void*))list, -1},
+    {\"list?\", (void*(*)(void*))list_Q, 1},
+    {\"vector\", (void*(*)(void*))vector, -1},
+    {\"vector?\", (void*(*)(void*))vector_Q, 1},
+    {\"hash-map\", (void*(*)(void*))_hash_map, -1},
+    {\"map?\", (void*(*)(void*))hash_map_Q, 1},
+    {\"assoc\", (void*(*)(void*))assoc, -1},
+    {\"dissoc\", (void*(*)(void*))dissoc, -1},
+    {\"get\", (void*(*)(void*))get, 2},
+    {\"contains?\", (void*(*)(void*))contains_Q, 2},
+    {\"keys\", (void*(*)(void*))keys, 1},
+    {\"vals\", (void*(*)(void*))vals, 1},
+
+    {\"sequential?\", (void*(*)(void*))sequential_Q, 1},
+    {\"cons\", (void*(*)(void*))cons, 2},
+    {\"concat\", (void*(*)(void*))concat, -1},
+    {\"nth\", (void*(*)(void*))nth, 2},
+    {\"first\", (void*(*)(void*))_first, 1},
+    {\"rest\", (void*(*)(void*))_rest, 1},
+    {\"last\", (void*(*)(void*))_last, 1},
+    {\"empty?\", (void*(*)(void*))empty_Q, 1},
+    {\"count\", (void*(*)(void*))count, 1},
+    {\"apply\", (void*(*)(void*))apply, -1},
+    {\"map\", (void*(*)(void*))map, 2},
+
+    {\"conj\", (void*(*)(void*))sconj, -1},
+    {\"seq\", (void*(*)(void*))seq, 1},
+
+    {\"with-meta\", (void*(*)(void*))with_meta, 2},
+    {\"meta\", (void*(*)(void*))meta, 1},
+    {\"atom\", (void*(*)(void*))atom, 1},
+    {\"atom?\", (void*(*)(void*))atom_Q, 1},
+    {\"deref\", (void*(*)(void*))deref, 1},
+    {\"reset!\", (void*(*)(void*))reset_BANG, 2},
+    {\"swap!\", (void*(*)(void*))swap_BANG, -1},
+    }"
+                :type ("core_ns_entry" type (:type "class") nil nil))
+                nil [14759 17329]))          
+      :file "core.c"
+      :pointmax 17330
+      :fsize 17329
+      :lastmodtime '(22733 22915 514065 321000)
+      :unmatched-syntax nil)
+    (semanticdb-table "step7_quote.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190 202])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 212]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [177 213])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [236 250])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [251 261]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [223 548])
+            ("is_pair" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [570 580]))                  
+                :type "int")
+                nil [558 632])
+            ("quasiquote" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [681 693]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [662 1477])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1496 1508])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1509 1518]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1479 2834])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2849 2861])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2862 2871]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2836 6606])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6629 6641]))                  
+                :type "char")
+                nil [6617 6841])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6880 6889])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6890 6903])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6904 6914]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [6869 7133])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [7173 7187])
+            ("do_eval" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7205 7217]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [7189 7249])
+            ("init_repl_env" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7270 7279])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7280 7293]))                  
+                :type "void")
+                nil [7251 8186])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8197 8206])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8207 8220]))                  
+                :type "int")
+                nil [8188 8965]))          
+      :file "step7_quote.c"
+      :pointmax 8966
+      :fsize 8965
+      :lastmodtime '(22613 64728 726099 524000)
+      :unmatched-syntax nil)
+    (semanticdb-table "step8_macros.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [190 202])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [203 212]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [177 213])
+            ("macroexpand" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234 246])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [247 256]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [214 257])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [280 294])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [295 305]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [267 592])
+            ("is_pair" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [614 624]))                  
+                :type "int")
+                nil [602 676])
+            ("quasiquote" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [697 709]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [678 1493])
+            ("is_macro_call" function
+               (:arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1513 1525])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1526 1535]))                  
+                :type "int")
+                nil [1495 1753])
+            ("macroexpand" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1775 1787])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1788 1797]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1755 2073])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2092 2104])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2105 2114]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2075 3430])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3445 3457])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3458 3467]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3432 7980])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8003 8015]))                  
+                :type "char")
+                nil [7991 8215])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8254 8263])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8264 8277])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8278 8288]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [8243 8507])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [8547 8561])
+            ("do_eval" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8579 8591]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [8563 8623])
+            ("init_repl_env" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [8644 8653])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8654 8667]))                  
+                :type "void")
+                nil [8625 9940])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9951 9960])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9961 9974]))                  
+                :type "int")
+                nil [9942 10721]))          
+      :file "step8_macros.c"
+      :pointmax 10722
+      :fsize 10721
+      :lastmodtime '(22614 1731 215947 909000)
+      :unmatched-syntax nil)
+    (semanticdb-table "step9_try.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("interop.h" include nil nil [160 180])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [211 223])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [224 233]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [198 234])
+            ("macroexpand" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [255 267])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 277]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [235 278])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [301 315])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [316 326]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [288 613])
+            ("is_pair" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [635 645]))                  
+                :type "int")
+                nil [623 697])
+            ("quasiquote" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [718 730]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [699 1514])
+            ("is_macro_call" function
+               (:arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1534 1546])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1547 1556]))                  
+                :type "int")
+                nil [1516 1774])
+            ("macroexpand" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1800 1812])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1813 1822]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1780 2098])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2117 2129])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2139]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [2100 3455])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3470 3482])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3483 3492]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3457 8783])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8806 8818]))                  
+                :type "char")
+                nil [8794 9018])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9057 9066])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9067 9080])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9081 9091]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [9046 9310])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [9350 9364])
+            ("do_eval" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9382 9394]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [9366 9426])
+            ("init_repl_env" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9447 9456])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9457 9470]))                  
+                :type "void")
+                nil [9428 10743])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10754 10763])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10764 10777]))                  
+                :type "int")
+                nil [10745 11524]))          
+      :file "step9_try.c"
+      :pointmax 11525
+      :fsize 11524
+      :lastmodtime '(22608 62496 859188 452000)
+      :unmatched-syntax nil)
+    (semanticdb-table "interop.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__MAL_INTEROP__" variable (:constant-flag t) nil [33 48])
+            ("invoke_native" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("call_data" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [72 90]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [50 91]))          
+      :file "interop.h"
+      :pointmax 100
+      :fsize 99
+      :lastmodtime '(22608 62496 859188 452000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__MAL_INTEROP__")
+          )
+)
+    (semanticdb-table "stepA_mal.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("unistd.h" include (:system-flag t) nil [60 79])
+            ("types.h" include nil nil [81 99])
+            ("readline.h" include nil nil [100 121])
+            ("reader.h" include nil nil [122 141])
+            ("core.h" include nil nil [142 159])
+            ("interop.h" include nil nil [160 180])
+            ("EVAL" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [211 223])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [224 233]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [198 234])
+            ("macroexpand" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [255 267])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [268 277]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [235 278])
+            ("READ" function
+               (:pointer 1
+                :arguments 
+                  ( ("prompt" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [301 315])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [316 326]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [288 569])
+            ("is_pair" function
+               (:arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [591 601]))                  
+                :type "int")
+                nil [579 651])
+            ("quasiquote" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [672 684]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [653 1360])
+            ("is_macro_call" function
+               (:arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1380 1392])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1393 1402]))                  
+                :type "int")
+                nil [1362 1602])
+            ("macroexpand" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1628 1640])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1641 1650]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1608 1902])
+            ("eval_ast" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1921 1933])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1934 1943]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1904 3149])
+            ("EVAL" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3164 3176])
+                    ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3177 3186]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [3151 8415])
+            ("PRINT" function
+               (:pointer 1
+                :arguments 
+                  ( ("exp" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8438 8450]))                  
+                :type "char")
+                nil [8426 8628])
+            ("RE" function
+               (:pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8667 8676])
+                    ("prompt" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8677 8690])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8691 8701]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [8656 8902])
+            ("repl_env" variable
+               (:pointer 1
+                :type ("Env" type (:type "class") nil nil))
+                nil [8942 8956])
+            ("do_eval" function
+               (:pointer 1
+                :arguments 
+                  ( ("ast" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8973 8985]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [8957 9017])
+            ("init_repl_env" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [9038 9047])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9048 9061]))                  
+                :type "void")
+                nil [9019 10524])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [10535 10544])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [10545 10558]))                  
+                :type "int")
+                nil [10526 11294]))          
+      :file "stepA_mal.c"
+      :pointmax 11295
+      :fsize 11294
+      :lastmodtime '(22614 18537 532916 76000)
+      :unmatched-syntax nil)
+    (semanticdb-table "interop.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [1 20])
+            ("dlfcn.h" include (:system-flag t) nil [21 39])
+            ("ffi.h" include (:system-flag t) nil [77 95])
+            ("types.h" include nil nil [104 122])
+            ("loaded_dls" variable
+               (:pointer 1
+                :default-value "NULL"
+                :type ("GHashTable" type (:type "class") nil nil))
+                nil [125 155])
+            ("get_byte_size" function
+               (:arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [175 186]))                  
+                :type "int")
+                nil [157 204])
+            ("Raw64" type
+               (:members 
+                  ( ("v" variable (:type ("" type
+                         (:members 
+                            ( ("floatnum" variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [249 266])
+                              ("integernum" variable (:type ("gint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [275 294])
+                              ("string" variable
+                                 (:pointer 1
+                                  :type "char")
+                                  (reparse-symbol classsubparts) [303 318]))                            
+                          :type "union")
+                          nil nil)) (reparse-symbol classsubparts) [233 327]))                  
+                :type "struct")
+                nil [206 336])
+            ("Raw64" type
+               (:typedef ("Raw64" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [206 336])
+            ("_get_ffi_type" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [411 422]))                  
+                :type ("ffi_type" type (:type "class") nil nil))
+                nil [387 1116])
+            ("_malval_new_by_type" function
+               (:pointer 1
+                :arguments 
+                  ( ("type" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1146 1157]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1118 1907])
+            ("invoke_native" function
+               (:pointer 1
+                :arguments 
+                  ( ("call_data" variable
+                       (:pointer 1
+                        :type ("MalVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2020 2038]))                  
+                :type ("MalVal" type (:type "class") nil nil))
+                nil [1998 5285]))          
+      :file "interop.c"
+      :pointmax 5287
+      :fsize 5286
+      :lastmodtime '(22608 62496 859188 452000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!src!mal!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

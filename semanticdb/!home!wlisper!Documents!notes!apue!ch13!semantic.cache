@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("syslog.h" include (:system-flag t) nil [224 243])
+            ("unistd.h" include (:system-flag t) nil [244 263])
+            ("fcntl.h" include (:system-flag t) nil [264 282])
+            ("signal.h" include (:system-flag t) nil [283 302])
+            ("sys/resource.h" include (:system-flag t) nil [303 328])
+            ("sys/stat.h" include (:system-flag t) nil [329 350])
+            ("daemonize" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [367 383]))                  
+                :type "void")
+                nil [352 1455]))          
+      :file "daomonize.c"
+      :pointmax 1456
+      :fsize 1455
+      :lastmodtime '(22838 10541 999772 51000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [185 204])
+            ("stdlib.h" include (:system-flag t) nil [205 224])
+            ("fcntl.h" include (:system-flag t) nil [225 243])
+            ("syslog.h" include (:system-flag t) nil [244 263])
+            ("string.h" include (:system-flag t) nil [264 283])
+            ("errno.h" include (:system-flag t) nil [284 302])
+            ("stdio.h" include (:system-flag t) nil [303 321])
+            ("sys/stat.h" include (:system-flag t) nil [322 343])
+            ("LOCKFILE" variable (:constant-flag t) nil [353 361])
+            ("LOCKMODE" variable (:constant-flag t) nil [392 400])
+            ("lockfile" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [462 466]))                  
+                :type "int")
+                nil [442 467])
+            ("already_running" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [489 494]))                  
+                :type "int")
+                nil [469 982]))          
+      :file "already_running.c"
+      :pointmax 983
+      :fsize 982
+      :lastmodtime '(22838 17491 350629 34000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LOCKFILE" . ((string "\"/var/run/daemon.pid\"" 362 . 383)))
+          ("LOCKMODE" . ((semantic-list "(S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH)" 401 . 440)))
+          )
+))
+  :file "!home!wlisper!Documents!notes!apue!ch13!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

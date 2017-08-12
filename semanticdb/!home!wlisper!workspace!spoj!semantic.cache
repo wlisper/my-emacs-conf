@@ -1,0 +1,129 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("print_line" function
+               (:arguments 
+                  ( ("col" variable (:type "int") (reparse-symbol arg-sub-list) [37 45])
+                    ("wid" variable (:type "int") (reparse-symbol arg-sub-list) [46 54])
+                    ("end" variable (:type "int") (reparse-symbol arg-sub-list) [55 63]))                  
+                :type "void")
+                nil [21 214])
+            ("print_grid" function
+               (:arguments 
+                  ( ("row" variable (:type "int") (reparse-symbol arg-sub-list) [232 240])
+                    ("col" variable (:type "int") (reparse-symbol arg-sub-list) [241 249])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [250 259])
+                    ("wid" variable (:type "int") (reparse-symbol arg-sub-list) [260 268]))                  
+                :type "void")
+                nil [216 440])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [451 460])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [461 474]))                  
+                :type "int")
+                nil [442 678]))          
+      :file "cpttrn4.c"
+      :pointmax 679
+      :fsize 678
+      :lastmodtime '(22810 46576 126740 945000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [681 699])
+            ("stdlib.h" include (:system-flag t) nil [700 719])
+            ("math.h" include (:system-flag t) nil [720 737])
+            ("stdint.h" include (:system-flag t) nil [738 757])
+            ("bitset_p" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ngroups" variable (:type "int") (reparse-symbol classsubparts) [778 790])
+                          ("groups" variable
+                             (:pointer 1
+                              :type ("int64_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [793 809]))                        
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [759 831])
+            ("bitset" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("ngroups" variable (:type "int") (reparse-symbol classsubparts) [778 790])
+                          ("groups" variable
+                             (:pointer 1
+                              :type ("int64_t" type (:type "class") nil nil))
+                              (reparse-symbol classsubparts) [793 809]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [759 831])
+            ("bitset_init" function
+               (:arguments 
+                  ( ("size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [850 863])
+                    ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [864 881]))                  
+                :type "void")
+                nil [833 1002])
+            ("bitset_destroy" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1024 1041]))                  
+                :type "void")
+                nil [1004 1070])
+            ("bitset_set" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1088 1105])
+                    ("bit" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1106 1118]))                  
+                :type "void")
+                nil [1072 1224])
+            ("bitset_fill" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1243 1260]))                  
+                :type "void")
+                nil [1226 1345])
+            ("bitset_clear" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1365 1382])
+                    ("bit" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1383 1395]))                  
+                :type "void")
+                nil [1347 1504])
+            ("bitset_set_p" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1523 1540])
+                    ("bit" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1541 1553]))                  
+                :type "int")
+                nil [1506 1666])
+            ("print_bitset" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1686 1703])
+                    ("start" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1704 1718])
+                    ("end" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1719 1731]))                  
+                :type "void")
+                nil [1668 1867])
+            ("sieve" function
+               (:arguments 
+                  ( ("pbitset" variable (:type ("bitset_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1880 1897])
+                    ("start" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1898 1912])
+                    ("end" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1913 1925]))                  
+                :type "void")
+                nil [1869 2058])
+            ("main" function (:type "int") nil [2060 2238]))          
+      :file "prime1.c"
+      :pointmax 2239
+      :fsize 2238
+      :lastmodtime '(22810 50096 939583 201000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!spoj!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

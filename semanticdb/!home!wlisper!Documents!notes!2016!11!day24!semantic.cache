@@ -1,0 +1,19 @@
+;; Object day24/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "day24/"
+  :tables
+  (list
+    (semanticdb-table "has_open_ssl.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [20 38])
+            ("openssl/bio.h" include (:system-flag t) nil [39 63])
+            ("main" function (:type "int") nil [65 118]))          
+      :file "has_open_ssl.c"
+      :pointmax 119
+      :fsize 118
+      :lastmodtime '(22622 7330 266615 169000)
+      :unmatched-syntax '((symbol 61 . 62) (punctuation 60 . 61) (symbol 57 . 60) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (symbol 61 . 62) (punctuation 60 . 61) (symbol 57 . 60) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (symbol 61 . 62) (punctuation 60 . 61) (symbol 57 . 60) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (punctuation 60 . 61) (symbol 57 . 60) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (punctuation 60 . 61) (symbol 57 . 60) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (punctuation 61 . 62) (symbol 57 . 61) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (punctuation 61 . 62) (symbol 57 . 61) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40) (punctuation 61 . 62) (symbol 57 . 61) (punctuation 56 . 57) (symbol 49 . 56) (punctuation 48 . 49) (symbol 40 . 47) (punctuation 39 . 40))))
+  :file "!home!wlisper!Documents!notes!2016!11!day24!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

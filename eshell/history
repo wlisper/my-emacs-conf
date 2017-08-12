@@ -1,0 +1,128 @@
+ls
+cat wtmp.1
+ls
+cat wtmp
+ls
+cd /usr/include/
+ls
+cd sys
+ls
+find . -name utsname.h
+cd librsvg-2.0/
+ls
+cd ..
+cd linux/
+l
+ls
+cd
+cd Documents/notes/apue/
+ls
+cd ch5
+ls
+rmbak
+cd ..
+ls
+mkdir ch7
+cd ch7
+ls
+cd Documents/notes/apue/
+ls
+cd ..
+ls
+cd unp/
+ls
+cd chc8
+ls
+cd ch8/
+ls
+rmbak
+man bzero
+man inet_ntop
+cd
+cd workspace/php/
+ls
+cd runoob/
+ls
+rmbak
+ls
+ls
+rmbak
+while.php
+ls
+php while.php 
+ls
+rmbak
+ls
+rmbak
+ls
+cd workspace/php/runoob/
+ls
+ls
+rmbak
+ls
+ls
+rmbak
+rmbak
+l
+rmbak
+ls
+rmbak
+ls
+rmbak
+ls
+ls
+ls
+rmbak
+ls
+clear
+
+ls
+ls
+cd workspace/php/
+ls
+cd runoob/
+ls
+rmbak
+php throw.php 
+ls
+rmbak
+ls
+cd workspace/php/
+ls
+cd runoob/
+ls
+fg
+ls
+rmbak
+ls
+rmbak
+ls
+ls
+rmbak
+cd workspace/
+ls
+cd c
+ls
+cd test/
+ls
+rmbak
+ls
+ls
+gcc gethostbyname.c 
+./a.out www.baidu.com
+./a.out www.taobao.com
+./a.out www.douyu.com
+ls
+ls
+php test.php 
+ls
+ls
+rmbak
+ls
+cd .emacs.d/elpa/php-mode-20170722.1205/
+ls
+ls
+ls
+rmbak
+rm \#php-mode.el\# 
+ls

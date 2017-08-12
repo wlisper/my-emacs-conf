@@ -1,0 +1,16 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "gc.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "gc.h"
+      :pointmax 50500
+      :fsize 50499
+      :lastmodtime '(18023 15616 0 0)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!src!gc-7.0!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

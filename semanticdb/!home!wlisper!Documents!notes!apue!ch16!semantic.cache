@@ -1,0 +1,66 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/socket.h" include (:system-flag t) nil [185 208])
+            ("stdio.h" include (:system-flag t) nil [209 227])
+            ("unistd.h" include (:system-flag t) nil [228 247])
+            ("MAXSLEEP" variable (:constant-flag t) nil [257 265])
+            ("connect_retry" function
+               (:arguments 
+                  ( ("domain" variable (:type "int") (reparse-symbol arg-sub-list) [289 300])
+                    ("type" variable (:type "int") (reparse-symbol arg-sub-list) [301 310])
+                    ("protocol" variable (:type "int") (reparse-symbol arg-sub-list) [311 324])
+                    ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [343 371])
+                    ("alen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [372 387]))                  
+                :type "int")
+                nil [271 716]))          
+      :file "ex16.11.c"
+      :pointmax 717
+      :fsize 716
+      :lastmodtime '(22905 45757 461368 306000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAXSLEEP" . ((number "128" 266 . 269)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/socket.h" include (:system-flag t) nil [185 208])
+            ("unistd.h" include (:system-flag t) nil [209 228])
+            ("errno.h" include (:system-flag t) nil [229 247])
+            ("initserver" function
+               (:arguments 
+                  ( ("type" variable (:type "int") (reparse-symbol arg-sub-list) [264 273])
+                    ("addr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [274 302])
+                    ("alen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [318 333])
+                    ("qlen" variable (:type "int") (reparse-symbol arg-sub-list) [334 343]))                  
+                :type "int")
+                nil [249 671]))          
+      :file "ex16.12.c"
+      :pointmax 672
+      :fsize 671
+      :lastmodtime '(22905 46497 295228 769000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!apue!ch16!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

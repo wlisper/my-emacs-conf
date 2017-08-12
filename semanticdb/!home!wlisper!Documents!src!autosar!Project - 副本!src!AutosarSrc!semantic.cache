@@ -1,0 +1,277 @@
+;; Object AutosarSrc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "AutosarSrc/"
+  :tables
+  (list
+    (semanticdb-table "MMUInitial.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("osprop.h" include nil nil [20 39])
+            ("osapi.h" include nil nil [40 58])
+            ("pageHashMap.h" include nil nil [116 140])
+            ("MAS0_VALUE" variable (:constant-flag t) nil [355 365])
+            ("MAS1_VALUE" variable (:constant-flag t) nil [766 776])
+            ("OS_START_SEC_VAR_NOINIT_32BITS" variable (:constant-flag t) nil [919 949])
+            ("MemMap.h" include nil nil [950 969])
+            ("mas0" variable (:type "unsigned long") nil [971 1008])
+            ("mas1" variable (:type "unsigned long") nil [971 1008])
+            ("mas2" variable (:type "unsigned long") nil [971 1008])
+            ("mas3" variable (:type "unsigned long") nil [971 1008])
+            ("OS_STOP_SEC_VAR_NOINIT_32BITS" variable (:constant-flag t) nil [1018 1047])
+            ("MemMap.h" include nil nil [1048 1067])
+            ("OS_START_SEC_CONFIGDATA_UNSPECIFIED" variable (:constant-flag t) nil [1077 1112])
+            ("MemMap.h" include nil nil [1113 1132])
+            ("untrusted_data_page_table" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("mmu_page_init_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1134 1203])
+            ("untrusted_code_page_table" variable
+               (:dereference 1
+                :typemodifiers ("extern")
+                :constant-flag t
+                :type ("mmu_page_init_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1204 1273])
+            ("OS_STOP_SEC_CONFIGDATA_UNSPECIFIED" variable (:constant-flag t) nil [1283 1317])
+            ("MemMap.h" include nil nil [1318 1337])
+            ("OS_START_SEC_CONFIGDATA_UNSPECIFIED" variable (:constant-flag t) nil [1347 1382])
+            ("MemMap.h" include nil nil [1383 1402])
+            ("trusted_page_table" variable
+               (:dereference 1
+                :constant-flag t
+                :default-value "{
+
+	{/*the os code and config data 64k*/
+	    1,
+	    0,
+	    0b0011,
+	    0b010001,
+	    0x00000,
+	    
+	    0x00000,
+	    0b01000,
+	    0,
+	    0,
+	    1,
+	    1,	
+	},
+
+	{/*the trap_func 1K*/
+		1,
+		0,
+		0b0001,
+		0b110000,
+		0x00010,
+		
+		0x00010,
+		0b01000,
+		0,
+		0,
+		1,
+		1
+	},	
+	
+		
+	
+	{/* the os data and stack */
+		1,
+		0,
+		0b0010,
+		0b000101,
+		0x40014,
+		
+		0x40014,
+		0b01000,
+		0,
+		0,
+		1,
+		0	
+	},
+
+	{/*0xC3F00000-0xC3FFFFFF*/
+		1,
+		0,
+		0b0101,
+		0b010101,
+		0xC3F00,
+		
+		0xC3F00,
+		0b01000,
+		0,
+		0,
+		1,
+		0
+	},
+	{/*0xFFF00000-0xFFFFFFFF*/
+		1,
+		0,
+		0b0101,
+		0b010101,
+		0xFFF00,
+		
+		0xFFF00,
+		0b01000,
+		0,
+		0,
+		1,
+		0
+	},
+}"
+                :type ("mmu_page_init_struct" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1698 2413])
+            ("OS_STOP_SEC_CONFIGDATA_UNSPECIFIED" variable (:constant-flag t) nil [2423 2457])
+            ("MemMap.h" include nil nil [2458 2477])
+            ("OS_START_SEC_VAR_NOINIT_UNSPECIFIED" variable (:constant-flag t) nil [2487 2522])
+            ("MemMap.h" include nil nil [2523 2542])
+            ("tlb_index" variable
+               (:default-value "0"
+                :type ("OSBYTE" type (:type "class") nil nil))
+                nil [2544 2565])
+            ("OS_STOP_SEC_VAR_NOINIT_UNSPECIFIED" variable (:constant-flag t) nil [2575 2609])
+            ("MemMap.h" include nil nil [2610 2629])
+            ("OS_START_SEC_OS_CODE" variable (:constant-flag t) nil [2640 2660])
+            ("MemMap.h" include nil nil [2661 2680])
+            ("switchDataTLBEntry" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [2799 2809]))                  
+                :type "void")
+                nil [2775 3382])
+            ("switchCodeTLBEntry" function
+               (:arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [3408 3418]))                  
+                :type "void")
+                nil [3384 3991])
+            ("doDataSwitch" function
+               (:arguments 
+                  ( ("epn" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4011 4028])
+                    ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4029 4042]))                  
+                :type "void")
+                nil [3993 4381])
+            ("doCodeSwitch" function
+               (:arguments 
+                  ( ("epn" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4401 4418])
+                    ("pid" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4419 4432]))                  
+                :type "void")
+                nil [4383 4763])
+            ("init_TLB" function (:type "void") nil [4765 5408])
+            ("write_TLB" function (:type "void") nil [5410 6309])
+            ("OS_STOP_SEC_OS_CODE" variable (:constant-flag t) nil [6319 6338])
+            ("MemMap.h" include nil nil [6339 6358]))          
+      :file "MMUInitial.c"
+      :pointmax 6360
+      :fsize 6648
+      :lastmodtime '(20870 31780 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MAS1_VALUE" (spp-arg-list ("valid" "iprot" "tid" "ts" "tsize") 776 . 806) . ((semantic-list "((unsigned long)((valid << 31) | (iprot << 30) | (tid << 16) | (ts << 12) | (tsize << 8)))" 819 . 909)))
+          ("OS_START_SEC_VAR_NOINIT_UNSPECIFIED")
+          ("OS_STOP_SEC_OS_CODE")
+          ("OS_START_SEC_CONFIGDATA_UNSPECIFIED")
+          ("OS_STOP_SEC_CONFIGDATA_UNSPECIFIED")
+          ("OS_START_SEC_VAR_NOINIT_32BITS")
+          ("OS_STOP_SEC_VAR_NOINIT_32BITS")
+          ("OS_START_SEC_OS_CODE")
+          ("MAS0_VALUE" (spp-arg-list ("eselcam") 365 . 374) . ((semantic-list "((unsigned long)(0x10000000 | (eselcam << 16)))" 375 . 422)))
+          ("OS_STOP_SEC_VAR_NOINIT_UNSPECIFIED")
+          )
+)
+    (semanticdb-table "autosarOsApplication.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("osapi.h" include nil nil [512 530])
+            ("string.h" include nil nil [531 550])
+            ("cfg.h" include nil nil [551 567])
+            ("judgeIsr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("nestedLevl" variable (:type ("OSBYTE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [589 607])
+                    ("trusted" variable (:type ("boolean" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [608 624]))                  
+                :type "void")
+                nil [568 625])
+            ("OS_START_SEC_OS_CODE" variable (:constant-flag t) nil [3845 3865])
+            ("MemMap.h" include nil nil [3866 3885])
+            ("Init_Autosar_Config_AppTable" function (:type "void") nil [3930 5572])
+            ("Init_Application" function (:type "void") nil [5662 6010])
+            ("OS_STOP_SEC_OS_CODE" variable (:constant-flag t) nil [6020 6039])
+            ("MemMap.h" include nil nil [6040 6059])
+            ("GetApplicationMask" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("appid" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6184 6206]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [6144 6230])
+            ("GetApplicationStruct" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("AppId" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6372 6394]))                  
+                :type ("OsAppVarType" type (:type "class") nil nil))
+                nil [6323 6425])
+            ("OS_START_SEC_OS_CODE" variable (:constant-flag t) nil [6477 6497])
+            ("MemMap.h" include nil nil [6498 6517])
+            ("CheckObjectAccess" function
+               (:arguments 
+                  ( ("appId" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7053 7075])
+                    ("ObjectType" variable (:type ("ObjectTypeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7076 7102])
+                    ("id" variable (:type ("ObjectID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7103 7115]))                  
+                :type ("ObjectAccessType" type (:type "class") nil nil))
+                nil [7018 8636])
+            ("CheckObjectOwnership" function
+               (:arguments 
+                  ( ("ObjectType" variable (:type ("ObjectTypeType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9105 9131])
+                    ("id" variable (:type ("ObjectID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9131 9143]))                  
+                :type ("ApplicationType" type (:type "class") nil nil))
+                nil [9068 10211])
+            ("GetApplicationID" function (:type ("ApplicationType" type (:type "class") nil nil)) nil [10495 10581])
+            ("TerminateApplication" function
+               (:arguments 
+                  ( ("appId" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11456 11478])
+                    ("restartOption" variable (:type ("RestartType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11479 11506]))                  
+                :type ("StatusType" type (:type "class") nil nil))
+                nil [11422 15048])
+            ("AllowAccess" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15368 15373]))                  
+                :type ("StatusType" type (:type "class") nil nil))
+                nil [15345 15698])
+            ("GetApplicationState" function
+               (:arguments 
+                  ( ("Application" variable (:type ("ApplicationType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15948 15976])
+                    ("Value" variable (:type ("ApplicationStateRefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15976 16006]))                  
+                :type ("StatusType" type (:type "class") nil nil))
+                nil [15917 16206])
+            ("OS_STOP_SEC_OS_CODE" variable (:constant-flag t) nil [16216 16235])
+            ("MemMap.h" include nil nil [16236 16255]))          
+      :file "autosarOsApplication.c"
+      :pointmax 19680
+      :fsize 20659
+      :lastmodtime '(20873 23316 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("OS_STOP_SEC_OS_CODE")
+          ("OS_START_SEC_OS_CODE")
+          )
+)
+    (semanticdb-table "autosarTrustedFunction.c"
+      :major-mode 'c-mode
+      :tags nil
+      :file "autosarTrustedFunction.c"
+      :pointmax 1606
+      :fsize 1676
+      :lastmodtime '(20683 28685 0 0)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!src!autosar!Project - 副本!src!AutosarSrc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

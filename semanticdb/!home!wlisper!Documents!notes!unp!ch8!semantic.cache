@@ -1,0 +1,113 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/socket.h" include (:system-flag t) nil [185 208])
+            ("arpa/inet.h" include (:system-flag t) nil [209 231])
+            ("stdio.h" include (:system-flag t) nil [232 250])
+            ("stdlib.h" include (:system-flag t) nil [251 270])
+            ("errno.h" include (:system-flag t) nil [271 289])
+            ("string.h" include (:system-flag t) nil [290 309])
+            ("SERV_PORT" variable (:constant-flag t) nil [319 328])
+            ("MAXLINE" variable (:constant-flag t) nil [342 349])
+            ("dg_echo" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [369 380])
+                    ("pcliaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [381 407])
+                    ("clilen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [408 425]))                  
+                :type "void")
+                nil [356 426])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [437 446])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [447 460]))                  
+                :type "int")
+                nil [428 951])
+            ("dg_echo" function
+               (:arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [966 977])
+                    ("pcliaddr" variable
+                       (:pointer 1
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [978 1004])
+                    ("clilen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1005 1022]))                  
+                :type "void")
+                nil [953 1216]))          
+      :file "udp_echo_server.c"
+      :pointmax 1217
+      :fsize 1216
+      :lastmodtime '(22890 15380 365089 500000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SERV_PORT" . ((number "8989" 329 . 333)))
+          ("MAXLINE" . ((number "2048" 350 . 354)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("sys/socket.h" include (:system-flag t) nil [224 247])
+            ("arpa/inet.h" include (:system-flag t) nil [248 270])
+            ("errno.h" include (:system-flag t) nil [271 289])
+            ("string.h" include (:system-flag t) nil [290 309])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [320 329])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [330 343]))                  
+                :type "int")
+                nil [311 537]))          
+      :file "udp_echo_client.c"
+      :pointmax 538
+      :fsize 537
+      :lastmodtime '(22890 17584 933072 688000)
+      :unmatched-syntax '((punctuation 299 . 300) (symbol 291 . 298) (punctuation 290 . 291) (punctuation 299 . 300) (symbol 291 . 298) (punctuation 290 . 291) (punctuation 299 . 300) (symbol 291 . 298) (punctuation 290 . 291) (punctuation 280 . 281) (symbol 272 . 279) (punctuation 271 . 272) (punctuation 280 . 281) (symbol 272 . 279) (punctuation 271 . 272)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("unistd.h" include (:system-flag t) nil [20 39])
+            ("sys/socket.h" include (:system-flag t) nil [40 63])
+            ("string.h" include (:system-flag t) nil [64 83])
+            ("arpa/inet.h" include (:system-flag t) nil [84 106])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [117 126])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [127 140]))                  
+                :type "int")
+                nil [108 828]))          
+      :file "ex8.23.c"
+      :pointmax 829
+      :fsize 828
+      :lastmodtime '(22918 35432 87389 609000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!unp!ch8!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

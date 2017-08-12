@@ -1,0 +1,28 @@
+;; Object test_glib/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test_glib/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [1 20])
+            ("glib-2.0/glib.h" include (:system-flag t) nil [21 47])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [58 67])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [68 81]))                  
+                :type "int")
+                nil [49 125]))          
+      :file "main.c"
+      :pointmax 126
+      :fsize 125
+      :lastmodtime '(22714 38 745345 740000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!test!c!apue!ch10!test_glib!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

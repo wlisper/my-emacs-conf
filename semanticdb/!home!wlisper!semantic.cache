@@ -1,0 +1,47 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("quick_split" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [62 72])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [73 82])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [83 93]))                  
+                :type "int")
+                nil [46 361])
+            ("quick_sort_util" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [384 394])
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) [395 403])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [404 413]))                  
+                :type "void")
+                nil [363 562])
+            ("quick_sort" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [579 589])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [590 598]))                  
+                :type "int")
+                nil [564 638]))          
+      :file "quicksort.c"
+      :pointmax 639
+      :fsize 638
+      :lastmodtime '(22892 42756 507453 736000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

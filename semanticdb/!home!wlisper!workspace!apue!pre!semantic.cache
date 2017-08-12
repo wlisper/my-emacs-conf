@@ -1,0 +1,37 @@
+;; Object pre/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pre/"
+  :tables
+  (list
+
+    (semanticdb-table "protect_signal.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("signal.h" include (:system-flag t) nil [60 79])
+            ("errno.h" include (:system-flag t) nil [80 98])
+            ("int_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [117 127]))                  
+                :type "void")
+                nil [100 170])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [181 190])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [191 204]))                  
+                :type "int")
+                nil [172 758]))          
+      :file "protect_signal.c"
+      :pointmax 760
+      :fsize 759
+      :lastmodtime '(22749 4627 461757 479000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!apue!pre!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

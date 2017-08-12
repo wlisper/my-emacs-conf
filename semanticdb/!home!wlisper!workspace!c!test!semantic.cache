@@ -1,0 +1,169 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("unistd.h" include (:system-flag t) nil [204 223])
+            ("signal.h" include (:system-flag t) nil [224 243])
+            ("sigalrm_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [266 276]))                  
+                :type "void")
+                nil [245 317])
+            ("sigusr1_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [340 350]))                  
+                :type "void")
+                nil [319 390])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [401 410])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [411 424]))                  
+                :type "int")
+                nil [392 875]))          
+      :file "sigprocmask_ts.c"
+      :pointmax 876
+      :fsize 875
+      :lastmodtime '(22817 1005 907394 897000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("signal.h" include (:system-flag t) nil [204 223])
+            ("unistd.h" include (:system-flag t) nil [224 243])
+            ("sigalrm_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [266 276]))                  
+                :type "void")
+                nil [245 312])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [323 332])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [333 346]))                  
+                :type "int")
+                nil [314 442]))          
+      :file "signal_ts.c"
+      :pointmax 443
+      :fsize 442
+      :lastmodtime '(22817 1729 655339 351000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("glib.h" include nil nil [204 221])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [232 241])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [242 255]))                  
+                :type "int")
+                nil [223 299]))          
+      :file "glibc.c"
+      :pointmax 300
+      :fsize 299
+      :lastmodtime '(22846 21816 685517 36000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("java.util.*" include nil nil [1 20])
+            ("Sorts" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [70 83]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46 370])
+                    ("checkSort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [406 415]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [374 553])
+                    ("quickSort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [588 597]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [559 643])
+                    ("quickSort" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [676 685])
+                            ("left" variable (:type "int") (reparse-symbol formal_parameters) [687 695])
+                            ("right" variable (:type "int") (reparse-symbol formal_parameters) [697 706]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [647 891])
+                    ("quickAdjust" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("arr" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [925 934])
+                            ("left" variable (:type "int") (reparse-symbol formal_parameters) [936 944])
+                            ("right" variable (:type "int") (reparse-symbol formal_parameters) [946 955]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [894 1534]))                  
+                :type "class")
+                nil [22 1536]))          
+      :file "Sorts.java"
+      :pointmax 1537
+      :fsize 1536
+      :lastmodtime '(22888 46440 758749 982000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("netdb.h" include (:system-flag t) nil [21 39])
+            ("arpa/inet.h" include (:system-flag t) nil [40 62])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [72 81])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [82 95]))                  
+                :type "int")
+                nil [63 873]))          
+      :file "gethostbyname.c"
+      :pointmax 874
+      :fsize 873
+      :lastmodtime '(22924 36613 55924 185000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!c!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

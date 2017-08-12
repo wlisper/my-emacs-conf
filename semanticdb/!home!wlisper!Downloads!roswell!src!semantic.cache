@@ -1,0 +1,83 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("opt.h" include nil nil [29 45])
+            ("download_count" variable
+               (:default-value "0"
+                :type "int")
+                nil [47 68])
+            ("download_width" variable
+               (:default-value "74"
+                :type "int")
+                nil [69 91])
+            ("content_length" variable
+               (:default-value "0"
+                :type "int")
+                nil [92 113])
+            ("download_opt" variable
+               (:default-value "0"
+                :type "int")
+                nil [114 133])
+            ("download_out" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [134 153])
+            ("write_data" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [173 183])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [184 196])
+                    ("nmemb" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [197 210])
+                    ("stream" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [211 224]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [155 1432])
+            ("header_callback" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buffer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1464 1477])
+                    ("size" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1478 1490])
+                    ("nitems" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1490 1504])
+                    ("opt" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1505 1514]))                  
+                :type ("size_t" type (:type "class") nil nil))
+                nil [1434 2260])
+            ("download_simple" function
+               (:arguments 
+                  ( ("uri" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2599 2609])
+                    ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2609 2620])
+                    ("opt" variable (:type "int") (reparse-symbol arg-sub-list) [2620 2628]))                  
+                :type "int")
+                nil [2578 4894]))          
+      :file "download.c"
+      :pointmax 4902
+      :fsize 4901
+      :lastmodtime '(22813 2048 37409 451000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "opt.h"
+      :fsize 1507
+      :lastmodtime '(22813 2048 41409 462000)))
+  :file "!home!wlisper!Downloads!roswell!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

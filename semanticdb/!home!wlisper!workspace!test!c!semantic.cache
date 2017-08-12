@@ -1,0 +1,132 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables
+  (list
+    (semanticdb-table "hello.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("uv.h" include (:system-flag t) nil [204 219])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [230 239])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [240 253]))                  
+                :type "int")
+                nil [221 364]))          
+      :file "hello.c"
+      :pointmax 366
+      :fsize 365
+      :lastmodtime '(22781 49054 462301 71000)
+      :unmatched-syntax nil)
+    (semanticdb-table "macro_ts.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("_max" variable (:constant-flag t) nil [213 217])
+            ("C4FN" variable (:constant-flag t) nil [464 468])
+            ("SYMS" variable (:constant-flag t) nil [690 694])
+            ("_SYMS" variable (:constant-flag t) nil [665 670])
+            ("SYMS" variable (:constant-flag t) nil [690 694])
+            ("GENSYM" variable (:constant-flag t) nil [721 727])
+            ("GENSYM" variable (:constant-flag t) nil [721 727])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [788 797])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [798 811]))                  
+                :type "int")
+                nil [779 1084]))          
+      :file "macro_ts.c"
+      :pointmax 1086
+      :fsize 1085
+      :lastmodtime '(22784 43496 258947 485000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("GENSYM" (spp-arg-list ("prefix") 727 . 735) . ((symbol "SYMS" 736 . 740) (semantic-list "(prefix, SYMS(__LINE__, __COUNTER__))" 740 . 777)))
+          ("_SYMS" (spp-arg-list ("a" "b") 670 . 676) . ((spp-symbol-merge ((symbol "a" 677 . 678) (symbol "b" 680 . 681)) 677 . 681)))
+          ("SYMS" (spp-arg-list ("a" "b") 694 . 700) . ((symbol "_SYMS" 701 . 706) (semantic-list "(a, b)" 706 . 712)))
+          ("C4FN" (spp-arg-list ("code" "ret" "...") 468 . 484) . ((semantic-list "({                 \\
+      ret fn(__VA_ARGS__) code;                 \\
+      fn;                                       \\
+    })" 485 . 612)))
+          ("_max" (spp-arg-list ("a" "b") 217 . 223) . ((semantic-list "({                           \\
+      typeof(a) _a = a;                         \\
+      typeof(b) _b = b;                         \\
+      _a > _b ? _a : _b;                        \\
+    })" 224 . 411)))
+          )
+)
+    (semanticdb-table "sim_webserver.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("unistd.h" include (:system-flag t) nil [224 243])
+            ("sys/types.h" include (:system-flag t) nil [244 266])
+            ("sys/socket.h" include (:system-flag t) nil [267 290])
+            ("netinet/in.h" include (:system-flag t) nil [291 314])
+            ("netdb.h" include (:system-flag t) nil [315 333])
+            ("arpa/inet.h" include (:system-flag t) nil [334 356])
+            ("string.h" include (:system-flag t) nil [357 376])
+            ("sys/stat.h" include (:system-flag t) nil [377 398])
+            ("fcntl.h" include (:system-flag t) nil [399 417])
+            ("webpage" variable
+               (:dereference 1
+                :default-value "\"HTTP/1.1 200 OK\\r\\n\"
+                 \"Content-Type: text/html; charset=UTF-8\\r\\n\\r\\n\"
+                 \"<!DOCTYPE html>\\r\\n\"
+                 \"<html><head><title>ShellWaveX</itle>\\r\\n\"
+                 \"<stype>body {backgroud-color: #FFFF00}</stype></head>\\r\\n\"
+                 \"<body><center><h1>hello world!</h1><br>\\r\\n\"
+                 \"<img src=\\\"doctest.jpg\\\"></center></body></html>\\r\\n\""
+                :type "char")
+                nil [419 835])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [846 855])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [856 869]))                  
+                :type "int")
+                nil [837 2250]))          
+      :file "sim_webserver.c"
+      :pointmax 2252
+      :fsize 2251
+      :lastmodtime '(22785 42804 56849 651000)
+      :unmatched-syntax nil)
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("test_pointer_and_array" function (:type "void") nil [205 395])
+            ("limits.h" include (:system-flag t) nil [397 416])
+            ("test__POSIX_ARG_MAX" function (:type "void") nil [417 499])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [510 519])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [520 533]))                  
+                :type "int")
+                nil [501 636]))          
+      :file "test.c"
+      :pointmax 637
+      :fsize 636
+      :lastmodtime '(22786 61150 552311 135000)
+      :unmatched-syntax nil)
+)
+  :file "!home!wlisper!workspace!test!c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

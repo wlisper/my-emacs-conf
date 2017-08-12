@@ -1,0 +1,186 @@
+;; Object deprecated/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "deprecated/"
+  :tables
+  (list
+    (semanticdb-table "gallocator.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_ALLOCATOR_H__" variable (:constant-flag t) nil [709 726])
+            ("glib/gtypes.h" include (:system-flag t) nil [849 873])
+            ((((0) "GAllocator")) type (:superclasses ("_GAllocator" type (:prototype t :type "struct") nil nil) :type "typedef") nil [890 928])
+            ((((0) "GMemChunk")) type (:superclasses ("_GMemChunk" type (:prototype t :type "struct") nil nil) :type "typedef") nil [929 966])
+            ("G_ALLOC_ONLY" variable (:constant-flag t) nil [976 988])
+            ("G_ALLOC_AND_FREE" variable (:constant-flag t) nil [1018 1034])
+            ("G_ALLOCATOR_LIST" variable (:constant-flag t) nil [1060 1076])
+            ("G_ALLOCATOR_SLIST" variable (:constant-flag t) nil [1102 1119])
+            ("G_ALLOCATOR_NODE" variable (:constant-flag t) nil [1144 1160])
+            ("g_chunk_new" variable (:constant-flag t) nil [1187 1198])
+            ("g_chunk_new0" variable (:constant-flag t) nil [1264 1276])
+            ("g_chunk_free" variable (:constant-flag t) nil [1342 1354])
+            ("g_mem_chunk_create" variable (:constant-flag t) nil [1418 1436]))          
+      :file "gallocator.h"
+      :pointmax 3255
+      :fsize 3254
+      :lastmodtime '(22332 12869 0 0)
+      :unmatched-syntax '((symbol 3211 . 3222) (punctuation 3208 . 3209) (semantic-list 3202 . 3208) (symbol 3178 . 3198) (VOID 3162 . 3166) (symbol 3146 . 3161) (punctuation 3144 . 3145) (semantic-list 3119 . 3144) (symbol 3095 . 3116) (VOID 3079 . 3083) (symbol 3063 . 3078) (punctuation 3061 . 3062) (semantic-list 3055 . 3061) (symbol 3031 . 3052) (VOID 3015 . 3019) (symbol 2999 . 3014) (punctuation 2997 . 2998) (semantic-list 2972 . 2997) (symbol 2948 . 2970) (VOID 2932 . 2936) (symbol 2916 . 2931) (punctuation 2914 . 2915) (semantic-list 2908 . 2914) (symbol 2884 . 2904) (VOID 2868 . 2872) (symbol 2852 . 2867) (punctuation 2850 . 2851) (semantic-list 2825 . 2850) (symbol 2801 . 2822) (VOID 2785 . 2789) (symbol 2769 . 2784) (punctuation 2767 . 2768) (semantic-list 2742 . 2767) (symbol 2718 . 2734) (VOID 2702 . 2706) (symbol 2686 . 2701) (punctuation 2684 . 2685) (semantic-list 2596 . 2684) (symbol 2572 . 2587) (punctuation 2567 . 2568) (symbol 2556 . 2566) (symbol 2540 . 2555) (punctuation 2536 . 2537) (semantic-list 2530 . 2536) (symbol 2506 . 2519) (VOID 2490 . 2494) (symbol 2474 . 2489) (punctuation 2472 . 2473) (semantic-list 2466 . 2472) (symbol 2442 . 2458) (VOID 2426 . 2430) (symbol 2410 . 2425) (punctuation 2408 . 2409) (semantic-list 2383 . 2408) (symbol 2359 . 2376) (VOID 2343 . 2347) (symbol 2327 . 2342) (punctuation 2325 . 2326) (semantic-list 2300 . 2325) (symbol 2276 . 2293) (VOID 2260 . 2264) (symbol 2244 . 2259) (punctuation 2242 . 2243) (semantic-list 2217 . 2242) (symbol 2193 . 2210) (VOID 2177 . 2181) (symbol 2161 . 2176) (punctuation 2159 . 2160) (semantic-list 2074 . 2159) (symbol 2050 . 2066) (VOID 2034 . 2038) (symbol 2018 . 2033) (punctuation 2016 . 2017) (semantic-list 1991 . 2016) (symbol 1967 . 1985) (symbol 1951 . 1959) (symbol 1935 . 1950) (punctuation 1933 . 1934) (semantic-list 1908 . 1933) (symbol 1884 . 1901) (symbol 1868 . 1876) (symbol 1852 . 1867) (punctuation 1850 . 1851) (semantic-list 1825 . 1850) (symbol 1801 . 1820) (VOID 1785 . 1789) (symbol 1769 . 1784) (punctuation 1767 . 1768) (semantic-list 1554 . 1767) (symbol 1530 . 1545) (punctuation 1524 . 1525) (symbol 1514 . 1523) (symbol 1498 . 1513) (symbol 875 . 888) (string 799 . 840) (symbol 793 . 798) (punctuation 792 . 793))
+      :lexical-table 
+        '(("G_ALLOCATOR_SLIST" . ((number "2" 1134 . 1135)))
+          ("G_ALLOC_ONLY" . ((number "1" 1008 . 1009)))
+          ("g_chunk_free" (spp-arg-list ("mem" "mem_chunk") 1354 . 1370) . ((semantic-list "(g_mem_chunk_free (mem_chunk, mem))" 1374 . 1409)))
+          ("G_ALLOCATOR_NODE" . ((number "3" 1176 . 1177)))
+          ("g_chunk_new" (spp-arg-list ("type" "chunk") 1198 . 1211) . ((semantic-list "((type *) g_mem_chunk_alloc (chunk))" 1219 . 1255)))
+          ("G_ALLOC_AND_FREE" . ((number "2" 1050 . 1051)))
+          ("G_ALLOCATOR_LIST" . ((number "1" 1092 . 1093)))
+          ("g_mem_chunk_create" (spp-arg-list ("type" "x" "y") 1436 . 1448) . ((semantic-list "(g_mem_chunk_new (NULL, sizeof (type), 0, 0))" 1450 . 1495)))
+          ("__G_ALLOCATOR_H__")
+          ("g_chunk_new0" (spp-arg-list ("type" "chunk") 1276 . 1289) . ((semantic-list "((type *) g_mem_chunk_alloc0 (chunk))" 1296 . 1333)))
+          )
+)
+    (semanticdb-table "gcache.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_CACHE_H__" variable (:constant-flag t) nil [1084 1097])
+            ("glib/glist.h" include (:system-flag t) nil [1220 1243])
+            ((((0) "GCache")) type (:superclasses ("_GCache" type (:prototype t :type "struct") nil nil) :type "typedef") nil [1290 1329]))          
+      :file "gcache.h"
+      :pointmax 2826
+      :fsize 2825
+      :lastmodtime '(22332 12869 0 0)
+      :unmatched-syntax '((symbol 2786 . 2797) (punctuation 2775 . 2776) (semantic-list 2630 . 2775) (symbol 2608 . 2629) (VOID 2599 . 2603) (symbol 2583 . 2598) (punctuation 2581 . 2582) (semantic-list 2436 . 2581) (symbol 2414 . 2433) (VOID 2405 . 2409) (symbol 2389 . 2404) (punctuation 2387 . 2388) (semantic-list 2303 . 2387) (symbol 2281 . 2295) (VOID 2272 . 2276) (symbol 2256 . 2271) (punctuation 2254 . 2255) (semantic-list 2172 . 2254) (symbol 2150 . 2164) (symbol 2141 . 2149) (symbol 2125 . 2140) (punctuation 2123 . 2124) (semantic-list 2097 . 2123) (symbol 2075 . 2090) (VOID 2066 . 2070) (symbol 2050 . 2065) (punctuation 2048 . 2049) (semantic-list 1607 . 2048) (symbol 1585 . 1596) (punctuation 1582 . 1583) (symbol 1576 . 1582) (symbol 1560 . 1575) (punctuation 1543 . 1544) (semantic-list 1521 . 1543) (semantic-list 1497 . 1517) (VOID 1481 . 1485) (TYPEDEF 1473 . 1480) (punctuation 1471 . 1472) (semantic-list 1449 . 1471) (semantic-list 1425 . 1441) (symbol 1409 . 1417) (TYPEDEF 1401 . 1408) (punctuation 1399 . 1400) (semantic-list 1379 . 1399) (semantic-list 1355 . 1371) (symbol 1339 . 1347) (TYPEDEF 1331 . 1338) (symbol 1245 . 1258) (string 1170 . 1211) (symbol 1164 . 1169) (punctuation 1163 . 1164))
+      :lexical-table 
+        '(("__G_CACHE_H__")
+          )
+)
+    (semanticdb-table "gcompletion.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_COMPLETION_H__" variable (:constant-flag t) nil [1089 1107])
+            ("glib/glist.h" include (:system-flag t) nil [1230 1253])
+            ((((0) "GCompletion")) type (:superclasses ("_GCompletion" type (:prototype t :type "struct") nil nil) :type "typedef") nil [1270 1314])
+            ("_GCompletion" type
+               (:members (((("items" 1 nil nil nil)) variable (:type ("GList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1593 1606]) ((("func" 0 nil nil nil)) variable (:type ("GCompletionFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1609 1630]) ((("prefix" 1 nil nil nil)) variable (:type ("gchar" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1635 1649]) ((("cache" 1 nil nil nil)) variable (:type ("GList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1652 1665]) ((("strncmp_func" 0 nil nil nil)) variable (:type ("GCompletionStrncmpFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1668 1704]))
+                :type "struct")
+                nil [1569 1707]))          
+      :file "gcompletion.h"
+      :pointmax 2921
+      :fsize 2920
+      :lastmodtime '(22332 12869 0 0)
+      :unmatched-syntax '((symbol 2876 . 2887) (punctuation 2873 . 2874) (semantic-list 2852 . 2873) (symbol 2825 . 2842) (VOID 2812 . 2816) (symbol 2788 . 2811) (punctuation 2786 . 2787) (semantic-list 2690 . 2786) (symbol 2663 . 2687) (VOID 2650 . 2654) (symbol 2626 . 2649) (punctuation 2624 . 2625) (semantic-list 2471 . 2624) (symbol 2444 . 2470) (punctuation 2436 . 2437) (symbol 2431 . 2436) (symbol 2407 . 2430) (punctuation 2405 . 2406) (semantic-list 2250 . 2405) (symbol 2223 . 2244) (punctuation 2215 . 2216) (symbol 2210 . 2215) (symbol 2186 . 2209) (punctuation 2184 . 2185) (semantic-list 2163 . 2184) (symbol 2136 . 2160) (VOID 2123 . 2127) (symbol 2099 . 2122) (punctuation 2097 . 2098) (semantic-list 2012 . 2097) (symbol 1985 . 2010) (VOID 1972 . 1976) (symbol 1948 . 1971) (punctuation 1946 . 1947) (semantic-list 1861 . 1946) (symbol 1834 . 1856) (VOID 1821 . 1825) (symbol 1797 . 1820) (punctuation 1795 . 1796) (semantic-list 1773 . 1795) (symbol 1746 . 1762) (punctuation 1744 . 1745) (symbol 1733 . 1744) (symbol 1709 . 1732) (punctuation 1566 . 1567) (semantic-list 1436 . 1566) (semantic-list 1410 . 1435) (symbol 1405 . 1409) (TYPEDEF 1397 . 1404) (punctuation 1374 . 1375) (semantic-list 1364 . 1374) (semantic-list 1340 . 1358) (punctuation 1329 . 1330) (symbol 1324 . 1329) (TYPEDEF 1316 . 1323) (symbol 1255 . 1268) (string 1180 . 1221) (symbol 1174 . 1179) (punctuation 1173 . 1174))
+      :lexical-table 
+        '(("__G_COMPLETION_H__")
+          )
+)
+    (semanticdb-table "gmain.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_DEPRECATED_MAIN_H__" variable (:constant-flag t) nil [1094 1117])
+            ("glib/gmain.h" include (:system-flag t) nil [1240 1263])
+            ("g_main_new" variable (:constant-flag t) nil [1724 1734])
+            ("g_main_run" variable (:constant-flag t) nil [1946 1956])
+            ("g_main_quit" variable (:constant-flag t) nil [2203 2214])
+            ("g_main_destroy" variable (:constant-flag t) nil [2417 2431])
+            ("g_main_is_running" variable (:constant-flag t) nil [2678 2695])
+            ("g_main_iteration" variable (:constant-flag t) nil [3205 3221])
+            ("g_main_pending" variable (:constant-flag t) nil [3522 3536])
+            ("g_main_set_poll_func" variable (:constant-flag t) nil [3853 3873]))          
+      :file "gmain.h"
+      :pointmax 3982
+      :fsize 3981
+      :lastmodtime '(22332 12869 0 0)
+      :unmatched-syntax '((symbol 3932 . 3943) (symbol 1265 . 1278) (string 1190 . 1231) (symbol 1184 . 1189) (punctuation 1183 . 1184))
+      :lexical-table 
+        '(("g_main_destroy" (spp-arg-list ("loop") 2431 . 2437) . ((symbol "g_main_loop_unref" 2441 . 2458) (semantic-list "(loop)" 2458 . 2464)))
+          ("g_main_iteration" (spp-arg-list ("may_block") 3221 . 3232) . ((symbol "g_main_context_iteration" 3233 . 3257) (semantic-list "(NULL, may_block)" 3258 . 3275)))
+          ("g_main_run" (spp-arg-list ("loop") 1956 . 1962) . ((symbol "g_main_loop_run" 1970 . 1985) (semantic-list "(loop)" 1985 . 1991)))
+          ("g_main_set_poll_func" (spp-arg-list ("func") 3873 . 3879) . ((symbol "g_main_context_set_poll_func" 3881 . 3909) (semantic-list "(NULL, func)" 3910 . 3922)))
+          ("g_main_new" (spp-arg-list ("is_running") 1734 . 1746) . ((symbol "g_main_loop_new" 1748 . 1763) (semantic-list "(NULL, is_running)" 1764 . 1782)))
+          ("__G_DEPRECATED_MAIN_H__")
+          ("g_main_is_running" (spp-arg-list ("loop") 2695 . 2701) . ((symbol "g_main_loop_is_running" 2702 . 2724) (semantic-list "(loop)" 2724 . 2730)))
+          ("g_main_pending" (spp-arg-list nil 3536 . 3538) . ((symbol "g_main_context_pending" 3550 . 3572) (semantic-list "(NULL)" 3573 . 3579)))
+          ("g_main_quit" (spp-arg-list ("loop") 2214 . 2220) . ((symbol "g_main_loop_quit" 2227 . 2243) (semantic-list "(loop)" 2243 . 2249)))
+          )
+)
+    (semanticdb-table "grel.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_REL_H__" variable (:constant-flag t) nil [1082 1093])
+            ("glib/gtypes.h" include (:system-flag t) nil [1216 1240])
+            ((((0) "GRelation")) type (:superclasses ("_GRelation" type (:prototype t :type "struct") nil nil) :type "typedef") nil [1257 1299])
+            ((((0) "GTuples")) type (:superclasses ("_GTuples" type (:prototype t :type "struct") nil nil) :type "typedef") nil [1300 1340])
+            ("_GTuples" type
+               (:members (((("len" 0 nil nil nil)) variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1362 1372]))
+                :type "struct")
+                nil [1342 1375]))          
+      :file "grel.h"
+      :pointmax 3681
+      :fsize 3680
+      :lastmodtime '(22332 12869 0 0)
+      :unmatched-syntax '((symbol 3643 . 3654) (punctuation 3640 . 3641) (semantic-list 3516 . 3640) (symbol 3497 . 3511) (symbol 3486 . 3494) (symbol 3462 . 3485) (punctuation 3460 . 3461) (semantic-list 3439 . 3460) (symbol 3420 . 3436) (VOID 3409 . 3413) (symbol 3385 . 3408) (punctuation 3383 . 3384) (semantic-list 3360 . 3383) (symbol 3341 . 3357) (VOID 3330 . 3334) (symbol 3306 . 3329) (punctuation 3304 . 3305) (semantic-list 3245 . 3304) (symbol 3226 . 3243) (symbol 3215 . 3223) (symbol 3191 . 3214) (punctuation 3189 . 3190) (semantic-list 3064 . 3189) (symbol 3045 . 3061) (symbol 3034 . 3038) (symbol 3010 . 3033) (punctuation 3008 . 3009) (semantic-list 2883 . 3008) (symbol 2864 . 2881) (punctuation 2860 . 2861) (symbol 2853 . 2860) (symbol 2829 . 2852) (punctuation 2827 . 2828) (semantic-list 2702 . 2827) (symbol 2683 . 2700) (symbol 2672 . 2676) (symbol 2648 . 2671) (punctuation 2646 . 2647) (semantic-list 2587 . 2646) (symbol 2568 . 2585) (VOID 2557 . 2561) (symbol 2533 . 2556) (punctuation 2531 . 2532) (semantic-list 2342 . 2531) (symbol 2323 . 2339) (VOID 2312 . 2316) (symbol 2288 . 2311) (punctuation 2286 . 2287) (semantic-list 2263 . 2286) (symbol 2244 . 2262) (VOID 2233 . 2237) (symbol 2209 . 2232) (punctuation 2207 . 2208) (semantic-list 2186 . 2207) (symbol 2167 . 2181) (punctuation 2165 . 2166) (symbol 2156 . 2165) (symbol 2132 . 2155) (symbol 1242 . 1255) (string 1166 . 1207) (symbol 1160 . 1165) (punctuation 1159 . 1160))
+      :lexical-table 
+        '(("__G_REL_H__")
+          )
+)
+    (semanticdb-table "gthread.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__G_DEPRECATED_THREAD_H__" variable (:constant-flag t) nil [1096 1121])
+            ("glib/gthread.h" include (:system-flag t) nil [1244 1269])
+            ((((0) "GThreadPriority")) type (:superclasses ("" type (:members (("G_THREAD_PRIORITY_LOW" variable (:constant-flag t :type "int") (reparse-symbol enumsubparts) [1333 1355]) ("G_THREAD_PRIORITY_NORMAL" variable (:constant-flag t :type "int") (reparse-symbol enumsubparts) [1358 1383]) ("G_THREAD_PRIORITY_HIGH" variable (:constant-flag t :type "int") (reparse-symbol enumsubparts) [1386 1409]) ("G_THREAD_PRIORITY_URGENT" variable (:constant-flag t :type "int") (reparse-symbol enumsubparts) [1412 1438])) :type "enum") nil nil) :type "typedef") nil [1316 1455])
+            ("_GThread" type
+               (:members (((("func" 0 nil nil nil)) variable (:type ("GThreadFunc" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1504 1521]) ((("data" 0 nil nil nil)) variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1524 1538]) ((("joinable" 0 nil nil nil)) variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1541 1559]) ((("priority" 0 nil nil nil)) variable (:type ("GThreadPriority" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1562 1587]))
+                :type "struct")
+                nil [1465 1590])
+            ((((0) "GThreadFunctions")) type (:superclasses ("_GThreadFunctions" type (:prototype t :type "struct") nil nil) :type "typedef") nil [1622 1672])
+            ("_GThreadFunctions" type (:type "struct") nil [1673 3841])
+            ((("g_thread_functions_for_glib_use" 0 nil nil nil)) variable (:type ("GThreadFunctions" type (:type "class") nil nil)) nil [3852 3907])
+            ((("g_thread_use_default_impl" 0 nil nil nil)) variable (:type ("gboolean" type (:type "class") nil nil)) nil [3917 3966])
+            ("sys/types.h" include (:system-flag t) nil [5054 5076])
+            ("pthread.h" include (:system-flag t) nil [5077 5097])
+            ("g_static_mutex_get_mutex" variable (:constant-flag t) nil [5114 5138])
+            ("G_STATIC_MUTEX_INIT" variable (:constant-flag t) nil [5177 5196])
+            ((((0) "GStaticMutex")) type (:superclasses ("" type (:members (((("mutex" 1 nil nil nil)) variable (:type ("GMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5225 5239]) ((("unused" 0 nil nil nil)) variable (:type ("pthread_mutex_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5304 5327])) :type "struct") nil nil) :type "typedef") nil [5206 5350])
+            ("g_static_mutex_lock" variable (:constant-flag t) nil [5360 5379])
+            ("g_static_mutex_trylock" variable (:constant-flag t) nil [5449 5471])
+            ("g_static_mutex_unlock" variable (:constant-flag t) nil [5544 5565])
+            ((((0) "GStaticRecMutex")) type (:superclasses ("_GStaticRecMutex" type (:prototype t :type "struct") nil nil) :type "typedef") nil [5935 5983])
+            ("_GStaticRecMutex" type
+               (:members (((("mutex" 0 nil nil nil)) variable (:type ("GStaticMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6030 6049]) ((("depth" 0 nil nil nil)) variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6052 6064]) ((("unused" 0 nil nil nil)) variable (:type ("" type (:members (((("owner" 0 nil nil nil)) variable (:type ("pthread_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6145 6161]) ((("dummy" 0 nil nil nil)) variable (:type ("gdouble" type (:type "class") nil nil)) (reparse-symbol classsubparts) [6173 6187])) :type "union") nil nil)) (reparse-symbol classsubparts) [6092 6199]))
+                :type "struct")
+                nil [5984 6202])
+            ("G_STATIC_REC_MUTEX_INIT" variable (:constant-flag t) nil [6212 6235])
+            ((((0) "GStaticRWLock")) type (:superclasses ("_GStaticRWLock" type (:prototype t :type "struct") nil nil) :type "typedef") nil [7078 7122])
+            ("_GStaticRWLock" type
+               (:members (((("mutex" 0 nil nil nil)) variable (:type ("GStaticMutex" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7167 7186]) ((("read_cond" 1 nil nil nil)) variable (:type ("GCond" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7189 7206]) ((("write_cond" 1 nil nil nil)) variable (:type ("GCond" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7209 7227]) ((("read_counter" 0 nil nil nil)) variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7230 7249]) ((("have_writer" 0 nil nil nil)) variable (:type ("gboolean" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7252 7273]) ((("want_to_read" 0 nil nil nil)) variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7276 7295]) ((("want_to_write" 0 nil nil nil)) variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [7298 7318]))
+                :type "struct")
+                nil [7123 7321])
+            ("G_STATIC_RW_LOCK_INIT" variable (:constant-flag t) nil [7331 7352])
+            ((((0) "GStaticPrivate")) type (:superclasses ("_GStaticPrivate" type (:prototype t :type "struct") nil nil) :type "typedef") nil [8430 8477])
+            ("_GStaticPrivate" type
+               (:members (((("index" 0 nil nil nil)) variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol classsubparts) [8523 8535]))
+                :type "struct")
+                nil [8478 8538])
+            ("G_STATIC_PRIVATE_INIT" variable (:constant-flag t) nil [8548 8569])
+            ((("g_threads_got_initialized" 0 nil nil nil)) variable (:type ("gboolean" type (:type "class") nil nil)) nil [9483 9518])
+            ("g_thread_supported" variable (:constant-flag t) nil [9528 9546]))          
+      :file "gthread.h"
+      :pointmax 10142
+      :fsize 10141
+      :lastmodtime '(22332 12869 0 0)
+      :unmatched-syntax '((symbol 10090 . 10101) (punctuation 10079 . 10080) (semantic-list 9927 . 10079) (symbol 9903 . 9920) (symbol 9887 . 9895) (symbol 9863 . 9886) (punctuation 9861 . 9862) (semantic-list 9847 . 9861) (symbol 9823 . 9834) (VOID 9807 . 9811) (symbol 9783 . 9806) (punctuation 9781 . 9782) (semantic-list 9775 . 9781) (symbol 9751 . 9761) (punctuation 9741 . 9742) (symbol 9735 . 9740) (symbol 9711 . 9734) (punctuation 9709 . 9710) (semantic-list 9694 . 9709) (symbol 9670 . 9682) (VOID 9654 . 9658) (symbol 9630 . 9653) (punctuation 9628 . 9629) (semantic-list 9622 . 9628) (symbol 9598 . 9609) (punctuation 9589 . 9590) (symbol 9582 . 9588) (symbol 9558 . 9581) (symbol 9474 . 9482) (punctuation 9471 . 9472) (semantic-list 9465 . 9471) (symbol 9433 . 9457) (symbol 9424 . 9432) (symbol 9400 . 9423) (punctuation 9397 . 9398) (semantic-list 9380 . 9397) (symbol 9342 . 9379) (VOID 9334 . 9338) (symbol 9310 . 9333) (punctuation 9308 . 9309) (semantic-list 9291 . 9308) (symbol 9259 . 9272) (VOID 9250 . 9254) (symbol 9226 . 9249) (punctuation 9223 . 9224) (semantic-list 9197 . 9223) (symbol 9165 . 9187) (symbol 9156 . 9164) (symbol 9132 . 9155) (punctuation 9129 . 9130) (semantic-list 9100 . 9129) (symbol 9068 . 9089) (VOID 9059 . 9063) (symbol 9035 . 9058) (punctuation 9032 . 9033) (semantic-list 8873 . 9032) (symbol 8841 . 8861) (VOID 8832 . 8836) (semantic-list 8816 . 8831) (symbol 8789 . 8816) (punctuation 8786 . 8787) (semantic-list 8757 . 8786) (symbol 8725 . 8745) (symbol 8716 . 8724) (semantic-list 8700 . 8715) (symbol 8673 . 8700) (punctuation 8670 . 8671) (semantic-list 8641 . 8670) (symbol 8609 . 8630) (VOID 8600 . 8604) (symbol 8576 . 8599) (punctuation 8427 . 8428) (semantic-list 8404 . 8427) (symbol 8378 . 8391) (punctuation 8371 . 8372) (symbol 8362 . 8370) (symbol 8338 . 8361) (punctuation 8335 . 8336) (semantic-list 8314 . 8335) (symbol 8282 . 8303) (VOID 8272 . 8276) (semantic-list 8255 . 8271) (symbol 8228 . 8255) (punctuation 8225 . 8226) (semantic-list 8204 . 8225) (symbol 8172 . 8202) (VOID 8162 . 8166) (semantic-list 8136 . 8161) (symbol 8109 . 8136) (punctuation 8106 . 8107) (semantic-list 8085 . 8106) (symbol 8053 . 8084) (symbol 8043 . 8051) (semantic-list 8016 . 8042) (symbol 7989 . 8016) (punctuation 7986 . 7987) (semantic-list 7965 . 7986) (symbol 7933 . 7961) (VOID 7923 . 7927) (semantic-list 7899 . 7922) (symbol 7872 . 7899) (punctuation 7869 . 7870) (semantic-list 7848 . 7869) (symbol 7816 . 7846) (VOID 7806 . 7810) (semantic-list 7780 . 7805) (symbol 7753 . 7780) (punctuation 7750 . 7751) (semantic-list 7729 . 7750) (symbol 7697 . 7728) (symbol 7687 . 7695) (semantic-list 7660 . 7686) (symbol 7633 . 7660) (punctuation 7630 . 7631) (semantic-list 7609 . 7630) (symbol 7577 . 7605) (VOID 7567 . 7571) (semantic-list 7543 . 7566) (symbol 7516 . 7543) (punctuation 7513 . 7514) (semantic-list 7492 . 7513) (symbol 7460 . 7481) (VOID 7450 . 7454) (semantic-list 7433 . 7449) (symbol 7406 . 7433) (punctuation 7075 . 7076) (semantic-list 7051 . 7075) (symbol 7020 . 7043) (VOID 7011 . 7015) (semantic-list 6992 . 7010) (symbol 6965 . 6992) (punctuation 6962 . 6963) (semantic-list 6938 . 6962) (symbol 6907 . 6937) (symbol 6898 . 6903) (symbol 6874 . 6897) (punctuation 6871 . 6872) (semantic-list 6782 . 6871) (symbol 6751 . 6779) (VOID 6742 . 6746) (symbol 6718 . 6741) (punctuation 6715 . 6716) (semantic-list 6691 . 6715) (symbol 6660 . 6685) (VOID 6651 . 6655) (semantic-list 6630 . 6650) (symbol 6603 . 6630) (punctuation 6600 . 6601) (semantic-list 6576 . 6600) (symbol 6545 . 6571) (symbol 6536 . 6544) (semantic-list 6513 . 6535) (symbol 6486 . 6513) (punctuation 6483 . 6484) (semantic-list 6459 . 6483) (symbol 6428 . 6451) (VOID 6419 . 6423) (semantic-list 6400 . 6418) (symbol 6373 . 6400) (punctuation 6370 . 6371) (semantic-list 6346 . 6370) (symbol 6315 . 6338) (VOID 6306 . 6310) (semantic-list 6287 . 6305) (symbol 6260 . 6287) (punctuation 5932 . 5933) (semantic-list 5911 . 5932) (symbol 5881 . 5910) (punctuation 5880 . 5881) (symbol 5873 . 5879) (semantic-list 5864 . 5872) (symbol 5837 . 5864) (punctuation 5835 . 5836) (semantic-list 5814 . 5835) (symbol 5784 . 5803) (VOID 5776 . 5780) (semantic-list 5760 . 5775) (symbol 5733 . 5760) (punctuation 5731 . 5732) (semantic-list 5710 . 5731) (symbol 5680 . 5699) (VOID 5672 . 5676) (semantic-list 5657 . 5671) (symbol 5630 . 5657) (punctuation 5032 . 5033) (semantic-list 4940 . 5032) (symbol 4918 . 4934) (VOID 4909 . 4913) (symbol 4885 . 4908) (punctuation 4882 . 4883) (semantic-list 4796 . 4882) (symbol 4774 . 4795) (VOID 4765 . 4769) (symbol 4741 . 4764) (punctuation 4738 . 4739) (semantic-list 4362 . 4738) (symbol 4340 . 4360) (punctuation 4339 . 4340) (symbol 4331 . 4338) (semantic-list 4316 . 4330) (symbol 4289 . 4316) (punctuation 4286 . 4287) (semantic-list 4089 . 4286) (symbol 4067 . 4082) (punctuation 4066 . 4067) (symbol 4058 . 4065) (semantic-list 4043 . 4057) (symbol 4016 . 4043) (punctuation 4013 . 4014) (semantic-list 4007 . 4013) (semantic-list 3987 . 4006) (symbol 3977 . 3984) (symbol 3968 . 3976) (punctuation 3988 . 3989) (symbol 3908 . 3916) (symbol 3843 . 3851) (punctuation 3837 . 3838) (semantic-list 3740 . 3837) (semantic-list 3718 . 3733) (symbol 3708 . 3716) (punctuation 3704 . 3705) (semantic-list 3674 . 3704) (semantic-list 3652 . 3666) (VOID 3642 . 3646) (punctuation 3638 . 3639) (semantic-list 3541 . 3638) (semantic-list 3519 . 3541) (VOID 3509 . 3513) (punctuation 3505 . 3506) (semantic-list 3499 . 3505) (semantic-list 3477 . 3491) (VOID 3467 . 3471) (punctuation 3463 . 3464) (semantic-list 3433 . 3463) (semantic-list 3411 . 3425) (VOID 3401 . 3405) (punctuation 3397 . 3398) (semantic-list 3391 . 3397) (semantic-list 3369 . 3384) (VOID 3359 . 3363) (punctuation 3355 . 3356) (semantic-list 2868 . 3355) (semantic-list 2846 . 2862) (VOID 2836 . 2840) (punctuation 2832 . 2833) (semantic-list 2734 . 2832) (semantic-list 2712 . 2726) (VOID 2702 . 2706) (punctuation 2698 . 2699) (semantic-list 2663 . 2698) (semantic-list 2641 . 2655) (symbol 2631 . 2639) (punctuation 2627 . 2628) (semantic-list 2593 . 2627) (semantic-list 2571 . 2585) (punctuation 2569 . 2570) (symbol 2561 . 2569) (punctuation 2557 . 2558) (semantic-list 2529 . 2557) (semantic-list 2507 . 2519) (VOID 2497 . 2501) (punctuation 2493 . 2494) (semantic-list 2334 . 2493) (semantic-list 2311 . 2329) (symbol 2302 . 2310) (punctuation 2298 . 2299) (semantic-list 2206 . 2298) (semantic-list 2183 . 2195) (VOID 2174 . 2178) (punctuation 2170 . 2171) (semantic-list 2142 . 2170) (semantic-list 2119 . 2136) (VOID 2110 . 2114) (punctuation 2106 . 2107) (semantic-list 2078 . 2106) (semantic-list 2055 . 2069) (VOID 2046 . 2050) (punctuation 2042 . 2043) (semantic-list 2036 . 2042) (semantic-list 2013 . 2024) (punctuation 2009 . 2010) (symbol 2004 . 2009) (punctuation 2000 . 2001) (semantic-list 1971 . 2000) (semantic-list 1948 . 1961) (VOID 1939 . 1943) (punctuation 1935 . 1936) (semantic-list 1906 . 1935) (semantic-list 1883 . 1898) (VOID 1874 . 1878) (punctuation 1870 . 1871) (semantic-list 1841 . 1870) (semantic-list 1818 . 1834) (symbol 1809 . 1817) (punctuation 1805 . 1806) (semantic-list 1776 . 1805) (semantic-list 1753 . 1766) (VOID 1744 . 1748) (punctuation 1740 . 1741) (semantic-list 1734 . 1740) (semantic-list 1711 . 1723) (punctuation 1708 . 1709) (symbol 1702 . 1708) (symbol 1271 . 1284) (string 1194 . 1235) (symbol 1188 . 1193) (punctuation 1187 . 1188))
+      :lexical-table 
+        '(("g_thread_supported" (spp-arg-list nil 9546 . 9548) . ((semantic-list "(1)" 9553 . 9556)))
+          ("g_static_mutex_get_mutex" . ((symbol "g_static_mutex_get_mutex_impl" 5139 . 5168)))
+          ("G_STATIC_PRIVATE_INIT" . ((semantic-list "{ 0 }" 8570 . 8575)))
+          ("g_static_mutex_trylock" (spp-arg-list ("mutex") 5471 . 5478) . ((symbol "g_mutex_trylock" 5485 . 5500) (semantic-list "(g_static_mutex_get_mutex (mutex))" 5501 . 5535)))
+          ("__G_DEPRECATED_THREAD_H__")
+          ("G_STATIC_RW_LOCK_INIT" . ((semantic-list "{ G_STATIC_MUTEX_INIT, NULL, NULL, 0, FALSE, 0, 0 }" 7353 . 7404)))
+          ("g_static_mutex_lock" (spp-arg-list ("mutex") 5379 . 5386) . ((symbol "g_mutex_lock" 5393 . 5405) (semantic-list "(g_static_mutex_get_mutex (mutex))" 5406 . 5440)))
+          ("g_static_mutex_unlock" (spp-arg-list ("mutex") 5565 . 5572) . ((symbol "g_mutex_unlock" 5579 . 5593) (semantic-list "(g_static_mutex_get_mutex (mutex))" 5594 . 5628)))
+          ("G_STATIC_MUTEX_INIT" . ((semantic-list "{ NULL }" 5197 . 5205)))
+          ("G_STATIC_REC_MUTEX_INIT" . ((semantic-list "{ G_STATIC_MUTEX_INIT }" 6236 . 6259)))
+          )
+))
+  :file "!usr!include!glib-2.0!glib!deprecated!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

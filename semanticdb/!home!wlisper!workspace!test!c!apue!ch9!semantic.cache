@@ -1,0 +1,106 @@
+;; Object ch9/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch9/"
+  :tables
+  (list
+    (semanticdb-table "tcgetpgrp.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [50 59])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [60 73]))                  
+                :type "int")
+                nil [41 166]))          
+      :file "tcgetpgrp.c"
+      :pointmax 167
+      :fsize 166
+      :lastmodtime '(22710 43767 314788 948000)
+      :unmatched-syntax nil)
+    (semanticdb-table "zombie.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [15 33])
+            ("unistd.h" include (:system-flag t) nil [34 53])
+            ("stdbool.h" include (:system-flag t) nil [54 74])
+            ("stdlib.h" include (:system-flag t) nil [75 94])
+            ("signal.h" include (:system-flag t) nil [95 114])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [125 134])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [135 148]))                  
+                :type "int")
+                nil [116 402]))          
+      :file "zombie.c"
+      :pointmax 403
+      :fsize 402
+      :lastmodtime '(22710 50968 115756 900000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sighup.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("stdbool.h" include (:system-flag t) nil [60 80])
+            ("signal.h" include (:system-flag t) nil [81 100])
+            ("sig_handler" function
+               (:arguments 
+                  ( ("signum" variable (:type "int") (reparse-symbol arg-sub-list) [120 131]))                  
+                :type "void")
+                nil [103 173])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [184 193])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [194 207]))                  
+                :type "int")
+                nil [175 493]))          
+      :file "sighup.c"
+      :pointmax 494
+      :fsize 493
+      :lastmodtime '(22710 51607 649619 150000)
+      :unmatched-syntax nil)
+    (semanticdb-table "winch.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("signal.h" include (:system-flag t) nil [60 79])
+            ("winch_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [100 110]))                  
+                :type "void")
+                nil [81 149])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [160 169])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170 183]))                  
+                :type "int")
+                nil [151 266]))          
+      :file "winch.c"
+      :pointmax 267
+      :fsize 266
+      :lastmodtime '(22711 24746 673357 360000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!test!c!apue!ch9!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

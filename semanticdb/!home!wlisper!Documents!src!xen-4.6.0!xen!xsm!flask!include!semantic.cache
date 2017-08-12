@@ -1,0 +1,736 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "avc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FLASK_AVC_H_" variable (:constant-flag t) nil [212 225])
+            ("xen/errno.h" include (:system-flag t) nil [227 249])
+            ("xen/lib.h" include (:system-flag t) nil [250 270])
+            ("xen/spinlock.h" include (:system-flag t) nil [271 296])
+            ("asm/percpu.h" include (:system-flag t) nil [297 320])
+            ("flask.h" include nil nil [321 339])
+            ("av_permissions.h" include nil nil [340 367])
+            ("security.h" include nil nil [368 389])
+            ("flask_enforcing" variable
+               (:typemodifiers ("extern")
+                :type ("bool_t" type (:type "class") nil nil))
+                nil [391 421])
+            ("avc_entry" type
+               (:prototype t
+                :type "struct")
+                nil [454 471])
+            ("task_struct" type
+               (:prototype t
+                :type "struct")
+                nil [473 492])
+            ("vfsmount" type
+               (:prototype t
+                :type "struct")
+                nil [493 509])
+            ("dentry" type
+               (:prototype t
+                :type "struct")
+                nil [510 524])
+            ("inode" type
+               (:prototype t
+                :type "struct")
+                nil [525 538])
+            ("sock" type
+               (:prototype t
+                :type "struct")
+                nil [539 551])
+            ("sk_buff" type
+               (:prototype t
+                :type "struct")
+                nil [552 567])
+            ("avc_audit_data" type
+               (:members 
+                  ( ("type" variable (:type "char") (reparse-symbol classsubparts) [657 670])
+                    ("AVC_AUDIT_DATA_NONE" variable (:constant-flag t) (reparse-symbol classsubparts) [679 698])
+                    ("AVC_AUDIT_DATA_DEV" variable (:constant-flag t) (reparse-symbol classsubparts) [710 728])
+                    ("AVC_AUDIT_DATA_IRQ" variable (:constant-flag t) (reparse-symbol classsubparts) [741 759])
+                    ("AVC_AUDIT_DATA_RANGE" variable (:constant-flag t) (reparse-symbol classsubparts) [772 792])
+                    ("AVC_AUDIT_DATA_MEMORY" variable (:constant-flag t) (reparse-symbol classsubparts) [803 824])
+                    ("AVC_AUDIT_DATA_DTDEV" variable (:constant-flag t) (reparse-symbol classsubparts) [835 855])
+                    ("sdom" variable
+                       (:pointer 1
+                        :type ("domain" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [862 882])
+                    ("tdom" variable
+                       (:pointer 1
+                        :type ("domain" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [887 907])
+                    ("" type
+                       (:members 
+                          ( ("device" variable (:type "unsigned long") (reparse-symbol classsubparts) [928 949])
+                            ("irq" variable (:type "int") (reparse-symbol classsubparts) [958 966])
+                            ("range" variable (:type ("" type
+                                 (:members 
+                                    ( ("start" variable (:type "unsigned long") (reparse-symbol classsubparts) [996 1016])
+                                      ("end" variable (:type "unsigned long") (reparse-symbol classsubparts) [1029 1047]))                                    
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [975 1064])
+                            ("memory" variable (:type ("" type
+                                 (:members 
+                                    ( ("pte" variable (:type "unsigned long") (reparse-symbol classsubparts) [1094 1112])
+                                      ("mfn" variable (:type "unsigned long") (reparse-symbol classsubparts) [1125 1143]))                                    
+                                  :type "struct")
+                                  nil nil)) (reparse-symbol classsubparts) [1073 1161])
+                            ("dtdev" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [1170 1188]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [912 1195]))                  
+                :type "struct")
+                nil [629 1198])
+            ("AVC_AUDIT_DATA_INIT" variable (:constant-flag t) nil [1254 1273])
+            ("avc_cache_stats" type
+               (:members 
+                  ( ("lookups" variable (:type "unsigned int") (reparse-symbol classsubparts) [1444 1465])
+                    ("hits" variable (:type "unsigned int") (reparse-symbol classsubparts) [1470 1488])
+                    ("misses" variable (:type "unsigned int") (reparse-symbol classsubparts) [1493 1513])
+                    ("allocations" variable (:type "unsigned int") (reparse-symbol classsubparts) [1518 1543])
+                    ("reclaims" variable (:type "unsigned int") (reparse-symbol classsubparts) [1548 1570])
+                    ("frees" variable (:type "unsigned int") (reparse-symbol classsubparts) [1575 1594]))                  
+                :type "struct")
+                nil [1415 1597])
+            ("avc_init" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [1639 1644]))                  
+                :type "void")
+                nil [1625 1645])
+            ("avc_audit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1662 1671])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1672 1681])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1682 1693])
+                    ("requested" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1694 1708])
+                    ("avd" variable
+                       (:pointer 1
+                        :type ("av_decision" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1717 1741])
+                    ("result" variable (:type "int") (reparse-symbol arg-sub-list) [1742 1753])
+                    ("auditdata" variable
+                       (:pointer 1
+                        :type ("avc_audit_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1754 1787]))                  
+                :type "void")
+                nil [1647 1788])
+            ("avc_has_perm_noaudit" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1815 1824])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1825 1834])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1835 1846])
+                    ("requested" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1847 1861])
+                    ("avd" variable
+                       (:pointer 1
+                        :type ("av_decision" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1915 1939]))                  
+                :type "int")
+                nil [1790 1940])
+            ("avc_has_perm" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1959 1968])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1969 1978])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1979 1990])
+                    ("requested" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1991 2005])
+                    ("auditdata" variable
+                       (:pointer 1
+                        :type ("avc_audit_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2051 2084]))                  
+                :type "int")
+                nil [1942 2085])
+            ("AVC_CALLBACK_GRANT" variable (:constant-flag t) nil [2095 2113])
+            ("AVC_CALLBACK_TRY_REVOKE" variable (:constant-flag t) nil [2131 2154])
+            ("AVC_CALLBACK_REVOKE" variable (:constant-flag t) nil [2172 2191])
+            ("AVC_CALLBACK_RESET" variable (:constant-flag t) nil [2209 2227])
+            ("AVC_CALLBACK_AUDITALLOW_ENABLE" variable (:constant-flag t) nil [2245 2275])
+            ("AVC_CALLBACK_AUDITALLOW_DISABLE" variable (:constant-flag t) nil [2290 2321])
+            ("AVC_CALLBACK_AUDITDENY_ENABLE" variable (:constant-flag t) nil [2336 2365])
+            ("AVC_CALLBACK_AUDITDENY_DISABLE" variable (:constant-flag t) nil [2380 2410])
+            ("avc_add_callback" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("callback" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("event" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2455 2465])
+                            ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2466 2475])
+                            ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2476 2485])
+                            ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2510 2521])
+                            ("perms" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2522 2532])
+                            ("out_retained" variable
+                               (:pointer 1
+                                :type ("u32" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2533 2551]))                          
+                        :type "int")
+                        nil nil)
+                    ("events" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2554 2565])
+                    ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2603 2612])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2613 2622])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2623 2634])
+                    ("perms" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2635 2645]))                  
+                :type "int")
+                nil [2419 2646])
+            ("xen_flask_hash_stats" type
+               (:prototype t
+                :type "struct")
+                nil [2676 2704])
+            ("avc_get_hash_stats" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type ("xen_flask_hash_stats" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2728 2761]))                  
+                :type "int")
+                nil [2705 2762])
+            ("avc_cache_threshold" variable
+               (:typemodifiers ("extern")
+                :type "unsigned int")
+                nil [2763 2803]))          
+      :file "avc.h"
+      :pointmax 2922
+      :fsize 2921
+      :lastmodtime '(22625 56477 49952 887000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("AVC_CALLBACK_TRY_REVOKE" . ((number "2" 2161 . 2162)))
+          ("_FLASK_AVC_H_")
+          ("AVC_CALLBACK_REVOKE" . ((number "4" 2198 . 2199)))
+          ("AVC_CALLBACK_AUDITALLOW_ENABLE" . ((number "16" 2278 . 2280)))
+          ("AVC_AUDIT_DATA_DTDEV" . ((number "5" 856 . 857)))
+          ("AVC_CALLBACK_AUDITDENY_ENABLE" . ((number "64" 2368 . 2370)))
+          ("AVC_CALLBACK_AUDITDENY_DISABLE" . ((number "128" 2413 . 2416)))
+          ("AVC_CALLBACK_AUDITALLOW_DISABLE" . ((number "32" 2324 . 2326)))
+          ("AVC_AUDIT_DATA_DEV" . ((number "1" 731 . 732)))
+          ("AVC_AUDIT_DATA_IRQ" . ((number "2" 762 . 763)))
+          ("AVC_AUDIT_DATA_MEMORY" . ((number "4" 825 . 826)))
+          ("AVC_CALLBACK_RESET" . ((number "8" 2234 . 2235)))
+          ("AVC_CALLBACK_GRANT" . ((number "1" 2120 . 2121)))
+          ("AVC_AUDIT_DATA_INIT" (spp-arg-list ("_d" "_t") 1273 . 1280) . ((semantic-list "{ memset((_d), 0, sizeof(struct avc_audit_data)); \\
+         (_d)->type = AVC_AUDIT_DATA_##_t; }" 1291 . 1387)))
+          ("AVC_AUDIT_DATA_NONE" . ((number "0" 700 . 701)))
+          ("AVC_AUDIT_DATA_RANGE" . ((number "3" 793 . 794)))
+          )
+)
+    (semanticdb-table "security.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FLASK_SECURITY_H_" variable (:constant-flag t) nil [195 213])
+            ("flask.h" include nil nil [215 233])
+            ("SECSID_NULL" variable (:constant-flag t) nil [243 254])
+            ("SECSID_WILD" variable (:constant-flag t) nil [307 318])
+            ("SECCLASS_NULL" variable (:constant-flag t) nil [368 381])
+            ("FLASK_MAGIC" variable (:constant-flag t) nil [424 435])
+            ("POLICYDB_VERSION_BASE" variable (:constant-flag t) nil [503 524])
+            ("POLICYDB_VERSION_BOOL" variable (:constant-flag t) nil [543 564])
+            ("POLICYDB_VERSION_IPV6" variable (:constant-flag t) nil [583 604])
+            ("POLICYDB_VERSION_NLCLASS" variable (:constant-flag t) nil [623 647])
+            ("POLICYDB_VERSION_VALIDATETRANS" variable (:constant-flag t) nil [662 692])
+            ("POLICYDB_VERSION_MLS" variable (:constant-flag t) nil [707 727])
+            ("POLICYDB_VERSION_AVTAB" variable (:constant-flag t) nil [746 768])
+            ("POLICYDB_VERSION_RANGETRANS" variable (:constant-flag t) nil [787 814])
+            ("POLICYDB_VERSION_POLCAP" variable (:constant-flag t) nil [826 849])
+            ("POLICYDB_VERSION_PERMISSIVE" variable (:constant-flag t) nil [862 889])
+            ("POLICYDB_VERSION_BOUNDARY" variable (:constant-flag t) nil [901 926])
+            ("POLICYDB_VERSION_FILENAME_TRANS" variable (:constant-flag t) nil [938 969])
+            ("POLICYDB_VERSION_ROLETRANS" variable (:constant-flag t) nil [981 1007])
+            ("POLICYDB_VERSION_NEW_OBJECT_DEFAULTS" variable (:constant-flag t) nil [1019 1055])
+            ("POLICYDB_VERSION_DEFAULT_TYPE" variable (:constant-flag t) nil [1067 1096])
+            ("POLICYDB_VERSION_CONSTRAINT_NAMES" variable (:constant-flag t) nil [1108 1141])
+            ("POLICYDB_VERSION_XEN_DEVICETREE" variable (:constant-flag t) nil [1153 1184])
+            ("POLICYDB_VERSION_MIN" variable (:constant-flag t) nil [1241 1261])
+            ("POLICYDB_VERSION_MAX" variable (:constant-flag t) nil [1294 1314])
+            ("flask_bootparam_t" type
+               (:members 
+                  ( ("FLASK_BOOTPARAM_PERMISSIVE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1379 1406])
+                    ("FLASK_BOOTPARAM_ENFORCING" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1411 1437])
+                    ("FLASK_BOOTPARAM_LATELOAD" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1442 1467])
+                    ("FLASK_BOOTPARAM_DISABLED" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1472 1497])
+                    ("FLASK_BOOTPARAM_INVALID" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1502 1526]))                  
+                :type "enum")
+                nil [1350 1529])
+            ("flask_bootparam" variable
+               (:typemodifiers ("extern")
+                :type ("flask_bootparam_t" type (:type "enum") nil nil))
+                nil [1531 1577])
+            ("flask_mls_enabled" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [1578 1607])
+            ("security_load_policy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1634 1646])
+                    ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1647 1658]))                  
+                :type "int")
+                nil [1609 1659])
+            ("av_decision" type
+               (:members 
+                  ( ("allowed" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1686 1698])
+                    ("auditallow" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1703 1718])
+                    ("auditdeny" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1723 1737])
+                    ("seqno" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1742 1752])
+                    ("flags" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1757 1767]))                  
+                :type "struct")
+                nil [1661 1770])
+            ("AVD_FLAGS_PERMISSIVE" variable (:constant-flag t) nil [1819 1839])
+            ("security_compute_av" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1872 1881])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1882 1891])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1892 1903])
+                    ("requested" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1904 1918])
+                    ("avd" variable
+                       (:pointer 1
+                        :type ("av_decision" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1971 1995]))                  
+                :type "int")
+                nil [1848 1996])
+            ("security_transition_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2026 2035])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2036 2045])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2046 2057])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2058 2071]))                  
+                :type "int")
+                nil [1998 2072])
+            ("security_member_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2098 2107])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2108 2117])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2118 2129])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2130 2143]))                  
+                :type "int")
+                nil [2074 2144])
+            ("security_change_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ssid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2170 2179])
+                    ("tsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2180 2189])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2190 2201])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2202 2215]))                  
+                :type "int")
+                nil [2146 2216])
+            ("security_sid_to_context" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2246 2254])
+                    ("scontext" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2255 2271])
+                    ("scontext_len" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2272 2290]))                  
+                :type "int")
+                nil [2218 2291])
+            ("security_context_to_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("scontext" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2321 2336])
+                    ("scontext_len" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2337 2354])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2355 2368]))                  
+                :type "int")
+                nil [2293 2369])
+            ("security_get_user_sids" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("callsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2398 2410])
+                    ("username" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2411 2426])
+                    ("sids" variable
+                       (:pointer 2
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2427 2438])
+                    ("nel" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2439 2448]))                  
+                :type "int")
+                nil [2371 2449])
+            ("security_irq_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pirq" variable (:type "int") (reparse-symbol arg-sub-list) [2472 2481])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2482 2495]))                  
+                :type "int")
+                nil [2451 2496])
+            ("security_iomem_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2521 2535])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2536 2549]))                  
+                :type "int")
+                nil [2498 2550])
+            ("security_ioport_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ioport" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2576 2587])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2588 2601]))                  
+                :type "int")
+                nil [2552 2602])
+            ("security_device_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("device" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2628 2639])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2640 2653]))                  
+                :type "int")
+                nil [2604 2654])
+            ("security_devicetree_sid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2684 2701])
+                    ("out_sid" variable
+                       (:pointer 1
+                        :type ("u32" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2702 2715]))                  
+                :type "int")
+                nil [2656 2716])
+            ("security_validate_transition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("oldsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2751 2762])
+                    ("newsid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2763 2774])
+                    ("tasksid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2775 2787])
+                    ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2856 2867]))                  
+                :type "int")
+                nil [2718 2868])
+            ("security_iterate_fn" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [2905 2916])
+                    ("sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2917 2925])
+                    ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2926 2946])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3003 3021]))                  
+                :type "int")
+                nil [2878 3022])
+            ("security_iterate_iomem_sids" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3055 3075])
+                    ("end" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3076 3094])
+                    ("fn" variable (:type ("security_iterate_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3127 3150])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3151 3162]))                  
+                :type "int")
+                nil [3023 3163])
+            ("security_iterate_ioport_sids" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("start" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3198 3208])
+                    ("end" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3209 3217])
+                    ("fn" variable (:type ("security_iterate_fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3250 3273])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3274 3285]))                  
+                :type "int")
+                nil [3165 3286])
+            ("security_ocontext_add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ocontext" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3314 3327])
+                    ("low" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3328 3346])
+                    ("high" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3374 3393])
+                    ("sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3394 3402]))                  
+                :type "int")
+                nil [3288 3403])
+            ("security_ocontext_del" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("ocontext" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3431 3444])
+                    ("low" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3445 3463])
+                    ("high" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [3464 3483]))                  
+                :type "int")
+                nil [3405 3484])
+            ("security_devicetree_setlabel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("path" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3519 3530])
+                    ("sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3531 3539]))                  
+                :type "int")
+                nil [3486 3540]))          
+      :file "security.h"
+      :pointmax 3573
+      :fsize 3572
+      :lastmodtime '(22034 35395 0 0)
+      :unmatched-syntax '((TYPEDEF 2870 . 2877))
+      :lexical-table 
+        '(("POLICYDB_VERSION_CONSTRAINT_NAMES" . ((number "29" 1142 . 1144)))
+          ("POLICYDB_VERSION_POLCAP" . ((number "22" 851 . 853)))
+          ("POLICYDB_VERSION_DEFAULT_TYPE" . ((number "28" 1097 . 1099)))
+          ("_FLASK_SECURITY_H_")
+          ("POLICYDB_VERSION_FILENAME_TRANS" . ((number "25" 970 . 972)))
+          ("POLICYDB_VERSION_ROLETRANS" . ((number "26" 1008 . 1010)))
+          ("AVD_FLAGS_PERMISSIVE" . ((number "0x0001" 1840 . 1846)))
+          ("SECCLASS_NULL" . ((number "0x0000" 393 . 399)))
+          ("POLICYDB_VERSION_VALIDATETRANS" . ((number "19" 696 . 698)))
+          ("POLICYDB_VERSION_BASE" . ((number "15" 532 . 534)))
+          ("POLICYDB_VERSION_NLCLASS" . ((number "18" 651 . 653)))
+          ("POLICYDB_VERSION_MAX" . ((symbol "POLICYDB_VERSION_XEN_DEVICETREE" 1317 . 1348)))
+          ("POLICYDB_VERSION_BOUNDARY" . ((number "24" 927 . 929)))
+          ("POLICYDB_VERSION_MIN" . ((symbol "POLICYDB_VERSION_BASE" 1264 . 1285)))
+          ("SECSID_WILD" . ((number "0xffffffff" 330 . 340)))
+          ("FLASK_MAGIC" . ((number "0xf97cff8c" 436 . 446)))
+          ("POLICYDB_VERSION_MLS" . ((number "19" 735 . 737)))
+          ("POLICYDB_VERSION_AVTAB" . ((number "20" 776 . 778)))
+          ("POLICYDB_VERSION_BOOL" . ((number "16" 572 . 574)))
+          ("SECSID_NULL" . ((number "0x00000000" 266 . 276)))
+          ("POLICYDB_VERSION_PERMISSIVE" . ((number "23" 890 . 892)))
+          ("POLICYDB_VERSION_NEW_OBJECT_DEFAULTS" . ((number "27" 1056 . 1058)))
+          ("POLICYDB_VERSION_XEN_DEVICETREE" . ((number "30" 1185 . 1187)))
+          ("POLICYDB_VERSION_IPV6" . ((number "17" 612 . 614)))
+          ("POLICYDB_VERSION_RANGETRANS" . ((number "21" 815 . 817)))
+          )
+)
+    (semanticdb-table "avc_ss.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FLASK_AVC_SS_H_" variable (:constant-flag t) nil [152 168])
+            ("flask.h" include nil nil [170 188])
+            ("avc_ss_reset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("seqno" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [207 217]))                  
+                :type "int")
+                nil [190 218])
+            ("av_perm_to_string" type
+               (:members 
+                  ( ("tclass" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [251 262])
+                    ("value" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [267 277])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [282 299]))                  
+                :type "struct")
+                nil [220 302])
+            ("selinux_class_perm" type
+               (:members 
+                  ( ("av_perm_to_string" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("av_perm_to_string" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [336 386])
+                    ("av_pts_len" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [391 406])
+                    ("cts_len" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [411 423])
+                    ("class_to_string" variable
+                       (:pointer 2
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol classsubparts) [428 457]))                  
+                :type "struct")
+                nil [304 460])
+            ("selinux_class_perm" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("selinux_class_perm" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [462 520]))          
+      :file "avc_ss.h"
+      :pointmax 553
+      :fsize 552
+      :lastmodtime '(22034 35395 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_FLASK_AVC_SS_H_")
+          )
+)
+    (semanticdb-table "conditional.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FLASK_CONDITIONAL_H_" variable (:constant-flag t) nil [442 463])
+            ("xen/types.h" include (:system-flag t) nil [465 487])
+            ("security_get_bools" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [511 520])
+                    ("names" variable
+                       (:pointer 3
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [521 535])
+                    ("values" variable
+                       (:pointer 2
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [536 549])
+                    ("maxstr" variable
+                       (:pointer 1
+                        :type ("size_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [550 565]))                  
+                :type "int")
+                nil [488 566])
+            ("security_set_bools" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("len" variable (:type "int") (reparse-symbol arg-sub-list) [590 598])
+                    ("values" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [599 611]))                  
+                :type "int")
+                nil [567 612])
+            ("security_find_bool" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [636 653]))                  
+                :type "int")
+                nil [613 654])
+            ("security_get_bool_name" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("b" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [684 699]))                  
+                :type "char")
+                nil [655 700])
+            ("security_get_bool_value" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [729 744]))                  
+                :type "int")
+                nil [701 745]))          
+      :file "conditional.h"
+      :pointmax 753
+      :fsize 752
+      :lastmodtime '(22632 58860 643162 544000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_FLASK_CONDITIONAL_H_")
+          )
+)
+    (semanticdb-table "objsec.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FLASK_OBJSEC_H_" variable (:constant-flag t) nil [438 454])
+            ("xen/sched.h" include (:system-flag t) nil [456 478])
+            ("flask.h" include nil nil [479 497])
+            ("avc.h" include nil nil [498 514])
+            ("domain_security_struct" type
+               (:members 
+                  ( ("sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [552 560])
+                    ("self_sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [597 610])
+                    ("target_sid" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [674 689]))                  
+                :type "struct")
+                nil [516 740]))          
+      :file "objsec.h"
+      :pointmax 772
+      :fsize 771
+      :lastmodtime '(22034 35395 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_FLASK_OBJSEC_H_")
+          )
+))
+  :file "!home!wlisper!Documents!src!xen-4.6.0!xen!xsm!flask!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

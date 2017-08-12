@@ -1,0 +1,253 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("math.h" include (:system-flag t) nil [20 37])
+            ("min" variable (:constant-flag t) nil [47 50])
+            ("jump_search" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [192 202])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [203 211])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [212 218]))                  
+                :type "int")
+                nil [175 494])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [519 528])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [529 542]))                  
+                :type "int")
+                nil [510 700]))          
+      :file "jump_search.c"
+      :pointmax 702
+      :fsize 701
+      :lastmodtime '(22890 48491 389565 925000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("min" (spp-arg-list ("a" "b") 50 . 56) . 
+              ((semantic-list "(a)" 57 . 60) (punctuation ">" 61 . 62) (semantic-list "(b)" 63 . 66) (punctuation "?" 67 . 68) (semantic-list "(b)" 69 . 72) (punctuation ":" 73 . 74) (semantic-list "(a)" 75 . 78)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("defcomparator" variable (:constant-flag t) nil [29 42])
+            ("define_binary_search" variable (:constant-flag t) nil [252 272])
+            ("compare_int" function
+               (:arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [1430 1498])
+            ("binary_search_int_util" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Cmp" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88 95])
+                            ("y" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96 103]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [1500 1538])
+            ("binary_search_int" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Cmp" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87 94])
+                            ("y" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95 102]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [1500 1538])
+            ("student" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("age" variable (:type "int") (reparse-symbol classsubparts) [1560 1568])
+                          ("" type
+                             (:prototype t
+                              :type "class")
+                              (reparse-symbol classsubparts) [1575 1581]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [1541 1592])
+            ("compare_student" function
+               (:arguments 
+                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("y" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [1594 1696])
+            ("binary_search_student_util" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Cmp" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [88 95])
+                            ("y" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [96 103]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [1698 1744])
+            ("binary_search_student" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("Type" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Cmp" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("x" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [87 94])
+                            ("y" variable (:type ("Type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95 102]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [1698 1744])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1764 1773])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1774 1787]))                  
+                :type "int")
+                nil [1755 2214]))          
+      :file "binary_search.c"
+      :pointmax 2215
+      :fsize 2214
+      :lastmodtime '(22890 51371 93799 129000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("defcomparator" (spp-arg-list ("T" "x" "y" "code") 42 . 57) . 
+              ((INT "int" 58 . 61) (spp-symbol-merge ((symbol "compare_" 62 . 70) (symbol "T" 72 . 73)) 62 . 73) (semantic-list "(T x, T y)" 74 . 84) (semantic-list "{       \\
+    code;                                                               \\
+  }" 85 . 172)))
+          ("Cmp"nil ;; bogus macro found.
+)
+          ("x"nil ;; bogus macro found.
+)
+          ("code"nil ;; bogus macro found.
+)
+          ("y"nil ;; bogus macro found.
+)
+          ("T"nil ;; bogus macro found.
+)
+          ("define_binary_search" (spp-arg-list ("Type" "Cmp") 272 . 283) . 
+              ((INT "int" 320 . 323) (spp-symbol-merge ((spp-symbol-merge ((symbol "binary_search_" 324 . 338) (symbol "Type" 340 . 344)) 324 . 344) (symbol "_util" 346 . 351)) 324 . 351) (semantic-list "(Type arr[], int low, int high, Type x, \\
+                                  int (*Cmp)(Type x, Type y))" 351 . 454) (semantic-list "{         \\
+    int mid = low + (high - low) / 2;                                   \\
+    if (Cmp(arr[mid], x) == 0) {                                        \\
+      return mid;                                                       \\
+    } else if (Cmp(arr[mid], x) < 0) {                                  \\
+      return binary_search_##Type##_util(arr, mid + 1, high, x, Cmp);   \\
+    } else {                                                            \\
+      return binary_search_##Type##_util(arr, low, mid - 1, x, Cmp);    \\
+    }                                                                   \\
+  }" 455 . 1062) (INT "int" 1135 . 1138) (spp-symbol-merge ((symbol "binary_search_" 1139 . 1153) (symbol "Type" 1155 . 1159)) 1139 . 1159) (semantic-list "(Type arr[], int len, Type x,                 \\
+                           int (*Cmp)(Type x, Type y))" 1159 . 1261) (semantic-list "{                \\
+    return binary_search_##Type##_util(arr, 0, len - 1, x, Cmp);        \\
+  }" 1262 . 1358)))
+          ("Type"nil ;; bogus macro found.
+)
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("compare_int" function
+               (:arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [37 43])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [44 50]))                  
+                :type "int")
+                nil [20 138])
+            ("binary_search_int_util" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [166 176])
+                    ("low" variable (:type "int") (reparse-symbol arg-sub-list) [177 185])
+                    ("high" variable (:type "int") (reparse-symbol arg-sub-list) [186 195])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [196 202])
+                    ("compare_int" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [249 255])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [256 262]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [139 559])
+            ("binary_search_int" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [582 592])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [593 601])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [602 608])
+                    ("compare_int" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [650 656])
+                            ("y" variable (:type "int") (reparse-symbol arg-sub-list) [657 663]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [560 734])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [745 754])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [755 768]))                  
+                :type "int")
+                nil [736 977]))          
+      :file "temp.c"
+      :pointmax 978
+      :fsize 977
+      :lastmodtime '(22890 50714 981745 996000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!algorithms!search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

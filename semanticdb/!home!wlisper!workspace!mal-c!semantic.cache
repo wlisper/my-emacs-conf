@@ -1,0 +1,285 @@
+;; Object mal-c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mal-c/"
+  :tables
+  (list
+    (semanticdb-table "types.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__MAL_TYPES__" variable (:constant-flag t) nil [31 44])
+            ("glib-2.0/glib.h" include (:system-flag t) nil [46 72])
+            ("string.h" include (:system-flag t) nil [313 332])
+            ("MAL_GC_SETUP" variable (:constant-flag t) nil [341 353])
+            ("MAL_GC_MALLOC" variable (:constant-flag t) nil [364 377])
+            ("MAL_GC_FREE" variable (:constant-flag t) nil [393 404])
+            ("MAL_GC_STRDUP" variable (:constant-flag t) nil [418 431])
+            ("MalVal" type
+               (:prototype t
+                :type "struct")
+                nil [448 462])
+            ("Env" type
+               (:members 
+                  ( ("outer" variable
+                       (:pointer 1
+                        :type ("Env" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [487 505])
+                    ("table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [508 526]))                  
+                :type "struct")
+                nil [464 533])
+            ("Env" type
+               (:typedef ("Env" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [464 533])
+            ("new_env" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("outer" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [548 559])
+                    ("binds" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [560 581])
+                    ("exprs" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [582 603]))                  
+                :type ("Env" type (:type "class") nil nil))
+                nil [535 604])
+            ("env_find" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [619 628])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [629 648]))                  
+                :type ("Env" type (:type "class") nil nil))
+                nil [605 649])
+            ("env_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [673 682])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [683 702]))                  
+                :type ("MalVal" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [650 703])
+            ("env_set" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("Env" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [717 726])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [727 746])
+                    ("val" variable
+                       (:pointer 1
+                        :type ("MalVal" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [747 766]))                  
+                :type ("Env" type (:type "class") nil nil))
+                nil [704 767])
+            ("g_hash_table_print" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("hash_table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [793 816]))                  
+                :type "void")
+                nil [769 817])
+            ("g_hash_table_copy" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("src_table" variable
+                       (:pointer 1
+                        :type ("GHashTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [848 870]))                  
+                :type ("GHashTable" type (:type "class") nil nil))
+                nil [818 871])
+            ("mal_error" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("MalVal" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [873 906])
+            ("_error" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [919 935])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [936 940]))                  
+                :type "void")
+                nil [907 941])
+            ("abort" variable (:constant-flag t) nil [951 956])
+            ("assert" variable (:constant-flag t) nil [1050 1056])
+            ("assert_type" variable (:constant-flag t) nil [1255 1266])
+            ("MalType" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("MAL_NIL" variable
+                             (:constant-flag t
+                              :default-value (1479 1480)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1469 1480])
+                          ("MAL_TRUE" variable
+                             (:constant-flag t
+                              :default-value (1495 1496)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1484 1496])
+                          ("MAL_FALSE" variable
+                             (:constant-flag t
+                              :default-value (1512 1513)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1500 1513])
+                          ("MAL_INTEGER" variable
+                             (:constant-flag t
+                              :default-value (1531 1532)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1517 1532])
+                          ("MAL_FLOAT" variable
+                             (:constant-flag t
+                              :default-value (1548 1550)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1536 1550])
+                          ("MAL_SYMBOL" variable
+                             (:constant-flag t
+                              :default-value (1567 1569)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1554 1569])
+                          ("MAL_STRING" variable
+                             (:constant-flag t
+                              :default-value (1586 1588)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1573 1588])
+                          ("MAL_LIST" variable
+                             (:constant-flag t
+                              :default-value (1603 1606)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1592 1606])
+                          ("MAL_VECTOR" variable
+                             (:constant-flag t
+                              :default-value (1623 1626)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1610 1626])
+                          ("MAL_HASH_MAP" variable
+                             (:constant-flag t
+                              :default-value (1645 1648)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1630 1648])
+                          ("MAL_ATOM" variable
+                             (:constant-flag t
+                              :default-value (1663 1667)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1652 1667])
+                          ("MAL_FUNCTION_C" variable
+                             (:constant-flag t
+                              :default-value (1688 1692)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1671 1692])
+                          ("MAL_FUNCTION_MAL" variable
+                             (:constant-flag t
+                              :default-value (1715 1719)
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1696 1719]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1452 1731]))          
+      :file "types.h"
+      :pointmax 1757
+      :fsize 1756
+      :lastmodtime '(22645 46925 337388 306000)
+      :unmatched-syntax '((semantic-list 1107 . 1245) (semantic-list 1097 . 1106) (IF 1094 . 1096) (semantic-list 1056 . 1075) (semantic-list 995 . 1040) (semantic-list 956 . 969) (semantic-list 1286 . 1337) (ENUM 1281 . 1285) (punctuation 1334 . 1335) (punctuation 1317 . 1318) (punctuation 1301 . 1302) (punctuation 1334 . 1335) (punctuation 1317 . 1318) (punctuation 1301 . 1302) (TYPEDEF 1273 . 1280) (punctuation 1334 . 1335) (punctuation 1317 . 1318) (punctuation 1301 . 1302) (punctuation 1334 . 1335) (punctuation 1317 . 1318) (punctuation 1301 . 1302) (semantic-list 1286 . 1311) (ENUM 1281 . 1285) (punctuation 1301 . 1302) (punctuation 1301 . 1302) (TYPEDEF 1273 . 1280) (punctuation 1301 . 1302) (punctuation 1301 . 1302) (semantic-list 1286 . 1307) (ENUM 1281 . 1285) (punctuation 1301 . 1302) (punctuation 1301 . 1302) (TYPEDEF 1273 . 1280) (punctuation 1301 . 1302) (punctuation 1301 . 1302) (semantic-list 1286 . 1292) (ENUM 1281 . 1285) (TYPEDEF 1273 . 1280) (ENUM 1281 . 1285) (TYPEDEF 1273 . 1280) (TYPEDEF 1273 . 1280) (close-paren 1268 . 1269) (close-paren 1248 . 1249) (close-paren 1237 . 1238) (close-paren 1219 . 1220) (close-paren 1105 . 1106) (semantic-list 974 . 1019) (semantic-list 956 . 969) (semantic-list 918 . 940) (symbol 912 . 918) (VOID 907 . 911) (semantic-list 918 . 939) (symbol 912 . 918) (punctuation 937 . 938) (punctuation 936 . 937) (VOID 907 . 911) (punctuation 937 . 938) (punctuation 936 . 937) (semantic-list 918 . 938) (symbol 912 . 918) (punctuation 936 . 937) (VOID 907 . 911) (punctuation 936 . 937) (semantic-list 918 . 920) (symbol 912 . 918) (VOID 907 . 911) (VOID 873 . 877) (semantic-list 716 . 755) (symbol 709 . 716) (punctuation 707 . 708) (symbol 704 . 707) (punctuation 707 . 708) (symbol 704 . 707) (symbol 610 . 618) (punctuation 608 . 609) (symbol 605 . 608) (semantic-list 547 . 582) (symbol 540 . 547) (punctuation 580 . 581) (punctuation 538 . 539) (punctuation 580 . 581) (symbol 535 . 538) (punctuation 580 . 581) (semantic-list 547 . 552) (symbol 540 . 547) (punctuation 538 . 539) (symbol 535 . 538) (semantic-list 483 . 528) (symbol 479 . 482) (STRUCT 472 . 478) (TYPEDEF 464 . 471) (symbol 494 . 497) (STRUCT 487 . 493) (TYPEDEF 464 . 471) (symbol 494 . 497) (STRUCT 487 . 493) (symbol 494 . 497) (STRUCT 487 . 493) (symbol 378 . 384) (symbol 378 . 382) (symbol 384 . 390) (punctuation 383 . 384) (punctuation 74 . 75) (symbol 65 . 68) (punctuation 64 . 65) (number 61 . 64) (punctuation 60 . 61) (symbol 56 . 60) (punctuation 55 . 56) (symbol 47 . 54) (punctuation 46 . 47) (symbol 56 . 60) (punctuation 55 . 56) (symbol 47 . 54) (punctuation 46 . 47))
+      :lexical-table 
+        '(("abort" (spp-arg-list ("format" "...") 956 . 969) . ((semantic-list "{_error(format, ##__VA_ARGS__); return NULL;}" 995 . 1040)))
+          ("MAL_GC_FREE" . ((symbol "free" 405 . 409)))
+          ("assert_type" (spp-arg-list ("mv" "typ" "format" "...") 1266 . 1288) . 
+              ((IF "if" 1299 . 1301) (semantic-list "(!(mv->type & (typ)))" 1302 . 1323) (semantic-list "{                    \\
+    _error(format, ##__VA_ARGS__);              \\
+    return NULL;                                \\
+  }" 1324 . 1450)))
+          ("MAL_GC_SETUP" (spp-arg-list nil 353 . 355))
+          ("MAL_GC_STRDUP" . ((symbol "strdup" 432 . 438)))
+          ("assert" (spp-arg-list ("test" "format" "...") 1056 . 1075) . 
+              ((IF "if" 1094 . 1096) (semantic-list "(!(test))" 1097 . 1106) (semantic-list "{                                \\
+    _error(format, ##__VA_ARGS__);              \\
+    return NULL;                                \\
+  }" 1107 . 1245)))
+          ("MAL_GC_MALLOC" . ((symbol "malloc" 378 . 384)))
+          ("__MAL_TYPES__")
+          )
+)
+
+
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("glib-2.0/glib.h" include (:system-flag t) nil [1 27])
+            ("stdio.h" include (:system-flag t) nil [28 46])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [57 66])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [67 80]))                  
+                :type "int")
+                nil [48 123]))          
+      :file "main.c"
+      :pointmax 124
+      :fsize 123
+      :lastmodtime '(22645 47222 49527 662000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!mal-c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

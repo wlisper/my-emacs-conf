@@ -1,0 +1,107 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("signal.h" include (:system-flag t) nil [21 40])
+            ("unistd.h" include (:system-flag t) nil [41 60])
+            ("sig_usr" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [82 86]))                  
+                :type "void")
+                nil [62 87])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [98 107])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [108 121]))                  
+                :type "int")
+                nil [89 323])
+            ("sig_usr" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [345 355]))                  
+                :type "void")
+                nil [325 545]))          
+      :file "signal_ts.c"
+      :pointmax 546
+      :fsize 545
+      :lastmodtime '(22796 33732 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("signal.h" include (:system-flag t) nil [185 204])
+            ("sys/wait.h" include (:system-flag t) nil [205 226])
+            ("unistd.h" include (:system-flag t) nil [227 246])
+            ("errno.h" include (:system-flag t) nil [247 265])
+            ("stdio.h" include (:system-flag t) nil [266 284])
+            ("system_signal" function
+               (:arguments 
+                  ( ("cmdstring" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [304 326]))                  
+                :type "int")
+                nil [286 1589])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1599 1608])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1609 1622]))                  
+                :type "int")
+                nil [1590 1705]))          
+      :file "system_signal.c"
+      :pointmax 1706
+      :fsize 1705
+      :lastmodtime '(22818 49788 359631 155000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("signal.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("stdint.h" include (:system-flag t) nil [60 79])
+            ("sigalrm_handler" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [109 119]))                  
+                :type "void")
+                nil [81 139])
+            ("my_sleep" function
+               (:arguments 
+                  ( ("seconds" variable (:type ("uint32_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [159 177]))                  
+                :type ("uint32_t" type (:type "class") nil nil))
+                nil [141 745])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [756 765])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [766 779]))                  
+                :type "int")
+                nil [747 880]))          
+      :file "sleep_impl.c"
+      :pointmax 882
+      :fsize 881
+      :lastmodtime '(22819 41434 512127 674000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!apue!ch10!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

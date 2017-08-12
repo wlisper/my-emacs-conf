@@ -1,0 +1,292 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("NDEBUG" variable (:constant-flag t) nil [9 15])
+            ("alloca.h" include (:system-flag t) nil [17 36])
+            ("assert.h" include (:system-flag t) nil [37 56])
+            ("stdio.h" include (:system-flag t) nil [57 75])
+            ("stdlib.h" include (:system-flag t) nil [76 95])
+            ("string.h" include (:system-flag t) nil [96 115])
+            ("wchar.h" include (:system-flag t) nil [116 134])
+            ("c4life/assert.h" include nil nil [135 161])
+            ("c4life/c4.h" include nil nil [162 184])
+            ("c4life/charset.h" include nil nil [185 212])
+            ("c4life/ctx.h" include nil nil [213 236])
+            ("c4life/defer.h" include nil nil [237 262])
+            ("c4life/err.h" include nil nil [263 286])
+            ("c4life/mem/mfreels.h" include nil nil [287 318])
+            ("c4life/mem/mpool.h" include nil nil [319 348])
+            ("c4life/mem/mmap.h" include nil nil [349 377])
+            ("c4life/mem/mslabs.h" include nil nil [378 408])
+            ("c4life/recs/fld.h" include nil nil [409 437])
+            ("c4life/recs/rec.h" include nil nil [438 466])
+            ("c4life/recs/tbl.h" include nil nil [467 495])
+            ("c4life/recs/trans.h" include nil nil [496 526])
+            ("c4life/seqs/bmap.h" include nil nil [527 556])
+            ("c4life/seqs/dyna.h" include nil nil [557 586])
+            ("c4life/seqs/idx.h" include nil nil [587 615])
+            ("c4life/seqs/ls.h" include nil nil [616 643])
+            ("c4life/sym.h" include nil nil [644 667])
+            ("c4life/tags.h" include nil nil [668 692])
+            ("c4life/test.h" include nil nil [693 717])
+            ("c4life/type.h" include nil nil [718 742])
+            ("c4life/uid.h" include nil nil [743 766])
+            ("c4life/utils.h" include nil nil [767 792])
+            ("c4life/val.h" include nil nil [793 816])
+            ("c4life/wcharset.h" include nil nil [817 845])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("args" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [863 868]))                  
+                :type "int")
+                nil [849 1060])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("assert" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1076 1083]))                  
+                :type "int")
+                nil [1062 1398])
+            ("cmp_int" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("_x" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1419 1428])
+                    ("_y" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1429 1438])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1439 1450]))                  
+                :type "int")
+                nil [1400 1537])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("bmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1553 1558]))                  
+                :type "int")
+                nil [1539 3150])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("bset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3166 3171]))                  
+                :type "int")
+                nil [3152 3692])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("charset" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3708 3716]))                  
+                :type "int")
+                nil [3694 4051])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("defer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4067 4073]))                  
+                :type "int")
+                nil [4053 4186])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("with_defer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4202 4213]))                  
+                :type "int")
+                nil [4188 4405])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dupa" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4421 4426]))                  
+                :type "int")
+                nil [4407 4678])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("dyna" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4694 4699]))                  
+                :type "int")
+                nil [4680 5179])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("err" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5195 5199]))                  
+                :type "int")
+                nil [5181 5760])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("idx" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5776 5780]))                  
+                :type "int")
+                nil [5762 7448])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("fmt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7464 7468]))                  
+                :type "int")
+                nil [7450 7529])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("fn" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7545 7548]))                  
+                :type "int")
+                nil [7531 7611])
+            ("ls_it" type
+               (:members 
+                  ( ("ls" variable (:type ("c4ls" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [7670 7685]))                  
+                :type "struct")
+                nil [7613 7688])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("ls" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7704 7707]))                  
+                :type "int")
+                nil [7690 8490])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("max" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8506 8510]))                  
+                :type "int")
+                nil [8492 8619])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mfreels" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8635 8643]))                  
+                :type "int")
+                nil [8621 9143])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mmap" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9159 9164]))                  
+                :type "int")
+                nil [9145 9410])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mpool" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9426 9432]))                  
+                :type "int")
+                nil [9412 9778])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("mslabs" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9794 9801]))                  
+                :type "int")
+                nil [9780 10290])
+            ("REC_ARRAY_LEN" variable (:constant-flag t) nil [10300 10313])
+            ("rec" type
+               (:members 
+                  ( ("array" variable
+                       (:dereference 1
+                        :type ("int32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [10333 10362])
+                    ("dyna" variable (:type ("c4dyna" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [10365 10384])
+                    ("int32" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10387 10401])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [10404 10414])
+                    ("str" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [10417 10427])
+                    ("sym" variable
+                       (:pointer 1
+                        :type ("c4sym" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [10430 10448])
+                    ("uid" variable (:type ("c4uid" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10451 10461])
+                    ("wstr" variable
+                       (:pointer 1
+                        :type "wchar_t")
+                        (reparse-symbol classsubparts) [10464 10478]))                  
+                :type "struct")
+                nil [10318 10481])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("rec" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10497 10501]))                  
+                :type "int")
+                nil [10483 12195])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("sym" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12211 12215]))                  
+                :type "int")
+                nil [12197 12597])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("tags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12613 12618]))                  
+                :type "int")
+                nil [12599 13109])
+            ("tbl_rec" type
+               (:members 
+                  ( ("id" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13130 13141]))                  
+                :type "struct")
+                nil [13111 13144])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("tbl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13161 13165]))                  
+                :type "int")
+                nil [13147 13787])
+            ("trans_rec" type
+               (:members 
+                  ( ("cnt" variable (:type ("int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [13810 13822]))                  
+                :type "struct")
+                nil [13789 13825])
+            ("C4TDEF" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type ("trans" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13841 13847]))                  
+                :type "int")
+                nil [13827 14720])
+            ("init_malloc_perf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tsuite" variable
+                       (:pointer 1
+                        :type ("c4tsuite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14744 14768]))                  
+                :type "void")
+                nil [14722 14769])
+            ("init_sym_perf" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("tsuite" variable
+                       (:pointer 1
+                        :type ("c4tsuite" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14789 14813]))                  
+                :type "void")
+                nil [14770 14814])
+            ("main" function (:type "int") nil [14816 15382]))          
+      :file "main.c"
+      :pointmax 15383
+      :fsize 15369
+      :lastmodtime '(22739 23398 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("REC_ARRAY_LEN" . ((number "10" 10301 . 10303)))
+          ("NDEBUG")
+          )
+))
+  :file "!home!wlisper!Documents!code-analysis!libc4life!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

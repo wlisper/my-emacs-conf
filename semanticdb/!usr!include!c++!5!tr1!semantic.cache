@@ -1,0 +1,36 @@
+;; Object tr1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tr1/"
+  :tables
+  (list
+    (semanticdb-table "stdarg.h"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_TR1_STDARG_H" variable (:constant-flag t) nil [1167 1180])
+            ("tr1/cstdarg" include (:system-flag t) nil [1184 1206]))          
+      :file "stdarg.h"
+      :pointmax 1215
+      :fsize 1214
+      :lastmodtime '(22554 36574 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_TR1_STDARG_H" . ((number "1" 1181 . 1182)))
+          )
+)
+    (semanticdb-table "cstdarg"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("_GLIBCXX_TR1_CSTDARG" variable (:constant-flag t) nil [1172 1192])
+            ("cstdarg" include (:system-flag t) nil [1196 1214]))          
+      :file "cstdarg"
+      :pointmax 1247
+      :fsize 1246
+      :lastmodtime '(22554 36574 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_GLIBCXX_TR1_CSTDARG" . ((number "1" 1193 . 1194)))
+          )
+))
+  :file "!usr!include!c++!5!tr1!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,56 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "features.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FEATURES_H" variable (:constant-flag t) nil [818 829])
+            ("__KERNEL_STRICT_NAMES" variable (:constant-flag t) nil [5288 5309])
+            ("__GNUC_PREREQ" variable (:constant-flag t) nil [5741 5754])
+            ("_DEFAULT_SOURCE" variable (:constant-flag t) nil [7194 7209])
+            ("__USE_POSIX_IMPLICITLY" variable (:constant-flag t) nil [8348 8370])
+            ("_POSIX_SOURCE" variable (:constant-flag t) nil [8413 8426])
+            ("_POSIX_C_SOURCE" variable (:constant-flag t) nil [8463 8478])
+            ("__USE_POSIX" variable (:constant-flag t) nil [9174 9185])
+            ("__USE_POSIX2" variable (:constant-flag t) nil [9282 9294])
+            ("__USE_MISC" variable (:constant-flag t) nil [10696 10706])
+            ("__USE_FORTIFY_LEVEL" variable (:constant-flag t) nil [11301 11320])
+            ("stdc-predef.h" include (:system-flag t) nil [11451 11475])
+            ("__GNU_LIBRARY__" variable (:constant-flag t) nil [11908 11923])
+            ("__GLIBC__" variable (:constant-flag t) nil [12067 12076])
+            ("__GLIBC_MINOR__" variable (:constant-flag t) nil [12087 12102])
+            ("__GLIBC_PREREQ" variable (:constant-flag t) nil [12115 12129])
+            ("sys/cdefs.h" include (:system-flag t) nil [12329 12353])
+            ("gnu/stubs.h" include (:system-flag t) nil [13176 13198]))          
+      :file "features.h"
+      :pointmax 13226
+      :fsize 13225
+      :lastmodtime '(22619 60538 358123 488000)
+      :unmatched-syntax '((close-paren 9163 . 9164) (symbol 9150 . 9163) (symbol 9142 . 9149) (punctuation 9140 . 9141) (punctuation 9139 . 9140) (close-paren 9130 . 9131) (number 9129 . 9130) (punctuation 9127 . 9128) (punctuation 9126 . 9127) (number "200809L" 9110 . 9125) (punctuation 9108 . 9109) (punctuation 9107 . 9108) (number "200809L" 9091 . 9106) (symbol 9083 . 9090) (open-paren 9082 . 9083) (punctuation 9080 . 9081) (punctuation 9079 . 9080) (close-paren 7158 . 7159) (semantic-list 7007 . 7158) (punctuation 7005 . 7006) (punctuation 7004 . 7005))
+      :lexical-table 
+        '(("__USE_POSIX_IMPLICITLY" . ((number "1" 8371 . 8372)))
+          ("__KERNEL_STRICT_NAMES")
+          ("_POSIX_SOURCE" . ((number "1" 8427 . 8428)))
+          ("__GLIBC__" . ((number "2" 12077 . 12078)))
+          ("__USE_FORTIFY_LEVEL" . ((number "0" 11321 . 11322)))
+          ("_FEATURES_H" . ((number "1" 830 . 831)))
+          ("__USE_MISC" . ((number "1" 10707 . 10708)))
+          ("__GNU_LIBRARY__" . ((number "6" 11924 . 11925)))
+          ("__GLIBC_MINOR__" . ((number "24" 12103 . 12105)))
+          ("__GLIBC_PREREQ" (spp-arg-list ("maj" "min") 12129 . 12139) . ((semantic-list "((__GLIBC__ << 16) + __GLIBC_MINOR__ >= ((maj) << 16) + (min))" 12143 . 12205)))
+          ("__GNUC_PREREQ" (spp-arg-list ("maj" "min") 5754 . 5764) . ((number "0" 5765 . 5766)))
+          ("__USE_POSIX2" . ((number "1" 9295 . 9296)))
+          ("_POSIX_C_SOURCE" . ((number "200809L" 8479 . 8486)))
+          ("_DEFAULT_SOURCE" . ((number "1" 7210 . 7211)))
+          ("__USE_POSIX" . ((number "1" 9186 . 9187)))
+          )
+)
+    (semanticdb-table "stdc-predef.h"
+      :file "stdc-predef.h"
+      :fsize 2229
+      :lastmodtime '(22619 60538 366123 678000)))
+  :file "!usr!local!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

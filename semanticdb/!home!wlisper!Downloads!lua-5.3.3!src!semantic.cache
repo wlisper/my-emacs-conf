@@ -1,0 +1,720 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables
+  (list
+    (semanticdb-table "lvm.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("lvm_h" variable (:constant-flag t) nil [141 146])
+            ("ldo.h" include nil nil [149 165])
+            ("lobject.h" include nil nil [166 186])
+            ("ltm.h" include nil nil [187 203])
+            ("cvt2str" variable (:constant-flag t) nil [241 248])
+            ("cvt2num" variable (:constant-flag t) nil [381 388])
+            ("LUA_FLOORN2I" variable (:constant-flag t) nil [685 697])
+            ("tonumber" variable (:constant-flag t) nil [718 726])
+            ("tointeger" variable (:constant-flag t) nil [807 816])
+            ("intop" variable (:constant-flag t) nil [913 918])
+            ("luaV_rawequalobj" variable (:constant-flag t) nil [980 996])
+            ("luaV_fastget" variable (:constant-flag t) nil [1364 1376])
+            ("luaV_gettable" variable (:constant-flag t) nil [1652 1665])
+            ("luaV_fastset" variable (:constant-flag t) nil [2208 2220])
+            ("luaV_settable" variable (:constant-flag t) nil [2454 2467])
+            ("luaV_equalobj" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2617 2630])
+                    ("t1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2631 2648])
+                    ("t2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2649 2666]))                  
+                :type "int")
+                nil [2598 2667])
+            ("luaV_lessthan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2697 2710])
+                    ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2711 2727])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2728 2744]))                  
+                :type "int")
+                nil [2678 2745])
+            ("luaV_lessequal" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2776 2789])
+                    ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2790 2806])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2807 2823]))                  
+                :type "int")
+                nil [2756 2824])
+            ("luaV_tonumber_" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2855 2873])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("lua_Number" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2874 2888]))                  
+                :type "int")
+                nil [2835 2889])
+            ("luaV_tointeger" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2920 2938])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("lua_Integer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2939 2954])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [2955 2964]))                  
+                :type "int")
+                nil [2900 2965])
+            ("luaV_finishget" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2997 3010])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3011 3027])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3028 3040])
+                    ("val" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3072 3082])
+                    ("slot" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3083 3102]))                  
+                :type "void")
+                nil [2976 3103])
+            ("luaV_finishset" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3135 3148])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3149 3165])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3166 3178])
+                    ("val" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3210 3220])
+                    ("slot" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3221 3240]))                  
+                :type "void")
+                nil [3114 3241])
+            ("luaV_finishOp" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3272 3285]))                  
+                :type "void")
+                nil [3252 3286])
+            ("luaV_execute" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3316 3329]))                  
+                :type "void")
+                nil [3297 3330])
+            ("luaV_concat" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3359 3372])
+                    ("total" variable (:type "int") (reparse-symbol arg-sub-list) [3373 3383]))                  
+                :type "void")
+                nil [3341 3384])
+            ("luaV_div" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3417 3430])
+                    ("x" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3431 3445])
+                    ("y" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3446 3460]))                  
+                :type ("lua_Integer" type (:type "class") nil nil))
+                nil [3395 3461])
+            ("luaV_mod" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3494 3507])
+                    ("x" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3508 3522])
+                    ("y" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3523 3537]))                  
+                :type ("lua_Integer" type (:type "class") nil nil))
+                nil [3472 3538])
+            ("luaV_shiftl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("x" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3574 3588])
+                    ("y" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3589 3603]))                  
+                :type ("lua_Integer" type (:type "class") nil nil))
+                nil [3549 3604])
+            ("luaV_objlen" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3633 3646])
+                    ("ra" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3647 3656])
+                    ("rb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3657 3674]))                  
+                :type "void")
+                nil [3615 3675]))          
+      :file "lvm.h"
+      :pointmax 3684
+      :fsize 3683
+      :lastmodtime '(22155 59961 0 0)
+      :unmatched-syntax '((symbol 3605 . 3614) (symbol 3539 . 3548) (symbol 3462 . 3471) (symbol 3385 . 3394) (symbol 3331 . 3340) (symbol 3287 . 3296) (symbol 3242 . 3251) (symbol 3104 . 3113) (symbol 2966 . 2975) (symbol 2890 . 2899) (symbol 2825 . 2834) (symbol 2746 . 2755) (symbol 2668 . 2677) (symbol 2588 . 2597))
+      :lexical-table 
+        '(("luaV_fastset" (spp-arg-list ("L" "t" "k" "slot" "f" "v") 2220 . 2236) . ((semantic-list "(!ttistable(t) \\
+   ? (slot = NULL, 0) \\
+   : (slot = f(hvalue(t), k), \\
+     ttisnil(slot) ? 0 \\
+     : (luaC_barrierback(L, hvalue(t), v), \\
+        setobj2t(L, cast(TValue *,slot), v), \\
+        1)))" 2241 . 2443)))
+          ("cvt2str" (spp-arg-list ("o") 248 . 251) . ((symbol "ttisnumber" 252 . 262) (semantic-list "(o)" 262 . 265)))
+          ("tointeger" (spp-arg-list ("o" "i") 816 . 821) . ((semantic-list "(ttisinteger(o) ? (*(i) = ivalue(o), 1) : luaV_tointeger(o,i,LUA_FLOORN2I))" 828 . 903)))
+          ("intop" (spp-arg-list ("op" "v1" "v2") 918 . 928) . ((symbol "l_castU2S" 929 . 938) (semantic-list "(l_castS2U(v1) op l_castS2U(v2))" 938 . 970)))
+          ("lvm_h")
+          ("LUA_FLOORN2I" . ((number "0" 699 . 700)))
+          ("cvt2num" (spp-arg-list ("o") 388 . 391) . ((symbol "ttisstring" 392 . 402) (semantic-list "(o)" 402 . 405)))
+          ("luaV_rawequalobj" (spp-arg-list ("t1" "t2") 996 . 1003) . ((symbol "luaV_equalobj" 1005 . 1018) (semantic-list "(NULL,t1,t2)" 1018 . 1030)))
+          ("luaV_settable" (spp-arg-list ("L" "t" "k" "v") 2467 . 2476) . ((semantic-list "{ const TValue *slot; \\
+  if (!luaV_fastset(L,t,k,slot,luaH_get,v)) \\
+    luaV_finishset(L,t,k,v,slot); }" 2477 . 2582)))
+          ("luaV_fastget" (spp-arg-list ("L" "t" "k" "slot" "f") 1376 . 1390) . ((semantic-list "(!ttistable(t)  \\
+   ? (slot = NULL, 0)  /* not a table; 'slot' is NULL and result is 0 */  \\
+   : (slot = f(hvalue(t), k),  /* else, do raw access */  \\
+      !ttisnil(slot)))" 1395 . 1571)))
+          ("luaV_gettable" (spp-arg-list ("L" "t" "k" "v") 1665 . 1674) . ((semantic-list "{ const TValue *slot; \\
+  if (luaV_fastget(L,t,k,slot,luaH_get)) { setobj2s(L, v, slot); } \\
+  else luaV_finishget(L,t,k,v,slot); }" 1675 . 1806)))
+          ("tonumber" (spp-arg-list ("o" "n") 726 . 731) . ((semantic-list "(ttisfloat(o) ? (*(n) = fltvalue(o), 1) : luaV_tonumber_(o,n))" 735 . 797)))
+          )
+)
+    (semanticdb-table "ldo.h"
+      :file "ldo.h"
+      :fsize 2054
+      :lastmodtime '(22135 63574 0 0))
+    (semanticdb-table "lobject.h"
+      :file "lobject.h"
+      :fsize 14530
+      :lastmodtime '(22072 64998 0 0))
+    (semanticdb-table "ltm.h"
+      :file "ltm.h"
+      :fsize 1779
+      :lastmodtime '(22224 42351 0 0))
+    (semanticdb-table "lvm.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("lvm_c" variable (:constant-flag t) nil [128 133])
+            ("LUA_CORE" variable (:constant-flag t) nil [142 150])
+            ("lprefix.h" include nil nil [152 172])
+            ("float.h" include (:system-flag t) nil [174 192])
+            ("limits.h" include (:system-flag t) nil [193 212])
+            ("math.h" include (:system-flag t) nil [213 230])
+            ("stdio.h" include (:system-flag t) nil [231 249])
+            ("stdlib.h" include (:system-flag t) nil [250 269])
+            ("string.h" include (:system-flag t) nil [270 289])
+            ("lua.h" include nil nil [291 307])
+            ("ldebug.h" include nil nil [309 328])
+            ("ldo.h" include nil nil [329 345])
+            ("lfunc.h" include nil nil [346 364])
+            ("lgc.h" include nil nil [365 381])
+            ("lobject.h" include nil nil [382 402])
+            ("lopcodes.h" include nil nil [403 424])
+            ("lstate.h" include nil nil [425 444])
+            ("lstring.h" include nil nil [445 465])
+            ("ltable.h" include nil nil [466 485])
+            ("ltm.h" include nil nil [486 502])
+            ("lvm.h" include nil nil [503 519])
+            ("MAXTAGLOOP" variable (:constant-flag t) nil [587 597])
+            ("NBM" variable (:constant-flag t) nil [871 874])
+            ("luaV_tonumber_" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1554 1572])
+                    ("n" variable
+                       (:pointer 1
+                        :type ("lua_Number" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1573 1587]))                  
+                :type "int")
+                nil [1534 1942])
+            ("luaV_tointeger" function
+               (:arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2172 2190])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("lua_Integer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2191 2206])
+                    ("mode" variable (:type "int") (reparse-symbol arg-sub-list) [2207 2216]))                  
+                :type "int")
+                nil [2152 2896])
+            ("forlimit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("obj" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3692 3710])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("lua_Integer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3711 3726])
+                    ("step" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3727 3744])
+                    ("stopnow" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3766 3779]))                  
+                :type "int")
+                nil [3671 4333])
+            ("luaV_finishget" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4511 4524])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4525 4541])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4542 4554])
+                    ("val" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4555 4565])
+                    ("slot" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4588 4607]))                  
+                :type "void")
+                nil [4490 5746])
+            ("luaV_finishset" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6057 6070])
+                    ("t" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6071 6087])
+                    ("key" variable
+                       (:pointer 1
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6088 6100])
+                    ("val" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6122 6132])
+                    ("slot" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6133 6152]))                  
+                :type "void")
+                nil [6036 7479])
+            ("l_strcmp" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("ls" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7797 7815])
+                    ("rs" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7816 7834]))                  
+                :type "int")
+                nil [7776 8579])
+            ("LTintfloat" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("i" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9108 9122])
+                    ("f" variable (:type ("lua_Number" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9123 9136]))                  
+                :type "int")
+                nil [9085 9606])
+            ("LEintfloat" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("i" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9741 9755])
+                    ("f" variable (:type ("lua_Number" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9756 9769]))                  
+                :type "int")
+                nil [9718 10242])
+            ("LTnum" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10301 10317])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10318 10334]))                  
+                :type "int")
+                nil [10283 10967])
+            ("LEnum" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11027 11043])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11044 11060]))                  
+                :type "int")
+                nil [11009 11696])
+            ("luaV_lessthan" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11769 11782])
+                    ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11783 11799])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11800 11816]))                  
+                :type "int")
+                nil [11750 12180])
+            ("luaV_lessequal" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12574 12587])
+                    ("l" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12588 12604])
+                    ("r" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12605 12621]))                  
+                :type "int")
+                nil [12554 13231])
+            ("luaV_equalobj" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13373 13386])
+                    ("t1" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13387 13404])
+                    ("t2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13405 13422]))                  
+                :type "int")
+                nil [13354 15149])
+            ("tostring" variable (:constant-flag t) nil [15236 15244])
+            ("isemptystr" variable (:constant-flag t) nil [15323 15333])
+            ("copy2buff" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("top" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15472 15482])
+                    ("n" variable (:type "int") (reparse-symbol arg-sub-list) [15483 15489])
+                    ("buff" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15490 15501]))                  
+                :type "void")
+                nil [15449 15716])
+            ("luaV_concat" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15861 15874])
+                    ("total" variable (:type "int") (reparse-symbol arg-sub-list) [15875 15885]))                  
+                :type "void")
+                nil [15843 17473])
+            ("luaV_objlen" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17531 17544])
+                    ("ra" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17545 17554])
+                    ("rb" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TValue" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [17555 17572]))                  
+                :type "void")
+                nil [17513 18267])
+            ("luaV_div" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18520 18533])
+                    ("m" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18534 18548])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18549 18563]))                  
+                :type ("lua_Integer" type (:type "class") nil nil))
+                nil [18498 18998])
+            ("luaV_mod" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19173 19186])
+                    ("m" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19187 19201])
+                    ("n" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19202 19216]))                  
+                :type ("lua_Integer" type (:type "class") nil nil))
+                nil [19151 19613])
+            ("NBITS" variable (:constant-flag t) nil [19659 19664])
+            ("luaV_shiftl" function
+               (:arguments 
+                  ( ("x" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19795 19809])
+                    ("y" variable (:type ("lua_Integer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19810 19824]))                  
+                :type ("lua_Integer" type (:type "class") nil nil))
+                nil [19770 20026])
+            ("getcached" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("Proto" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20236 20245])
+                    ("encup" variable
+                       (:pointer 2
+                        :type ("UpVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20246 20260])
+                    ("base" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20261 20272]))                  
+                :type ("LClosure" type (:type "class") nil nil))
+                nil [20208 20757])
+            ("pushclosure" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21004 21017])
+                    ("p" variable
+                       (:pointer 1
+                        :type ("Proto" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21018 21027])
+                    ("encup" variable
+                       (:pointer 2
+                        :type ("UpVal" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21028 21042])
+                    ("base" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21043 21054])
+                    ("ra" variable (:type ("StkId" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21080 21089]))                  
+                :type "void")
+                nil [20979 21773])
+            ("luaV_finishOp" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21859 21872]))                  
+                :type "void")
+                nil [21839 24011])
+            ("RA" variable (:constant-flag t) nil [24282 24284])
+            ("RB" variable (:constant-flag t) nil [24315 24317])
+            ("RC" variable (:constant-flag t) nil [24392 24394])
+            ("RKB" variable (:constant-flag t) nil [24469 24472])
+            ("RKC" variable (:constant-flag t) nil [24593 24596])
+            ("dojump" variable (:constant-flag t) nil [24752 24758])
+            ("donextjump" variable (:constant-flag t) nil [24978 24988])
+            ("Protect" variable (:constant-flag t) nil [25047 25054])
+            ("checkGC" variable (:constant-flag t) nil [25098 25105])
+            ("vmfetch" variable (:constant-flag t) nil [25347 25354])
+            ("vmdispatch" variable (:constant-flag t) nil [25667 25677])
+            ("vmcase" variable (:constant-flag t) nil [25699 25705])
+            ("vmbreak" variable (:constant-flag t) nil [25725 25732])
+            ("gettableProtected" variable (:constant-flag t) nil [25868 25885])
+            ("settableProtected" variable (:constant-flag t) nil [26078 26095])
+            ("luaV_execute" function
+               (:arguments 
+                  ( ("L" variable
+                       (:pointer 1
+                        :type ("lua_State" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26242 26255]))                  
+                :type "void")
+                nil [26223 44313]))          
+      :file "lvm.c"
+      :pointmax 44390
+      :fsize 44389
+      :lastmodtime '(22614 19831 297572 631000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("lvm_c")
+          ("MAXTAGLOOP" . ((number "2000" 598 . 602)))
+          ("RB" (spp-arg-list ("i") 24317 . 24320) . ((symbol "check_exp" 24321 . 24330) (semantic-list "(getBMode(GET_OPCODE(i)) == OpArgR, base+GETARG_B(i))" 24330 . 24383)))
+          ("vmfetch" (spp-arg-list nil 25354 . 25356) . ((semantic-list "{ \\
+  i = *(ci->u.l.savedpc++); \\
+  if (L->hookmask & (LUA_MASKLINE | LUA_MASKCOUNT)) \\
+    Protect(luaG_traceexec(L)); \\
+  ra = RA(i); /* WARNING: any stack reallocation invalidates 'ra' */ \\
+  lua_assert(base == ci->u.l.base); \\
+  lua_assert(base <= L->top && L->top < L->stack + L->stacksize); \\
+}" 25357 . 25657)))
+          ("LUA_CORE")
+          ("RC" (spp-arg-list ("i") 24394 . 24397) . ((symbol "check_exp" 24398 . 24407) (semantic-list "(getCMode(GET_OPCODE(i)) == OpArgR, base+GETARG_C(i))" 24407 . 24460)))
+          ("NBM" . ((semantic-list "(l_mathlim(MANT_DIG))" 876 . 897)))
+          ("isemptystr" (spp-arg-list ("o") 15333 . 15336) . ((semantic-list "(ttisshrstring(o) && tsvalue(o)->shrlen == 0)" 15337 . 15382)))
+          ("RKB" (spp-arg-list ("i") 24472 . 24475) . ((symbol "check_exp" 24476 . 24485) (semantic-list "(getBMode(GET_OPCODE(i)) == OpArgK, \\
+	ISK(GETARG_B(i)) ? k+INDEXK(GETARG_B(i)) : base+GETARG_B(i))" 24485 . 24584)))
+          ("checkGC" (spp-arg-list ("L" "c") 25105 . 25110) . ((semantic-list "{ luaC_condGC(L, L->top = (c),  /* limit of live values */ \\
+                         Protect(L->top = ci->top));  /* restore top */ \\
+           luai_threadyield(L); }" 25115 . 25283)))
+          ("RKC" (spp-arg-list ("i") 24596 . 24599) . ((symbol "check_exp" 24600 . 24609) (semantic-list "(getCMode(GET_OPCODE(i)) == OpArgK, \\
+	ISK(GETARG_C(i)) ? k+INDEXK(GETARG_C(i)) : base+GETARG_C(i))" 24609 . 24708)))
+          ("Protect" (spp-arg-list ("x") 25054 . 25057) . ((semantic-list "{ {x;}; base = ci->u.l.base; }" 25058 . 25088)))
+          ("NBITS" . ((symbol "cast_int" 19665 . 19673) (semantic-list "(sizeof(lua_Integer) * CHAR_BIT)" 19673 . 19705)))
+          ("tostring" (spp-arg-list ("L" "o") 15244 . 15249) . ((semantic-list "(ttisstring(o) || (cvt2str(o) && (luaO_tostring(L, o), 1)))" 15254 . 15313)))
+          ("donextjump" (spp-arg-list ("ci") 24988 . 24992) . ((semantic-list "{ i = *ci->u.l.savedpc; dojump(ci, i, 1); }" 24993 . 25036)))
+          ("vmbreak" . ((BREAK "break" 25734 . 25739)))
+          ("settableProtected" (spp-arg-list ("L" "t" "k" "v") 26095 . 26104) . ((semantic-list "{ const TValue *slot; \\
+  if (!luaV_fastset(L,t,k,slot,luaH_get,v)) \\
+    Protect(luaV_finishset(L,t,k,v,slot)); }" 26105 . 26219)))
+          ("gettableProtected" (spp-arg-list ("L" "t" "k" "v") 25885 . 25894) . ((semantic-list "{ const TValue *slot; \\
+  if (luaV_fastget(L,t,k,slot,luaH_get)) { setobj2s(L, v, slot); } \\
+  else Protect(luaV_finishget(L,t,k,v,slot)); }" 25896 . 26036)))
+          ("dojump" (spp-arg-list ("ci" "i" "e") 24758 . 24766) . ((semantic-list "{ int a = GETARG_A(i); \\
+    if (a != 0) luaF_close(L, ci->u.l.base + a - 1); \\
+    ci->u.l.savedpc += GETARG_sBx(i) + e; }" 24771 . 24894)))
+          ("vmdispatch" (spp-arg-list ("o") 25677 . 25680) . ((SWITCH "switch" 25681 . 25687) (semantic-list "(o)" 25687 . 25690)))
+          ("RA" (spp-arg-list ("i") 24284 . 24287) . ((semantic-list "(base+GETARG_A(i))" 24288 . 24306)))
+          ("vmcase" (spp-arg-list ("l") 25705 . 25708) . 
+              ((CASE "case" 25709 . 25713) (symbol "l" 25714 . 25715) (punctuation ":" 25715 . 25716)))
+          )
+)
+    (semanticdb-table "lprefix.h"
+      :file "lprefix.h"
+      :fsize 867
+      :lastmodtime '(21665 34613 0 0))
+    (semanticdb-table "lua.h"
+      :file "lua.h"
+      :fsize 14833
+      :lastmodtime '(22348 25080 0 0))
+    (semanticdb-table "ldebug.h"
+      :file "ldebug.h"
+      :fsize 1452
+      :lastmodtime '(21855 27476 0 0))
+    (semanticdb-table "lfunc.h"
+      :file "lfunc.h"
+      :fsize 1631
+      :lastmodtime '(21685 15991 0 0))
+    (semanticdb-table "lgc.h"
+      :file "lgc.h"
+      :fsize 4738
+      :lastmodtime '(22135 63574 0 0))
+    (semanticdb-table "lopcodes.h"
+      :file "lopcodes.h"
+      :fsize 8788
+      :lastmodtime '(21579 36502 0 0))
+    (semanticdb-table "lstate.h"
+      :file "lstate.h"
+      :fsize 7805
+      :lastmodtime '(22129 37834 0 0))
+    (semanticdb-table "lstring.h"
+      :file "lstring.h"
+      :fsize 1451
+      :lastmodtime '(22072 54369 0 0))
+    (semanticdb-table "ltable.h"
+      :file "ltable.h"
+      :fsize 1877
+      :lastmodtime '(22072 55058 0 0)))
+  :file "!home!wlisper!Downloads!lua-5.3.3!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

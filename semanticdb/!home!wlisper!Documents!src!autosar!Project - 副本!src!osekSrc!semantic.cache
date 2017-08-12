@@ -1,0 +1,50 @@
+;; Object osekSrc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "osekSrc/"
+  :tables
+  (list
+    (semanticdb-table "osekEvent.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("osprop.h" include nil nil [559 578])
+            ("osapi.h" include nil nil [580 598]))          
+      :file "osekEvent.c"
+      :pointmax 9489
+      :fsize 9885
+      :lastmodtime '(20683 28726 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "osekTarget.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("osprop.h" include nil nil [580 599])
+            ("osapi.h" include nil nil [601 619]))          
+      :file "osekTarget.c"
+      :pointmax 15683
+      :fsize 16476
+      :lastmodtime '(20683 28725 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "osekCounter.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("osprop.h" include nil nil [569 588])
+            ("osapi.h" include nil nil [590 608])
+            ("string.h" include (:system-flag t) nil [609 628]))          
+      :file "osekCounter.c"
+      :pointmax 11348
+      :fsize 11831
+      :lastmodtime '(20724 3830 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "osekMessage.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("osprop.h" include nil nil [591 610])
+            ("string.h" include (:system-flag t) nil [612 634])
+            ("osapi.h" include nil nil [696 717]))          
+      :file "osekMessage.c"
+      :pointmax 20911
+      :fsize 21663
+      :lastmodtime '(20683 28730 0 0)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!src!autosar!Project - 副本!src!osekSrc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,266 @@
+;; Object mem/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mem/"
+  :tables
+  (list
+    (semanticdb-table "malloc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("C4MALLOC_H" variable (:constant-flag t) nil [28 38])
+            ("stdint.h" include (:system-flag t) nil [40 59])
+            ("stdlib.h" include (:system-flag t) nil [60 79])
+            ("c4malloc" type
+               (:members 
+                  ( ("acq" function
+                       (:prototype-flag t
+                        :pointer 1
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("c4malloc" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [114 132])
+                            ("" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [133 141]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [101 142])
+                    ("rel" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("c4malloc" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [157 175])
+                            ("" variable
+                               (:pointer 1
+                                :type "void")
+                                (reparse-symbol arg-sub-list) [176 183]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [145 184])
+                    ("free" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("c4malloc" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [201 219]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [188 220]))                  
+                :type "struct")
+                nil [81 223])
+            ("c4malloc_init" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [256 278]))                  
+                :type ("c4malloc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [225 279])
+            ("c4malloc_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [299 321]))                  
+                :type "void")
+                nil [280 322])
+            ("c4malloc_acq" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [343 365])
+                    ("size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [366 379]))                  
+                :type "void")
+                nil [324 404])
+            ("c4malloc_rel" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [423 445])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [446 456]))                  
+                :type "void")
+                nil [405 457]))          
+      :file "malloc.h"
+      :pointmax 466
+      :fsize 465
+      :lastmodtime '(22739 23398 242758 422000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("C4MALLOC_H")
+          )
+)
+    (semanticdb-table "malloc.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("assert.h" include (:system-flag t) nil [1 20])
+            ("c4life/c4.h" include nil nil [21 43])
+            ("c4life/mem/malloc.h" include nil nil [44 74])
+            ("c4malloc_init" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [107 129]))                  
+                :type ("c4malloc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [76 209])
+            ("c4malloc_free" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [230 252]))                  
+                :type "void")
+                nil [211 296])
+            ("c4malloc_acq" function
+               (:pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [317 339])
+                    ("size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [340 353]))                  
+                :type "void")
+                nil [298 410])
+            ("c4malloc_rel" function
+               (:arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [430 452])
+                    ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [453 463]))                  
+                :type "void")
+                nil [412 510]))          
+      :file "malloc.c"
+      :pointmax 511
+      :fsize 510
+      :lastmodtime '(22739 23398 242758 422000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mfreels.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("C4MFREELS_H" variable (:constant-flag t) nil [29 40])
+            ("stdint.h" include (:system-flag t) nil [42 61])
+            ("c4life/mem/malloc.h" include nil nil [62 92])
+            ("c4life/seqs/ls.h" include nil nil [93 120])
+            ("c4mfreels" type
+               (:members 
+                  ( ("its" variable (:type ("c4ls" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [143 159])
+                    ("malloc" variable (:type ("c4malloc" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [162 191])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [162 191]))                  
+                :type "struct")
+                nil [122 194])
+            ("c4mfreels_it" type
+               (:members 
+                  ( ("size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [220 233])
+                    ("its" variable (:type ("c4ls" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [236 252])
+                    ("data" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [255 267]))                  
+                :type "struct")
+                nil [196 270])
+            ("c4mfreels_init" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4mfreels" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [304 327])
+                    ("src" variable
+                       (:pointer 1
+                        :type ("c4malloc" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [328 349]))                  
+                :type ("c4malloc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [272 350]))          
+      :file "mfreels.h"
+      :pointmax 359
+      :fsize 358
+      :lastmodtime '(22739 23398 242758 422000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("C4MFREELS_H")
+          )
+))
+  :file "!home!wlisper!Documents!code-analysis!libc4life!src!c4life!mem!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

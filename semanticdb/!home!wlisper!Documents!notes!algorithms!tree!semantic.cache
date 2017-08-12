@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("_tree_node" type
+               (:members 
+                  ( ("value" variable (:type "int") (reparse-symbol classsubparts) [247 257])
+                    ("left" variable
+                       (:pointer 1
+                        :type ("_tree_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [260 284])
+                    ("right" variable
+                       (:pointer 1
+                        :type ("_tree_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [287 312]))                  
+                :type "struct")
+                nil [225 315])
+            ("TreeNode" type
+               (:typedef ("_tree_node" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [317 352])
+            ("newNode" function
+               (:pointer 1
+                :arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [372 382]))                  
+                :type ("TreeNode" type (:type "class") nil nil))
+                nil [354 477])
+            ("freeNode" function
+               (:arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("TreeNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [493 508]))                  
+                :type "void")
+                nil [479 526])
+            ("insert_left" function
+               (:arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("TreeNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [544 559])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [560 570]))                  
+                :type "int")
+                nil [528 617])
+            ("insert_right" function
+               (:arguments 
+                  ( ("node" variable
+                       (:pointer 1
+                        :type ("TreeNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [636 651])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [652 662]))                  
+                :type "int")
+                nil [619 710])
+            ("inorder" function
+               (:arguments 
+                  ( ("root" variable
+                       (:pointer 1
+                        :type ("TreeNode" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [725 740]))                  
+                :type "void")
+                nil [712 849])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [860 869])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [870 883]))                  
+                :type "int")
+                nil [851 902]))          
+      :file "bt-inorder.c"
+      :pointmax 904
+      :fsize 903
+      :lastmodtime '(22905 44541 946311 646000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!algorithms!tree!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

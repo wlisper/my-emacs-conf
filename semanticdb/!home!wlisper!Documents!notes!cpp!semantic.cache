@@ -1,0 +1,117 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [185 204])
+            ("string" include (:system-flag t) nil [205 222])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [224 244])
+            ("print_str" function
+               (:arguments 
+                  ( ("s" variable
+                       (:constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [260 275]))                  
+                :type "void")
+                nil [245 300])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [311 320])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [321 334]))                  
+                :type "int")
+                nil [302 378]))          
+      :file "ts1.cpp"
+      :pointmax 380
+      :fsize 379
+      :lastmodtime '(22899 19627 663453 466000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [1 20])
+            ("string" include (:system-flag t) nil [21 38])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [40 60])
+            ("print_str" function
+               (:arguments 
+                  ( ("s" variable
+                       (:reference 1
+                        :constant-flag t
+                        :type ("string" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [77 93]))                  
+                :type "void")
+                nil [62 118])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [129 138])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [139 152]))                  
+                :type "int")
+                nil [120 196]))          
+      :file "ts2.cpp"
+      :pointmax 197
+      :fsize 196
+      :lastmodtime '(22899 21547 940135 918000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c++-mode
+      :tags 
+        '( ("iostream" include (:system-flag t) nil [185 204])
+            ("std" using (:type ("std" type
+                 (:prototype t
+                  :type "namespace")
+                  nil nil)) nil [206 226])
+            ("Point" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [243 252])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [243 252])
+                    ("public" label nil (reparse-symbol classsubparts) [254 261])
+                    ("Point" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [270 276])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [277 283]))                          
+                        :type ("Point" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [264 311])
+                    ("MovePoint" function
+                       (:arguments 
+                          ( ("a" variable (:type "int") (reparse-symbol arg-sub-list) [329 335])
+                            ("b" variable (:type "int") (reparse-symbol arg-sub-list) [336 342]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [314 372])
+                    ("print" function (:type "void") (reparse-symbol classsubparts) [375 419]))                  
+                :type "class")
+                nil [227 422])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [433 442])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [443 456]))                  
+                :type "int")
+                nil [424 540]))          
+      :file "Point.cpp"
+      :pointmax 541
+      :fsize 540
+      :lastmodtime '(22899 21837 640842 332000)
+      :unmatched-syntax '((number 478 . 480) (number 474 . 476) (number 478 . 480) (number 474 . 476) (number 478 . 480) (number 474 . 476) (number 478 . 480) (number 474 . 476) (number 478 . 480) (number 474 . 476))))
+  :file "!home!wlisper!Documents!notes!cpp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

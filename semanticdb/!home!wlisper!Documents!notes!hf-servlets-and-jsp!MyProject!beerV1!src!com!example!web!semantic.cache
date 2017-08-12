@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.example.web" package nil nil [1 25])
+            ("javax.servlet.*" include nil nil [27 50])
+            ("javax.servlet.http.*" include nil nil [51 79])
+            ("java.util.*" include nil nil [80 99])
+            ("com.example.model.BeerExpert" include nil nil [100 136])
+            ("java.io.*" include nil nil [137 154])
+            ("BeerSelect" type
+               (:typemodifiers ("public")
+                :superclasses "HttpServlet"
+                :members 
+                  ( ("doPost" function
+                       (:throws ("IOException" "ServletException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("request" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [223 249])
+                            ("response" variable (:type "HttpServletResponse") (reparse-symbol formal_parameters) [251 279]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [204 700]))                  
+                :type "class")
+                nil [156 702]))          
+      :file "BeerSelect.java"
+      :pointmax 703
+      :fsize 702
+      :lastmodtime '(22883 29063 791942 118000)
+      :unmatched-syntax '((BRACE_BLOCK 647 . 693) (PAREN_BLOCK 632 . 646) (WHILE 626 . 631) (SEMICOLON 583 . 584) (PAREN_BLOCK 580 . 583) (EQ 566 . 567) (GT 557 . 558) (IDENTIFIER 546 . 550) (LT 550 . 551) (SEMICOLON 456 . 457) (IDENTIFIER 416 . 419) (PAREN_BLOCK 427 . 456) (SEMICOLON 366 . 367) (PAREN_BLOCK 353 . 366) (PAREN_BLOCK 664 . 687) ($EOI 707 . 707) (PLUS 677 . 678) (STRING_LITERAL 665 . 676) (BRACE_BLOCK 647 . 693) (PAREN_BLOCK 632 . 646) (WHILE 626 . 631) (SEMICOLON 583 . 584) (PAREN_BLOCK 580 . 583) (EQ 566 . 567) (GT 557 . 558) (IDENTIFIER 546 . 550) (LT 550 . 551) (SEMICOLON 456 . 457) (IDENTIFIER 416 . 419) (PAREN_BLOCK 427 . 456) (SEMICOLON 366 . 367) (PAREN_BLOCK 353 . 366) (PAREN_BLOCK 664 . 687) ($EOI 700 . 700) (PLUS 677 . 678) (STRING_LITERAL 665 . 676) (BRACE_BLOCK 647 . 692) (PAREN_BLOCK 632 . 646) (WHILE 626 . 631) (SEMICOLON 583 . 584) (PAREN_BLOCK 580 . 583) (EQ 566 . 567) (GT 557 . 558) (IDENTIFIER 546 . 550) (LT 550 . 551) (SEMICOLON 456 . 457) (IDENTIFIER 416 . 419) (PAREN_BLOCK 427 . 456) (SEMICOLON 366 . 367) (PAREN_BLOCK 353 . 366) (PAREN_BLOCK 664 . 686) ($EOI 706 . 706) (PLUS 677 . 678) (STRING_LITERAL 665 . 676) (BRACE_BLOCK 647 . 692) (PAREN_BLOCK 632 . 646) (WHILE 626 . 631) (SEMICOLON 583 . 584) (PAREN_BLOCK 580 . 583) (EQ 566 . 567) (GT 557 . 558) (IDENTIFIER 546 . 550) (LT 550 . 551) (SEMICOLON 456 . 457) (IDENTIFIER 416 . 419) (PAREN_BLOCK 427 . 456) (SEMICOLON 366 . 367) (PAREN_BLOCK 353 . 366) (PAREN_BLOCK 664 . 686) ($EOI 706 . 706) (PLUS 677 . 678) (STRING_LITERAL 665 . 676) (BRACE_BLOCK 647 . 691) (PAREN_BLOCK 632 . 646) (WHILE 626 . 631) (SEMICOLON 583 . 584) (PAREN_BLOCK 580 . 583) (EQ 566 . 567) (GT 557 . 558) (IDENTIFIER 546 . 550) (LT 550 . 551) (SEMICOLON 456 . 457) (IDENTIFIER 416 . 419) (PAREN_BLOCK 427 . 456) (SEMICOLON 366 . 367) (PAREN_BLOCK 353 . 366) (PAREN_BLOCK 664 . 685) ($EOI 698 . 698) (PLUS 677 . 678) (STRING_LITERAL 665 . 676) (BRACE_BLOCK 647 . 689) (PAREN_BLOCK 632 . 646) (WHILE 626 . 631) (SEMICOLON 583 . 584) (PAREN_BLOCK 580 . 583) (EQ 566 . 567) (GT 557 . 558) (IDENTIFIER 546 . 550) (LT 550 . 551) (SEMICOLON 456 . 457) (IDENTIFIER 416 . 419) (PAREN_BLOCK 427 . 456) (SEMICOLON 366 . 367) (PAREN_BLOCK 353 . 366) (PAREN_BLOCK 664 . 683) ($EOI 703 . 703) (PLUS 677 . 678) (STRING_LITERAL 665 . 676))))
+  :file "!home!wlisper!Documents!notes!hf-servlets-and-jsp!MyProject!beerV1!src!com!example!web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

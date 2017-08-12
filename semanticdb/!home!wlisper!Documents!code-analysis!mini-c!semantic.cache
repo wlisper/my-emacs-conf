@@ -1,0 +1,303 @@
+;; Object mini-c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mini-c/"
+  :tables
+  (list
+    (semanticdb-table "cc.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdlib.h" include (:system-flag t) nil [88 107])
+            ("string.h" include (:system-flag t) nil [108 127])
+            ("ctype.h" include (:system-flag t) nil [128 146])
+            ("stdio.h" include (:system-flag t) nil [147 165])
+            ("stdbool.h" include (:system-flag t) nil [166 186])
+            ("ptr_size" variable
+               (:default-value "4"
+                :type "int")
+                nil [203 220])
+            ("word_size" variable
+               (:default-value "4"
+                :type "int")
+                nil [221 239])
+            ("output" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [241 254])
+            ("inputname" variable
+               (:pointer 1
+                :type "char")
+                nil [276 292])
+            ("input" variable
+               (:pointer 1
+                :type ("FILE" type (:type "class") nil nil))
+                nil [293 305])
+            ("curln" variable (:type "int") nil [307 317])
+            ("curch" variable (:type "char") nil [318 329])
+            ("buffer" variable
+               (:pointer 1
+                :type "char")
+                nil [331 344])
+            ("buflength" variable (:type "int") nil [345 359])
+            ("token" variable (:type "int") nil [360 370])
+            ("token_other" variable
+               (:default-value "0"
+                :type "int")
+                nil [372 392])
+            ("token_ident" variable
+               (:default-value "1"
+                :type "int")
+                nil [393 413])
+            ("token_int" variable
+               (:default-value "2"
+                :type "int")
+                nil [414 432])
+            ("token_char" variable
+               (:default-value "3"
+                :type "int")
+                nil [433 452])
+            ("token_str" variable
+               (:default-value "4"
+                :type "int")
+                nil [453 471])
+            ("next_char" function (:type "char") nil [473 558])
+            ("prev_char" function
+               (:arguments 
+                  ( ("before" variable (:type "char") (reparse-symbol arg-sub-list) [575 587]))                  
+                :type "bool")
+                nil [560 649])
+            ("eat_char" function (:type "void") nil [651 852])
+            ("next" function (:type "void") nil [854 2263])
+            ("lex_init" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2279 2294])
+                    ("maxlen" variable (:type "int") (reparse-symbol arg-sub-list) [2295 2306]))                  
+                :type "void")
+                nil [2265 2485])
+            ("errors" variable (:type "int") nil [2523 2534])
+            ("error" function
+               (:arguments 
+                  ( ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2546 2559]))                  
+                :type "void")
+                nil [2535 2699])
+            ("require" function
+               (:arguments 
+                  ( ("condition" variable (:type "bool") (reparse-symbol arg-sub-list) [2714 2729])
+                    ("format" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2730 2743]))                  
+                :type "void")
+                nil [2701 2784])
+            ("see" function
+               (:arguments 
+                  ( ("look" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2795 2806]))                  
+                :type "bool")
+                nil [2786 2842])
+            ("waiting_for" function
+               (:arguments 
+                  ( ("look" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2861 2872]))                  
+                :type "bool")
+                nil [2844 2913])
+            ("match" function
+               (:arguments 
+                  ( ("look" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2926 2937]))                  
+                :type "void")
+                nil [2915 3089])
+            ("try_match" function
+               (:arguments 
+                  ( ("look" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3106 3117]))                  
+                :type "bool")
+                nil [3091 3182])
+            ("globals" variable
+               (:pointer 2
+                :type "char")
+                nil [3210 3225])
+            ("global_no" variable
+               (:default-value "0"
+                :type "int")
+                nil [3226 3244])
+            ("is_fn" variable
+               (:pointer 1
+                :type "bool")
+                nil [3245 3257])
+            ("locals" variable
+               (:pointer 2
+                :type "char")
+                nil [3259 3273])
+            ("local_no" variable
+               (:default-value "0"
+                :type "int")
+                nil [3274 3291])
+            ("param_no" variable
+               (:default-value "0"
+                :type "int")
+                nil [3292 3309])
+            ("offsets" variable
+               (:pointer 1
+                :type "int")
+                nil [3310 3323])
+            ("sym_init" function
+               (:arguments 
+                  ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [3339 3347]))                  
+                :type "void")
+                nil [3325 3487])
+            ("new_global" function
+               (:arguments 
+                  ( ("ident" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3505 3517]))                  
+                :type "void")
+                nil [3489 3553])
+            ("new_fn" function
+               (:arguments 
+                  ( ("ident" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3567 3579]))                  
+                :type "void")
+                nil [3555 3631])
+            ("new_local" function
+               (:arguments 
+                  ( ("ident" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3647 3659]))                  
+                :type "int")
+                nil [3633 3864])
+            ("new_param" function
+               (:arguments 
+                  ( ("ident" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3881 3893]))                  
+                :type "void")
+                nil [3866 4154])
+            ("new_scope" function (:type "void") nil [4192 4245])
+            ("sym_lookup" function
+               (:arguments 
+                  ( ("table" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4263 4276])
+                    ("table_size" variable (:type "int") (reparse-symbol arg-sub-list) [4277 4292])
+                    ("look" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4293 4304]))                  
+                :type "int")
+                nil [4247 4414])
+            ("label_no" variable
+               (:default-value "0"
+                :type "int")
+                nil [4444 4461])
+            ("return_to" variable (:type "int") nil [4498 4512])
+            ("new_label" function (:type "int") nil [4514 4555])
+            ("lvalue" variable (:type "bool") nil [4605 4617])
+            ("needs_lvalue" function
+               (:arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4637 4647]))                  
+                :type "void")
+                nil [4619 4700])
+            ("expr" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [4713 4723]))                  
+                :type "void")
+                nil [4702 4724])
+            ("factor" function (:type "void") nil [5174 6506])
+            ("object" function (:type "void") nil [6508 7840])
+            ("unary" function (:type "void") nil [7842 8465])
+            ("branch" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("expr" variable (:type "bool") (reparse-symbol arg-sub-list) [8480 8490]))                  
+                :type "void")
+                nil [8467 8491])
+            ("expr" function
+               (:arguments 
+                  ( ("level" variable (:type "int") (reparse-symbol arg-sub-list) [8504 8514]))                  
+                :type "void")
+                nil [8493 9803])
+            ("line" function
+               (:prototype-flag t
+                :type "void")
+                nil [9805 9818])
+            ("branch" function
+               (:arguments 
+                  ( ("isexpr" variable (:type "bool") (reparse-symbol arg-sub-list) [9833 9845]))                  
+                :type "void")
+                nil [9820 10231])
+            ("if_branch" function (:type "void") nil [10233 10325])
+            ("while_loop" function (:type "void") nil [10327 10783])
+            ("decl" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("kind" variable (:type "int") (reparse-symbol arg-sub-list) [10796 10805]))                  
+                :type "void")
+                nil [10785 10806])
+            ("decl_module" variable
+               (:default-value "1"
+                :type "int")
+                nil [10836 10856])
+            ("decl_local" variable
+               (:default-value "2"
+                :type "int")
+                nil [10857 10876])
+            ("decl_param" variable
+               (:default-value "3"
+                :type "int")
+                nil [10877 10896])
+            ("line" function (:type "void") nil [10898 11345])
+            ("function" function
+               (:arguments 
+                  ( ("ident" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [11362 11374]))                  
+                :type "void")
+                nil [11347 11704])
+            ("decl" function
+               (:arguments 
+                  ( ("kind" variable (:type "int") (reparse-symbol arg-sub-list) [11716 11725]))                  
+                :type "void")
+                nil [11706 13609])
+            ("program" function (:type "void") nil [13611 13734])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [13745 13754])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [13755 13767]))                  
+                :type "int")
+                nil [13736 14616]))          
+      :file "cc.c"
+      :pointmax 14617
+      :fsize 14616
+      :lastmodtime '(22735 46868 854409 59000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!code-analysis!mini-c!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

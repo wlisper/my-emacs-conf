@@ -1,0 +1,22 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "triangular.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("triangular" function
+               (:arguments 
+                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [17 23]))                  
+                :type "int")
+                nil [1 130])
+            ("main" function (:type "int") nil [132 173]))          
+      :file "triangular.c"
+      :pointmax 174
+      :fsize 173
+      :lastmodtime '(22735 44566 73947 532000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!src!mini-c!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,124 @@
+;; Object mal/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mal/"
+  :tables
+  (list
+    (semanticdb-table "step8_macros.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("mal" package nil nil [1 13])
+            ("java.io.IOException" include nil nil [15 42])
+            ("java.util.List" include nil nil [44 66])
+            ("java.util.Map" include nil nil [67 88])
+            ("java.util.HashMap" include nil nil [89 114])
+            ("java.util.Iterator" include nil nil [115 141])
+            ("mal.types.*" include nil nil [142 161])
+            ("mal.readline" include nil nil [162 182])
+            ("mal.reader" include nil nil [183 201])
+            ("mal.printer" include nil nil [202 221])
+            ("mal.env.Env" include nil nil [222 241])
+            ("mal.core" include nil nil [242 258])
+            ("step8_macros" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("READ" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [330 340]))                          
+                        :type "MalVal")
+                        (reparse-symbol class_member_declaration) [304 406])
+                    ("is_pair" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("x" variable (:type "MalVal") (reparse-symbol formal_parameters) [454 462]))                          
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [424 535])
+                    ("quasiquote" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ast" variable (:type "MalVal") (reparse-symbol formal_parameters) [573 583]))                          
+                        :type "MalVal")
+                        (reparse-symbol class_member_declaration) [541 1528])
+                    ("is_macro_call" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ast" variable (:type "MalVal") (reparse-symbol formal_parameters) [1570 1580])
+                            ("env" variable (:type "Env") (reparse-symbol formal_parameters) [1582 1589]))                          
+                        :type "Boolean")
+                        (reparse-symbol class_member_declaration) [1534 2065])
+                    ("macroexpand" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ast" variable (:type "MalVal") (reparse-symbol formal_parameters) [2104 2114])
+                            ("env" variable (:type "Env") (reparse-symbol formal_parameters) [2116 2123]))                          
+                        :type "MalVal")
+                        (reparse-symbol class_member_declaration) [2071 2406])
+                    ("eval_ast" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("ast" variable (:type "MalVal") (reparse-symbol formal_parameters) [2442 2452])
+                            ("env" variable (:type "Env") (reparse-symbol formal_parameters) [2454 2461]))                          
+                        :type "MalVal")
+                        (reparse-symbol class_member_declaration) [2412 3386])
+                    ("EVAL" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("orig_ast" variable (:type "MalVal") (reparse-symbol formal_parameters) [3418 3433])
+                            ("env" variable (:type "Env") (reparse-symbol formal_parameters) [3435 3442]))                          
+                        :type "MalVal")
+                        (reparse-symbol class_member_declaration) [3392 6648])
+                    ("PRINT" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("exp" variable (:type "MalVal") (reparse-symbol formal_parameters) [6694 6704]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [6667 6756])
+                    ("RE" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("env" variable (:type "Env") (reparse-symbol formal_parameters) [6798 6805])
+                            ("str" variable (:type "String") (reparse-symbol formal_parameters) [6807 6817]))                          
+                        :type "MalVal")
+                        (reparse-symbol class_member_declaration) [6774 6883])
+                    ("main" function
+                       (:throws ("MalThrowable")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [6913 6926]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6889 9347]))                  
+                :type "class")
+                nil [260 9349]))          
+      :file "step8_macros.java"
+      :pointmax 9350
+      :fsize 9349
+      :lastmodtime '(22608 62496 879188 527000)
+      :unmatched-syntax nil)
+    (semanticdb-table "readline.java"
+      :file "readline.java"
+      :fsize 3012
+      :lastmodtime '(22608 62496 879188 527000))
+    (semanticdb-table "reader.java"
+      :file "reader.java"
+      :fsize 5415
+      :lastmodtime '(22608 62496 879188 527000))
+    (semanticdb-table "printer.java"
+      :file "printer.java"
+      :fsize 1773
+      :lastmodtime '(22608 62496 879188 527000))
+    (semanticdb-table "core.java"
+      :file "core.java"
+      :fsize 20448
+      :lastmodtime '(22608 62496 879188 527000)))
+  :file "!home!wlisper!Documents!src!mal!java!src!main!java!mal!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

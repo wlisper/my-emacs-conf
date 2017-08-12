@@ -1,0 +1,19 @@
+;; Object source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "source/"
+  :tables
+  (list
+    (semanticdb-table "osekAlarm.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("osprop.h" include (:system-flag t) nil [507 526])
+            ("osapi.h" include (:system-flag t) nil [528 546])
+            ("string.h" include (:system-flag t) nil [547 566]))          
+      :file "osekAlarm.c"
+      :pointmax 17038
+      :fsize 19532
+      :lastmodtime '(20419 2109 0 0)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!src!autosar!AutoPlatform31!basesw!os!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

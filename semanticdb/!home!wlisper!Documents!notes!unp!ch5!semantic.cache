@@ -1,0 +1,101 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("sys/socket.h" include (:system-flag t) nil [224 247])
+            ("arpa/inet.h" include (:system-flag t) nil [248 270])
+            ("unistd.h" include (:system-flag t) nil [271 290])
+            ("SERV_PORT" variable (:constant-flag t) nil [319 328])
+            ("errno.h" include (:system-flag t) nil [291 309])
+            ("SERV_PORT" variable (:constant-flag t) nil [319 328])
+            ("LISTENQ" variable (:constant-flag t) nil [342 349])
+            ("MAXLINE" variable (:constant-flag t) nil [363 370])
+            ("str_echo" function
+               (:arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [391 402]))                  
+                :type "void")
+                nil [377 665])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [676 685])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [686 699]))                  
+                :type "int")
+                nil [667 1459]))          
+      :file "ex5.2.c"
+      :pointmax 1460
+      :fsize 1459
+      :lastmodtime '(22884 50803 632285 724000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LISTENQ" . ((number "1024" 331 . 335)))
+          ("SERV_PORT" . ((number "8989" 329 . 333)))
+          ("MAXLINE")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("unistd.h" include (:system-flag t) nil [224 243])
+            ("sys/socket.h" include (:system-flag t) nil [244 267])
+            ("arpa/inet.h" include (:system-flag t) nil [268 290])
+            ("string.h" include (:system-flag t) nil [291 310])
+            ("SERV_PORT" variable (:constant-flag t) nil [319 328])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [379 388])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [389 402]))                  
+                :type "int")
+                nil [370 850]))          
+      :file "ex5.4.c"
+      :pointmax 851
+      :fsize 850
+      :lastmodtime '(22884 62560 819851 788000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SERV_PORT" . ((number "8989" 329 . 333)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("sys/select.h" include (:system-flag t) nil [204 227])
+            ("max" function
+               (:arguments 
+                  ( ("left" variable (:type "int") (reparse-symbol arg-sub-list) [237 246])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [247 257]))                  
+                :type "int")
+                nil [229 299])
+            ("str_cli" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [314 323])
+                    ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [324 335]))                  
+                :type "void")
+                nil [301 921]))          
+      :file "str_cli.c"
+      :pointmax 922
+      :fsize 921
+      :lastmodtime '(22886 12644 92434 848000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!unp!ch5!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

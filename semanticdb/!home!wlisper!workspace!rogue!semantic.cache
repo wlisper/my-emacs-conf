@@ -1,0 +1,175 @@
+;; Object rogue/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "rogue/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("ncurses.h" include (:system-flag t) nil [19 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("time.h" include (:system-flag t) nil [60 77])
+            ("Position" type
+               (:members 
+                  ( ("x" variable (:type "int") (reparse-symbol classsubparts) [107 113])
+                    ("y" variable (:type "int") (reparse-symbol classsubparts) [116 122]))                  
+                :type "struct")
+                nil [79 155])
+            ("Position" type
+               (:typedef ("Position" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [79 155])
+            ("Player" type
+               (:members 
+                  ( ("position" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [183 201])
+                    ("health" variable (:type "int") (reparse-symbol classsubparts) [204 215]))                  
+                :type "struct")
+                nil [157 225])
+            ("Player" type
+               (:typedef ("Player" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [157 225])
+            ("Room" type
+               (:members 
+                  ( ("position" variable (:type ("Position" type (:type "class") nil nil)) (reparse-symbol classsubparts) [251 269])
+                    ("height" variable (:type "int") (reparse-symbol classsubparts) [272 283])
+                    ("width" variable (:type "int") (reparse-symbol classsubparts) [286 296])
+                    ("doors" variable
+                       (:pointer 2
+                        :type ("Position" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [299 316]))                  
+                :type "struct")
+                nil [227 369])
+            ("Room" type
+               (:typedef ("Room" type (:type "struct") nil nil)
+                :type "typedef")
+                nil [227 369])
+            ("screenSetUp" function
+               (:prototype-flag t
+                :type "int")
+                nil [371 389])
+            ("mapSetUp" function
+               (:prototype-flag t
+                :pointer 2
+                :type ("Room" type (:type "class") nil nil))
+                nil [390 408])
+            ("playerSetup" function
+               (:prototype-flag t
+                :pointer 1
+                :type ("Player" type (:type "class") nil nil))
+                nil [409 431])
+            ("handleInput" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [448 458])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [459 472]))                  
+                :type "int")
+                nil [432 473])
+            ("playerMove" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("y" variable (:type "int") (reparse-symbol arg-sub-list) [489 495])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [496 502])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [503 516]))                  
+                :type "int")
+                nil [474 517])
+            ("checkPosition" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("newY" variable (:type "int") (reparse-symbol arg-sub-list) [536 545])
+                    ("newX" variable (:type "int") (reparse-symbol arg-sub-list) [546 555])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [556 569]))                  
+                :type "int")
+                nil [518 570])
+            ("createRoom" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [588 594])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [595 601])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [602 613])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [614 624]))                  
+                :type ("Room" type (:type "class") nil nil))
+                nil [571 625])
+            ("drawRoom" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("room" variable
+                       (:pointer 1
+                        :type ("Room" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [639 650]))                  
+                :type "int")
+                nil [626 651])
+            ("main" function (:type "int") nil [653 837])
+            ("screenSetUp" function (:type "int") nil [840 937])
+            ("mapSetUp" function
+               (:pointer 2
+                :type ("Room" type (:type "class") nil nil))
+                nil [939 1212])
+            ("playerSetup" function
+               (:pointer 1
+                :type ("Player" type (:type "class") nil nil))
+                nil [1214 1530])
+            ("handleInput" function
+               (:arguments 
+                  ( ("input" variable (:type "int") (reparse-symbol arg-sub-list) [1548 1558])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1559 1572]))                  
+                :type "int")
+                nil [1532 2113])
+            ("checkPosition" function
+               (:arguments 
+                  ( ("newY" variable (:type "int") (reparse-symbol arg-sub-list) [2133 2142])
+                    ("newX" variable (:type "int") (reparse-symbol arg-sub-list) [2143 2152])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2153 2166]))                  
+                :type "int")
+                nil [2115 2308])
+            ("playerMove" function
+               (:arguments 
+                  ( ("y" variable (:type "int") (reparse-symbol arg-sub-list) [2325 2331])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [2332 2338])
+                    ("user" variable
+                       (:pointer 1
+                        :type ("Player" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2339 2352]))                  
+                :type "int")
+                nil [2310 2522])
+            ("drawRoom" function
+               (:arguments 
+                  ( ("room" variable
+                       (:pointer 1
+                        :type ("Room" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2537 2548]))                  
+                :type "int")
+                nil [2524 3057])
+            ("createRoom" function
+               (:pointer 1
+                :arguments 
+                  ( ("x" variable (:type "int") (reparse-symbol arg-sub-list) [3076 3082])
+                    ("y" variable (:type "int") (reparse-symbol arg-sub-list) [3083 3089])
+                    ("height" variable (:type "int") (reparse-symbol arg-sub-list) [3090 3101])
+                    ("width" variable (:type "int") (reparse-symbol arg-sub-list) [3102 3112]))                  
+                :type ("Room" type (:type "class") nil nil))
+                nil [3059 4421]))          
+      :file "main.c"
+      :pointmax 4422
+      :fsize 4421
+      :lastmodtime '(22638 17276 364169 656000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!rogue!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

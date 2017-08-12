@@ -1,0 +1,353 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("mysql/mysql.h" include (:system-flag t) nil [20 44])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [55 64])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [65 78]))                  
+                :type "int")
+                nil [46 159]))          
+      :file "get_version.c"
+      :pointmax 160
+      :fsize 159
+      :lastmodtime '(22821 35599 741275 237000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("mysql/mysql.h" include (:system-flag t) nil [20 44])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [55 64])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [65 78]))                  
+                :type "int")
+                nil [46 541]))          
+      :file "create_database.c"
+      :pointmax 542
+      :fsize 541
+      :lastmodtime '(22821 36374 548757 602000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("mysql/mysql.h" include (:system-flag t) nil [1 25])
+            ("stdio.h" include (:system-flag t) nil [26 44])
+            ("finish_with_error" function
+               (:arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [69 80]))                  
+                :type "void")
+                nil [46 160])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [171 180])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [181 194]))                  
+                :type "int")
+                nil [162 1542]))          
+      :file "create_table.c"
+      :pointmax 1543
+      :fsize 1542
+      :lastmodtime '(22822 43947 2605 983000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 987]))          
+      :file "select.c"
+      :pointmax 989
+      :fsize 988
+      :lastmodtime '(22822 45853 625132 795000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__COMMON_H" variable (:constant-flag t) nil [28 38])
+            ("mysql/mysql.h" include (:system-flag t) nil [223 247])
+            ("stdio.h" include (:system-flag t) nil [248 266])
+            ("finish_with_error" function
+               (:arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [290 301]))                  
+                :type "void")
+                nil [267 381]))          
+      :file "common.h"
+      :pointmax 405
+      :fsize 404
+      :lastmodtime '(22822 44252 310221 763000)
+      :unmatched-syntax '((symbol 239 . 242) (punctuation 238 . 239) (symbol 233 . 238) (punctuation 232 . 233) (symbol 224 . 231) (punctuation 223 . 224) (symbol 239 . 242) (punctuation 238 . 239) (symbol 233 . 238) (punctuation 232 . 233) (symbol 224 . 231) (punctuation 223 . 224) (punctuation 194 . 195) (symbol 186 . 193) (punctuation 185 . 186))
+      :lexical-table 
+        '(("__COMMON_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 929]))          
+      :file "select_my.c"
+      :pointmax 930
+      :fsize 929
+      :lastmodtime '(22822 46449 889615 972000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 1231]))          
+      :file "mysql_insert_id.c"
+      :pointmax 1232
+      :fsize 1231
+      :lastmodtime '(22822 47263 499000 489000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 1201]))          
+      :file "mysql_insert_id_my.c"
+      :pointmax 1202
+      :fsize 1201
+      :lastmodtime '(22822 51550 992772 885000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 1165]))          
+      :file "column_name.c"
+      :pointmax 1166
+      :fsize 1165
+      :lastmodtime '(22822 53383 626435 551000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [186 207])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [218 227])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [228 241]))                  
+                :type "int")
+                nil [209 1148]))          
+      :file "mysql_fetch_field_my.c"
+      :pointmax 1149
+      :fsize 1148
+      :lastmodtime '(22822 58298 336263 667000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [217 226])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [227 240]))                  
+                :type "int")
+                nil [208 1165]))          
+      :file "mysql_fetch_field.c"
+      :pointmax 1166
+      :fsize 1165
+      :lastmodtime '(22822 56799 483688 955000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [185 206])
+            ("main" function (:type "int") nil [208 1111]))          
+      :file "multi_statement.c"
+      :pointmax 1112
+      :fsize 1111
+      :lastmodtime '(22822 62101 355468 523000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [2 23])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34 43])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44 57]))                  
+                :type "int")
+                nil [25 951]))          
+      :file "multi_statement_my.c"
+      :pointmax 952
+      :fsize 951
+      :lastmodtime '(22822 64837 670967 753000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [185 204])
+            ("./common.h" include nil nil [205 226])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [237 246])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [247 260]))                  
+                :type "int")
+                nil [228 1772]))          
+      :file "store_image.c"
+      :pointmax 1773
+      :fsize 1772
+      :lastmodtime '(22824 541 571969 302000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [2 21])
+            ("./common.h" include nil nil [22 43])
+            ("store_file" function
+               (:arguments 
+                  ( ("con" variable
+                       (:pointer 1
+                        :type ("MYSQL" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [60 71])
+                    ("filepath" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [72 93]))                  
+                :type "int")
+                nil [45 904])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [915 924])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [925 938]))                  
+                :type "int")
+                nil [906 2247]))          
+      :file "store_image_my.c"
+      :pointmax 2248
+      :fsize 2247
+      :lastmodtime '(22823 46691 876936 128000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("string.h" include (:system-flag t) nil [2 21])
+            ("./common.h" include nil nil [22 43])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [54 63])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [64 77]))                  
+                :type "int")
+                nil [45 1172]))          
+      :file "select_image.c"
+      :pointmax 1173
+      :fsize 1172
+      :lastmodtime '(22824 399 771593 891000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("./common.h" include nil nil [2 23])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34 43])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44 57]))                  
+                :type "int")
+                nil [25 902]))          
+      :file "select_image_my.c"
+      :pointmax 903
+      :fsize 902
+      :lastmodtime '(22824 1198 269598 259000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!c!mysql!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

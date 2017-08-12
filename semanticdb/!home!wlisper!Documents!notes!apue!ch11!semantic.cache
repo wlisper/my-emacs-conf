@@ -1,0 +1,565 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("pthread.h" include (:system-flag t) nil [184 204])
+            ("stdio.h" include (:system-flag t) nil [205 223])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [234 243])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [244 257]))                  
+                :type "int")
+                nil [225 365]))          
+      :file "pthread_self_ts.c"
+      :pointmax 366
+      :fsize 365
+      :lastmodtime '(22751 5614 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("unistd.h" include (:system-flag t) nil [204 223])
+            ("pthread.h" include (:system-flag t) nil [224 244])
+            ("ntid" variable (:type ("pthread_t" type (:type "class") nil nil)) nil [246 261])
+            ("printids" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [276 290]))                  
+                :type "void")
+                nil [262 480])
+            ("thr_fn" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [495 505]))                  
+                :type "void")
+                nil [482 556])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [567 576])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [577 590]))                  
+                :type "int")
+                nil [558 779]))          
+      :file "print_thread_ts.c"
+      :pointmax 780
+      :fsize 779
+      :lastmodtime '(22751 7062 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("pthread.h" include (:system-flag t) nil [185 205])
+            ("stdio.h" include (:system-flag t) nil [206 224])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [240 250]))                  
+                :type "void")
+                nil [226 307])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [323 333]))                  
+                :type "void")
+                nil [309 395])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [406 415])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [416 429]))                  
+                :type "int")
+                nil [397 1019]))          
+      :file "pthread_exit_value_ts.c"
+      :pointmax 1020
+      :fsize 1019
+      :lastmodtime '(22751 9370 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [185 204])
+            ("stdio.h" include (:system-flag t) nil [205 223])
+            ("pthread.h" include (:system-flag t) nil [224 244])
+            ("foo" type
+               (:members 
+                  ( ("a" variable (:type "int") (reparse-symbol classsubparts) [326 341])
+                    ("b" variable (:type "int") (reparse-symbol classsubparts) [326 341])
+                    ("c" variable (:type "int") (reparse-symbol classsubparts) [326 341])
+                    ("d" variable (:type "int") (reparse-symbol classsubparts) [326 341]))                  
+                :type "struct")
+                nil [311 344])
+            ("printfoo" function
+               (:arguments 
+                  ( ("s" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [360 374])
+                    ("fp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("foo" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [375 396]))                  
+                :type "void")
+                nil [346 609])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [625 635]))                  
+                :type "void")
+                nil [611 735])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [751 761]))                  
+                :type "void")
+                nil [737 857])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [868 877])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [878 891]))                  
+                :type "int")
+                nil [859 1386]))          
+      :file "pthread_exit_value_ts2.c"
+      :pointmax 1387
+      :fsize 1386
+      :lastmodtime '(22821 25120 127869 431000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("unistd.h" include (:system-flag t) nil [204 223])
+            ("pthread.h" include (:system-flag t) nil [224 244])
+            ("cleanup" function
+               (:arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [259 269]))                  
+                :type "void")
+                nil [246 312])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [328 338]))                  
+                :type "void")
+                nil [314 611])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [627 637]))                  
+                :type "void")
+                nil [613 941])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [952 961])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [962 975]))                  
+                :type "int")
+                nil [943 1576]))          
+      :file "pthread_cleanup_ts.c"
+      :pointmax 1578
+      :fsize 1577
+      :lastmodtime '(22821 30837 370112 550000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("pthread.h" include (:system-flag t) nil [1 21])
+            ("unistd.h" include (:system-flag t) nil [22 41])
+            ("stdio.h" include (:system-flag t) nil [42 60])
+            ("thr_fn" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [75 85]))                  
+                :type "void")
+                nil [62 308])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [319 328])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [329 342]))                  
+                :type "int")
+                nil [310 483]))          
+      :file "pthread_detach_ts.c"
+      :pointmax 484
+      :fsize 483
+      :lastmodtime '(22823 58031 589817 838000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [1 20])
+            ("stdio.h" include (:system-flag t) nil [21 39])
+            ("stdlib.h" include (:system-flag t) nil [40 59])
+            ("pthread.h" include (:system-flag t) nil [60 80])
+            ("lock" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [82 110])
+            ("rwlock" variable
+               (:typemodifiers ("static")
+                :type ("pthread_rwlock_t" type (:type "class") nil nil))
+                nil [131 162])
+            ("counter" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [163 187])
+            ("rwvar" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [188 209])
+            ("init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cnt" variable (:type "int") (reparse-symbol arg-sub-list) [250 258]))                  
+                :type "void")
+                nil [233 352])
+            ("finalize" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [400 405]))                  
+                :type "void")
+                nil [379 476])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [536 546]))                  
+                :type "void")
+                nil [522 668])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [684 694]))                  
+                :type "void")
+                nil [670 816])
+            ("thr_fn3" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [857 867]))                  
+                :type "void")
+                nil [843 1009])
+            ("thr_fn4" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1062 1072]))                  
+                :type "void")
+                nil [1048 1320])
+            ("thr_fn5" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1362 1372]))                  
+                :type "void")
+                nil [1348 1527])
+            ("thr_fn6" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1568 1578]))                  
+                :type "void")
+                nil [1554 1706])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1834 1843])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1844 1857]))                  
+                :type "int")
+                nil [1825 2628]))          
+      :file "pthread_mutex_ts.c"
+      :pointmax 2629
+      :fsize 2628
+      :lastmodtime '(22823 60318 516127 452000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("pthread.h" include (:system-flag t) nil [60 80])
+            ("Task_p" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("describe" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [101 119])
+                          ("size" variable (:type "int") (reparse-symbol classsubparts) [122 131]))                        
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [82 150])
+            ("Task_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("describe" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [101 119])
+                          ("size" variable (:type "int") (reparse-symbol classsubparts) [122 131]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [82 150])
+            ("ptask" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("Task_p" type (:type "class") nil nil))
+                nil [152 179])
+            ("hasTaskLock" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [180 215])
+            ("noTaskLock" variable
+               (:typemodifiers ("static")
+                :type ("pthread_mutex_t" type (:type "class") nil nil))
+                nil [216 250])
+            ("hasTaskCond" variable
+               (:typemodifiers ("static")
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [251 285])
+            ("noTaskCond" variable
+               (:typemodifiers ("static")
+                :type ("pthread_cond_t" type (:type "class") nil nil))
+                nil [286 319])
+            ("init" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [321 523])
+            ("finalize" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [525 703])
+            ("producer_thr" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [724 734]))                  
+                :type "void")
+                nil [705 1089])
+            ("consumer_thr" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1110 1120]))                  
+                :type "void")
+                nil [1091 1434])
+            ("main" function (:type "int") nil [1435 1645]))          
+      :file "pthread_cond_t_ts.c"
+      :pointmax 1646
+      :fsize 1645
+      :lastmodtime '(22826 31222 359450 40000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("unistd.h" include (:system-flag t) nil [224 243])
+            ("pthread.h" include (:system-flag t) nil [244 264])
+            ("counter" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [266 285])
+            ("spinlock" variable
+               (:typemodifiers ("static")
+                :type ("pthread_spinlock_t" type (:type "class") nil nil))
+                nil [286 321])
+            ("init" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [322 394])
+            ("finalize" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [396 457])
+            ("thr_fn1" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [473 483]))                  
+                :type "void")
+                nil [459 611])
+            ("thr_fn2" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [627 637]))                  
+                :type "void")
+                nil [613 765])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [776 785])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [786 799]))                  
+                :type "int")
+                nil [767 1060]))          
+      :file "pthread_spinlock_t_ts.c"
+      :pointmax 1061
+      :fsize 1060
+      :lastmodtime '(22826 32277 169147 411000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("unistd.h" include (:system-flag t) nil [41 60])
+            ("pthread.h" include (:system-flag t) nil [61 81])
+            ("barrier" variable
+               (:typemodifiers ("static")
+                :type ("pthread_barrier_t" type (:type "class") nil nil))
+                nil [83 116])
+            ("init" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [117 182])
+            ("finalize" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [184 247])
+            ("thr_fn" function
+               (:pointer 1
+                :arguments 
+                  ( ("arg" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [262 272]))                  
+                :type "void")
+                nil [249 394])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [405 414])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [415 428]))                  
+                :type "int")
+                nil [396 723]))          
+      :file "pthread_barrier_t_ts.c"
+      :pointmax 724
+      :fsize 723
+      :lastmodtime '(22828 52070 558115 861000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__SORT_H" variable (:constant-flag t) nil [26 34])
+            ("split" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [46 51])
+                    ("" variable (:type ("arr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [52 56])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [57 66])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [67 77]))                  
+                :type "int")
+                nil [36 211])
+            ("quick_sort" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [229 234])
+                    ("" variable (:type ("arr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [235 239])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [240 249]))                  
+                :type "void")
+                nil [213 256]))          
+      :file "sort.h"
+      :pointmax 278
+      :fsize 277
+      :lastmodtime '(22826 35477 639733 717000)
+      :unmatched-syntax '((semantic-list 232 . 234) (semantic-list 49 . 51) (semantic-list 49 . 51) (semantic-list 182 . 184) (semantic-list 49 . 51) (semantic-list 49 . 51) (semantic-list 166 . 168) (semantic-list 49 . 51) (semantic-list 49 . 51))
+      :lexical-table 
+        '(("__SORT_H")
+          )
+))
+  :file "!home!wlisper!Documents!notes!apue!ch11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

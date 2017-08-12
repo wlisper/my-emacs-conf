@@ -1,0 +1,54 @@
+;; Object old/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "old/"
+  :tables
+  (list
+
+
+    (semanticdb-table "good.h"
+      :major-mode 'c-mode
+      :tags nil
+      :file "good.h"
+      :pointmax 1
+      :fsize 0
+      :lastmodtime '(22720 37739 890048 374000)
+      :unmatched-syntax nil)
+    (semanticdb-table "jmpts.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [52 70])
+            ("setjmp.h" include (:system-flag t) nil [71 90])
+            ("stdlib.h" include (:system-flag t) nil [91 110])
+            ("h" function
+               (:arguments 
+                  ( ("buf" variable (:type ("jmp_buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [119 131]))                  
+                :type "void")
+                nil [112 176])
+            ("g" function
+               (:arguments 
+                  ( ("buf" variable (:type ("jmp_buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [185 197]))                  
+                :type "void")
+                nil [178 233])
+            ("f" function
+               (:arguments 
+                  ( ("buf" variable (:type ("jmp_buf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [242 254]))                  
+                :type "void")
+                nil [235 290])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [305 314])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [315 328]))                  
+                :type "int")
+                nil [296 527]))          
+      :file "jmpts.c"
+      :pointmax 528
+      :fsize 527
+      :lastmodtime '(22720 39439 758880 33000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!workspace!test!c!old!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

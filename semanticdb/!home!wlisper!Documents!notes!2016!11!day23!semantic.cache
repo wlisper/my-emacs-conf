@@ -1,0 +1,1620 @@
+;; Object day23/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "day23/"
+  :tables
+  (list
+    (semanticdb-table "lex.yy.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("YY_INT_ALIGNED" variable (:constant-flag t) nil [31 45])
+            ("FLEX_SCANNER" variable (:constant-flag t) nil [108 120])
+            ("YY_FLEX_MAJOR_VERSION" variable (:constant-flag t) nil [129 150])
+            ("YY_FLEX_MINOR_VERSION" variable (:constant-flag t) nil [161 182])
+            ("YY_FLEX_SUBMINOR_VERSION" variable (:constant-flag t) nil [193 217])
+            ("stdio.h" include (:system-flag t) nil [386 404])
+            ("string.h" include (:system-flag t) nil [405 424])
+            ("errno.h" include (:system-flag t) nil [425 443])
+            ("stdlib.h" include (:system-flag t) nil [444 463])
+            ("FLEXINT_H" variable (:constant-flag t) nil [559 568])
+            ("flex_int8_t" type
+               (:typedef ("signed char")
+                :type "typedef")
+                nil [1110 1142])
+            ("flex_int16_t" type
+               (:typedef ("short int")
+                :type "typedef")
+                nil [1143 1174])
+            ("flex_int32_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1175 1200])
+            ("flex_uint8_t" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [1201 1236])
+            ("flex_uint16_t" type
+               (:typedef ("unsigned short int")
+                :type "typedef")
+                nil [1238 1279])
+            ("flex_uint32_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [1280 1315])
+            ("INT8_MIN" variable (:constant-flag t) nil [1374 1382])
+            ("INT16_MIN" variable (:constant-flag t) nil [1437 1446])
+            ("INT32_MIN" variable (:constant-flag t) nil [1504 1513])
+            ("INT8_MAX" variable (:constant-flag t) nil [1575 1583])
+            ("INT16_MAX" variable (:constant-flag t) nil [1637 1646])
+            ("INT32_MAX" variable (:constant-flag t) nil [1701 1710])
+            ("UINT8_MAX" variable (:constant-flag t) nil [1770 1779])
+            ("UINT16_MAX" variable (:constant-flag t) nil [1834 1844])
+            ("UINT32_MAX" variable (:constant-flag t) nil [1900 1910])
+            ("YY_USE_CONST" variable (:constant-flag t) nil [2070 2082])
+            ("yyconst" variable (:constant-flag t) nil [2293 2300])
+            ("YY_NULL" variable (:constant-flag t) nil [2378 2385])
+            ("YY_SC_TO_UI" variable (:constant-flag t) nil [2625 2636])
+            ("BEGIN" variable (:constant-flag t) nil [2856 2861])
+            ("YY_START" variable (:constant-flag t) nil [3055 3063])
+            ("YYSTATE" variable (:constant-flag t) nil [3095 3102])
+            ("YY_STATE_EOF" variable (:constant-flag t) nil [3178 3190])
+            ("YY_NEW_FILE" variable (:constant-flag t) nil [3298 3309])
+            ("YY_END_OF_BUFFER_CHAR" variable (:constant-flag t) nil [3337 3358])
+            ("YY_BUF_SIZE" variable (:constant-flag t) nil [3635 3646])
+            ("YY_STATE_BUF_SIZE" variable (:constant-flag t) nil [3785 3802])
+            ("YY_TYPEDEF_YY_BUFFER_STATE" variable (:constant-flag t) nil [3893 3919])
+            ("YY_BUFFER_STATE" type
+               (:typedef ("yy_buffer_state" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3920 3968])
+            ("YY_TYPEDEF_YY_SIZE_T" variable (:constant-flag t) nil [4014 4034])
+            ("yy_size_t" type
+               (:typedef ("size_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4035 4060])
+            ("yyleng" variable
+               (:typemodifiers ("extern")
+                :type ("yy_size_t" type (:type "class") nil nil))
+                nil [4069 4093])
+            ("yyin" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [4095 4121])
+            ("yyout" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [4095 4121])
+            ("EOB_ACT_CONTINUE_SCAN" variable (:constant-flag t) nil [4131 4152])
+            ("EOB_ACT_END_OF_FILE" variable (:constant-flag t) nil [4163 4182])
+            ("EOB_ACT_LAST_MATCH" variable (:constant-flag t) nil [4193 4211])
+            ("YY_LESS_LINENO" variable (:constant-flag t) nil [4227 4241])
+            ("YY_LINENO_REWIND_TO" variable (:constant-flag t) nil [4257 4276])
+            ("yyless" variable (:constant-flag t) nil [4375 4381])
+            ("unput" variable (:constant-flag t) nil [4730 4735])
+            ("YY_STRUCT_YY_BUFFER_STATE" variable (:constant-flag t) nil [4810 4835])
+            ("yy_buffer_state" type
+               (:members 
+                  ( ("yy_input_file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4863 4883])
+                    ("yy_ch_buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4886 4902])
+                    ("yy_buf_pos" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [4924 4941])
+                    ("yy_buf_size" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5067 5089])
+                    ("yy_n_chars" variable (:type "int") (reparse-symbol classsubparts) [5177 5192])
+                    ("yy_is_our_buffer" variable (:type "int") (reparse-symbol classsubparts) [5339 5360])
+                    ("yy_is_interactive" variable (:type "int") (reparse-symbol classsubparts) [5577 5599])
+                    ("yy_at_bol" variable (:type "int") (reparse-symbol classsubparts) [5744 5758])
+                    ("yy_bs_lineno" variable (:type "int") (reparse-symbol classsubparts) [5764 5781])
+                    ("yy_bs_column" variable (:type "int") (reparse-symbol classsubparts) [5810 5827])
+                    ("yy_fill_buffer" variable (:type "int") (reparse-symbol classsubparts) [5942 5961])
+                    ("yy_buffer_status" variable (:type "int") (reparse-symbol classsubparts) [5964 5985])
+                    ("YY_BUFFER_NEW" variable (:constant-flag t) (reparse-symbol classsubparts) [5995 6008])
+                    ("YY_BUFFER_NORMAL" variable (:constant-flag t) (reparse-symbol classsubparts) [6019 6035])
+                    ("YY_BUFFER_EOF_PENDING" variable (:constant-flag t) (reparse-symbol classsubparts) [6517 6538]))                  
+                :type "struct")
+                nil [4836 6545])
+            ("yy_buffer_stack_top" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [6617 6655])
+            ("yy_buffer_stack_max" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type ("size_t" type (:type "class") nil nil))
+                nil [6687 6725])
+            ("yy_buffer_stack" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "0"
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [6753 6798])
+            ("YY_CURRENT_BUFFER" variable (:constant-flag t) nil [7029 7046])
+            ("YY_CURRENT_BUFFER_LVALUE" variable (:constant-flag t) nil [7325 7349])
+            ("yy_hold_char" variable
+               (:typemodifiers ("static")
+                :type "char")
+                nil [7459 7484])
+            ("yy_n_chars" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7485 7507])
+            ("yyleng" variable (:type ("yy_size_t" type (:type "class") nil nil)) nil [7556 7573])
+            ("yy_c_buf_p" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "(char *) 0"
+                :type "char")
+                nil [7620 7657])
+            ("yy_init" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7658 7681])
+            ("yy_start" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [7719 7743])
+            ("yy_did_buffer_switch_on_eof" variable
+               (:typemodifiers ("static")
+                :type "int")
+                nil [7898 7937])
+            ("yyrestart" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("input_file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7955 7974]))                  
+                :type "void")
+                nil [7939 7975])
+            ("yy_switch_to_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("new_buffer" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8002 8031]))                  
+                :type "void")
+                nil [7976 8032])
+            ("yy_create_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8067 8078])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [8078 8089]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [8033 8090])
+            ("yy_delete_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8114 8134]))                  
+                :type "void")
+                nil [8091 8135])
+            ("yy_flush_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("b" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8158 8178]))                  
+                :type "void")
+                nil [8136 8179])
+            ("yypush_buffer_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("new_buffer" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8206 8235]))                  
+                :type "void")
+                nil [8180 8236])
+            ("yypop_buffer_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8262 8268]))                  
+                :type "void")
+                nil [8237 8269])
+            ("yyensure_buffer_stack" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8306 8312]))                  
+                :type "void")
+                nil [8271 8313])
+            ("yy_load_buffer_state" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8348 8354]))                  
+                :type "void")
+                nil [8314 8355])
+            ("yy_init_buffer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8384 8402])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8402 8415]))                  
+                :type "void")
+                nil [8356 8416])
+            ("YY_FLUSH_BUFFER" variable (:constant-flag t) nil [8426 8441])
+            ("yy_scan_buffer" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8511 8522])
+                    ("size" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8522 8539]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [8479 8540])
+            ("yy_scan_string" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("yy_str" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8573 8596]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [8541 8597])
+            ("yy_scan_bytes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("bytes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8629 8649])
+                    ("len" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8649 8665]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [8598 8666])
+            ("yyalloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8683 8695]))                  
+                :type "void")
+                nil [8668 8696])
+            ("yyrealloc" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8714 8721])
+                    ("" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8721 8733]))                  
+                :type "void")
+                nil [8697 8734])
+            ("yyfree" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [8748 8757]))                  
+                :type "void")
+                nil [8735 8758])
+            ("yy_new_buffer" variable (:constant-flag t) nil [8768 8781])
+            ("yy_set_interactive" variable (:constant-flag t) nil [8808 8826])
+            ("yy_set_bol" variable (:constant-flag t) nil [9084 9094])
+            ("YY_AT_BOL" variable (:constant-flag t) nil [9327 9336])
+            ("YY_CHAR" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [9402 9432])
+            ("yyin" variable
+               (:pointer 1
+                :default-value "(FILE *) 0"
+                :type ("FILE" type (:type "class") nil nil))
+                nil [9434 9479])
+            ("yyout" variable
+               (:pointer 1
+                :default-value "(FILE *) 0"
+                :type ("FILE" type (:type "class") nil nil))
+                nil [9434 9479])
+            ("yy_state_type" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [9481 9507])
+            ("yylineno" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [9509 9529])
+            ("yylineno" variable
+               (:default-value "1"
+                :type "int")
+                nil [9531 9548])
+            ("yytext" variable
+               (:pointer 1
+                :typemodifiers ("extern")
+                :type "char")
+                nil [9550 9570])
+            ("yytext_ptr" variable (:constant-flag t) nil [9622 9632])
+            ("yy_get_previous_state" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9685 9691]))                  
+                :type ("yy_state_type" type (:type "class") nil nil))
+                nil [9641 9692])
+            ("yy_try_NUL_trans" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("current_state" variable (:type ("yy_state_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9732 9762]))                  
+                :type ("yy_state_type" type (:type "class") nil nil))
+                nil [9693 9763])
+            ("yy_get_next_buffer" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9795 9801]))                  
+                :type "int")
+                nil [9764 9802])
+            ("yy_fatal_error" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:dereference 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [9907 9928]))                  
+                :type "void")
+                nil [9879 9929])
+            ("YY_DO_BEFORE_ACTION" variable (:constant-flag t) nil [10051 10070])
+            ("YY_NUM_RULES" variable (:constant-flag t) nil [10214 10226])
+            ("YY_END_OF_BUFFER" variable (:constant-flag t) nil [10237 10253])
+            ("yy_trans_info" type
+               (:members 
+                  ( ("yy_verify" variable (:type ("flex_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10362 10385])
+                    ("yy_nxt" variable (:type ("flex_int32_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [10387 10407]))                  
+                :type "struct")
+                nil [10337 10411])
+            ("yy_accept" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        0,    0,    5,    1,    3,    2,    1,    0
+    }"
+                :type ("flex_int16_t" type (:type "class") nil nil))
+                nil [10412 10525])
+            ("yy_ec" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        1,    1,    1,    1,    1,    1,    1,    1,    2,    3,
+        2,    2,    2,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    2,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1,    1,    1,    1,    1,    1,
+        1,    1,    1,    1,    1
+    }"
+                :type ("YY_CHAR" type (:type "class") nil nil))
+                nil [10527 12242])
+            ("yy_meta" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        1,    2,    2
+    }"
+                :type ("YY_CHAR" type (:type "class") nil nil))
+                nil [12244 12320])
+            ("yy_base" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        0,    0,    5,    0,    6,    6,    0,    6,    3
+    }"
+                :type ("flex_uint16_t" type (:type "class") nil nil))
+                nil [12322 12441])
+            ("yy_def" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        8,    1,    8,    9,    8,    8,    9,    0,    8
+    }"
+                :type ("flex_int16_t" type (:type "class") nil nil))
+                nil [12443 12560])
+            ("yy_nxt" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        4,    5,    6,    7,    8,    3,    8,    8,    8
+    }"
+                :type ("flex_uint16_t" type (:type "class") nil nil))
+                nil [12562 12680])
+            ("yy_chk" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :constant-flag t
+                :default-value "{   0,
+        1,    1,    1,    9,    3,    8,    8,    8,    8
+    }"
+                :type ("flex_int16_t" type (:type "class") nil nil))
+                nil [12682 12799])
+            ("yy_last_accepting_state" variable
+               (:typemodifiers ("static")
+                :type ("yy_state_type" type (:type "class") nil nil))
+                nil [12801 12846])
+            ("yy_last_accepting_cpos" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [12847 12883])
+            ("yy_flex_debug" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [12885 12910])
+            ("yy_flex_debug" variable
+               (:default-value "0"
+                :type "int")
+                nil [12911 12933])
+            ("REJECT" variable (:constant-flag t) nil [13045 13051])
+            ("yymore" variable (:constant-flag t) nil [13089 13095])
+            ("YY_MORE_ADJ" variable (:constant-flag t) nil [13135 13146])
+            ("YY_RESTORE_YY_MORE_OFFSET" variable (:constant-flag t) nil [13157 13182])
+            ("yytext" variable
+               (:pointer 1
+                :type "char")
+                nil [13183 13196])
+            ("chars" variable
+               (:default-value "0"
+                :type "int")
+                nil [13227 13241])
+            ("words" variable
+               (:default-value "0"
+                :type "int")
+                nil [13242 13256])
+            ("lines" variable
+               (:default-value "0"
+                :type "int")
+                nil [13257 13271])
+            ("INITIAL" variable (:constant-flag t) nil [13302 13309])
+            ("unistd.h" include (:system-flag t) nil [13546 13565])
+            ("YY_EXTRA_TYPE" variable (:constant-flag t) nil [13604 13617])
+            ("yy_init_globals" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13661 13667]))                  
+                :type "int")
+                nil [13633 13668])
+            ("yylex_destroy" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13794 13800]))                  
+                :type "int")
+                nil [13775 13801])
+            ("yyget_debug" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13820 13826]))                  
+                :type "int")
+                nil [13803 13827])
+            ("yyset_debug" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("debug_flag" variable (:type "int") (reparse-symbol arg-sub-list) [13847 13864]))                  
+                :type "void")
+                nil [13829 13865])
+            ("yyget_extra" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13894 13900]))                  
+                :type "void")
+                nil [13867 13901])
+            ("yyset_extra" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("user_defined" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [13921 13950]))                  
+                :type "void")
+                nil [13903 13951])
+            ("yyget_in" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13969 13975]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [13953 13976])
+            ("yyset_in" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("_in_str" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13994 14011]))                  
+                :type "void")
+                nil [13978 14012])
+            ("yyget_out" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14031 14037]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [14014 14038])
+            ("yyset_out" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("_out_str" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14057 14075]))                  
+                :type "void")
+                nil [14040 14076])
+            ("yyget_leng" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14100 14106]))                  
+                :type ("yy_size_t" type (:type "class") nil nil))
+                nil [14078 14107])
+            ("yyget_text" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14127 14133]))                  
+                :type "char")
+                nil [14109 14134])
+            ("yyget_lineno" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14154 14160]))                  
+                :type "int")
+                nil [14136 14161])
+            ("yyset_lineno" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("_line_number" variable (:type "int") (reparse-symbol arg-sub-list) [14182 14201]))                  
+                :type "void")
+                nil [14163 14202])
+            ("yywrap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14360 14366]))                  
+                :type "int")
+                nil [14348 14367])
+            ("yyunput" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [14466 14472])
+                    ("buf_ptr" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14472 14488]))                  
+                :type "void")
+                nil [14445 14489])
+            ("yyinput" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [14723 14729]))                  
+                :type "int")
+                nil [14703 14730])
+            ("YY_READ_BUF_SIZE" variable (:constant-flag t) nil [14962 14978])
+            ("ECHO" variable (:constant-flag t) nil [15202 15206])
+            ("YY_INPUT" variable (:constant-flag t) nil [15412 15420])
+            ("yyterminate" variable (:constant-flag t) nil [16326 16337])
+            ("YY_START_STACK_INCR" variable (:constant-flag t) nil [16461 16480])
+            ("YY_FATAL_ERROR" variable (:constant-flag t) nil [16551 16565])
+            ("YY_DECL_IS_OURS" variable (:constant-flag t) nil [16784 16799])
+            ("yylex" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [16821 16826]))                  
+                :type "int")
+                nil [16803 16827])
+            ("YY_DECL" variable (:constant-flag t) nil [16837 16844])
+            ("YY_USER_ACTION" variable (:constant-flag t) nil [17013 17027])
+            ("YY_BREAK" variable (:constant-flag t) nil [17106 17114])
+            ("YY_RULE_SETUP" variable (:constant-flag t) nil [17148 17161])
+            ("yylex" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [17240 23124])
+            ("yy_get_next_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [23405 23410]))                  
+                :type "int")
+                nil [23374 26862])
+            ("yy_get_previous_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26994 26999]))                  
+                :type ("yy_state_type" type (:type "class") nil nil))
+                nil [26950 27679])
+            ("yy_try_NUL_trans" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("yy_current_state" variable (:type ("yy_state_type" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27863 27895]))                  
+                :type ("yy_state_type" type (:type "class") nil nil))
+                nil [27823 28459])
+            ("yyunput" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable (:type "int") (reparse-symbol arg-sub-list) [28507 28513])
+                    ("yy_bp" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [28514 28528]))                  
+                :type "void")
+                nil [28486 29462])
+            ("yyinput" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [29535 29540]))                  
+                :type "int")
+                nil [29515 31070])
+            ("yyrestart" function
+               (:arguments 
+                  ( ("input_file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31299 31318]))                  
+                :type "void")
+                nil [31282 31546])
+            ("yy_switch_to_buffer" function
+               (:arguments 
+                  ( ("new_buffer" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31670 31699]))                  
+                :type "void")
+                nil [31643 32480])
+            ("yy_load_buffer_state" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [32517 32522]))                  
+                :type "void")
+                nil [32482 32735])
+            ("yy_create_buffer" function
+               (:arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32994 33006])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [33007 33018]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [32959 33570])
+            ("yy_delete_buffer" function
+               (:arguments 
+                  ( ("b" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33684 33704]))                  
+                :type "void")
+                nil [33661 33943])
+            ("yy_init_buffer" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("b" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34139 34158])
+                    ("file" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34159 34172]))                  
+                :type "void")
+                nil [34110 34675])
+            ("yy_flush_buffer" function
+               (:arguments 
+                  ( ("b" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34865 34885]))                  
+                :type "void")
+                nil [34843 35335])
+            ("yypush_buffer_state" function
+               (:arguments 
+                  ( ("new_buffer" variable (:type ("YY_BUFFER_STATE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35551 35579]))                  
+                :type "void")
+                nil [35525 36179])
+            ("yypop_buffer_state" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36315 36320]))                  
+                :type "void")
+                nil [36290 36590])
+            ("yyensure_buffer_stack" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [36720 36725]))                  
+                :type "void")
+                nil [36685 38123])
+            ("yy_scan_buffer" function
+               (:arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [38402 38414])
+                    ("size" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38415 38432]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [38369 39110])
+            ("yy_scan_string" function
+               (:arguments 
+                  ( ("yystr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39474 39496]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [39442 39550])
+            ("yy_scan_bytes" function
+               (:arguments 
+                  ( ("yybytes" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [39891 39914])
+                    ("_yybytes_len" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [39915 39940]))                  
+                :type ("YY_BUFFER_STATE" type (:type "class") nil nil))
+                nil [39859 40568])
+            ("YY_EXIT_FAILURE" variable (:constant-flag t) nil [40602 40617])
+            ("yy_fatal_error" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("msg" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40656 40675]))                  
+                :type "void")
+                nil [40628 40747])
+            ("yyless" variable (:constant-flag t) nil [40827 40833])
+            ("yyget_lineno" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41297 41302]))                  
+                :type "int")
+                nil [41278 41336])
+            ("yyget_in" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41389 41394]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [41372 41419])
+            ("yyget_out" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41474 41479]))                  
+                :type ("FILE" type (:type "class") nil nil))
+                nil [41456 41505])
+            ("yyget_leng" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41579 41584]))                  
+                :type ("yy_size_t" type (:type "class") nil nil))
+                nil [41556 41611])
+            ("yyget_text" function
+               (:pointer 1
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [41668 41673]))                  
+                :type "char")
+                nil [41649 41700])
+            ("yyset_lineno" function
+               (:arguments 
+                  ( ("_line_number" variable (:type "int") (reparse-symbol arg-sub-list) [41797 41816]))                  
+                :type "void")
+                nil [41778 41854])
+            ("yyset_in" function
+               (:arguments 
+                  ( ("_in_str" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42021 42038]))                  
+                :type "void")
+                nil [42006 42067])
+            ("yyset_out" function
+               (:arguments 
+                  ( ("_out_str" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42085 42103]))                  
+                :type "void")
+                nil [42069 42134])
+            ("yyget_debug" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [42154 42159]))                  
+                :type "int")
+                nil [42136 42193])
+            ("yyset_debug" function
+               (:arguments 
+                  ( ("_bdebug" variable (:type "int") (reparse-symbol arg-sub-list) [42213 42227]))                  
+                :type "void")
+                nil [42195 42265])
+            ("yy_init_globals" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [42295 42300]))                  
+                :type "int")
+                nil [42267 42877])
+            ("yylex_destroy" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [42969 42974]))                  
+                :type "int")
+                nil [42949 43444])
+            ("yyalloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("size" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43781 43798]))                  
+                :type "void")
+                nil [43766 43837])
+            ("yyrealloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [43857 43868])
+                    ("size" variable (:type ("yy_size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [43869 43886]))                  
+                :type "void")
+                nil [43839 44296])
+            ("yyfree" function
+               (:arguments 
+                  ( ("ptr" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [44311 44323]))                  
+                :type "void")
+                nil [44298 44392])
+            ("YYTABLES_NAME" variable (:constant-flag t) nil [44402 44415])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [44457 44466])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44467 44479]))                  
+                :type "int")
+                nil [44447 44557]))          
+      :file "lex.yy.c"
+      :pointmax 44559
+      :fsize 45527
+      :lastmodtime '(22620 57664 535066 94000)
+      :unmatched-syntax '((string 44437 . 44443) (number 44434 . 44436) (symbol 44429 . 44433) (punctuation 44428 . 44429) (punctuation 17130 . 17131) (BREAK 17125 . 17130) (string 13282 . 13292) (number 13278 . 13281) (symbol 13273 . 13277) (punctuation 13272 . 13273) (string 13220 . 13226) (number 13218 . 13219) (symbol 13213 . 13217) (punctuation 13212 . 13213) (string 13205 . 13211) (number 13203 . 13204) (symbol 13198 . 13202) (punctuation 13197 . 13198) (string 10 . 20) (number 8 . 9) (symbol 3 . 7) (punctuation 2 . 3))
+      :lexical-table 
+        '(("yymore" (spp-arg-list nil 13095 . 13097) . ((symbol "yymore_used_but_not_detected" 13098 . 13126)))
+          ("yyconst" . ((CONST "const" 2301 . 2306)))
+          ("YY_STATE_EOF" (spp-arg-list ("state") 3190 . 3197) . ((semantic-list "(YY_END_OF_BUFFER + state + 1)" 3198 . 3228)))
+          ("EOB_ACT_CONTINUE_SCAN" . ((number "0" 4153 . 4154)))
+          ("REJECT" . ((symbol "reject_used_but_not_detected" 13052 . 13080)))
+          ("YY_EXTRA_TYPE" . ((VOID "void" 13618 . 13622) (punctuation "*" 13623 . 13624)))
+          ("YY_INT_ALIGNED" . ((SHORT "short" 46 . 51) (INT "int" 52 . 55)))
+          ("FLEX_SCANNER")
+          ("UINT8_MAX" . ((semantic-list "(255U)" 1793 . 1799)))
+          ("YY_START" . ((semantic-list "(((yy_start) - 1) / 2)" 3064 . 3086)))
+          ("YY_NUM_RULES" . ((number "4" 10227 . 10228)))
+          ("INT32_MAX" . ((semantic-list "(2147483647)" 1724 . 1736)))
+          ("YY_LESS_LINENO" (spp-arg-list ("n") 4241 . 4244))
+          ("YY_BREAK")
+          ("INT32_MIN" . ((semantic-list "(-2147483647-1)" 1527 . 1542)))
+          ("INT8_MAX" . ((semantic-list "(127)" 1598 . 1603)))
+          ("UINT16_MAX" . ((semantic-list "(65535U)" 1857 . 1865)))
+          ("YY_BUF_SIZE" . ((number "16384" 3647 . 3652)))
+          ("EOB_ACT_END_OF_FILE" . ((number "1" 4183 . 4184)))
+          ("YY_LINENO_REWIND_TO" (spp-arg-list ("ptr") 4276 . 4281))
+          ("INITIAL" . ((number "0" 13310 . 13311)))
+          ("yyless" (spp-arg-list ("n") 40833 . 40836) . 
+              ((DO "do" 40840 . 40842) (semantic-list "{ \\
+		/* Undo effects of setting up yytext. */ \\
+        int yyless_macro_arg = (n); \\
+        YY_LESS_LINENO(yyless_macro_arg);\\
+		yytext[yyleng] = (yy_hold_char); \\
+		(yy_c_buf_p) = yytext + yyless_macro_arg; \\
+		(yy_hold_char) = *(yy_c_buf_p); \\
+		*(yy_c_buf_p) = '\\0'; \\
+		yyleng = yyless_macro_arg; \\
+		}" 40847 . 41156) (WHILE "while" 41160 . 41165) (semantic-list "( 0 )" 41166 . 41171)))
+          ("YY_FLEX_MINOR_VERSION" . ((number "6" 183 . 184)))
+          ("INT8_MIN" . ((semantic-list "(-128)" 1397 . 1403)))
+          ("YY_NEW_FILE" . ((symbol "yyrestart" 3310 . 3319) (semantic-list "(yyin  )" 3319 . 3327)))
+          ("YY_MORE_ADJ" . ((number "0" 13147 . 13148)))
+          ("ECHO" . 
+              ((DO "do" 15207 . 15209) (semantic-list "{ if (fwrite( yytext, yyleng, 1, yyout )) {} }" 15210 . 15256) (WHILE "while" 15257 . 15262) (semantic-list "(0)" 15263 . 15266)))
+          ("YY_DECL_IS_OURS" . ((number "1" 16800 . 16801)))
+          ("YY_EXIT_FAILURE" . ((number "2" 40618 . 40619)))
+          ("YY_DO_BEFORE_ACTION" . 
+              ((semantic-list "(yytext_ptr)" 10074 . 10086) (punctuation "=" 10087 . 10088) (symbol "yy_bp" 10089 . 10094) (punctuation ";" 10094 . 10095) (symbol "yyleng" 10099 . 10105) (punctuation "=" 10106 . 10107) (semantic-list "(size_t)" 10108 . 10116) (semantic-list "(yy_cp - yy_bp)" 10117 . 10132) (punctuation ";" 10132 . 10133) (semantic-list "(yy_hold_char)" 10137 . 10151) (punctuation "=" 10152 . 10153) (punctuation "*" 10154 . 10155) (symbol "yy_cp" 10155 . 10160) (punctuation ";" 10160 . 10161) (punctuation "*" 10165 . 10166) (symbol "yy_cp" 10166 . 10171) (punctuation "=" 10172 . 10173) (string "'\\0'" 10174 . 10178) (punctuation ";" 10178 . 10179) (semantic-list "(yy_c_buf_p)" 10183 . 10195) (punctuation "=" 10196 . 10197) (symbol "yy_cp" 10198 . 10203) (punctuation ";" 10203 . 10204)))
+          ("YY_END_OF_BUFFER" . ((number "5" 10254 . 10255)))
+          ("YY_INPUT" (spp-arg-list ("buf" "result" "max_size") 15420 . 15441) . 
+              ((IF "if" 15445 . 15447) (semantic-list "( YY_CURRENT_BUFFER_LVALUE->yy_is_interactive )" 15448 . 15495) (semantic-list "{ \\
+		int c = '*'; \\
+		size_t n; \\
+		for ( n = 0; n < max_size && \\
+			     (c = getc( yyin )) != EOF && c != '\\n'; ++n ) \\
+			buf[n] = (char) c; \\
+		if ( c == '\\n' ) \\
+			buf[n++] = (char) c; \\
+		if ( c == EOF && ferror( yyin ) ) \\
+			YY_FATAL_ERROR( \"input in flex scanner failed\" ); \\
+		result = n; \\
+		}" 15500 . 15807) (ELSE "else" 15811 . 15815) (semantic-list "{ \\
+		errno=0; \\
+		while ( (result = fread(buf, 1, max_size, yyin))==0 && ferror(yyin)) \\
+			{ \\
+			if( errno != EINTR) \\
+				{ \\
+				YY_FATAL_ERROR( \"input in flex scanner failed\" ); \\
+				break; \\
+				} \\
+			errno=0; \\
+			clearerr(yyin); \\
+			} \\
+		}" 15820 . 16072)))
+          ("yyterminate" (spp-arg-list nil 16337 . 16339) . ((RETURN "return" 16340 . 16346) (symbol "YY_NULL" 16347 . 16354)))
+          ("YY_BUFFER_NEW" . ((number "0" 6009 . 6010)))
+          ("BEGIN" . 
+              ((semantic-list "(yy_start)" 2862 . 2872) (punctuation "=" 2873 . 2874) (number "1" 2875 . 2876) (punctuation "+" 2877 . 2878) (number "2" 2879 . 2880) (punctuation "*" 2881 . 2882)))
+          ("YY_END_OF_BUFFER_CHAR" . ((number "0" 3359 . 3360)))
+          ("YY_TYPEDEF_YY_SIZE_T")
+          ("yy_new_buffer" . ((symbol "yy_create_buffer" 8782 . 8798)))
+          ("YY_START_STACK_INCR" . ((number "25" 16481 . 16483)))
+          ("YY_RULE_SETUP" . ((symbol "YY_USER_ACTION" 17165 . 17179)))
+          ("YY_NULL" . ((number "0" 2386 . 2387)))
+          ("EOB_ACT_LAST_MATCH" . ((number "2" 4212 . 4213)))
+          ("yy_set_bol" (spp-arg-list ("at_bol") 9094 . 9102) . ((semantic-list "{ \\
+	if ( ! YY_CURRENT_BUFFER ){\\
+        yyensure_buffer_stack (); \\
+		YY_CURRENT_BUFFER_LVALUE =    \\
+            yy_create_buffer(yyin,YY_BUF_SIZE ); \\
+	} \\
+	YY_CURRENT_BUFFER_LVALUE->yy_at_bol = at_bol; \\
+	}" 9106 . 9317)))
+          ("YY_FATAL_ERROR" (spp-arg-list ("msg") 16565 . 16570) . ((symbol "yy_fatal_error" 16571 . 16585) (semantic-list "( msg )" 16585 . 16592)))
+          ("FLEXINT_H")
+          ("YY_USE_CONST")
+          ("YY_SC_TO_UI" (spp-arg-list ("c") 2636 . 2639) . ((semantic-list "((unsigned int) (unsigned char) c)" 2640 . 2674)))
+          ("YY_STRUCT_YY_BUFFER_STATE")
+          ("YY_DECL" . 
+              ((INT "int" 16845 . 16848) (symbol "yylex" 16849 . 16854) (semantic-list "(void)" 16855 . 16861)))
+          ("YY_BUFFER_EOF_PENDING" . ((number "2" 6539 . 6540)))
+          ("INT16_MAX" . ((semantic-list "(32767)" 1660 . 1667)))
+          ("UINT32_MAX" . ((semantic-list "(4294967295U)" 1923 . 1936)))
+          ("YYSTATE" . ((symbol "YY_START" 3103 . 3111)))
+          ("YY_CURRENT_BUFFER" . ((semantic-list "( (yy_buffer_stack) \\
+                          ? (yy_buffer_stack)[(yy_buffer_stack_top)] \\
+                          : NULL)" 7047 . 7173)))
+          ("YY_FLUSH_BUFFER" . ((symbol "yy_flush_buffer" 8442 . 8457) (semantic-list "(YY_CURRENT_BUFFER )" 8457 . 8477)))
+          ("YY_RESTORE_YY_MORE_OFFSET")
+          ("YY_BUFFER_NORMAL" . ((number "1" 6036 . 6037)))
+          ("INT16_MIN" . ((semantic-list "(-32767-1)" 1460 . 1470)))
+          ("yytext_ptr" . ((symbol "yytext" 9633 . 9639)))
+          ("YY_READ_BUF_SIZE" . ((number "8192" 14979 . 14983)))
+          ("YY_USER_ACTION")
+          ("YYTABLES_NAME" . ((string "\"yytables\"" 44416 . 44426)))
+          ("YY_FLEX_MAJOR_VERSION" . ((number "2" 151 . 152)))
+          ("YY_FLEX_SUBMINOR_VERSION" . ((number "0" 218 . 219)))
+          ("YY_STATE_BUF_SIZE" . ((semantic-list "((YY_BUF_SIZE + 2) * sizeof(yy_state_type))" 3805 . 3848)))
+          ("YY_TYPEDEF_YY_BUFFER_STATE")
+          ("unput" (spp-arg-list ("c") 4735 . 4738) . ((symbol "yyunput" 4739 . 4746) (semantic-list "( c, (yytext_ptr)  )" 4746 . 4766)))
+          ("YY_CURRENT_BUFFER_LVALUE" . ((semantic-list "(yy_buffer_stack)" 7350 . 7367) (semantic-list "[(yy_buffer_stack_top)]" 7367 . 7390)))
+          ("yy_set_interactive" (spp-arg-list ("is_interactive") 8826 . 8842) . ((semantic-list "{ \\
+	if ( ! YY_CURRENT_BUFFER ){ \\
+        yyensure_buffer_stack (); \\
+		YY_CURRENT_BUFFER_LVALUE =    \\
+            yy_create_buffer(yyin,YY_BUF_SIZE ); \\
+	} \\
+	YY_CURRENT_BUFFER_LVALUE->yy_is_interactive = is_interactive; \\
+	}" 8846 . 9074)))
+          ("YY_AT_BOL" (spp-arg-list nil 9336 . 9338) . ((semantic-list "(YY_CURRENT_BUFFER_LVALUE->yy_at_bol)" 9339 . 9376)))
+          )
+)
+    (semanticdb-table "test.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [20 38])
+            ("yylex" function
+               (:prototype-flag t
+                :type "int")
+                nil [40 52])
+            ("chars" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [53 70])
+            ("words" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [71 88])
+            ("lines" variable
+               (:typemodifiers ("extern")
+                :type "int")
+                nil [89 106])
+            ("main" function (:type "int") nil [108 238]))          
+      :file "test.c"
+      :pointmax 239
+      :fsize 238
+      :lastmodtime '(22620 52341 496312 984000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("mycalc" function (:arguments ("calc.l" "calc.y")) nil [1 88]))          
+      :file "Makefile"
+      :pointmax 88
+      :fsize 87
+      :lastmodtime '(22620 57387 275883 540000)
+      :unmatched-syntax nil)
+    (semanticdb-table "calc.tab.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("YY_YY_CALC_TAB_H_INCLUDED" variable (:constant-flag t) nil [1558 1583])
+            ("YYDEBUG" variable (:constant-flag t) nil [1630 1637])
+            ("YYTOKENTYPE" variable (:constant-flag t) nil [1735 1746])
+            ("yytokentype" type
+               (:members 
+                  ( ("NUMBER" variable
+                       (:constant-flag t
+                        :default-value (1783 1786)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1774 1786])
+                    ("ADD" variable
+                       (:constant-flag t
+                        :default-value (1798 1801)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1792 1801])
+                    ("SUB" variable
+                       (:constant-flag t
+                        :default-value (1813 1816)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1807 1816])
+                    ("MUL" variable
+                       (:constant-flag t
+                        :default-value (1828 1831)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1822 1831])
+                    ("DIV" variable
+                       (:constant-flag t
+                        :default-value (1843 1846)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1837 1846])
+                    ("ABS" variable
+                       (:constant-flag t
+                        :default-value (1858 1861)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1852 1861])
+                    ("OP" variable
+                       (:constant-flag t
+                        :default-value (1872 1875)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1867 1875])
+                    ("CP" variable
+                       (:constant-flag t
+                        :default-value (1886 1889)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1881 1889])
+                    ("EOL" variable
+                       (:constant-flag t
+                        :default-value (1901 1904)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [1895 1904]))                  
+                :type "enum")
+                nil [1749 1909])
+            ("YYSTYPE" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [1992 2012])
+            ("YYSTYPE_IS_TRIVIAL" variable (:constant-flag t) nil [2022 2040])
+            ("YYSTYPE_IS_DECLARED" variable (:constant-flag t) nil [2052 2071])
+            ("yylval" variable
+               (:typemodifiers ("extern")
+                :type ("YYSTYPE" type (:type "class") nil nil))
+                nil [2083 2105])
+            ("yyparse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2120 2125]))                  
+                :type "int")
+                nil [2107 2126]))          
+      :file "calc.tab.h"
+      :pointmax 2169
+      :fsize 2168
+      :lastmodtime '(22620 57664 531066 106000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("YYTOKENTYPE")
+          ("YYDEBUG" . ((number "0" 1638 . 1639)))
+          ("YYSTYPE_IS_DECLARED" . ((number "1" 2072 . 2073)))
+          ("YY_YY_CALC_TAB_H_INCLUDED")
+          ("YYSTYPE_IS_TRIVIAL" . ((number "1" 2041 . 2042)))
+          )
+)
+    (semanticdb-table "calc.tab.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("YYBISON" variable (:constant-flag t) nil [2046 2053])
+            ("YYBISON_VERSION" variable (:constant-flag t) nil [2087 2102])
+            ("YYSKELETON_NAME" variable (:constant-flag t) nil [2142 2157])
+            ("YYPURE" variable (:constant-flag t) nil [2197 2203])
+            ("YYPUSH" variable (:constant-flag t) nil [2236 2242])
+            ("YYPULL" variable (:constant-flag t) nil [2275 2281])
+            ("stdio.h" include (:system-flag t) nil [2373 2391])
+            ("YY_NULLPTR" variable (:constant-flag t) nil [2555 2565])
+            ("YYERROR_VERBOSE" variable (:constant-flag t) nil [2715 2730])
+            ("YY_YY_CALC_TAB_H_INCLUDED" variable (:constant-flag t) nil [2880 2905])
+            ("YYDEBUG" variable (:constant-flag t) nil [2952 2959])
+            ("YYTOKENTYPE" variable (:constant-flag t) nil [3057 3068])
+            ("yytokentype" type
+               (:members 
+                  ( ("NUMBER" variable
+                       (:constant-flag t
+                        :default-value (3105 3108)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3096 3108])
+                    ("ADD" variable
+                       (:constant-flag t
+                        :default-value (3120 3123)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3114 3123])
+                    ("SUB" variable
+                       (:constant-flag t
+                        :default-value (3135 3138)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3129 3138])
+                    ("MUL" variable
+                       (:constant-flag t
+                        :default-value (3150 3153)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3144 3153])
+                    ("DIV" variable
+                       (:constant-flag t
+                        :default-value (3165 3168)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3159 3168])
+                    ("ABS" variable
+                       (:constant-flag t
+                        :default-value (3180 3183)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3174 3183])
+                    ("OP" variable
+                       (:constant-flag t
+                        :default-value (3194 3197)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3189 3197])
+                    ("CP" variable
+                       (:constant-flag t
+                        :default-value (3208 3211)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3203 3211])
+                    ("EOL" variable
+                       (:constant-flag t
+                        :default-value (3223 3226)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [3217 3226]))                  
+                :type "enum")
+                nil [3071 3231])
+            ("YYSTYPE" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [3314 3334])
+            ("YYSTYPE_IS_TRIVIAL" variable (:constant-flag t) nil [3344 3362])
+            ("YYSTYPE_IS_DECLARED" variable (:constant-flag t) nil [3374 3393])
+            ("yylval" variable
+               (:typemodifiers ("extern")
+                :type ("YYSTYPE" type (:type "class") nil nil))
+                nil [3405 3427])
+            ("yyparse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3442 3447]))                  
+                :type "int")
+                nil [3429 3448])
+            ("yytype_uint8" type
+               (:typedef ("unsigned char")
+                :type "typedef")
+                nil [3681 3716])
+            ("yytype_int8" type
+               (:typedef ("signed char")
+                :type "typedef")
+                nil [3783 3815])
+            ("yytype_uint16" type
+               (:typedef ("unsigned short int")
+                :type "typedef")
+                nil [3888 3929])
+            ("yytype_int16" type
+               (:typedef ("short int")
+                :type "typedef")
+                nil [3999 4030])
+            ("stddef.h" include (:system-flag t) nil [4185 4206])
+            ("YYSIZE_T" variable (:constant-flag t) nil [4252 4260])
+            ("YYSIZE_MAXIMUM" variable (:constant-flag t) nil [4331 4345])
+            ("YY_" variable (:constant-flag t) nil [4589 4592])
+            ("YY_ATTRIBUTE" variable (:constant-flag t) nil [4846 4858])
+            ("YY_ATTRIBUTE_PURE" variable (:constant-flag t) nil [4984 5001])
+            ("YY_ATTRIBUTE_UNUSED" variable (:constant-flag t) nil [5075 5094])
+            ("_Noreturn" variable (:constant-flag t) nil [5322 5331])
+            ("YYUSE" variable (:constant-flag t) nil [5481 5486])
+            ("YY_IGNORE_MAYBE_UNINITIALIZED_BEGIN" variable (:constant-flag t) nil [5693 5728])
+            ("YY_IGNORE_MAYBE_UNINITIALIZED_END" variable (:constant-flag t) nil [5903 5936])
+            ("YY_INITIAL_VALUE" variable (:constant-flag t) nil [6199 6215])
+            ("YYSTACK_ALLOC" variable (:constant-flag t) nil [7619 7632])
+            ("YYSTACK_FREE" variable (:constant-flag t) nil [7652 7664])
+            ("YYSTACK_ALLOC_MAXIMUM" variable (:constant-flag t) nil [7715 7736])
+            ("stdlib.h" include (:system-flag t) nil [7919 7941])
+            ("EXIT_SUCCESS" variable (:constant-flag t) nil [8013 8025])
+            ("YYMALLOC" variable (:constant-flag t) nil [8077 8085])
+            ("YYFREE" variable (:constant-flag t) nil [8250 8256])
+            ("yyss_alloc" variable (:type ("yytype_int16" type (:type "class") nil nil)) nil [8653 8677])
+            ("yyvs_alloc" variable (:type ("YYSTYPE" type (:type "class") nil nil)) nil [8680 8699])
+            ("YYSTACK_GAP_MAXIMUM" variable (:constant-flag t) nil [8788 8807])
+            ("YYSTACK_BYTES" variable (:constant-flag t) nil [8936 8949])
+            ("YYCOPY_NEEDED" variable (:constant-flag t) nil [9051 9064])
+            ("YYSTACK_RELOCATE" variable (:constant-flag t) nil [9360 9376])
+            ("YYCOPY" variable (:constant-flag t) nil [10241 10247])
+            ("YYFINAL" variable (:constant-flag t) nil [10813 10820])
+            ("YYLAST" variable (:constant-flag t) nil [10872 10878])
+            ("YYNTOKENS" variable (:constant-flag t) nil [10934 10943])
+            ("YYNNTS" variable (:constant-flag t) nil [10997 11003])
+            ("YYNRULES" variable (:constant-flag t) nil [11051 11059])
+            ("YYNSTATES" variable (:constant-flag t) nil [11110 11119])
+            ("YYUNDEFTOK" variable (:constant-flag t) nil [11249 11259])
+            ("YYMAXUTOK" variable (:constant-flag t) nil [11271 11280])
+            ("YYTRANSLATE" variable (:constant-flag t) nil [11296 11307])
+            ("YYPACT_NINF" variable (:constant-flag t) nil [14487 14498])
+            ("yypact_value_is_default" variable (:constant-flag t) nil [14511 14534])
+            ("YYTABLE_NINF" variable (:constant-flag t) nil [14581 14593])
+            ("yytable_value_is_error" variable (:constant-flag t) nil [14606 14628])
+            ("yyerrok" variable (:constant-flag t) nil [17152 17159])
+            ("yyclearin" variable (:constant-flag t) nil [17194 17203])
+            ("YYEMPTY" variable (:constant-flag t) nil [17237 17244])
+            ("YYEOF" variable (:constant-flag t) nil [17266 17271])
+            ("YYACCEPT" variable (:constant-flag t) nil [17293 17301])
+            ("YYABORT" variable (:constant-flag t) nil [17334 17341])
+            ("YYERROR" variable (:constant-flag t) nil [17374 17381])
+            ("YYRECOVERING" variable (:constant-flag t) nil [17416 17428])
+            ("YYBACKUP" variable (:constant-flag t) nil [17457 17465])
+            ("YYTERROR" variable (:constant-flag t) nil [18472 18480])
+            ("YYERRCODE" variable (:constant-flag t) nil [18498 18507])
+            ("YYDPRINTF" variable (:constant-flag t) nil [22440 22449])
+            ("YY_SYMBOL_PRINT" variable (:constant-flag t) nil [22465 22480])
+            ("YY_STACK_PRINT" variable (:constant-flag t) nil [22520 22534])
+            ("YY_REDUCE_PRINT" variable (:constant-flag t) nil [22557 22572])
+            ("YYINITDEPTH" variable (:constant-flag t) nil [22691 22702])
+            ("YYMAXDEPTH" variable (:constant-flag t) nil [23047 23057])
+            ("yymsg" variable
+               (:default-value "\"Deleting\""
+                :type "int")
+                nil [30580 30599])
+            ("_Pragma" function (:type "int") nil [30661 30713])
+            ("yychar" variable (:type "int") nil [30786 30797])
+            ("yylval" variable (:type ("YYSTYPE" type (:type "class") nil nil)) nil [30850 30865])
+            ("yynerrs" variable (:type "int") nil [30905 30917])
+            ("yystate" variable (:type "int") nil [30988 31000])
+            ("yyerrstatus" variable (:type "int") nil [31073 31089])
+            ("yyss" variable
+               (:pointer 1
+                :type ("yytype_int16" type (:type "class") nil nil))
+                nil [31389 31408])
+            ("yyssp" variable
+               (:pointer 1
+                :type ("yytype_int16" type (:type "class") nil nil))
+                nil [31413 31433])
+            ("yyvs" variable
+               (:pointer 1
+                :type ("YYSTYPE" type (:type "class") nil nil))
+                nil [31508 31522])
+            ("yyvsp" variable
+               (:pointer 1
+                :type ("YYSTYPE" type (:type "class") nil nil))
+                nil [31527 31542])
+            ("yystacksize" variable (:type ("size_t" type (:type "class") nil nil)) nil [31548 31569])
+            ("yyn" variable (:type "int") nil [31573 31581])
+            ("yyresult" variable (:type "int") nil [31584 31597])
+            ("yytoken" variable
+               (:default-value "0"
+                :type "int")
+                nil [31667 31683])
+            ("yyval" variable (:type ("YYSTYPE" type (:type "class") nil nil)) nil [31783 31797])
+            ("YYPOPSTACK" variable (:constant-flag t) nil [31985 31995])
+            ("yylen" variable
+               (:default-value "0"
+                :type "int")
+                nil [32147 32161])
+            ("yyss" variable
+               (:default-value "yyssa"
+                :type "int")
+                nil [32173 32186])
+            ("yyvs" variable
+               (:default-value "yyvsa"
+                :type "int")
+                nil [32197 32210])
+            ("yystacksize" variable
+               (:default-value "YYINITDEPTH"
+                :type "int")
+                nil [32213 32239])
+            ("yystate" variable
+               (:default-value "0"
+                :type "int")
+                nil [32288 32300])
+            ("yyerrstatus" variable
+               (:default-value "0"
+                :type "int")
+                nil [32303 32319])
+            ("yynerrs" variable
+               (:default-value "0"
+                :type "int")
+                nil [32322 32334])
+            ("yychar" variable
+               (:default-value "YYEMPTY"
+                :type "int")
+                nil [32337 32354])
+            ("yysetstate" variable (:type ("goto" type (:type "class") nil nil)) nil [32390 32406])
+            ("yyssp" variable
+               (:pointer 1
+                :default-value "yystate"
+                :type "int")
+                nil [32783 32800])
+            ("yyexhaustedlab" variable (:type ("goto" type (:type "class") nil nil)) nil [33889 33909])
+            ("yystacksize" variable
+               (:default-value "YYMAXDEPTH"
+                :type "int")
+                nil [33978 34003])
+            ("yyss1" variable
+               (:pointer 1
+                :default-value "yyss"
+                :type ("yytype_int16" type (:type "class") nil nil))
+                nil [34021 34048])
+            ("yyptr" variable
+               (:pointer 1
+                :default-value "(union yyalloc *) YYSTACK_ALLOC (YYSTACK_BYTES (yystacksize))"
+                :type ("yyalloc" type (:type "union") nil nil))
+                nil [34057 34152])
+            ("yyexhaustedlab" variable (:type ("goto" type (:type "class") nil nil)) nil [34184 34204])
+            ("free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("yyss1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34373 34379]))                  
+                :type "int")
+                nil [34359 34380])
+            ("yyabortlab" variable (:type ("goto" type (:type "class") nil nil)) nil [34656 34664])
+            ("yyacceptlab" variable (:type ("goto" type (:type "class") nil nil)) nil [34759 34768])
+            ("yybackup" variable (:type ("goto" type (:type "class") nil nil)) nil [34772 34786])
+            ("yydefault" variable (:type ("goto" type (:type "class") nil nil)) nil [35121 35136])
+            ("yytoken" variable
+               (:default-value "YYEOF"
+                :type "int")
+                nil [35438 35454])
+            ("yytoken" variable
+               (:default-value "YYTRANSLATE (yychar)"
+                :type "int")
+                nil [35534 35565])
+            ("yytoken" variable (:type "int") nil [35763 35771])
+            ("yydefault" variable (:type ("goto" type (:type "class") nil nil)) nil [35834 35849])
+            ("yyerrlab" variable (:type ("goto" type (:type "class") nil nil)) nil [35942 35956])
+            ("yyn" variable
+               (:default-value "-yyn"
+                :type "int")
+                nil [35963 35974])
+            ("yyreduce" variable (:type ("goto" type (:type "class") nil nil)) nil [35981 35995])
+            ("yychar" variable
+               (:default-value "YYEMPTY"
+                :type "int")
+                nil [36260 36277])
+            ("yystate" variable
+               (:default-value "yyn"
+                :type "int")
+                nil [36281 36295])
+            ("yyvsp" variable
+               (:default-value "yylval"
+                :type "int")
+                nil [36339 36354])
+            ("yynewstate" variable (:type ("goto" type (:type "class") nil nil)) nil [36394 36410])
+            ("yyerrlab" variable (:type ("goto" type (:type "class") nil nil)) nil [36660 36674])
+            ("yyreduce" variable (:type ("goto" type (:type "class") nil nil)) nil [36677 36691])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [37383 37413])
+            ("printf" function
+               (:prototype-flag t
+                :type "int")
+                nil [37522 37535])
+            ("yylen" variable
+               (:default-value "0"
+                :type "int")
+                nil [39509 39519])
+            ("yyvsp" variable
+               (:default-value "yyval"
+                :type "int")
+                nil [39558 39572])
+            ("yyssp" variable
+               (:pointer 1
+                :type "int")
+                nil [39799 39806])
+            ("yynewstate" variable (:type ("goto" type (:type "class") nil nil)) nil [39962 39978])
+            ("yynerrs" variable (:type "int") nil [40413 40421])
+            ("yyabortlab" variable (:type ("goto" type (:type "class") nil nil)) nil [41736 41744])
+            ("yydestruct" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("yytoken" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41841 41849])
+                    ("" variable (:type ("yylval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41851 41858]))                  
+                :type "int")
+                nil [41786 41859])
+            ("yychar" variable
+               (:default-value "YYEMPTY"
+                :type "int")
+                nil [41870 41887])
+            ("yyerrlab1" variable (:type ("goto" type (:type "class") nil nil)) nil [41992 42007])
+            ("yyerrorlab" variable (:type ("goto" type (:type "class") nil nil)) nil [42365 42381])
+            ("yylen" variable
+               (:default-value "0"
+                :type "int")
+                nil [42497 42507])
+            ("yystate" variable
+               (:default-value "*yyssp"
+                :type "int")
+                nil [42542 42559])
+            ("yyerrlab1" variable (:type ("goto" type (:type "class") nil nil)) nil [42562 42577])
+            ("yyerrstatus" variable
+               (:default-value "3"
+                :type "int")
+                nil [42788 42804])
+            ("yyabortlab" variable (:type ("goto" type (:type "class") nil nil)) nil [43286 43294])
+            ("yystate" variable
+               (:default-value "*yyssp"
+                :type "int")
+                nil [43404 43421])
+            ("yyvsp" variable
+               (:default-value "yylval"
+                :type "int")
+                nil [43508 43523])
+            ("_Pragma" function
+               (:prototype-flag t
+                :type "int")
+                nil [43526 43652])
+            ("yystate" variable
+               (:default-value "yyn"
+                :type "int")
+                nil [43656 43670])
+            ("yynewstate" variable (:type ("goto" type (:type "class") nil nil)) nil [43673 43689])
+            ("yyresult" variable
+               (:default-value "0"
+                :type "int")
+                nil [43830 43843])
+            ("yyreturn" variable (:type ("goto" type (:type "class") nil nil)) nil [43846 43860])
+            ("yyresult" variable
+               (:default-value "1"
+                :type "int")
+                nil [43993 44006])
+            ("yyreturn" variable (:type ("goto" type (:type "class") nil nil)) nil [44009 44023])
+            ("yyresult" variable
+               (:default-value "2"
+                :type "int")
+                nil [44282 44295])
+            ("yytoken" variable
+               (:default-value "YYTRANSLATE (yychar)"
+                :type "int")
+                nil [44510 44541])
+            ("yyresult" variable (:type "int") nil [45089 45098]))          
+      :file "calc.tab.c"
+      :pointmax 45260
+      :fsize 45259
+      :lastmodtime '(22620 57664 531066 106000)
+      :unmatched-syntax '((close-paren 45258 . 45259) (punctuation 45256 . 45257) (close-paren 45255 . 45256) (symbol 45254 . 45255) (punctuation 45252 . 45253) (string 45239 . 45252) (punctuation 45237 . 45238) (symbol 45231 . 45237) (open-paren 45230 . 45231) (symbol 45223 . 45230) (open-paren 45219 . 45220) (close-paren 45217 . 45218) (symbol 45216 . 45217) (punctuation 45214 . 45215) (CHAR 45210 . 45214) (open-paren 45209 . 45210) (symbol 45202 . 45209) (close-paren 45199 . 45200) (punctuation 45197 . 45198) (close-paren 45196 . 45197) (open-paren 45195 . 45196) (symbol 45188 . 45195) (punctuation 45184 . 45185) (close-paren 45183 . 45184) (string 45179 . 45183) (open-paren 45178 . 45179) (symbol 45172 . 45178) (open-paren 45168 . 45169) (close-paren 45166 . 45167) (symbol 45162 . 45166) (punctuation 45160 . 45161) (punctuation 45159 . 45160) (CHAR 45155 . 45159) (punctuation 45153 . 45154) (symbol 45149 . 45153) (INT 45145 . 45148) (open-paren 45144 . 45145) (symbol 45140 . 45144) (string 45110 . 45118) (number 45107 . 45109) (symbol 45102 . 45106) (punctuation 45101 . 45102) (close-paren 45099 . 45100) (RETURN 45082 . 45088) (punctuation 44993 . 44994) (close-paren 44992 . 44993) (symbol 44988 . 44992) (open-paren 44987 . 44988) (symbol "free" 44974 . 44986) (close-paren 44968 . 44969) (symbol 44963 . 44968) (punctuation 44961 . 44962) (punctuation 44960 . 44961) (symbol 44955 . 44959) (open-paren 44954 . 44955) (IF 44951 . 44953) (close-paren 44928 . 44929) (punctuation 44922 . 44923) (semantic-list #("(yyvsp -= (N), yyssp -= (N))" 0 1 (macros (("N" number "1" 44920 . 44921)))) 44908 . 44922) (punctuation 44900 . 44901) (close-paren 44899 . 44900) (symbol 44894 . 44899) (punctuation 44892 . 44893) (semantic-list 44884 . 44892) (symbol 44878 . 44884) (punctuation 44858 . 44859) (string 44840 . 44858) (open-paren 44839 . 44840) (symbol 44828 . 44838) (open-paren 44820 . 44821) (close-paren 44814 . 44815) (symbol 44810 . 44814) (punctuation 44808 . 44809) (punctuation 44807 . 44808) (symbol 44801 . 44806) (open-paren 44800 . 44801) (WHILE 44794 . 44799) (punctuation 44790 . 44791) (punctuation 44758 . 44759) (semantic-list #("(yyvsp -= (N), yyssp -= (N))" 0 1 (macros (("N" symbol "yylen" 44752 . 44757)))) 44740 . 44758) (close-paren 44634 . 44635) (punctuation 44628 . 44629) (close-paren 44627 . 44628) (symbol 44621 . 44627) (punctuation 44620 . 44621) (punctuation 44618 . 44619) (symbol 44611 . 44618) (punctuation 44591 . 44592) (string 44560 . 44591) (open-paren 44559 . 44560) (symbol 44548 . 44558) (open-paren 44366 . 44367) (close-paren 44360 . 44361) (semantic-list "(-2)" 44353 . 44360) (punctuation 44351 . 44352) (punctuation 44350 . 44351) (symbol 44343 . 44349) (open-paren 44342 . 44343) (IF 44339 . 44341) (punctuation 44335 . 44336) (symbol 44327 . 44335) (punctuation 44278 . 44279) (close-paren 44277 . 44278) (string "\"memory exhausted\"" 44254 . 44277) (open-paren 44253 . 44254) (symbol 44245 . 44252) (punctuation 44241 . 44242) (symbol 44227 . 44241) (punctuation 43989 . 43990) (symbol 43979 . 43989) (punctuation 43826 . 43827) (symbol 43815 . 43826) (punctuation 43507 . 43508) (punctuation 43506 . 43507) (punctuation 43505 . 43506) (semantic-list "(\"GCC diagnostic ignored \\\"-Wmaybe-uninitialized\\\"\")" 43467 . 43502) (symbol "_Pragma" 43467 . 43502) (semantic-list "(\"GCC diagnostic ignored \\\"-Wuninitialized\\\"\")" 43467 . 43502) (symbol "_Pragma" 43467 . 43502) (semantic-list "(\"GCC diagnostic push\")" 43467 . 43502) (symbol "_Pragma" 43467 . 43502) (close-paren 43462 . 43463) (punctuation 43456 . 43457) (punctuation 43396 . 43397) (semantic-list #("(yyvsp -= (N), yyssp -= (N))" 0 1 (macros (("N" number "1" 43394 . 43395)))) 43382 . 43396) (punctuation 43374 . 43375) (close-paren 43373 . 43374) (symbol 43368 . 43373) (punctuation 43366 . 43367) (semantic-list 43357 . 43366) (symbol 43351 . 43357) (punctuation 43331 . 43332) (string 43315 . 43331) (open-paren 43314 . 43315) (symbol 43303 . 43313) (close-paren 43276 . 43277) (symbol 43272 . 43276) (punctuation 43270 . 43271) (punctuation 43269 . 43270) (symbol 43263 . 43268) (open-paren 43262 . 43263) (IF 43259 . 43261) (close-paren 43173 . 43174) (semantic-list 43065 . 43164) (semantic-list 42997 . 43052) (IF 42994 . 42996) (punctuation 42982 . 42983) (number "1" 42974 . 42982) (punctuation 42972 . 42973) (punctuation 42971 . 42972) (symbol 42967 . 42970) (open-paren 42955 . 42956) (close-paren 42945 . 42946) (semantic-list #("(!!((Yystate) == (-5)))" 0 1 (macros (("Yystate" symbol "yyn" 42941 . 42944)))) 42916 . 42945) (punctuation 42915 . 42916) (open-paren 42914 . 42915) (IF 42911 . 42913) (punctuation 42903 . 42904) (close-paren 42902 . 42903) (symbol 42895 . 42902) (open-paren 42894 . 42895) (symbol 42888 . 42894) (punctuation 42886 . 42887) (symbol 42882 . 42885) (open-paren 42874 . 42875) (close-paren 42868 . 42869) (punctuation 42867 . 42868) (punctuation 42866 . 42867) (open-paren 42865 . 42866) (FOR 42861 . 42864) (punctuation 42784 . 42785) (symbol 42775 . 42784) (punctuation 42538 . 42539) (punctuation 42493 . 42494) (semantic-list #("(yyvsp -= (N), yyssp -= (N))" 0 1 (macros (("N" symbol "yylen" 42487 . 42492)))) 42475 . 42493) (close-paren 42358 . 42359) (number 42357 . 42358) (open-paren 42342 . 42343) (IF 42339 . 42341) (punctuation 42185 . 42186) (symbol 42175 . 42185) (close-paren 41902 . 41903) (close-paren 41896 . 41897) (punctuation 41850 . 41851) (string 41798 . 41817) (open-paren 41774 . 41775) (ELSE 41761 . 41765) (close-paren 41753 . 41754) (semantic-list 41706 . 41723) (IF 41703 . 41705) (open-paren 41639 . 41640) (close-paren 41629 . 41630) (number "0" 41624 . 41629) (punctuation 41622 . 41623) (punctuation 41621 . 41622) (symbol 41614 . 41620) (open-paren 41613 . 41614) (IF 41610 . 41612) (open-paren 41501 . 41502) (close-paren 41495 . 41496) (number 41494 . 41495) (punctuation 41492 . 41493) (punctuation 41491 . 41492) (symbol 41479 . 41490) (open-paren 41478 . 41479) (IF 41475 . 41477) (close-paren 41468 . 41469) (punctuation 40479 . 40480) (close-paren 40478 . 40479) (string "\"syntax error\"" 40459 . 40478) (open-paren 40458 . 40459) (symbol 40450 . 40457) (punctuation 40412 . 40413) (punctuation 40411 . 40412) (open-paren 40403 . 40404) (close-paren 40397 . 40398) (symbol 40386 . 40397) (punctuation 40385 . 40386) (open-paren 40384 . 40385) (IF 40381 . 40383) (punctuation 40307 . 40308) (semantic-list #("((unsigned int) (YYX) <= YYMAXUTOK ? yytranslate[YYX] : YYUNDEFTOK)" 0 1 (macros (("YYX" symbol "yychar" 40300 . 40306)))) 40287 . 40307) (punctuation 40285 . 40286) (semantic-list "(-2)" 40277 . 40284) (punctuation 40275 . 40276) (semantic-list "(-2)" 40267 . 40274) (punctuation 40265 . 40266) (punctuation 40264 . 40265) (symbol 40257 . 40263) (punctuation 40255 . 40256) (symbol 40247 . 40254) (punctuation 40115 . 40116) (symbol 40107 . 40115) (punctuation 39957 . 39958) (close-paren 39956 . 39957) (number "12" 39947 . 39956) (punctuation 39945 . 39946) (symbol 39941 . 39944) (open-paren 39940 . 39941) (symbol 39931 . 39940) (punctuation 39929 . 39930) (symbol 39921 . 39928) (ELSE 39912 . 39916) (punctuation 39908 . 39909) (close-paren 39907 . 39908) (symbol 39900 . 39907) (open-paren 39899 . 39900) (symbol 39892 . 39899) (punctuation 39890 . 39891) (symbol 39882 . 39889) (close-paren 39876 . 39877) (symbol 39871 . 39876) (punctuation 39870 . 39871) (punctuation 39868 . 39869) (punctuation 39867 . 39868) (close-paren 39865 . 39866) (symbol 39858 . 39865) (open-paren 39857 . 39858) (symbol 39850 . 39857) (punctuation 39848 . 39849) (punctuation 39847 . 39848) (number "33" 39840 . 39846) (punctuation 39838 . 39839) (punctuation 39837 . 39838) (symbol 39829 . 39836) (punctuation 39827 . 39828) (punctuation 39826 . 39827) (symbol 39818 . 39825) (punctuation 39816 . 39817) (punctuation 39815 . 39816) (number 39813 . 39814) (open-paren 39812 . 39813) (IF 39809 . 39811) (punctuation 39797 . 39798) (close-paren 39795 . 39796) (number "12" 39786 . 39795) (punctuation 39784 . 39785) (symbol 39780 . 39783) (open-paren 39779 . 39780) (symbol 39772 . 39779) (punctuation 39770 . 39771) (symbol 39762 . 39769) (punctuation 39757 . 39758) (close-paren 39756 . 39757) (symbol 39753 . 39756) (open-paren 39752 . 39753) (symbol 39748 . 39752) (punctuation 39746 . 39747) (symbol 39742 . 39745) (punctuation 39557 . 39558) (punctuation 39556 . 39557) (punctuation 39555 . 39556) (punctuation 39550 . 39551) (punctuation 39505 . 39506) (semantic-list #("(yyvsp -= (N), yyssp -= (N))" 0 1 (macros (("N" symbol "yylen" 39499 . 39504)))) 39487 . 39505) (punctuation 39482 . 39483) (close-paren 38679 . 38680) (punctuation 38673 . 38674) (BREAK 38668 . 38673) (punctuation 38666 . 38667) (DEFAULT 38659 . 38666) (string 38621 . 38633) (number 38616 . 38620) (symbol 38611 . 38615) (punctuation 38610 . 38611) (punctuation 38606 . 38607) (BREAK 38601 . 38606) (string 38565 . 38577) (number 38560 . 38564) (symbol 38555 . 38559) (punctuation 38554 . 38555) (close-paren 38552 . 38553) (punctuation 38551 . 38552) (semantic-list 38540 . 38551) (punctuation 38538 . 38539) (semantic-list 38530 . 38537) (open-paren 38529 . 38530) (string 38497 . 38505) (number 38494 . 38496) (symbol 38489 . 38493) (punctuation 38488 . 38489) (punctuation 38486 . 38487) (number 38484 . 38486) (CASE 38479 . 38483) (punctuation 38474 . 38475) (BREAK 38469 . 38474) (string 38433 . 38445) (number 38428 . 38432) (symbol 38423 . 38427) (punctuation 38422 . 38423) (close-paren 38420 . 38421) (punctuation 38419 . 38420) (semantic-list 38409 . 38419) (punctuation 38407 . 38408) (punctuation 38405 . 38406) (semantic-list 38394 . 38404) (punctuation 38392 . 38393) (number 38391 . 38392) (punctuation 38389 . 38390) (punctuation 38388 . 38389) (semantic-list 38377 . 38387) (punctuation 38375 . 38376) (semantic-list 38367 . 38374) (open-paren 38366 . 38367) (string 38334 . 38342) (number 38331 . 38333) (symbol 38326 . 38330) (punctuation 38325 . 38326) (punctuation 38323 . 38324) (number 38321 . 38323) (CASE 38316 . 38320) (punctuation 38311 . 38312) (BREAK 38306 . 38311) (string 38270 . 38282) (number 38265 . 38269) (symbol 38260 . 38264) (punctuation 38259 . 38260) (close-paren 38257 . 38258) (punctuation 38256 . 38257) (semantic-list 38246 . 38256) (punctuation 38244 . 38245) (semantic-list 38232 . 38243) (punctuation 38230 . 38231) (semantic-list 38222 . 38229) (open-paren 38221 . 38222) (string 38189 . 38197) (number 38186 . 38188) (symbol 38181 . 38185) (punctuation 38180 . 38181) (punctuation 38178 . 38179) (number 38176 . 38178) (CASE 38171 . 38175) (punctuation 38166 . 38167) (BREAK 38161 . 38166) (string 38125 . 38137) (number 38120 . 38124) (symbol 38115 . 38119) (punctuation 38114 . 38115) (close-paren 38112 . 38113) (punctuation 38111 . 38112) (semantic-list 38101 . 38111) (punctuation 38099 . 38100) (semantic-list 38087 . 38098) (punctuation 38085 . 38086) (semantic-list 38077 . 38084) (open-paren 38076 . 38077) (string 38044 . 38052) (number 38041 . 38043) (symbol 38036 . 38040) (punctuation 38035 . 38036) (punctuation 38033 . 38034) (number 38031 . 38033) (CASE 38026 . 38030) (punctuation 38021 . 38022) (BREAK 38016 . 38021) (string 37980 . 37992) (number 37975 . 37979) (symbol 37970 . 37974) (punctuation 37969 . 37970) (close-paren 37967 . 37968) (punctuation 37966 . 37967) (semantic-list 37956 . 37966) (punctuation 37954 . 37955) (semantic-list 37942 . 37953) (punctuation 37940 . 37941) (semantic-list 37932 . 37939) (open-paren 37931 . 37932) (string 37899 . 37907) (number 37896 . 37898) (symbol 37891 . 37895) (punctuation 37890 . 37891) (punctuation 37888 . 37889) (number 37887 . 37888) (CASE 37882 . 37886) (punctuation 37877 . 37878) (BREAK 37872 . 37877) (string 37836 . 37848) (number 37831 . 37835) (symbol 37826 . 37830) (punctuation 37825 . 37826) (close-paren 37823 . 37824) (punctuation 37822 . 37823) (semantic-list 37812 . 37822) (punctuation 37810 . 37811) (semantic-list 37798 . 37809) (punctuation 37796 . 37797) (semantic-list 37788 . 37795) (open-paren 37787 . 37788) (string 37755 . 37763) (number 37752 . 37754) (symbol 37747 . 37751) (punctuation 37746 . 37747) (punctuation 37744 . 37745) (number 37743 . 37744) (CASE 37738 . 37742) (punctuation 37733 . 37734) (BREAK 37728 . 37733) (string 37692 . 37704) (number 37687 . 37691) (symbol 37682 . 37686) (punctuation 37681 . 37682) (close-paren 37679 . 37680) (punctuation 37678 . 37679) (semantic-list 37668 . 37678) (punctuation 37666 . 37667) (semantic-list 37654 . 37665) (punctuation 37652 . 37653) (semantic-list 37644 . 37651) (open-paren 37643 . 37644) (string 37611 . 37619) (number 37608 . 37610) (symbol 37603 . 37607) (punctuation 37602 . 37603) (punctuation 37600 . 37601) (number 37599 . 37600) (CASE 37594 . 37598) (punctuation 37589 . 37590) (BREAK 37584 . 37589) (string 37548 . 37560) (number 37543 . 37547) (symbol 37538 . 37542) (punctuation 37537 . 37538) (close-paren 37535 . 37536) (string 37529 . 37533) (open-paren 37521 . 37522) (string 37489 . 37497) (number 37486 . 37488) (symbol 37481 . 37485) (punctuation 37480 . 37481) (punctuation 37478 . 37479) (number 37477 . 37478) (CASE 37472 . 37476) (punctuation 37467 . 37468) (BREAK 37462 . 37467) (string 37426 . 37438) (number 37421 . 37425) (symbol 37416 . 37420) (punctuation 37415 . 37416) (close-paren 37413 . 37414) (semantic-list 37400 . 37411) (string 37390 . 37398) (open-paren 37382 . 37383) (string 37350 . 37358) (number 37347 . 37349) (symbol 37342 . 37346) (punctuation 37341 . 37342) (punctuation 37339 . 37340) (number 37338 . 37339) (CASE 37333 . 37337) (open-paren 37323 . 37324) (close-paren 37317 . 37318) (symbol 37314 . 37317) (open-paren 37313 . 37314) (SWITCH 37306 . 37312) (punctuation 37302 . 37303) (punctuation 37275 . 37276) (close-paren 37274 . 37275) (symbol 37269 . 37274) (punctuation 37268 . 37269) (number 37267 . 37268) (open-paren 37266 . 37267) (symbol 37261 . 37266) (punctuation 37259 . 37260) (symbol 37253 . 37258) (punctuation 36875 . 36876) (close-paren 36874 . 36875) (symbol 36871 . 36874) (open-paren 36870 . 36871) (symbol 36866 . 36870) (punctuation 36864 . 36865) (symbol 36858 . 36863) (punctuation 36801 . 36802) (symbol 36793 . 36801) (close-paren 36654 . 36655) (number 36653 . 36654) (punctuation 36651 . 36652) (punctuation 36650 . 36651) (symbol 36646 . 36649) (open-paren 36645 . 36646) (IF 36642 . 36644) (punctuation 36638 . 36639) (close-paren 36637 . 36638) (symbol 36630 . 36637) (open-paren 36629 . 36630) (symbol 36621 . 36629) (punctuation 36619 . 36620) (symbol 36615 . 36618) (punctuation 36611 . 36612) (symbol 36602 . 36611) (semantic-list "(\"GCC diagnostic pop\")" 36357 . 36390) (symbol "_Pragma" 36357 . 36390) (punctuation 36338 . 36339) (punctuation 36337 . 36338) (punctuation 36336 . 36337) (semantic-list "(\"GCC diagnostic ignored \\\"-Wmaybe-uninitialized\\\"\")" 36298 . 36333) (symbol "_Pragma" 36298 . 36333) (semantic-list "(\"GCC diagnostic ignored \\\"-Wuninitialized\\\"\")" 36298 . 36333) (symbol "_Pragma" 36298 . 36333) (semantic-list "(\"GCC diagnostic push\")" 36298 . 36333) (symbol "_Pragma" 36298 . 36333) (punctuation 36219 . 36220) (punctuation 36123 . 36124) (punctuation 36122 . 36123) (punctuation 36121 . 36122) (symbol 36110 . 36121) (close-paren 36104 . 36105) (symbol 36093 . 36104) (open-paren 36092 . 36093) (IF 36089 . 36091) (close-paren 36000 . 36001) (close-paren 35932 . 35933) (number "0" 35904 . 35932) (open-paren 35903 . 35904) (IF 35900 . 35902) (open-paren 35892 . 35893) (close-paren 35886 . 35887) (number 35885 . 35886) (punctuation 35883 . 35884) (punctuation 35882 . 35883) (symbol 35878 . 35881) (open-paren 35877 . 35878) (IF 35874 . 35876) (punctuation 35870 . 35871) (close-paren 35869 . 35870) (symbol 35866 . 35869) (open-paren 35865 . 35866) (symbol 35858 . 35865) (punctuation 35856 . 35857) (symbol 35852 . 35855) (close-paren 35828 . 35829) (symbol 35821 . 35828) (punctuation 35819 . 35820) (punctuation 35818 . 35819) (close-paren 35816 . 35817) (symbol 35813 . 35816) (open-paren 35812 . 35813) (symbol 35805 . 35812) (punctuation 35803 . 35804) (punctuation 35802 . 35803) (symbol 35798 . 35801) (punctuation 35796 . 35797) (number "33" 35789 . 35795) (punctuation 35787 . 35788) (punctuation 35786 . 35787) (number 35784 . 35785) (punctuation 35782 . 35783) (symbol 35778 . 35781) (open-paren 35777 . 35778) (IF 35774 . 35776) (punctuation 35761 . 35762) (punctuation 35760 . 35761) (symbol 35756 . 35759) (close-paren 35638 . 35639) (punctuation 35632 . 35633) (open-paren 35526 . 35527) (ELSE 35517 . 35521) (close-paren 35513 . 35514) (punctuation 35507 . 35508) (punctuation 35436 . 35437) (symbol 35429 . 35435) (open-paren 35421 . 35422) (close-paren 35415 . 35416) (number "0" 35410 . 35415) (punctuation 35408 . 35409) (punctuation 35407 . 35408) (symbol 35400 . 35406) (open-paren 35399 . 35400) (IF 35396 . 35398) (close-paren 35391 . 35392) (punctuation 35385 . 35386) (close-paren 35384 . 35385) (open-paren 35383 . 35384) (symbol 35377 . 35382) (punctuation 35375 . 35376) (symbol 35368 . 35374) (punctuation 35360 . 35361) (open-paren 35311 . 35312) (close-paren 35305 . 35306) (semantic-list "(-2)" 35298 . 35305) (punctuation 35296 . 35297) (punctuation 35295 . 35296) (symbol 35288 . 35294) (open-paren 35287 . 35288) (IF 35284 . 35286) (close-paren 35115 . 35116) (semantic-list #("(!!((Yystate) == (-5)))" 0 1 (macros (("Yystate" symbol "yyn" 35111 . 35114)))) 35086 . 35115) (open-paren 35085 . 35086) (IF 35082 . 35084) (punctuation 35078 . 35079) (close-paren 35077 . 35078) (symbol 35070 . 35077) (open-paren 35069 . 35070) (symbol 35063 . 35069) (punctuation 35061 . 35062) (symbol 35057 . 35060) (punctuation 34841 . 34842) (symbol 34833 . 34841) (close-paren 34753 . 34754) (number "2" 34746 . 34753) (punctuation 34744 . 34745) (punctuation 34743 . 34744) (symbol 34735 . 34742) (open-paren 34734 . 34735) (IF 34731 . 34733) (punctuation 34726 . 34727) (close-paren 34669 . 34670) (close-paren 34646 . 34647) (symbol 34641 . 34646) (punctuation 34639 . 34640) (punctuation 34638 . 34639) (number 34636 . 34637) (punctuation 34634 . 34635) (symbol 34622 . 34633) (punctuation 34620 . 34621) (symbol 34615 . 34619) (open-paren 34614 . 34615) (IF 34611 . 34613) (punctuation 34602 . 34603) (punctuation 34489 . 34490) (number 34488 . 34489) (punctuation 34486 . 34487) (symbol 34479 . 34485) (punctuation 34477 . 34478) (symbol 34472 . 34476) (punctuation 34470 . 34471) (symbol 34464 . 34469) (punctuation 34456 . 34457) (number 34455 . 34456) (punctuation 34453 . 34454) (symbol 34446 . 34452) (punctuation 34444 . 34445) (symbol 34439 . 34443) (punctuation 34437 . 34438) (symbol 34431 . 34436) (close-paren 34387 . 34388) (semantic-list 34332 . 34348) (IF 34329 . 34331) (punctuation 34293 . 34294) (semantic-list #("(0)" 0 1 (macros (("Stack" symbol "yyvs" 34288 . 34292) ("Stack_alloc" symbol "yyvs_alloc" 34276 . 34286)))) 34258 . 34293) (WHILE "while" 34258 . 34293) (semantic-list #("{                                                                 \\
+        YYSIZE_T yynewbytes;                                            \\
+        YYCOPY (&yyptr->Stack_alloc, Stack, yysize);                    \\
+        Stack = &yyptr->Stack_alloc;                                    \\
+        yynewbytes = yystacksize * sizeof (*Stack) + YYSTACK_GAP_MAXIMUM; \\
+        yyptr += yynewbytes / sizeof (*yyptr);                          \\
+      }" 0 1 (macros (("Stack" symbol "yyvs" 34288 . 34292) ("Stack_alloc" symbol "yyvs_alloc" 34276 . 34286)))) 34258 . 34293) (DO "do" 34258 . 34293) (punctuation 34248 . 34249) (semantic-list #("(0)" 0 1 (macros (("Stack" symbol "yyss" 34243 . 34247) ("Stack_alloc" symbol "yyss_alloc" 34231 . 34241)))) 34213 . 34248) (WHILE "while" 34213 . 34248) (semantic-list #("{                                                                 \\
+        YYSIZE_T yynewbytes;                                            \\
+        YYCOPY (&yyptr->Stack_alloc, Stack, yysize);                    \\
+        Stack = &yyptr->Stack_alloc;                                    \\
+        yynewbytes = yystacksize * sizeof (*Stack) + YYSTACK_GAP_MAXIMUM; \\
+        yyptr += yynewbytes / sizeof (*yyptr);                          \\
+      }" 0 1 (macros (("Stack" symbol "yyss" 34243 . 34247) ("Stack_alloc" symbol "yyss_alloc" 34231 . 34241)))) 34213 . 34248) (DO "do" 34213 . 34248) (semantic-list 34164 . 34173) (IF 34161 . 34163) (open-paren 34011 . 34012) (close-paren 33968 . 33969) (symbol 33957 . 33968) (punctuation 33955 . 33956) (number "10000" 33944 . 33954) (open-paren 33943 . 33944) (IF 33940 . 33942) (punctuation 33932 . 33933) (number 33931 . 33932) (punctuation 33929 . 33930) (punctuation 33928 . 33929) (symbol 33916 . 33927) (close-paren 33879 . 33880) (symbol 33868 . 33879) (punctuation 33866 . 33867) (punctuation 33865 . 33866) (number "10000" 33854 . 33864) (open-paren 33853 . 33854) (IF 33850 . 33852) (punctuation 32960 . 32961) (number 32959 . 32960) (punctuation 32957 . 32958) (symbol 32952 . 32956) (punctuation 32950 . 32951) (symbol 32944 . 32949) (punctuation 32942 . 32943) (symbol 32935 . 32941) (symbol "size_t" 32926 . 32934) (open-paren 32845 . 32846) (close-paren 32839 . 32840) (symbol 32834 . 32839) (punctuation 32832 . 32833) (punctuation 32831 . 32832) (number 32829 . 32830) (punctuation 32827 . 32828) (symbol 32815 . 32826) (punctuation 32813 . 32814) (symbol 32808 . 32812) (open-paren 32807 . 32808) (IF 32804 . 32806) (punctuation 32779 . 32780) (symbol 32769 . 32779) (punctuation 32765 . 32766) (punctuation 32764 . 32765) (punctuation 32763 . 32764) (symbol 32758 . 32763) (punctuation 32611 . 32612) (symbol 32601 . 32611) (punctuation 32283 . 32284) (punctuation 32195 . 32196) (symbol 32189 . 32194) (punctuation 32171 . 32172) (symbol 32165 . 32170) (punctuation 31502 . 31503) (close-paren 31501 . 31502) (number "200" 31490 . 31501) (open-paren 31489 . 31490) (symbol 31484 . 31489) (symbol 31476 . 31483) (punctuation 31383 . 31384) (close-paren 31382 . 31383) (number "200" 31371 . 31382) (open-paren 31370 . 31371) (symbol 31365 . 31370) (symbol 31352 . 31364) (open-paren 30982 . 30983) (close-paren 30980 . 30981) (VOID 30976 . 30980) (open-paren 30975 . 30976) (symbol 30967 . 30974) (INT 30963 . 30966) (close-paren 30751 . 30752) (semantic-list "(\"GCC diagnostic pop\")" 30717 . 30750) (symbol "_Pragma" 30717 . 30750) (punctuation 30713 . 30714) (semantic-list "(\"GCC diagnostic ignored \\\"-Wuninitialized\\\"\")" 30661 . 30696) (symbol "_Pragma" 30661 . 30696) (semantic-list "(\"GCC diagnostic push\")" 30661 . 30696) (symbol "_Pragma" 30661 . 30696) (punctuation 30656 . 30657) (close-paren 30574 . 30575) (symbol 30569 . 30574) (punctuation 30568 . 30569) (open-paren 30567 . 30568) (IF 30564 . 30566) (punctuation 30560 . 30561) (semantic-list #("((void) (E))" 0 1 (macros (("E" symbol "yyvaluep" 30551 . 30559)))) 30544 . 30560) (open-paren 30540 . 30541) (close-paren 30538 . 30539) (symbol 30530 . 30538) (punctuation 30529 . 30530) (symbol 30521 . 30528) (punctuation 30519 . 30520) (symbol 30513 . 30519) (INT 30509 . 30512) (punctuation 30507 . 30508) (symbol 30502 . 30507) (punctuation 30501 . 30502) (CHAR 30496 . 30500) (CONST 30490 . 30495) (open-paren 30489 . 30490) (symbol 30478 . 30488) (VOID 30473 . 30477) (STATIC 30466 . 30472) (punctuation 17140 . 17141) (close-paren 17139 . 17140) (number 17137 . 17138) (punctuation 17131 . 17132) (number 17130 . 17131) (punctuation 17124 . 17125) (number 17123 . 17124) (punctuation 17117 . 17118) (number 17116 . 17117) (punctuation 17110 . 17111) (number 17109 . 17110) (punctuation 17100 . 17101) (number 17099 . 17100) (punctuation 17093 . 17094) (number 17092 . 17093) (punctuation 17086 . 17087) (number 17085 . 17086) (punctuation 17079 . 17080) (number 17078 . 17079) (punctuation 17072 . 17073) (number 17071 . 17072) (punctuation 17065 . 17066) (number 17064 . 17065) (punctuation 17058 . 17059) (number 17057 . 17058) (punctuation 17051 . 17052) (number 17050 . 17051) (punctuation 17044 . 17045) (number 17043 . 17044) (punctuation 17037 . 17038) (number 17036 . 17037) (open-paren 17027 . 17028) (punctuation 17025 . 17026) (close-paren 17023 . 17024) (open-paren 17022 . 17023) (symbol 17018 . 17022) (symbol 17005 . 17017) (CONST 16999 . 17004) (STATIC 16992 . 16998) (punctuation 16913 . 16914) (close-paren 16912 . 16913) (number 16909 . 16911) (punctuation 16904 . 16905) (number 16902 . 16904) (punctuation 16897 . 16898) (number 16895 . 16897) (punctuation 16890 . 16891) (number 16888 . 16890) (punctuation 16883 . 16884) (number 16881 . 16883) (punctuation 16873 . 16874) (number 16871 . 16873) (punctuation 16866 . 16867) (number 16864 . 16866) (punctuation 16859 . 16860) (number 16857 . 16859) (punctuation 16852 . 16853) (number 16850 . 16852) (punctuation 16845 . 16846) (number 16843 . 16845) (punctuation 16838 . 16839) (number 16836 . 16838) (punctuation 16831 . 16832) (number 16829 . 16831) (punctuation 16824 . 16825) (number 16822 . 16824) (punctuation 16817 . 16818) (number 16815 . 16817) (punctuation 16810 . 16811) (number 16809 . 16810) (open-paren 16800 . 16801) (punctuation 16798 . 16799) (close-paren 16796 . 16797) (open-paren 16795 . 16796) (symbol 16791 . 16795) (symbol 16778 . 16790) (CONST 16772 . 16777) (STATIC 16765 . 16771) (punctuation 16693 . 16694) (close-paren 16692 . 16693) (number 16689 . 16691) (punctuation 16684 . 16685) (number 16682 . 16684) (punctuation 16677 . 16678) (number 16675 . 16677) (punctuation 16670 . 16671) (number 16668 . 16670) (punctuation 16660 . 16661) (number 16658 . 16660) (punctuation 16653 . 16654) (number 16651 . 16653) (punctuation 16646 . 16647) (number 16645 . 16646) (punctuation 16639 . 16640) (number 16638 . 16639) (punctuation 16632 . 16633) (number 16630 . 16632) (punctuation 16625 . 16626) (number 16624 . 16625) (punctuation 16618 . 16619) (number 16617 . 16618) (punctuation 16611 . 16612) (number 16610 . 16611) (punctuation 16604 . 16605) (number 16602 . 16604) (punctuation 16597 . 16598) (number 16595 . 16597) (punctuation 16587 . 16588) (number 16585 . 16587) (punctuation 16580 . 16581) (number 16578 . 16580) (punctuation 16573 . 16574) (number 16571 . 16573) (punctuation 16566 . 16567) (number 16564 . 16566) (punctuation 16559 . 16560) (number 16558 . 16559) (punctuation 16552 . 16553) (number 16551 . 16552) (punctuation 16545 . 16546) (number 16544 . 16545) (punctuation 16538 . 16539) (number 16537 . 16538) (punctuation 16531 . 16532) (number 16529 . 16531) (punctuation 16524 . 16525) (number 16523 . 16524) (open-paren 16514 . 16515) (punctuation 16512 . 16513) (close-paren 16510 . 16511) (open-paren 16509 . 16510) (symbol 16503 . 16509) (symbol 16490 . 16502) (CONST 16484 . 16489) (STATIC 16477 . 16483) (punctuation 16373 . 16374) (close-paren 16372 . 16373) (number 16370 . 16371) (punctuation 16364 . 16365) (number 16363 . 16364) (punctuation 16357 . 16358) (number 16356 . 16357) (punctuation 16350 . 16351) (number 16348 . 16350) (punctuation 16340 . 16341) (number 16338 . 16340) (punctuation 16333 . 16334) (number 16332 . 16333) (punctuation 16326 . 16327) (number 16325 . 16326) (punctuation 16319 . 16320) (number 16318 . 16319) (punctuation 16312 . 16313) (number 16311 . 16312) (punctuation 16305 . 16306) (number 16303 . 16305) (punctuation 16298 . 16299) (number 16297 . 16298) (punctuation 16296 . 16297) (punctuation 16291 . 16292) (number 16290 . 16291) (punctuation 16284 . 16285) (number 16283 . 16284) (punctuation 16282 . 16283) (punctuation 16277 . 16278) (number 16276 . 16277) (punctuation 16267 . 16268) (number 16266 . 16267) (punctuation 16260 . 16261) (number 16259 . 16260) (punctuation 16253 . 16254) (number 16251 . 16253) (punctuation 16246 . 16247) (number 16245 . 16246) (punctuation 16244 . 16245) (punctuation 16239 . 16240) (number 16238 . 16239) (punctuation 16232 . 16233) (number 16231 . 16232) (punctuation 16225 . 16226) (number 16223 . 16225) (punctuation 16218 . 16219) (number 16216 . 16218) (punctuation 16211 . 16212) (number 16210 . 16211) (punctuation 16209 . 16210) (punctuation 16204 . 16205) (number 16202 . 16204) (punctuation 16194 . 16195) (number 16193 . 16194) (punctuation 16187 . 16188) (number 16185 . 16187) (punctuation 16180 . 16181) (number 16179 . 16180) (punctuation 16178 . 16179) (punctuation 16173 . 16174) (number 16172 . 16173) (punctuation 16166 . 16167) (number 16165 . 16166) (punctuation 16159 . 16160) (number 16158 . 16159) (punctuation 16157 . 16158) (punctuation 16152 . 16153) (number 16151 . 16152) (punctuation 16145 . 16146) (number 16144 . 16145) (punctuation 16138 . 16139) (number 16137 . 16138) (punctuation 16131 . 16132) (number 16130 . 16131) (open-paren 16121 . 16122) (punctuation 16119 . 16120) (close-paren 16117 . 16118) (open-paren 16116 . 16117) (symbol 16109 . 16116) (symbol 16097 . 16108) (CONST 16091 . 16096) (STATIC 16084 . 16090) (punctuation 16081 . 16082) (close-paren 16080 . 16081) (number 16077 . 16079) (punctuation 16072 . 16073) (number 16070 . 16072) (punctuation 16065 . 16066) (number 16063 . 16065) (punctuation 16058 . 16059) (number 16056 . 16058) (punctuation 16048 . 16049) (number 16046 . 16048) (punctuation 16041 . 16042) (number 16039 . 16041) (punctuation 16034 . 16035) (number 16032 . 16034) (punctuation 16027 . 16028) (number 16026 . 16027) (punctuation 16020 . 16021) (number 16019 . 16020) (punctuation 16013 . 16014) (number 16011 . 16013) (punctuation 16006 . 16007) (number 16005 . 16006) (punctuation 15999 . 16000) (number 15997 . 15999) (punctuation 15992 . 15993) (number 15991 . 15992) (punctuation 15985 . 15986) (number 15984 . 15985) (punctuation 15975 . 15976) (number 15973 . 15975) (punctuation 15968 . 15969) (number 15966 . 15968) (punctuation 15961 . 15962) (number 15960 . 15961) (punctuation 15954 . 15955) (number 15953 . 15954) (punctuation 15947 . 15948) (number 15946 . 15947) (punctuation 15940 . 15941) (number 15939 . 15940) (punctuation 15933 . 15934) (number 15931 . 15933) (punctuation 15926 . 15927) (number 15924 . 15926) (punctuation 15919 . 15920) (number 15918 . 15919) (punctuation 15912 . 15913) (number 15910 . 15912) (punctuation 15902 . 15903) (number 15901 . 15902) (punctuation 15895 . 15896) (number 15893 . 15895) (punctuation 15888 . 15889) (number 15887 . 15888) (punctuation 15881 . 15882) (number 15880 . 15881) (punctuation 15874 . 15875) (number 15872 . 15874) (punctuation 15867 . 15868) (number 15866 . 15867) (punctuation 15860 . 15861) (number 15858 . 15860) (punctuation 15853 . 15854) (number 15851 . 15853) (punctuation 15846 . 15847) (number 15844 . 15846) (punctuation 15839 . 15840) (number 15837 . 15839) (open-paren 15829 . 15830) (punctuation 15827 . 15828) (close-paren 15825 . 15826) (open-paren 15824 . 15825) (symbol 15817 . 15824) (symbol 15804 . 15816) (CONST 15798 . 15803) (STATIC 15791 . 15797) (punctuation 15584 . 15585) (close-paren 15583 . 15584) (number 15581 . 15582) (punctuation 15575 . 15576) (number 15574 . 15575) (punctuation 15568 . 15569) (number 15567 . 15568) (punctuation 15561 . 15562) (number 15560 . 15561) (punctuation 15554 . 15555) (number 15553 . 15554) (punctuation 15552 . 15553) (open-paren 15544 . 15545) (punctuation 15542 . 15543) (close-paren 15540 . 15541) (open-paren 15539 . 15540) (symbol 15530 . 15539) (symbol 15518 . 15529) (CONST 15512 . 15517) (STATIC 15505 . 15511) (punctuation 15471 . 15472) (close-paren 15470 . 15471) (number 15468 . 15469) (punctuation 15467 . 15468) (punctuation 15462 . 15463) (number 15460 . 15462) (punctuation 15455 . 15456) (number 15454 . 15455) (punctuation 15453 . 15454) (punctuation 15448 . 15449) (number 15447 . 15448) (punctuation 15446 . 15447) (punctuation 15441 . 15442) (number 15440 . 15441) (punctuation 15439 . 15440) (open-paren 15431 . 15432) (punctuation 15429 . 15430) (close-paren 15427 . 15428) (open-paren 15426 . 15427) (symbol 15419 . 15426) (symbol 15407 . 15418) (CONST 15401 . 15406) (STATIC 15394 . 15400) (punctuation 15362 . 15363) (close-paren 15361 . 15362) (number 15358 . 15360) (punctuation 15353 . 15354) (number 15351 . 15353) (punctuation 15346 . 15347) (number 15345 . 15346) (punctuation 15339 . 15340) (number 15338 . 15339) (punctuation 15329 . 15330) (number 15328 . 15329) (punctuation 15322 . 15323) (number 15320 . 15322) (punctuation 15315 . 15316) (number 15314 . 15315) (punctuation 15308 . 15309) (number 15307 . 15308) (punctuation 15301 . 15302) (number 15300 . 15301) (punctuation 15294 . 15295) (number 15293 . 15294) (punctuation 15287 . 15288) (number 15286 . 15287) (punctuation 15280 . 15281) (number 15279 . 15280) (punctuation 15273 . 15274) (number 15272 . 15273) (punctuation 15266 . 15267) (number 15264 . 15266) (punctuation 15256 . 15257) (number 15255 . 15256) (punctuation 15249 . 15250) (number 15248 . 15249) (punctuation 15242 . 15243) (number 15241 . 15242) (punctuation 15235 . 15236) (number 15234 . 15235) (punctuation 15228 . 15229) (number 15227 . 15228) (punctuation 15221 . 15222) (number 15220 . 15221) (punctuation 15214 . 15215) (number 15212 . 15214) (punctuation 15207 . 15208) (number 15206 . 15207) (punctuation 15200 . 15201) (number 15199 . 15200) (punctuation 15193 . 15194) (number 15192 . 15193) (open-paren 15183 . 15184) (punctuation 15181 . 15182) (close-paren 15179 . 15180) (open-paren 15178 . 15179) (symbol 15170 . 15178) (symbol 15157 . 15169) (CONST 15151 . 15156) (STATIC 15144 . 15150) (punctuation 14955 . 14956) (close-paren 14954 . 14955) (number 14952 . 14953) (punctuation 14951 . 14952) (punctuation 14946 . 14947) (number 14945 . 14946) (punctuation 14944 . 14945) (punctuation 14939 . 14940) (number 14937 . 14939) (punctuation 14932 . 14933) (number 14930 . 14932) (punctuation 14922 . 14923) (number 14920 . 14922) (punctuation 14915 . 14916) (number 14914 . 14915) (punctuation 14913 . 14914) (punctuation 14908 . 14909) (number 14906 . 14908) (punctuation 14901 . 14902) (number 14899 . 14901) (punctuation 14894 . 14895) (number 14893 . 14894) (punctuation 14892 . 14893) (punctuation 14887 . 14888) (number 14885 . 14887) (punctuation 14880 . 14881) (number 14878 . 14880) (punctuation 14873 . 14874) (number 14871 . 14873) (punctuation 14866 . 14867) (number 14864 . 14866) (punctuation 14859 . 14860) (number 14858 . 14859) (punctuation 14857 . 14858) (punctuation 14849 . 14850) (number 14848 . 14849) (punctuation 14847 . 14848) (punctuation 14842 . 14843) (number 14840 . 14842) (punctuation 14835 . 14836) (number 14834 . 14835) (punctuation 14833 . 14834) (punctuation 14828 . 14829) (number 14827 . 14828) (punctuation 14826 . 14827) (punctuation 14821 . 14822) (number 14819 . 14821) (punctuation 14814 . 14815) (number 14812 . 14814) (punctuation 14807 . 14808) (number 14806 . 14807) (punctuation 14805 . 14806) (punctuation 14800 . 14801) (number 14799 . 14800) (punctuation 14798 . 14799) (punctuation 14793 . 14794) (number 14792 . 14793) (punctuation 14786 . 14787) (number 14785 . 14786) (punctuation 14784 . 14785) (open-paren 14776 . 14777) (punctuation 14774 . 14775) (close-paren 14772 . 14773) (open-paren 14771 . 14772) (symbol 14765 . 14771) (symbol 14753 . 14764) (CONST 14747 . 14752) (STATIC 14740 . 14746) (punctuation 13558 . 13559) (close-paren 13557 . 13558) (number 13554 . 13556) (punctuation 13549 . 13550) (number 13547 . 13549) (punctuation 13542 . 13543) (number 13541 . 13542) (punctuation 13535 . 13536) (number 13534 . 13535) (punctuation 13528 . 13529) (number 13527 . 13528) (punctuation 13521 . 13522) (number 13520 . 13521) (punctuation 13514 . 13515) (number 13513 . 13514) (punctuation 13504 . 13505) (number 13503 . 13504) (punctuation 13497 . 13498) (number 13496 . 13497) (punctuation 13490 . 13491) (number 13489 . 13490) (punctuation 13483 . 13484) (number 13482 . 13483) (punctuation 13476 . 13477) (number 13475 . 13476) (punctuation 13469 . 13470) (number 13468 . 13469) (punctuation 13462 . 13463) (number 13461 . 13462) (punctuation 13455 . 13456) (number 13454 . 13455) (punctuation 13448 . 13449) (number 13447 . 13448) (punctuation 13441 . 13442) (number 13440 . 13441) (punctuation 13431 . 13432) (number 13430 . 13431) (punctuation 13424 . 13425) (number 13423 . 13424) (punctuation 13417 . 13418) (number 13416 . 13417) (punctuation 13410 . 13411) (number 13409 . 13410) (punctuation 13403 . 13404) (number 13402 . 13403) (punctuation 13396 . 13397) (number 13395 . 13396) (punctuation 13389 . 13390) (number 13388 . 13389) (punctuation 13382 . 13383) (number 13381 . 13382) (punctuation 13375 . 13376) (number 13374 . 13375) (punctuation 13368 . 13369) (number 13367 . 13368) (punctuation 13358 . 13359) (number 13357 . 13358) (punctuation 13351 . 13352) (number 13350 . 13351) (punctuation 13344 . 13345) (number 13343 . 13344) (punctuation 13337 . 13338) (number 13336 . 13337) (punctuation 13330 . 13331) (number 13329 . 13330) (punctuation 13323 . 13324) (number 13322 . 13323) (punctuation 13316 . 13317) (number 13315 . 13316) (punctuation 13309 . 13310) (number 13308 . 13309) (punctuation 13302 . 13303) (number 13301 . 13302) (punctuation 13295 . 13296) (number 13294 . 13295) (punctuation 13285 . 13286) (number 13284 . 13285) (punctuation 13278 . 13279) (number 13277 . 13278) (punctuation 13271 . 13272) (number 13270 . 13271) (punctuation 13264 . 13265) (number 13263 . 13264) (punctuation 13257 . 13258) (number 13256 . 13257) (punctuation 13250 . 13251) (number 13249 . 13250) (punctuation 13243 . 13244) (number 13242 . 13243) (punctuation 13236 . 13237) (number 13235 . 13236) (punctuation 13229 . 13230) (number 13228 . 13229) (punctuation 13222 . 13223) (number 13221 . 13222) (punctuation 13212 . 13213) (number 13211 . 13212) (punctuation 13205 . 13206) (number 13204 . 13205) (punctuation 13198 . 13199) (number 13197 . 13198) (punctuation 13191 . 13192) (number 13190 . 13191) (punctuation 13184 . 13185) (number 13183 . 13184) (punctuation 13177 . 13178) (number 13176 . 13177) (punctuation 13170 . 13171) (number 13169 . 13170) (punctuation 13163 . 13164) (number 13162 . 13163) (punctuation 13156 . 13157) (number 13155 . 13156) (punctuation 13149 . 13150) (number 13148 . 13149) (punctuation 13139 . 13140) (number 13138 . 13139) (punctuation 13132 . 13133) (number 13131 . 13132) (punctuation 13125 . 13126) (number 13124 . 13125) (punctuation 13118 . 13119) (number 13117 . 13118) (punctuation 13111 . 13112) (number 13110 . 13111) (punctuation 13104 . 13105) (number 13103 . 13104) (punctuation 13097 . 13098) (number 13096 . 13097) (punctuation 13090 . 13091) (number 13089 . 13090) (punctuation 13083 . 13084) (number 13082 . 13083) (punctuation 13076 . 13077) (number 13075 . 13076) (punctuation 13066 . 13067) (number 13065 . 13066) (punctuation 13059 . 13060) (number 13058 . 13059) (punctuation 13052 . 13053) (number 13051 . 13052) (punctuation 13045 . 13046) (number 13044 . 13045) (punctuation 13038 . 13039) (number 13037 . 13038) (punctuation 13031 . 13032) (number 13030 . 13031) (punctuation 13024 . 13025) (number 13023 . 13024) (punctuation 13017 . 13018) (number 13016 . 13017) (punctuation 13010 . 13011) (number 13009 . 13010) (punctuation 13003 . 13004) (number 13002 . 13003) (punctuation 12993 . 12994) (number 12992 . 12993) (punctuation 12986 . 12987) (number 12985 . 12986) (punctuation 12979 . 12980) (number 12978 . 12979) (punctuation 12972 . 12973) (number 12971 . 12972) (punctuation 12965 . 12966) (number 12964 . 12965) (punctuation 12958 . 12959) (number 12957 . 12958) (punctuation 12951 . 12952) (number 12950 . 12951) (punctuation 12944 . 12945) (number 12943 . 12944) (punctuation 12937 . 12938) (number 12936 . 12937) (punctuation 12930 . 12931) (number 12929 . 12930) (punctuation 12920 . 12921) (number 12919 . 12920) (punctuation 12913 . 12914) (number 12912 . 12913) (punctuation 12906 . 12907) (number 12905 . 12906) (punctuation 12899 . 12900) (number 12898 . 12899) (punctuation 12892 . 12893) (number 12891 . 12892) (punctuation 12885 . 12886) (number 12884 . 12885) (punctuation 12878 . 12879) (number 12877 . 12878) (punctuation 12871 . 12872) (number 12870 . 12871) (punctuation 12864 . 12865) (number 12863 . 12864) (punctuation 12857 . 12858) (number 12856 . 12857) (punctuation 12847 . 12848) (number 12846 . 12847) (punctuation 12840 . 12841) (number 12839 . 12840) (punctuation 12833 . 12834) (number 12832 . 12833) (punctuation 12826 . 12827) (number 12825 . 12826) (punctuation 12819 . 12820) (number 12818 . 12819) (punctuation 12812 . 12813) (number 12811 . 12812) (punctuation 12805 . 12806) (number 12804 . 12805) (punctuation 12798 . 12799) (number 12797 . 12798) (punctuation 12791 . 12792) (number 12790 . 12791) (punctuation 12784 . 12785) (number 12783 . 12784) (punctuation 12774 . 12775) (number 12773 . 12774) (punctuation 12767 . 12768) (number 12766 . 12767) (punctuation 12760 . 12761) (number 12759 . 12760) (punctuation 12753 . 12754) (number 12752 . 12753) (punctuation 12746 . 12747) (number 12745 . 12746) (punctuation 12739 . 12740) (number 12738 . 12739) (punctuation 12732 . 12733) (number 12731 . 12732) (punctuation 12725 . 12726) (number 12724 . 12725) (punctuation 12718 . 12719) (number 12717 . 12718) (punctuation 12711 . 12712) (number 12710 . 12711) (punctuation 12701 . 12702) (number 12700 . 12701) (punctuation 12694 . 12695) (number 12693 . 12694) (punctuation 12687 . 12688) (number 12686 . 12687) (punctuation 12680 . 12681) (number 12679 . 12680) (punctuation 12673 . 12674) (number 12672 . 12673) (punctuation 12666 . 12667) (number 12665 . 12666) (punctuation 12659 . 12660) (number 12658 . 12659) (punctuation 12652 . 12653) (number 12651 . 12652) (punctuation 12645 . 12646) (number 12644 . 12645) (punctuation 12638 . 12639) (number 12637 . 12638) (punctuation 12628 . 12629) (number 12627 . 12628) (punctuation 12621 . 12622) (number 12620 . 12621) (punctuation 12614 . 12615) (number 12613 . 12614) (punctuation 12607 . 12608) (number 12606 . 12607) (punctuation 12600 . 12601) (number 12599 . 12600) (punctuation 12593 . 12594) (number 12592 . 12593) (punctuation 12586 . 12587) (number 12585 . 12586) (punctuation 12579 . 12580) (number 12578 . 12579) (punctuation 12572 . 12573) (number 12571 . 12572) (punctuation 12565 . 12566) (number 12564 . 12565) (punctuation 12555 . 12556) (number 12554 . 12555) (punctuation 12548 . 12549) (number 12547 . 12548) (punctuation 12541 . 12542) (number 12540 . 12541) (punctuation 12534 . 12535) (number 12533 . 12534) (punctuation 12527 . 12528) (number 12526 . 12527) (punctuation 12520 . 12521) (number 12519 . 12520) (punctuation 12513 . 12514) (number 12512 . 12513) (punctuation 12506 . 12507) (number 12505 . 12506) (punctuation 12499 . 12500) (number 12498 . 12499) (punctuation 12492 . 12493) (number 12491 . 12492) (punctuation 12482 . 12483) (number 12481 . 12482) (punctuation 12475 . 12476) (number 12474 . 12475) (punctuation 12468 . 12469) (number 12467 . 12468) (punctuation 12461 . 12462) (number 12460 . 12461) (punctuation 12454 . 12455) (number 12453 . 12454) (punctuation 12447 . 12448) (number 12446 . 12447) (punctuation 12440 . 12441) (number 12439 . 12440) (punctuation 12433 . 12434) (number 12432 . 12433) (punctuation 12426 . 12427) (number 12425 . 12426) (punctuation 12419 . 12420) (number 12418 . 12419) (punctuation 12409 . 12410) (number 12408 . 12409) (punctuation 12402 . 12403) (number 12401 . 12402) (punctuation 12395 . 12396) (number 12394 . 12395) (punctuation 12388 . 12389) (number 12387 . 12388) (punctuation 12381 . 12382) (number 12380 . 12381) (punctuation 12374 . 12375) (number 12373 . 12374) (punctuation 12367 . 12368) (number 12366 . 12367) (punctuation 12360 . 12361) (number 12359 . 12360) (punctuation 12353 . 12354) (number 12352 . 12353) (punctuation 12346 . 12347) (number 12345 . 12346) (punctuation 12336 . 12337) (number 12335 . 12336) (punctuation 12329 . 12330) (number 12328 . 12329) (punctuation 12322 . 12323) (number 12321 . 12322) (punctuation 12315 . 12316) (number 12314 . 12315) (punctuation 12308 . 12309) (number 12307 . 12308) (punctuation 12301 . 12302) (number 12300 . 12301) (punctuation 12294 . 12295) (number 12293 . 12294) (punctuation 12287 . 12288) (number 12286 . 12287) (punctuation 12280 . 12281) (number 12279 . 12280) (punctuation 12273 . 12274) (number 12272 . 12273) (punctuation 12263 . 12264) (number 12262 . 12263) (punctuation 12256 . 12257) (number 12255 . 12256) (punctuation 12249 . 12250) (number 12248 . 12249) (punctuation 12242 . 12243) (number 12241 . 12242) (punctuation 12235 . 12236) (number 12234 . 12235) (punctuation 12228 . 12229) (number 12227 . 12228) (punctuation 12221 . 12222) (number 12220 . 12221) (punctuation 12214 . 12215) (number 12213 . 12214) (punctuation 12207 . 12208) (number 12206 . 12207) (punctuation 12200 . 12201) (number 12199 . 12200) (punctuation 12190 . 12191) (number 12189 . 12190) (punctuation 12183 . 12184) (number 12182 . 12183) (punctuation 12176 . 12177) (number 12175 . 12176) (punctuation 12169 . 12170) (number 12168 . 12169) (punctuation 12162 . 12163) (number 12161 . 12162) (punctuation 12155 . 12156) (number 12154 . 12155) (punctuation 12148 . 12149) (number 12147 . 12148) (punctuation 12141 . 12142) (number 12140 . 12141) (punctuation 12134 . 12135) (number 12133 . 12134) (punctuation 12127 . 12128) (number 12126 . 12127) (punctuation 12117 . 12118) (number 12116 . 12117) (punctuation 12110 . 12111) (number 12109 . 12110) (punctuation 12103 . 12104) (number 12102 . 12103) (punctuation 12096 . 12097) (number 12095 . 12096) (punctuation 12089 . 12090) (number 12088 . 12089) (punctuation 12082 . 12083) (number 12081 . 12082) (punctuation 12075 . 12076) (number 12074 . 12075) (punctuation 12068 . 12069) (number 12067 . 12068) (punctuation 12061 . 12062) (number 12060 . 12061) (punctuation 12054 . 12055) (number 12053 . 12054) (punctuation 12044 . 12045) (number 12043 . 12044) (punctuation 12037 . 12038) (number 12036 . 12037) (punctuation 12030 . 12031) (number 12029 . 12030) (punctuation 12023 . 12024) (number 12022 . 12023) (punctuation 12016 . 12017) (number 12015 . 12016) (punctuation 12009 . 12010) (number 12008 . 12009) (punctuation 12002 . 12003) (number 12001 . 12002) (punctuation 11995 . 11996) (number 11994 . 11995) (punctuation 11988 . 11989) (number 11987 . 11988) (punctuation 11981 . 11982) (number 11980 . 11981) (punctuation 11971 . 11972) (number 11970 . 11971) (punctuation 11964 . 11965) (number 11963 . 11964) (punctuation 11957 . 11958) (number 11956 . 11957) (punctuation 11950 . 11951) (number 11949 . 11950) (punctuation 11943 . 11944) (number 11942 . 11943) (punctuation 11936 . 11937) (number 11935 . 11936) (punctuation 11929 . 11930) (number 11928 . 11929) (punctuation 11922 . 11923) (number 11921 . 11922) (punctuation 11915 . 11916) (number 11914 . 11915) (punctuation 11908 . 11909) (number 11907 . 11908) (punctuation 11898 . 11899) (number 11897 . 11898) (punctuation 11891 . 11892) (number 11890 . 11891) (punctuation 11884 . 11885) (number 11883 . 11884) (punctuation 11877 . 11878) (number 11876 . 11877) (punctuation 11870 . 11871) (number 11869 . 11870) (punctuation 11863 . 11864) (number 11862 . 11863) (punctuation 11856 . 11857) (number 11855 . 11856) (punctuation 11849 . 11850) (number 11848 . 11849) (punctuation 11842 . 11843) (number 11841 . 11842) (punctuation 11835 . 11836) (number 11834 . 11835) (punctuation 11825 . 11826) (number 11824 . 11825) (punctuation 11818 . 11819) (number 11817 . 11818) (punctuation 11811 . 11812) (number 11810 . 11811) (punctuation 11804 . 11805) (number 11803 . 11804) (punctuation 11797 . 11798) (number 11796 . 11797) (punctuation 11790 . 11791) (number 11789 . 11790) (punctuation 11783 . 11784) (number 11782 . 11783) (punctuation 11776 . 11777) (number 11775 . 11776) (punctuation 11769 . 11770) (number 11768 . 11769) (punctuation 11762 . 11763) (number 11761 . 11762) (punctuation 11752 . 11753) (number 11751 . 11752) (punctuation 11745 . 11746) (number 11744 . 11745) (punctuation 11738 . 11739) (number 11737 . 11738) (punctuation 11731 . 11732) (number 11730 . 11731) (punctuation 11724 . 11725) (number 11723 . 11724) (punctuation 11717 . 11718) (number 11716 . 11717) (punctuation 11710 . 11711) (number 11709 . 11710) (punctuation 11703 . 11704) (number 11702 . 11703) (punctuation 11696 . 11697) (number 11695 . 11696) (punctuation 11689 . 11690) (number 11688 . 11689) (punctuation 11679 . 11680) (number 11678 . 11679) (punctuation 11672 . 11673) (number 11671 . 11672) (punctuation 11665 . 11666) (number 11664 . 11665) (punctuation 11658 . 11659) (number 11657 . 11658) (punctuation 11651 . 11652) (number 11650 . 11651) (punctuation 11644 . 11645) (number 11643 . 11644) (punctuation 11637 . 11638) (number 11636 . 11637) (punctuation 11630 . 11631) (number 11629 . 11630) (punctuation 11623 . 11624) (number 11622 . 11623) (punctuation 11616 . 11617) (number 11615 . 11616) (open-paren 11606 . 11607) (punctuation 11604 . 11605) (close-paren 11602 . 11603) (open-paren 11601 . 11602) (symbol 11590 . 11601) (symbol 11577 . 11589) (CONST 11571 . 11576) (STATIC 11564 . 11570) (punctuation 8701 . 8702) (close-paren 8700 . 8701) (open-paren 8649 . 8650) (symbol 8641 . 8648) (UNION 8635 . 8640) (close-paren 8571 . 8572) (close-paren 8570 . 8571) (close-paren 8569 . 8570) (number "1" 8551 . 8569) (punctuation 8549 . 8550) (punctuation 8548 . 8549) (number "1" 8529 . 8547) (symbol 8521 . 8528) (open-paren 8520 . 8521) (punctuation 8518 . 8519) (punctuation 8517 . 8518) (symbol "199711L" 8494 . 8505) (symbol 8486 . 8493) (punctuation 8484 . 8485) (open-paren 8483 . 8484) (punctuation 8481 . 8482) (punctuation 8480 . 8481) (close-paren 7917 . 7918) (close-paren 7916 . 7917) (semantic-list 7884 . 7916) (punctuation 7882 . 7883) (punctuation 7881 . 7882) (semantic-list 7829 . 7865) (open-paren 7828 . 7829) (punctuation 7826 . 7827) (punctuation 7824 . 7825) (punctuation 7823 . 7824) (close-paren 5219 . 5220) (number 5213 . 5219) (punctuation 5211 . 5212) (symbol 5194 . 5210) (punctuation 5192 . 5193) (punctuation 5191 . 5192) (symbol 5174 . 5190) (symbol 5166 . 5173) (punctuation 5165 . 5166) (open-paren 5164 . 5165) (punctuation 5162 . 5163) (punctuation 5161 . 5162) (symbol 4825 . 4835) (punctuation 4823 . 4824) (punctuation 4822 . 4823) (number 4815 . 4821) (punctuation 4813 . 4814) (punctuation 4812 . 4813) (symbol 4801 . 4811) (symbol 4793 . 4800) (punctuation 4791 . 4792) (punctuation 4790 . 4791) (close-paren 4780 . 4781) (semantic-list 4723 . 4780) (punctuation 4721 . 4722) (punctuation 4720 . 4721) (string 3553 . 3565) (number 3549 . 3552) (symbol 3544 . 3548) (punctuation 3543 . 3544) (string 2402 . 2414) (number 2399 . 2401) (symbol 2394 . 2398) (punctuation 2393 . 2394) (string 2345 . 2353) (number 2343 . 2344) (symbol 2338 . 2342) (punctuation 2337 . 2338))
+      :lexical-table 
+        '(("YYBISON" . ((number "1" 2054 . 2055)))
+          ("YYSIZE_MAXIMUM" . ((semantic-list "((YYSIZE_T) -1)" 4346 . 4361)))
+          ("yypact_value_is_default" (spp-arg-list ("Yystate") 14534 . 14543) . ((semantic-list "(!!((Yystate) == (-5)))" 14548 . 14571)))
+          ("YYERROR" . ((symbol "goto" 17390 . 17394) (symbol "yyerrorlab" 17395 . 17405)))
+          ("YYERRCODE" . ((number "256" 18514 . 18517)))
+          ("YYINITDEPTH" . ((number "200" 22703 . 22706)))
+          ("YY_INITIAL_VALUE" (spp-arg-list ("Value") 6215 . 6222))
+          ("YYSTACK_FREE" . ((symbol "YYFREE" 7665 . 7671)))
+          ("YYFINAL" . ((number "2" 10822 . 10823)))
+          ("YYMAXUTOK" . ((number "266" 11283 . 11286)))
+          ("YYTERROR" . ((number "1" 18488 . 18489)))
+          ("YYDPRINTF" (spp-arg-list ("Args") 22449 . 22455))
+          ("YYTOKENTYPE")
+          ("YYTRANSLATE" (spp-arg-list ("YYX") 11307 . 11312) . ((semantic-list "((unsigned int) (YYX) <= YYMAXUTOK ? yytranslate[YYX] : YYUNDEFTOK)" 11364 . 11431)))
+          ("YYDEBUG" . ((number "0" 2960 . 2961)))
+          ("YYSTYPE_IS_DECLARED" . ((number "1" 3394 . 3395)))
+          ("_Noreturn" . ((symbol "YY_ATTRIBUTE" 5332 . 5344) (semantic-list "((__noreturn__))" 5345 . 5361)))
+          ("YYPOPSTACK" (spp-arg-list ("N") 31995 . 31998) . ((semantic-list "(yyvsp -= (N), yyssp -= (N))" 32001 . 32029)))
+          ("YY_YY_CALC_TAB_H_INCLUDED")
+          ("YYCOPY" (spp-arg-list ("Dst" "Src" "Count") 10247 . 10264) . ((symbol "__builtin_memcpy" 10273 . 10289) (semantic-list "(Dst, Src, (Count) * sizeof (*(Src)))" 10290 . 10327)))
+          ("YYTABLE_NINF" . ((punctuation "-" 14594 . 14595) (number "1" 14595 . 14596)))
+          ("YYBISON_VERSION" . ((string "\"3.0.4\"" 2103 . 2110)))
+          ("YYPURE" . ((number "0" 2204 . 2205)))
+          ("YY_ATTRIBUTE_UNUSED" . ((symbol "YY_ATTRIBUTE" 5095 . 5107) (semantic-list "((__unused__))" 5108 . 5122)))
+          ("YY_IGNORE_MAYBE_UNINITIALIZED_END" . ((symbol "_Pragma" 5943 . 5950) (semantic-list "(\"GCC diagnostic pop\")" 5951 . 5973)))
+          ("YYSKELETON_NAME" . ((string "\"yacc.c\"" 2158 . 2166)))
+          ("YYERROR_VERBOSE" . ((number "0" 2731 . 2732)))
+          ("YY_" (spp-arg-list ("Msgid") 4592 . 4599) . ((symbol "Msgid" 4600 . 4605)))
+          ("YYNTOKENS" . ((number "12" 10945 . 10947)))
+          ("YYNSTATES" . ((number "24" 11121 . 11123)))
+          ("yyclearin" . ((semantic-list "(yychar = YYEMPTY)" 17210 . 17228)))
+          ("YYMAXDEPTH" . ((number "10000" 23058 . 23063)))
+          ("YYPULL" . ((number "1" 2282 . 2283)))
+          ("YY_ATTRIBUTE" (spp-arg-list ("Spec") 4858 . 4864) . ((symbol "__attribute__" 4865 . 4878) (semantic-list "(Spec)" 4878 . 4884)))
+          ("YY_ATTRIBUTE_PURE" . ((symbol "YY_ATTRIBUTE" 5004 . 5016) (semantic-list "((__pure__))" 5017 . 5029)))
+          ("YYMALLOC" . ((symbol "malloc" 8086 . 8092)))
+          ("YYFREE" . ((symbol "free" 8257 . 8261)))
+          ("yytable_value_is_error" (spp-arg-list ("Yytable_value") 14628 . 14643) . ((number "0" 14648 . 14649)))
+          ("YYRECOVERING" (spp-arg-list nil 17428 . 17430) . ((semantic-list "(!!yyerrstatus)" 17432 . 17447)))
+          ("YY_STACK_PRINT" (spp-arg-list ("Bottom" "Top") 22534 . 22547))
+          ("YY_REDUCE_PRINT" (spp-arg-list ("Rule") 22572 . 22578))
+          ("YYSTYPE_IS_TRIVIAL" . ((number "1" 3363 . 3364)))
+          ("YYSTACK_GAP_MAXIMUM" . ((semantic-list "(sizeof (union yyalloc) - 1)" 8808 . 8836)))
+          ("YYSTACK_BYTES" (spp-arg-list ("N") 8949 . 8952) . ((semantic-list "((N) * (sizeof (yytype_int16) + sizeof (YYSTYPE)) \\
+      + YYSTACK_GAP_MAXIMUM)" 8960 . 9040)))
+          ("YYLAST" . ((number "33" 10881 . 10883)))
+          ("YYUNDEFTOK" . ((number "2" 11261 . 11262)))
+          ("YYABORT" . ((symbol "goto" 17350 . 17354) (symbol "yyabortlab" 17355 . 17365)))
+          ("YY_NULLPTR" . ((number "0" 2566 . 2567)))
+          ("YYUSE" (spp-arg-list ("E") 5486 . 5489) . ((semantic-list "((void) (E))" 5490 . 5502)))
+          ("YYCOPY_NEEDED" . ((number "1" 9065 . 9066)))
+          ("YYACCEPT" . ((symbol "goto" 17309 . 17313) (symbol "yyacceptlab" 17314 . 17325)))
+          ("YY_SYMBOL_PRINT" (spp-arg-list ("Title" "Type" "Value" "Location") 22480 . 22510))
+          ("YYSIZE_T" . ((symbol "size_t" 4261 . 4267)))
+          ("YY_IGNORE_MAYBE_UNINITIALIZED_BEGIN" . 
+              ((symbol "_Pragma" 5735 . 5742) (semantic-list "(\"GCC diagnostic push\")" 5743 . 5766) (symbol "_Pragma" 5773 . 5780) (semantic-list "(\"GCC diagnostic ignored \\\"-Wuninitialized\\\"\")" 5781 . 5827) (symbol "_Pragma" 5833 . 5840) (semantic-list "(\"GCC diagnostic ignored \\\"-Wmaybe-uninitialized\\\"\")" 5841 . 5893)))
+          ("YYNRULES" . ((number "14" 11061 . 11063)))
+          ("YYEOF" . ((number "0" 17282 . 17283)))
+          ("YYPUSH" . ((number "0" 2243 . 2244)))
+          ("YYSTACK_ALLOC_MAXIMUM" . ((symbol "YYSIZE_MAXIMUM" 7737 . 7751)))
+          ("YYSTACK_ALLOC" . ((symbol "YYMALLOC" 7633 . 7641)))
+          ("EXIT_SUCCESS" . ((number "0" 8026 . 8027)))
+          ("YYNNTS" . ((number "5" 11005 . 11006)))
+          ("YYPACT_NINF" . ((punctuation "-" 14499 . 14500) (number "5" 14500 . 14501)))
+          ("yyerrok" . ((semantic-list "(yyerrstatus = 0)" 17168 . 17185)))
+          ("YYEMPTY" . ((semantic-list "(-2)" 17253 . 17257)))
+          ("YYBACKUP" (spp-arg-list ("Token" "Value") 17465 . 17479) . 
+              ((DO "do" 17515 . 17517) (IF "if" 17583 . 17585) (semantic-list "(yychar == YYEMPTY)" 17586 . 17605) (semantic-list "{                                                           \\
+      yychar = (Token);                                         \\
+      yylval = (Value);                                         \\
+      YYPOPSTACK (yylen);                                       \\
+      yystate = *yyssp;                                         \\
+      goto yybackup;                                            \\
+    }" 17651 . 18048) (ELSE "else" 18111 . 18115) (semantic-list "{                                                           \\
+      yyerror (YY_(\"syntax error: cannot back up\")); \\
+      YYERROR;                                                  \\
+    }" 18179 . 18367) (WHILE "while" 18428 . 18433) (semantic-list "(0)" 18434 . 18437)))
+          )
+))
+  :file "!home!wlisper!Documents!notes!2016!11!day23!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

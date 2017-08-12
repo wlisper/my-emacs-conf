@@ -1,0 +1,196 @@
+;; Object ch10/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch10/"
+  :tables
+  (list
+    (semanticdb-table "abort.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [14 32])
+            ("stdlib.h" include (:system-flag t) nil [33 52])
+            ("unistd.h" include (:system-flag t) nil [53 72])
+            ("signal.h" include (:system-flag t) nil [73 92])
+            ("abt_handler" function
+               (:arguments 
+                  ( ("num" variable (:type "int") (reparse-symbol arg-sub-list) [111 119]))                  
+                :type "void")
+                nil [94 175])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [186 195])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [196 209]))                  
+                :type "int")
+                nil [177 513]))          
+      :file "abort.c"
+      :pointmax 514
+      :fsize 513
+      :lastmodtime '(22711 24000 959173 217000)
+      :unmatched-syntax nil)
+    (semanticdb-table "alarm.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [14 32])
+            ("unistd.h" include (:system-flag t) nil [33 52])
+            ("stdlib.h" include (:system-flag t) nil [53 72])
+            ("signal.h" include (:system-flag t) nil [73 92])
+            ("alrm_handler" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [112 122]))                  
+                :type "void")
+                nil [94 149])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [160 169])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [170 183]))                  
+                :type "int")
+                nil [151 278]))          
+      :file "alarm.c"
+      :pointmax 279
+      :fsize 278
+      :lastmodtime '(22711 23382 997363 252000)
+      :unmatched-syntax nil)
+    (semanticdb-table "abort_core.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("unistd.h" include (:system-flag t) nil [40 59])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [70 79])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [80 93]))                  
+                :type "int")
+                nil [61 301]))          
+      :file "abort_core.c"
+      :pointmax 302
+      :fsize 301
+      :lastmodtime '(22711 24128 275546 118000)
+      :unmatched-syntax nil)
+    (semanticdb-table "sleep_sort.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("unistd.h" include (:system-flag t) nil [14 33])
+            ("pthread.h" include (:system-flag t) nil [34 54])
+            ("sleep_sort" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [72 77])
+                    ("" variable (:type ("arr" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [78 82])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [83 92]))                  
+                :type "void")
+                nil [56 99])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [110 119])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [120 133]))                  
+                :type "int")
+                nil [101 152]))          
+      :file "sleep_sort.c"
+      :pointmax 153
+      :fsize 152
+      :lastmodtime '(22713 63442 883273 44000)
+      :unmatched-syntax '((semantic-list 75 . 77) (semantic-list 75 . 77) (semantic-list 41 . 43) (semantic-list 41 . 43)))
+    (semanticdb-table "macro_ts.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("A" variable (:constant-flag t) nil [29 30])
+            ("B" variable (:constant-flag t) nil [41 42])
+            ("A" variable (:constant-flag t) nil [53 54])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [67 76])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [77 90]))                  
+                :type "int")
+                nil [58 144]))          
+      :file "macro_ts.c"
+      :pointmax 145
+      :fsize 144
+      :lastmodtime '(22713 65118 448045 959000)
+      :unmatched-syntax '((number 55 . 56))
+      :lexical-table 
+        '(("A" . ((number "3" 55 . 56)))
+          ("B" . ((number "4" 43 . 44)))
+          )
+)
+    (semanticdb-table "10-5.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [183 201])
+            ("pwd.h" include (:system-flag t) nil [202 218])
+            ("string.h" include (:system-flag t) nil [219 238])
+            ("unistd.h" include (:system-flag t) nil [239 258])
+            ("signal.h" include (:system-flag t) nil [259 278])
+            ("stdlib.h" include (:system-flag t) nil [279 298])
+            ("my_alarm" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [321 331]))                  
+                :type "void")
+                nil [300 536])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [547 556])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [557 570]))                  
+                :type "int")
+                nil [538 900]))          
+      :file "10-5.c"
+      :pointmax 901
+      :fsize 900
+      :lastmodtime '(22720 40816 54791 976000)
+      :unmatched-syntax nil)
+    (semanticdb-table "10-6.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("signal.h" include (:system-flag t) nil [204 223])
+            ("unistd.h" include (:system-flag t) nil [224 243])
+            ("sys/wait.h" include (:system-flag t) nil [244 265])
+            ("sig_cld" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [287 297]))                  
+                :type "void")
+                nil [267 504])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [515 524])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [525 538]))                  
+                :type "int")
+                nil [506 768]))          
+      :file "10-6.c"
+      :pointmax 769
+      :fsize 768
+      :lastmodtime '(22720 41915 721917 641000)
+      :unmatched-syntax nil)
+)
+  :file "!home!wlisper!workspace!test!c!apue!ch10!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

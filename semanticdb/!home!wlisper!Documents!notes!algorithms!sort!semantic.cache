@@ -1,0 +1,124 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("time.h" include (:system-flag t) nil [204 221])
+            ("stdlib.h" include (:system-flag t) nil [222 241])
+            ("string.h" include (:system-flag t) nil [242 261])
+            ("defcomparator" variable (:constant-flag t) nil [272 285])
+            ("compare_int" function
+               (:arguments 
+                  ( ("X" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Y" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [353 420])
+            ("swap_int" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [436 446])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [447 456])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [457 467]))                  
+                :type "void")
+                nil [422 613])
+            ("quick_split" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [631 641])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [642 651])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [652 662])
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [676 680])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [681 685]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [615 998])
+            ("quick_sort_util_int" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1028 1038])
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [1039 1048])
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [1049 1059])
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1097 1101])
+                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1102 1106]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1000 1315])
+            ("quick_sort_int" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1340 1350])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1351 1359]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1317 1423])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1438 1447])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1448 1461]))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [1425 1618]))          
+      :file "sort.c"
+      :pointmax 1620
+      :fsize 1619
+      :lastmodtime '(22912 40412 103279 680000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("defcomparator" (spp-arg-list ("TYPE" "X" "Y" "CODE") 285 . 303) . 
+              ((INT "int" 304 . 307) (spp-symbol-merge ((symbol "compare_" 308 . 316) (symbol "TYPE" 318 . 322)) 308 . 322) (semantic-list "(TYPE X, TYPE Y)" 322 . 338) (semantic-list "{ CODE;}" 342 . 350)))
+          ("X"nil ;; bogus macro found.
+)
+          ("CODE"nil ;; bogus macro found.
+)
+          ("Y"nil ;; bogus macro found.
+)
+          ("TYPE"nil ;; bogus macro found.
+)
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("time.h" include (:system-flag t) nil [41 58])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [69 78])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [79 92]))                  
+                :type "int")
+                nil [60 172]))          
+      :file "test.c"
+      :pointmax 173
+      :fsize 172
+      :lastmodtime '(22912 37119 707258 189000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!algorithms!sort!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

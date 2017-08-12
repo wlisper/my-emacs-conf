@@ -1,0 +1,309 @@
+;; Object include/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "include/"
+  :tables
+  (list
+    (semanticdb-table "stdbool.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__STDBOOL_H" variable (:constant-flag t) nil [92 103])
+            ("bool" variable (:constant-flag t) nil [113 117])
+            ("true" variable (:constant-flag t) nil [132 136])
+            ("false" variable (:constant-flag t) nil [147 152])
+            ("__bool_true_false_are_defined" variable (:constant-flag t) nil [163 192]))          
+      :file "stdbool.h"
+      :pointmax 203
+      :fsize 202
+      :lastmodtime '(22665 54708 965650 771000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("false" . ((number "0" 153 . 154)))
+          ("bool" . ((symbol "_Bool" 118 . 123)))
+          ("__STDBOOL_H")
+          ("__bool_true_false_are_defined" . ((number "1" 193 . 194)))
+          ("true" . ((number "1" 137 . 138)))
+          )
+)
+    (semanticdb-table "stdarg.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__STDARG_H" variable (:constant-flag t) nil [91 101])
+            ("__va_elem" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("gp_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [223 246])
+                          ("fp_offset" variable (:type "unsigned int") (reparse-symbol classsubparts) [251 274])
+                          ("overflow_arg_area" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [279 303])
+                          ("reg_save_area" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [308 328]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [202 341])
+            ("va_list" type
+               (:typedef ("__va_elem" type (:type "class") nil nil)
+                :type "typedef")
+                nil [343 372])
+            ("__va_arg_gp" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("__va_elem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [399 413]))                  
+                :type "void")
+                nil [374 512])
+            ("__va_arg_fp" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("__va_elem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [539 553]))                  
+                :type "void")
+                nil [514 653])
+            ("__va_arg_mem" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("ap" variable
+                       (:pointer 1
+                        :type ("__va_elem" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [681 695]))                  
+                :type "void")
+                nil [655 727])
+            ("va_start" variable (:constant-flag t) nil [737 745])
+            ("va_arg" variable (:constant-flag t) nil [787 793])
+            ("va_end" variable (:constant-flag t) nil [1143 1149])
+            ("va_copy" variable (:constant-flag t) nil [1164 1171])
+            ("__GNUC_VA_LIST" variable (:constant-flag t) nil [1254 1268])
+            ("__gnuc_va_list" type
+               (:typedef ("va_list" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1271 1302]))          
+      :file "stdarg.h"
+      :pointmax 1311
+      :fsize 1310
+      :lastmodtime '(22665 54708 965650 771000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("va_start" (spp-arg-list ("ap" "last") 745 . 755) . ((symbol "__builtin_va_start" 756 . 774) (semantic-list "(ap)" 774 . 778)))
+          ("va_end" (spp-arg-list ("ap") 1149 . 1153) . ((number "1" 1154 . 1155)))
+          ("__STDARG_H")
+          ("va_arg" (spp-arg-list ("ap" "type") 793 . 803) . ((semantic-list "({                                                  \\
+        int klass = __builtin_reg_class((type *)0);     \\
+        *(type *)(klass == 0 ? __va_arg_gp(ap) :        \\
+                  klass == 1 ? __va_arg_fp(ap) :        \\
+                  __va_arg_mem(ap));                    \\
+    })" 841 . 1133)))
+          ("va_copy" (spp-arg-list ("dest" "src") 1171 . 1182) . ((semantic-list "((dest)[0] = (src)[0])" 1183 . 1205)))
+          ("__GNUC_VA_LIST" . ((number "1" 1269 . 1270)))
+          )
+)
+    (semanticdb-table "8cc.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_LP64" variable (:constant-flag t) nil [72 77])
+            ("__8cc__" variable (:constant-flag t) nil [88 95])
+            ("__ELF__" variable (:constant-flag t) nil [106 113])
+            ("__LP64__" variable (:constant-flag t) nil [124 132])
+            ("__SIZEOF_DOUBLE__" variable (:constant-flag t) nil [143 160])
+            ("__SIZEOF_FLOAT__" variable (:constant-flag t) nil [171 187])
+            ("__SIZEOF_INT__" variable (:constant-flag t) nil [198 212])
+            ("__SIZEOF_LONG_DOUBLE__" variable (:constant-flag t) nil [223 245])
+            ("__SIZEOF_LONG_LONG__" variable (:constant-flag t) nil [256 276])
+            ("__SIZEOF_LONG__" variable (:constant-flag t) nil [287 302])
+            ("__SIZEOF_POINTER__" variable (:constant-flag t) nil [313 331])
+            ("__SIZEOF_PTRDIFF_T__" variable (:constant-flag t) nil [342 362])
+            ("__SIZEOF_SHORT__" variable (:constant-flag t) nil [373 389])
+            ("__SIZEOF_SIZE_T__" variable (:constant-flag t) nil [400 417])
+            ("__STDC_HOSTED__" variable (:constant-flag t) nil [428 443])
+            ("__STDC_ISO_10646__" variable (:constant-flag t) nil [454 472])
+            ("__STDC_NO_ATOMICS__" variable (:constant-flag t) nil [489 508])
+            ("__STDC_NO_COMPLEX__" variable (:constant-flag t) nil [519 538])
+            ("__STDC_NO_THREADS__" variable (:constant-flag t) nil [549 568])
+            ("__STDC_NO_VLA__" variable (:constant-flag t) nil [579 594])
+            ("__STDC_UTF_16__" variable (:constant-flag t) nil [605 620])
+            ("__STDC_UTF_32__" variable (:constant-flag t) nil [631 646])
+            ("__STDC_VERSION__" variable (:constant-flag t) nil [657 673])
+            ("__STDC__" variable (:constant-flag t) nil [690 698])
+            ("__amd64" variable (:constant-flag t) nil [709 716])
+            ("__amd64__" variable (:constant-flag t) nil [727 736])
+            ("__gnu_linux__" variable (:constant-flag t) nil [747 760])
+            ("__linux" variable (:constant-flag t) nil [771 778])
+            ("__linux__" variable (:constant-flag t) nil [789 798])
+            ("__unix" variable (:constant-flag t) nil [809 815])
+            ("__unix__" variable (:constant-flag t) nil [826 834])
+            ("__x86_64" variable (:constant-flag t) nil [845 853])
+            ("__x86_64__" variable (:constant-flag t) nil [864 874])
+            ("linux" variable (:constant-flag t) nil [885 890])
+            ("__alignof__" variable (:constant-flag t) nil [902 913])
+            ("__const__" variable (:constant-flag t) nil [930 939])
+            ("__inline__" variable (:constant-flag t) nil [954 964])
+            ("__restrict" variable (:constant-flag t) nil [980 990])
+            ("__restrict__" variable (:constant-flag t) nil [1008 1020])
+            ("__signed__" variable (:constant-flag t) nil [1038 1048])
+            ("__typeof__" variable (:constant-flag t) nil [1064 1074])
+            ("__volatile__" variable (:constant-flag t) nil [1090 1102])
+            ("char16_t" type
+               (:typedef ("unsigned short")
+                :type "typedef")
+                nil [1113 1145])
+            ("char32_t" type
+               (:typedef ("unsigned int")
+                :type "typedef")
+                nil [1146 1176]))          
+      :file "8cc.h"
+      :pointmax 1177
+      :fsize 1176
+      :lastmodtime '(22665 54708 965650 771000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__STDC_HOSTED__" . ((number "1" 444 . 445)))
+          ("__STDC_VERSION__" . ((number "201112L" 674 . 681)))
+          ("__unix__" . ((number "1" 835 . 836)))
+          ("__volatile__" . ((VOLATILE "volatile" 1103 . 1111)))
+          ("__SIZEOF_LONG__" . ((number "8" 303 . 304)))
+          ("__STDC_NO_COMPLEX__" . ((number "1" 539 . 540)))
+          ("__STDC_UTF_32__" . ((number "1" 647 . 648)))
+          ("__amd64__" . ((number "1" 737 . 738)))
+          ("__restrict__" . ((symbol "restrict" 1021 . 1029)))
+          ("__SIZEOF_FLOAT__" . ((number "4" 188 . 189)))
+          ("__unix" . ((number "1" 816 . 817)))
+          ("__8cc__" . ((number "1" 96 . 97)))
+          ("__linux__" . ((number "1" 799 . 800)))
+          ("linux" . ((number "1" 891 . 892)))
+          ("__inline__" . ((INLINE "inline" 965 . 971)))
+          ("__typeof__" . ((symbol "typeof" 1075 . 1081)))
+          ("__SIZEOF_PTRDIFF_T__" . ((number "8" 363 . 364)))
+          ("__linux" . ((number "1" 779 . 780)))
+          ("__alignof__" . ((symbol "alignof" 914 . 921)))
+          ("__ELF__" . ((number "1" 114 . 115)))
+          ("__SIZEOF_POINTER__" . ((number "8" 332 . 333)))
+          ("__STDC_ISO_10646__" . ((number "201103L" 473 . 480)))
+          ("__amd64" . ((number "1" 717 . 718)))
+          ("_LP64" . ((number "1" 78 . 79)))
+          ("__STDC_NO_ATOMICS__" . ((number "1" 509 . 510)))
+          ("__STDC_NO_VLA__" . ((number "1" 595 . 596)))
+          ("__x86_64" . ((number "1" 854 . 855)))
+          ("__signed__" . ((SIGNED "signed" 1049 . 1055)))
+          ("__LP64__" . ((number "1" 133 . 134)))
+          ("__SIZEOF_LONG_LONG__" . ((number "8" 277 . 278)))
+          ("__STDC_UTF_16__" . ((number "1" 621 . 622)))
+          ("__SIZEOF_DOUBLE__" . ((number "8" 161 . 162)))
+          ("__SIZEOF_SHORT__" . ((number "2" 390 . 391)))
+          ("__SIZEOF_SIZE_T__" . ((number "8" 418 . 419)))
+          ("__x86_64__" . ((number "1" 875 . 876)))
+          ("__restrict" . ((symbol "restrict" 991 . 999)))
+          ("__SIZEOF_INT__" . ((number "4" 213 . 214)))
+          ("__SIZEOF_LONG_DOUBLE__" . ((number "8" 246 . 247)))
+          ("__STDC_NO_THREADS__" . ((number "1" 569 . 570)))
+          ("__STDC__" . ((number "1" 699 . 700)))
+          ("__gnu_linux__" . ((number "1" 761 . 762)))
+          ("__const__" . ((CONST "const" 940 . 945)))
+          )
+)
+
+    (semanticdb-table "float.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("__STDFLOAT_H" variable (:constant-flag t) nil [93 105])
+            ("DECIMAL_DIG" variable (:constant-flag t) nil [115 126])
+            ("FLT_EVAL_METHOD" variable (:constant-flag t) nil [138 153])
+            ("FLT_RADIX" variable (:constant-flag t) nil [183 192])
+            ("FLT_ROUNDS" variable (:constant-flag t) nil [203 213])
+            ("FLT_DIG" variable (:constant-flag t) nil [261 268])
+            ("FLT_EPSILON" variable (:constant-flag t) nil [279 290])
+            ("FLT_MANT_DIG" variable (:constant-flag t) nil [307 319])
+            ("FLT_MAX" variable (:constant-flag t) nil [331 338])
+            ("FLT_MAX_10_EXP" variable (:constant-flag t) nil [363 377])
+            ("FLT_MAX_EXP" variable (:constant-flag t) nil [389 400])
+            ("FLT_MIN" variable (:constant-flag t) nil [413 420])
+            ("FLT_MIN_10_EXP" variable (:constant-flag t) nil [438 452])
+            ("FLT_MIN_EXP" variable (:constant-flag t) nil [465 476])
+            ("FLT_TRUE_MIN" variable (:constant-flag t) nil [490 502])
+            ("DBL_DIG" variable (:constant-flag t) nil [521 528])
+            ("DBL_EPSILON" variable (:constant-flag t) nil [540 551])
+            ("DBL_MANT_DIG" variable (:constant-flag t) nil [568 580])
+            ("DBL_MAX" variable (:constant-flag t) nil [592 599])
+            ("DBL_MAX_10_EXP" variable (:constant-flag t) nil [632 646])
+            ("DBL_MAX_EXP" variable (:constant-flag t) nil [659 670])
+            ("DBL_MIN" variable (:constant-flag t) nil [684 691])
+            ("DBL_MIN_10_EXP" variable (:constant-flag t) nil [710 724])
+            ("DBL_MIN_EXP" variable (:constant-flag t) nil [738 749])
+            ("DBL_TRUE_MIN" variable (:constant-flag t) nil [764 776])
+            ("LDBL_DIG" variable (:constant-flag t) nil [810 818])
+            ("LDBL_EPSILON" variable (:constant-flag t) nil [830 842])
+            ("LDBL_MANT_DIG" variable (:constant-flag t) nil [859 872])
+            ("LDBL_MAX" variable (:constant-flag t) nil [884 892])
+            ("LDBL_MAX_10_EXP" variable (:constant-flag t) nil [925 940])
+            ("LDBL_MAX_EXP" variable (:constant-flag t) nil [953 965])
+            ("LDBL_MIN" variable (:constant-flag t) nil [979 987])
+            ("LDBL_MIN_10_EXP" variable (:constant-flag t) nil [1006 1021])
+            ("LDBL_MIN_EXP" variable (:constant-flag t) nil [1035 1047])
+            ("LDBL_TRUE_MIN" variable (:constant-flag t) nil [1062 1075]))          
+      :file "float.h"
+      :pointmax 1108
+      :fsize 1107
+      :lastmodtime '(22665 54708 965650 771000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("LDBL_MAX_10_EXP" . ((number "308" 941 . 944)))
+          ("FLT_DIG" . ((number "6" 269 . 270)))
+          ("FLT_MANT_DIG" . ((number "24" 320 . 322)))
+          ("FLT_MIN_EXP" . ((punctuation "-" 477 . 478) (number "125" 478 . 481)))
+          ("DBL_MAX_EXP" . ((number "1024" 671 . 675)))
+          ("FLT_MAX_10_EXP" . ((number "38" 378 . 380)))
+          ("FLT_TRUE_MIN" . 
+              ((symbol "0x1p" 503 . 507) (punctuation "-" 507 . 508) (number "149" 508 . 511)))
+          ("DBL_DIG" . ((number "15" 529 . 531)))
+          ("LDBL_EPSILON" . 
+              ((symbol "0x1p" 843 . 847) (punctuation "-" 847 . 848) (number "52" 848 . 850)))
+          ("LDBL_MIN_10_EXP" . ((punctuation "-" 1022 . 1023) (number "307" 1023 . 1026)))
+          ("FLT_ROUNDS" . ((number "1" 214 . 215)))
+          ("DBL_MIN_EXP" . ((punctuation "-" 750 . 751) (number "1021" 751 . 755)))
+          ("DECIMAL_DIG" . ((number "21" 127 . 129)))
+          ("FLT_EPSILON" . 
+              ((symbol "0x1p" 291 . 295) (punctuation "-" 295 . 296) (number "23" 296 . 298)))
+          ("FLT_MIN_10_EXP" . ((punctuation "-" 453 . 454) (number "37" 454 . 456)))
+          ("DBL_MAX_10_EXP" . ((number "308" 647 . 650)))
+          ("LDBL_MAX" . 
+              ((number "0x1" 893 . 896) (punctuation "." 896 . 897) (symbol "fffffffffffffp" 897 . 911) (punctuation "+" 911 . 912) (number "1023" 912 . 916)))
+          ("LDBL_MIN" . 
+              ((symbol "0x1p" 988 . 992) (punctuation "-" 992 . 993) (number "1022" 993 . 997)))
+          ("FLT_EVAL_METHOD" . ((number "0" 154 . 155)))
+          ("DBL_EPSILON" . 
+              ((symbol "0x1p" 552 . 556) (punctuation "-" 556 . 557) (number "52" 557 . 559)))
+          ("DBL_MIN_10_EXP" . ((punctuation "-" 725 . 726) (number "307" 726 . 729)))
+          ("LDBL_MANT_DIG" . ((number "53" 873 . 875)))
+          ("LDBL_DIG" . ((number "15" 819 . 821)))
+          ("LDBL_MAX_EXP" . ((number "1024" 966 . 970)))
+          ("LDBL_TRUE_MIN" . 
+              ((number "0x0" 1076 . 1079) (punctuation "." 1079 . 1080) (symbol "0000000000001p" 1080 . 1094) (punctuation "-" 1094 . 1095) (number "1022" 1095 . 1099)))
+          ("__STDFLOAT_H")
+          ("FLT_MAX" . 
+              ((number "0x1" 339 . 342) (punctuation "." 342 . 343) (symbol "fffffep" 343 . 350) (punctuation "+" 350 . 351) (number "127" 351 . 354)))
+          ("DBL_MANT_DIG" . ((number "53" 581 . 583)))
+          ("FLT_RADIX" . ((number "2" 193 . 194)))
+          ("FLT_MAX_EXP" . ((number "128" 401 . 404)))
+          ("FLT_MIN" . 
+              ((symbol "0x1p" 421 . 425) (punctuation "-" 425 . 426) (number "126" 426 . 429)))
+          ("DBL_MAX" . 
+              ((number "0x1" 600 . 603) (punctuation "." 603 . 604) (symbol "fffffffffffffp" 604 . 618) (punctuation "+" 618 . 619) (number "1023" 619 . 623)))
+          ("DBL_TRUE_MIN" . 
+              ((number "0x0" 777 . 780) (punctuation "." 780 . 781) (symbol "0000000000001p" 781 . 795) (punctuation "-" 795 . 796) (number "1022" 796 . 800)))
+          ("DBL_MIN" . 
+              ((symbol "0x1p" 692 . 696) (punctuation "-" 696 . 697) (number "1022" 697 . 701)))
+          ("LDBL_MIN_EXP" . ((punctuation "-" 1048 . 1049) (number "1021" 1049 . 1053)))
+          )
+))
+  :file "!home!wlisper!Documents!src!8cc!include!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

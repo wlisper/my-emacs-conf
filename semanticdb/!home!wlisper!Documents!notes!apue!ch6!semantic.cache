@@ -1,0 +1,40 @@
+;; Object ch6/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ch6/"
+  :tables
+  (list
+    (semanticdb-table "uname_ts.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [185 203])
+            ("stdlib.h" include (:system-flag t) nil [204 223])
+            ("unistd.h" include (:system-flag t) nil [224 243])
+            ("sys/utsname.h" include (:system-flag t) nil [244 268])
+            ("HOST_NAME_MAX" variable (:constant-flag t) nil [278 291])
+            ("hostname" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [295 331])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [342 351])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [352 365]))                  
+                :type "int")
+                nil [333 708]))          
+      :file "uname_ts.c"
+      :pointmax 709
+      :fsize 708
+      :lastmodtime '(22785 41124 378654 573000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("HOST_NAME_MAX" . ((number "65" 292 . 294)))
+          )
+))
+  :file "!home!wlisper!Documents!notes!apue!ch6!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
