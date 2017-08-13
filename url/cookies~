@@ -18,14 +18,7 @@
   [url-cookie "Max-Age" "63072000" "25-Dec-2018 12:54:16.00 GMT" "/" "www.so.com" nil]
   [url-cookie "QiHooGUID" "EB3C2B19233EF1879C7B7E4379991A91.1482670434940" "25-Dec-2018 12:53:54.00 GMT" "/" "www.so.com" nil])
  (".lynda.com"
-  [url-cookie "throttle-19917df26f9e03aa55c2b853c5be7c14" "1" "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "throttle-e0cb8e4541d2401ae2437d4836b8d8cd" "1" "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "throttle-f01d5e1760e46dd67ba9e947530269e4" "1" "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "throttle-9c141ac35cd620cc696a4ed9dad825a3" "1" "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "throttle-34b71ebdd1275c6b9611f8bd38bdf4c5" "1" "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "LyndaLoginStatus" "Unknown-Not-Logged-In" "24-Dec-2026 07:02:09.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "HttpOnly" nil "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil]
-  [url-cookie "throttle-debc254721129a3be83a175fa3f635de" "1" "24-Jun-2017 06:04:41.00 GMT" "/" ".lynda.com" nil])
+  [url-cookie "LyndaLoginStatus" "Unknown-Not-Logged-In" "24-Dec-2026 07:02:09.00 GMT" "/" ".lynda.com" nil])
  ("www.lynda.com"
   [url-cookie "bcookie" "026505cfe56b47b28b245f13ab8de7ef7955a3712321476d9b10519c94a4b886" "24-Dec-2018 18:39:41.00 GMT" "/" "www.lynda.com" nil])
  (".163.com"
@@ -39,9 +32,6 @@
  (".sbkk8.cn"
   [url-cookie "yunsuo_session_verify" "e50215fac3589706ac6a0cd17c5010ef" "09 Dec 21 20:16:35 [GMT]" "/" ".sbkk8.cn" nil]
   [url-cookie "HttpOnly" nil "09 Dec 21 20:16:35 [GMT]" "/" ".sbkk8.cn" nil])
- (".sogou.com"
-  [url-cookie "sw_uuid" "850339191" "26-Mar-2017 06:47:21.00 GMT" "/" ".sogou.com" nil]
-  [url-cookie "sg_uuid" "1042513152" "26-Mar-2017 06:47:21.00 GMT" "/" ".sogou.com" nil])
  (".dd.ma"
   [url-cookie "__cfduid" "d3fff6f52f6a36a673245fd9761c29f731485710296" "29 Jan 18 17:18:16 [GMT]" "/" ".dd.ma" nil]
   [url-cookie "HttpOnly" nil "29 Jan 18 17:18:16 [GMT]" "/" ".dd.ma" nil])

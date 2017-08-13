@@ -1,5 +1,3 @@
-/home/wlisper/Documents/notes/algorithms
-/home/wlisper/Documents/notes/algorithms/sort
 /home/wlisper/Documents/notes/apue/ch4
 /
 /home/wlisper/Downloads
@@ -7,7 +5,6 @@
 /opt/php7
 /opt/php7/bin
 /home/wlisper/workspace/php/runoob
-/home/wlisper/Documents
 /var/run
 /var
 /var/log
@@ -17,7 +14,6 @@
 /home/wlisper/Documents/notes/apue/ch5
 /home/wlisper/Documents/notes/apue/ch7
 /home/wlisper/Documents/notes/apue
-/home/wlisper/Documents/notes
 /home/wlisper/Documents/notes/unp
 /home/wlisper/Documents/notes/unp/ch8
 /home/wlisper
@@ -29,5 +25,8 @@
 /home/wlisper/workspace
 /home/wlisper/workspace/c
 /home/wlisper/workspace/c/test
-~
 /home/wlisper/.emacs.d/elpa/php-mode-20170722.1205
+~
+/home/wlisper/Documents
+/home/wlisper/Documents/notes
+/home/wlisper/Documents/notes/redis-runoob
