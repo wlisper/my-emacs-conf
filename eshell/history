@@ -1,34 +1,3 @@
-cd ..
-ls
-cd unp/
-ls
-cd chc8
-ls
-cd ch8/
-ls
-rmbak
-man bzero
-man inet_ntop
-cd
-cd workspace/php/
-ls
-cd runoob/
-ls
-rmbak
-ls
-ls
-rmbak
-while.php
-ls
-php while.php 
-ls
-rmbak
-ls
-rmbak
-ls
-cd workspace/php/runoob/
-ls
-ls
 rmbak
 ls
 ls
@@ -126,3 +95,34 @@ rmbak
 git add redis.org 
 git commit -m "update redis.org"
 git push -u origin master
+ls
+rm dump.rdb 
+ls
+cat test.php 
+ls
+ls
+rm test.php 
+ls
+ls
+cd Downloads/
+cd ../Documents/
+ls
+ls
+cd ..
+ls
+cd Downloads/
+ls
+mv Head\ First\ jQuery.pdf HeadFirst-AJAX【中】.pdf OpenResty-Best-Practices.pdf ~/Documents/
+ls
+rm -rf curl_7.35.0.orig.tar.gz
+rm -rf curl-7.35.0/
+ls
+cd 
+cd Documents/
+ls
+ls
+cd 
+cd .emacs.d/
+ls
+rmbak
+git add *

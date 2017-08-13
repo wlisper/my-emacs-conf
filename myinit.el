@@ -33,7 +33,14 @@
 
 (defun search-web()
   (interactive)
-  (eww "www.bing.com"))
+  (if (and mark-active (/= (point) (mark)))
+      (let ((word (buffer-substring-no-properties (region-beginning) (region-end))))
+          (eww (format "http://cn.bing.com/search?q=%s" word)))
+      (let ((word (thing-at-point 'word 'no-properties)))
+          (if (and (not (null word)) (stringp word))
+              (eww (format "http://cn.bing.com/search?q=%s" word))
+              (eww "www.bing.com")))))
+
 (global-set-key (kbd "C-c s") 'search-web)
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
