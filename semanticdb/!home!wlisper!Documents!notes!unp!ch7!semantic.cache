@@ -1,0 +1,17 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("sys/socket.h" include (:system-flag t) nil [15 38]))          
+      :file "ch7.c"
+      :pointmax 56
+      :fsize 40
+      :lastmodtime '(23004 35002 819818 851000)
+      :unmatched-syntax '((semantic-list 54 . 56) (symbol 44 . 54) (INT 40 . 43) (symbol 44 . 51) (INT 40 . 43) (symbol 44 . 49) (INT 40 . 43) (VOID 40 . 44) (symbol 22 . 23) (punctuation 21 . 22) (symbol 15 . 21) (punctuation 14 . 15) (symbol 11 . 14) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (symbol 22 . 23) (punctuation 21 . 22) (symbol 15 . 21) (punctuation 14 . 15) (symbol 11 . 14) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2) (punctuation 21 . 22) (symbol 15 . 21) (punctuation 14 . 15) (symbol 11 . 14) (punctuation 10 . 11) (symbol 2 . 9) (punctuation 1 . 2))))
+  :file "!home!wlisper!Documents!notes!unp!ch7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

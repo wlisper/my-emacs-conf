@@ -6,90 +6,291 @@
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
       :tags 
-        '( ("stdio.h" include (:system-flag t) nil [185 203])
-            ("time.h" include (:system-flag t) nil [204 221])
-            ("stdlib.h" include (:system-flag t) nil [222 241])
-            ("string.h" include (:system-flag t) nil [242 261])
-            ("defcomparator" variable (:constant-flag t) nil [272 285])
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("time.h" include (:system-flag t) nil [20 37])
+            ("stdlib.h" include (:system-flag t) nil [38 57])
+            ("string.h" include (:system-flag t) nil [58 77])
+            ("defcomparator" variable (:constant-flag t) nil [87 100])
+            ("def_quick_sort" variable (:constant-flag t) nil [239 253])
             ("compare_int" function
                (:arguments 
                   ( ("X" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
                     ("Y" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
                 :type "int")
-                nil [353 420])
+                nil [2753 2820])
             ("swap_int" function
                (:arguments 
                   ( ("arr" variable
                        (:dereference 1
-                        :type "int")
-                        (reparse-symbol arg-sub-list) [436 446])
-                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [447 456])
-                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [457 467]))                  
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
                 :type "void")
-                nil [422 613])
-            ("quick_split" function
+                nil [2822 2841])
+            ("quick_split_int" function
                (:arguments 
                   ( ("arr" variable
                        (:dereference 1
-                        :type "int")
-                        (reparse-symbol arg-sub-list) [631 641])
-                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [642 651])
-                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [652 662])
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil)
                     ("cmptr" function
                        (:function-pointer t
                         :arguments 
-                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [676 680])
-                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [681 685]))                          
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100 105])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106 111]))                          
                         :type "int")
                         nil nil))                  
                 :type "int")
-                nil [615 998])
+                nil [2822 2841])
             ("quick_sort_util_int" function
                (:arguments 
                   ( ("arr" variable
                        (:dereference 1
-                        :type "int")
-                        (reparse-symbol arg-sub-list) [1028 1038])
-                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) [1039 1048])
-                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) [1049 1059])
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil)
                     ("cmptr" function
                        (:function-pointer t
                         :arguments 
-                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1097 1101])
-                            ("" variable (:type "int") (reparse-symbol arg-sub-list) [1102 1106]))                          
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89 94])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95 100]))                          
                         :type "int")
                         nil nil))                  
                 :type ("int32_t" type (:type "class") nil nil))
-                nil [1000 1315])
+                nil [2822 2841])
             ("quick_sort_int" function
                (:arguments 
                   ( ("arr" variable
                        (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36 41])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42 47]))                          
                         :type "int")
-                        (reparse-symbol arg-sub-list) [1340 1350])
-                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [1351 1359]))                  
+                        nil nil))                  
                 :type ("int32_t" type (:type "class") nil nil))
-                nil [1317 1423])
+                nil [2822 2841])
+            ("compare_float" function
+               (:arguments 
+                  ( ("X" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Y" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [2844 2913])
+            ("swap_float" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [2915 2936])
+            ("quick_split_float" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100 105])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106 111]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [2915 2936])
+            ("quick_sort_util_float" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89 94])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95 100]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2915 2936])
+            ("quick_sort_float" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36 41])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42 47]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [2915 2936])
+            ("arr_length" variable (:constant-flag t) nil [2947 2957])
+            ("newline" variable (:constant-flag t) nil [3006 3013])
+            ("Studentp" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [3052 3066])
+                          ("age" variable (:type "int") (reparse-symbol classsubparts) [3069 3077]))                        
+                      :type "struct")
+                      nil nil)
+                :pointer 1
+                :type "typedef")
+                nil [3033 3100])
+            ("Student" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("name" variable
+                             (:dereference 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [3052 3066])
+                          ("age" variable (:type "int") (reparse-symbol classsubparts) [3069 3077]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3033 3100])
+            ("compare_Student" function
+               (:arguments 
+                  ( ("X" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("Y" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type "int")
+                nil [3102 3203])
+            ("swap_Student" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [3205 3228])
+            ("quick_split_Student" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [100 105])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [106 111]))                          
+                        :type "int")
+                        nil nil))                  
+                :type "int")
+                nil [3205 3228])
+            ("quick_sort_util_Student" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("left" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("right" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [89 94])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [95 100]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [3205 3228])
+            ("quick_sort_Student" function
+               (:arguments 
+                  ( ("arr" variable
+                       (:dereference 1
+                        :type ("TYPE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) nil)
+                    ("cmptr" function
+                       (:function-pointer t
+                        :arguments 
+                          ( ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [36 41])
+                            ("" variable (:type ("TYPE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42 47]))                          
+                        :type "int")
+                        nil nil))                  
+                :type ("int32_t" type (:type "class") nil nil))
+                nil [3205 3228])
             ("main" function
                (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1438 1447])
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [3244 3253])
                     ("argv" variable
                        (:pointer 1
                         :dereference 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1448 1461]))                  
+                        (reparse-symbol arg-sub-list) [3254 3267]))                  
                 :type ("int32_t" type (:type "class") nil nil))
-                nil [1425 1618]))          
+                nil [3231 4072]))          
       :file "sort.c"
-      :pointmax 1620
-      :fsize 1619
-      :lastmodtime '(22912 40412 103279 680000)
+      :pointmax 4074
+      :fsize 4073
+      :lastmodtime '(22928 36892 558739 451000)
       :unmatched-syntax nil
       :lexical-table 
-        '(("defcomparator" (spp-arg-list ("TYPE" "X" "Y" "CODE") 285 . 303) . 
-              ((INT "int" 304 . 307) (spp-symbol-merge ((symbol "compare_" 308 . 316) (symbol "TYPE" 318 . 322)) 308 . 322) (semantic-list "(TYPE X, TYPE Y)" 322 . 338) (semantic-list "{ CODE;}" 342 . 350)))
+        '(("defcomparator" (spp-arg-list ("TYPE" "X" "Y" "CODE") 284 . 302) . 
+              ((INT "int" 303 . 306) (spp-symbol-merge ((symbol "compare_" 307 . 315) (symbol "TYPE" 317 . 321)) 307 . 321) (semantic-list "(TYPE X, TYPE Y)" 321 . 337) (semantic-list "{ CODE;}" 342 . 350)))
+          ("newline" (spp-arg-list nil 3197 . 3199) . 
+              ((symbol "putchar" 3201 . 3208) (semantic-list "('\\n')" 3208 . 3214) (punctuation ";" 3214 . 3215)))
+          ("arr_length" (spp-arg-list ("arr") 3141 . 3146) . ((semantic-list "((sizeof(arr)) / (sizeof(arr[0])))" 3147 . 3181)))
           ("X"nil ;; bogus macro found.
 )
+          ("def_quick_sort" (spp-arg-list ("TYPE") 437 . 443) . 
+              ((VOID "void" 491 . 495) (spp-symbol-merge ((symbol "swap_" 496 . 501) (symbol "TYPE" 503 . 507)) 496 . 507) (semantic-list "(TYPE arr[], int left, int right)" 507 . 540) (semantic-list "{                   \\
+    TYPE bak;                                                           \\
+    memcpy(&bak, &arr[right], sizeof(TYPE));                            \\
+    memcpy(&arr[right], &arr[left], sizeof(TYPE));                      \\
+    memcpy(&arr[left], &bak, sizeof(TYPE));                             \\
+  }" 541 . 862) (INT "int" 935 . 938) (spp-symbol-merge ((symbol "quick_split_" 939 . 951) (symbol "TYPE" 953 . 957)) 939 . 957) (semantic-list "(TYPE arr[], int left,                          \\
+                         int right, int (*cmptr)(TYPE, TYPE))" 957 . 1068) (semantic-list "{         \\
+    srand(time(NULL));                                                  \\
+    int pivot_idx = left + (rand() % (right - left + 1));               \\
+    TYPE pivot = arr[pivot_idx];                                        \\
+    swap_##TYPE(arr, left, pivot_idx);                                  \\
+    int shift = left - 1;                                               \\
+    for (int i = left + 1; i <= right; i++) {                           \\
+      if (cmptr(arr[i], pivot) < 0) {                                   \\
+        swap_##TYPE(arr, i, ++shift);                                   \\
+      }                                                                 \\
+    }                                                                   \\
+    return shift + 1;                                                   \\
+  }" 1069 . 1898) (symbol "int32_t" 1971 . 1978) (spp-symbol-merge ((symbol "quick_sort_util_" 1979 . 1995) (symbol "TYPE" 1997 . 2001)) 1979 . 2001) (semantic-list "(TYPE arr[], int left, int right,       \\
+                                 int (*cmptr)(TYPE, TYPE))" 2001 . 2101) (semantic-list "{            \\
+    if (right - left <= 0) {                                            \\
+      return 0;                                                         \\
+    }                                                                   \\
+    int mid = quick_split_##TYPE(arr, left, right, cmptr);              \\
+    quick_sort_util_##TYPE(arr, left, mid - 1, cmptr);                  \\
+    quick_sort_util_##TYPE(arr, mid, right, cmptr);                     \\
+    return 0;                                                           \\
+  }" 2102 . 2638) (symbol "int32_t" 2711 . 2718) (spp-symbol-merge ((symbol "quick_sort_" 2719 . 2730) (symbol "TYPE" 2732 . 2736)) 2719 . 2736) (semantic-list "(TYPE arr[], int len, int (*cmptr)(TYPE, TYPE))" 2736 . 2783) (semantic-list "{ \\
+    return quick_sort_util_##TYPE(arr, 0, len - 1, cmptr);              \\
+  }" 2784 . 2865)))
           ("CODE"nil ;; bogus macro found.
 )
           ("Y"nil ;; bogus macro found.

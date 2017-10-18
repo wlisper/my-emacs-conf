@@ -2,50 +2,50 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '(("cn.bing.com"
-  [url-cookie "SRCHUID" "V=2&GUID=64BFAE51548B488582641BF6FD63C273" "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]
-  [url-cookie "MUIDB" "177646136B4B6D7A0DF64FF56AEA6CD5" "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]
-  [url-cookie "httponly" nil "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil])
- (".baidu.com"
-  [url-cookie "version" "1" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "max-age" "31536000" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "BAIDUID" "060EE0663B94C29A59456182891F9B1E:FG=1" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil])
- (".tuicool.com"
-  [url-cookie "HttpOnly" nil "19-Aug-2018 03:44:45.00 GMT" "/" ".tuicool.com" nil]
-  [url-cookie "_tuicool_session" "BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNkNGIwM2VlNjQ0YTU5NjdhOWE0MTU0ZjUzYzE5ZTdhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWJOR1VSM0trRjY3eUxEc2VITlF2QUxHYk9mUU0yclVoVmZmQjQ2bVEvR1E9BjsARg%3D%3D--9d6d2e96066b1bcf2783dabd33efb37a3010fee7" "19-Aug-2018 03:44:45.00 GMT" "/" ".tuicool.com" nil])
- ("www.so.com"
-  [url-cookie "tso_Anoyid" "11148267045612104919" "25-Dec-2018 12:54:16.00 GMT" "/" "www.so.com" nil]
-  [url-cookie "Max-Age" "63072000" "25-Dec-2018 12:54:16.00 GMT" "/" "www.so.com" nil]
-  [url-cookie "QiHooGUID" "EB3C2B19233EF1879C7B7E4379991A91.1482670434940" "25-Dec-2018 12:53:54.00 GMT" "/" "www.so.com" nil])
- (".lynda.com"
-  [url-cookie "LyndaLoginStatus" "Unknown-Not-Logged-In" "24-Dec-2026 07:02:09.00 GMT" "/" ".lynda.com" nil])
- ("www.lynda.com"
-  [url-cookie "bcookie" "026505cfe56b47b28b245f13ab8de7ef7955a3712321476d9b10519c94a4b886" "24-Dec-2018 18:39:41.00 GMT" "/" "www.lynda.com" nil])
+ '((".bing.com"
+  [url-cookie "SRCHUSR" "DOB=20161209" "09-Dec-2018 07:25:44.00 GMT" "/" ".bing.com" nil]
+  [url-cookie "SRCHD" "AF=NOFORM" "09-Dec-2018 07:25:44.00 GMT" "/" ".bing.com" nil])
+ (".beett.pw"
+  [url-cookie "HttpOnly" nil "29 Jan 18 17:18:17 [GMT]" "/" ".beett.pw" nil]
+  [url-cookie "__cfduid" "d20ccc7ac0d523a54e003328237d4a8c11485710297" "29 Jan 18 17:18:17 [GMT]" "/" ".beett.pw" nil])
+ (".dd.ma"
+  [url-cookie "HttpOnly" nil "29 Jan 18 17:18:16 [GMT]" "/" ".dd.ma" nil]
+  [url-cookie "__cfduid" "d3fff6f52f6a36a673245fd9761c29f731485710296" "29 Jan 18 17:18:16 [GMT]" "/" ".dd.ma" nil])
+ (".sbkk8.cn"
+  [url-cookie "HttpOnly" nil "09 Dec 21 20:16:35 [GMT]" "/" ".sbkk8.cn" nil]
+  [url-cookie "yunsuo_session_verify" "e50215fac3589706ac6a0cd17c5010ef" "09 Dec 21 20:16:35 [GMT]" "/" ".sbkk8.cn" nil])
+ (".eywedu.com"
+  [url-cookie "HttpOnly" nil "09 Dec 21 01:02:13 [GMT]" "/" ".eywedu.com" nil]
+  [url-cookie "yunsuo_session_verify" "8a42fcb3a19cccecf1279c611881ae73" "09 Dec 21 01:02:13 [GMT]" "/" ".eywedu.com" nil])
+ ("bing.com"
+  [url-cookie "MUID" "177646136B4B6D7A0DF64FF56AEA6CD5" "09-Dec-2018 07:25:44.00 GMT" "/" "bing.com" nil]
+  [url-cookie "_EDGE_V" "1" "09-Dec-2018 07:25:44.00 GMT" "/" "bing.com" nil])
  (".163.com"
   [url-cookie "usertrack" "c+5+hlhY5fetkgpyA8X3Ag==" "20 Dec 17 08:04:07 [GMT]" "/" ".163.com" nil])
- ("bing.com"
-  [url-cookie "_EDGE_V" "1" "09-Dec-2018 07:25:44.00 GMT" "/" "bing.com" nil]
-  [url-cookie "MUID" "177646136B4B6D7A0DF64FF56AEA6CD5" "09-Dec-2018 07:25:44.00 GMT" "/" "bing.com" nil])
- (".eywedu.com"
-  [url-cookie "yunsuo_session_verify" "8a42fcb3a19cccecf1279c611881ae73" "09 Dec 21 01:02:13 [GMT]" "/" ".eywedu.com" nil]
-  [url-cookie "HttpOnly" nil "09 Dec 21 01:02:13 [GMT]" "/" ".eywedu.com" nil])
- (".sbkk8.cn"
-  [url-cookie "yunsuo_session_verify" "e50215fac3589706ac6a0cd17c5010ef" "09 Dec 21 20:16:35 [GMT]" "/" ".sbkk8.cn" nil]
-  [url-cookie "HttpOnly" nil "09 Dec 21 20:16:35 [GMT]" "/" ".sbkk8.cn" nil])
- (".dd.ma"
-  [url-cookie "__cfduid" "d3fff6f52f6a36a673245fd9761c29f731485710296" "29 Jan 18 17:18:16 [GMT]" "/" ".dd.ma" nil]
-  [url-cookie "HttpOnly" nil "29 Jan 18 17:18:16 [GMT]" "/" ".dd.ma" nil])
- (".beett.pw"
-  [url-cookie "__cfduid" "d20ccc7ac0d523a54e003328237d4a8c11485710297" "29 Jan 18 17:18:17 [GMT]" "/" ".beett.pw" nil]
-  [url-cookie "HttpOnly" nil "29 Jan 18 17:18:17 [GMT]" "/" ".beett.pw" nil])
- (".bing.com"
-  [url-cookie "SRCHD" "AF=NOFORM" "09-Dec-2018 07:25:44.00 GMT" "/" ".bing.com" nil]
-  [url-cookie "SRCHUSR" "DOB=20161209" "09-Dec-2018 07:25:44.00 GMT" "/" ".bing.com" nil]))
+ ("www.lynda.com"
+  [url-cookie "bcookie" "026505cfe56b47b28b245f13ab8de7ef7955a3712321476d9b10519c94a4b886" "24-Dec-2018 18:39:41.00 GMT" "/" "www.lynda.com" nil])
+ (".lynda.com"
+  [url-cookie "LyndaLoginStatus" "Unknown-Not-Logged-In" "24-Dec-2026 07:02:09.00 GMT" "/" ".lynda.com" nil])
+ ("www.so.com"
+  [url-cookie "QiHooGUID" "EB3C2B19233EF1879C7B7E4379991A91.1482670434940" "25-Dec-2018 12:53:54.00 GMT" "/" "www.so.com" nil]
+  [url-cookie "Max-Age" "63072000" "25-Dec-2018 12:54:16.00 GMT" "/" "www.so.com" nil]
+  [url-cookie "tso_Anoyid" "11148267045612104919" "25-Dec-2018 12:54:16.00 GMT" "/" "www.so.com" nil])
+ (".tuicool.com"
+  [url-cookie "_tuicool_session" "BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNkNGIwM2VlNjQ0YTU5NjdhOWE0MTU0ZjUzYzE5ZTdhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWJOR1VSM0trRjY3eUxEc2VITlF2QUxHYk9mUU0yclVoVmZmQjQ2bVEvR1E9BjsARg%3D%3D--9d6d2e96066b1bcf2783dabd33efb37a3010fee7" "19-Aug-2018 03:44:45.00 GMT" "/" ".tuicool.com" nil]
+  [url-cookie "HttpOnly" nil "19-Aug-2018 03:44:45.00 GMT" "/" ".tuicool.com" nil])
+ (".baidu.com"
+  [url-cookie "BAIDUID" "060EE0663B94C29A59456182891F9B1E:FG=1" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "max-age" "31536000" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil]
+  [url-cookie "version" "1" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil])
+ ("cn.bing.com"
+  [url-cookie "httponly" nil "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "MUIDB" "177646136B4B6D7A0DF64FF56AEA6CD5" "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]
+  [url-cookie "SRCHUID" "V=2&GUID=64BFAE51548B488582641BF6FD63C273" "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]))
 )
 (setq url-cookie-secure-storage
  '((".github.com"
-  [url-cookie "HttpOnly" nil "Tue, 23 Dec 2036 09:16:29 -0000" "/" ".github.com" t]
-  [url-cookie "logged_in" "no" "Tue, 23 Dec 2036 09:16:29 -0000" "/" ".github.com" t]))
+  [url-cookie "logged_in" "no" "Tue, 23 Dec 2036 09:16:29 -0000" "/" ".github.com" t]
+  [url-cookie "HttpOnly" nil "Tue, 23 Dec 2036 09:16:29 -0000" "/" ".github.com" t]))
 )
 
 ;; Local Variables:

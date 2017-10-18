@@ -10,7 +10,7 @@
       :file "wordsize.h"
       :pointmax 328
       :fsize 327
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17633 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__WORDSIZE" . ((number "32" 157 . 159)))
@@ -84,7 +84,7 @@
       :file "types.h"
       :pointmax 7564
       :fsize 7563
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((symbol 7482 . 7492) (symbol 7404 . 7414) (symbol 7050 . 7060) (symbol 6951 . 6961) (symbol 6828 . 6838) (symbol 6788 . 6798) (symbol 6691 . 6701) (symbol 6648 . 6658) (symbol 6560 . 6570) (symbol 6517 . 6527) (symbol 6432 . 6442) (symbol 6393 . 6403) (symbol 6254 . 6264) (symbol 6179 . 6189) (symbol 6093 . 6103) (symbol 5981 . 5991) (symbol 5909 . 5919) (symbol 5826 . 5836) (symbol 5753 . 5763) (symbol 5686 . 5696) (symbol 5625 . 5635) (symbol 5542 . 5552) (symbol 5469 . 5479) (symbol 5399 . 5409) (symbol 5332 . 5342) (symbol 5259 . 5269) (symbol 5177 . 5187) (symbol 5105 . 5115) (symbol 5035 . 5045) (symbol 4960 . 4970) (symbol 4883 . 4893) (symbol 4814 . 4824) (symbol 4743 . 4753) (symbol 4673 . 4683) (symbol 4609 . 4619) (symbol 4532 . 4537) (punctuation 4530 . 4531) (LONG 1886 . 1890) (UNSIGNED 1877 . 1885) (TYPEDEF 1869 . 1876) (symbol 1855 . 1868) (LONG 1831 . 1835) (TYPEDEF 1823 . 1830) (symbol 1809 . 1822) (LONG 1652 . 1656) (UNSIGNED 1643 . 1651) (TYPEDEF 1635 . 1642) (symbol 1621 . 1634) (LONG 1596 . 1600) (SIGNED 1589 . 1595) (TYPEDEF 1581 . 1588) (symbol 1567 . 1580))
       :lexical-table 
         '(("__U32_TYPE" . ((UNSIGNED "unsigned" 3598 . 3606) (INT "int" 3607 . 3610)))
@@ -104,7 +104,7 @@
       :file "stdio_lim.h"
       :pointmax 1355
       :fsize 1354
-      :lastmodtime '(22737 34388 0 0)
+      :lastmodtime '(22852 17633 0 0)
       :unmatched-syntax '((string 876 . 943) (symbol 870 . 875) (punctuation 868 . 869)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -134,7 +134,7 @@
       :file "sys_errlist.h"
       :pointmax 1216
       :fsize 1215
-      :lastmodtime '(22737 34400 0 0)
+      :lastmodtime '(22852 17634 0 0)
       :unmatched-syntax '((string 891 . 960) (symbol 885 . 890) (punctuation 883 . 884)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -142,7 +142,7 @@
       :file "stdlib-float.h"
       :pointmax 1157
       :fsize 1156
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17633 0 0)
       :unmatched-syntax '((string 865 . 936) (symbol 859 . 864) (punctuation 857 . 858)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -186,7 +186,7 @@
       :file "typesizes.h"
       :pointmax 3277
       :fsize 3276
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((string 892 . 963) (symbol 886 . 891) (punctuation 884 . 885))
       :lexical-table 
         '(("__RLIM64_T_TYPE" . ((symbol "__UQUAD_TYPE" 2050 . 2062)))
@@ -236,7 +236,7 @@
       :file "wchar.h"
       :pointmax 1906
       :fsize 1905
-      :lastmodtime '(22737 34416 0 0)
+      :lastmodtime '(22852 17637 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_BITS_WCHAR_H" . ((number "1" 871 . 872)))
@@ -310,7 +310,7 @@
       :file "posix_opt.h"
       :pointmax 5706
       :fsize 5705
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_POSIX_SAVED_IDS" . ((number "1" 1063 . 1064)))
@@ -1597,7 +1597,7 @@
       :file "confname.h"
       :pointmax 23709
       :fsize 23708
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((spp-macro-def 23680 . 23690) (spp-macro-def 23633 . 23643) (spp-macro-def 23536 . 23571) (spp-macro-def 23425 . 23455) (spp-macro-def 23313 . 23346) (spp-macro-def 23200 . 23232) (spp-macro-def 23086 . 23119) (spp-macro-def 22981 . 23009) (spp-macro-def 22875 . 22906) (spp-macro-def 22768 . 22798) (spp-macro-def 22652 . 22687) (spp-macro-def 22541 . 22571) (spp-macro-def 22429 . 22462) (spp-macro-def 22316 . 22348) (spp-macro-def 22200 . 22234) (spp-macro-def 22092 . 22121) (spp-macro-def 21983 . 22015) (spp-macro-def 21873 . 21904) (spp-macro-def 21755 . 21790) (spp-macro-def 21644 . 21674) (spp-macro-def 21532 . 21565) (spp-macro-def 21419 . 21451) (spp-macro-def 21305 . 21338) (spp-macro-def 21200 . 21228) (spp-macro-def 21094 . 21125) (spp-macro-def 20987 . 21017) (spp-macro-def 20871 . 20906) (spp-macro-def 20760 . 20790) (spp-macro-def 20648 . 20681) (spp-macro-def 20535 . 20567) (spp-macro-def 20419 . 20453) (spp-macro-def 20311 . 20340) (spp-macro-def 20202 . 20234) (spp-macro-def 20092 . 20123) (spp-macro-def 19982 . 20013) (spp-macro-def 19883 . 19909) (spp-macro-def 19783 . 19812) (spp-macro-def 19682 . 19710) (spp-macro-def 19580 . 19609) (spp-macro-def 19487 . 19511) (spp-macro-def 19393 . 19420) (spp-macro-def 19298 . 19324) (spp-macro-def 19194 . 19225) (spp-macro-def 19095 . 19121) (spp-macro-def 18995 . 19024) (spp-macro-def 18894 . 18922) (spp-macro-def 18790 . 18820) (spp-macro-def 18694 . 18719) (spp-macro-def 18597 . 18625) (spp-macro-def 18499 . 18526) (spp-macro-def 18410 . 18429) (spp-macro-def 18347 . 18361) (spp-macro-def 18283 . 18300) (spp-macro-def 18218 . 18234) (spp-macro-def 18152 . 18169) (spp-macro-def 18094 . 18106) (spp-macro-def 18036 . 18051) (spp-macro-def 17977 . 17991) (spp-macro-def 17877 . 17911) (spp-macro-def 17811 . 17839) (spp-macro-def 17704 . 17738) (spp-macro-def 17638 . 17666) (spp-macro-def 17541 . 17567) (spp-macro-def 17459 . 17479) (spp-macro-def 17360 . 17394) (spp-macro-def 17294 . 17322) (spp-macro-def 17232 . 17240) (spp-macro-def 17049 . 17079) (spp-macro-def 16944 . 16974) (spp-macro-def 16862 . 16879) (spp-macro-def 16780 . 16804) (spp-macro-def 16705 . 16722) (spp-macro-def 16635 . 16653) (spp-macro-def 16553 . 16577) (spp-macro-def 16480 . 16495) (spp-macro-def 16409 . 16428) (spp-macro-def 16339 . 16356) (spp-macro-def 16267 . 16286) (spp-macro-def 16195 . 16213) (spp-macro-def 16128 . 16143) (spp-macro-def 16079 . 16087) (spp-macro-def 15898 . 15923) (spp-macro-def 15812 . 15834) (spp-macro-def 15731 . 15752) (spp-macro-def 15644 . 15669) (spp-macro-def 15558 . 15580) (spp-macro-def 15477 . 15498) (spp-macro-def 15390 . 15415) (spp-macro-def 15304 . 15326) (spp-macro-def 15223 . 15244) (spp-macro-def 15134 . 15160) (spp-macro-def 15045 . 15068) (spp-macro-def 14961 . 14983) (spp-macro-def 14871 . 14897) (spp-macro-def 14782 . 14805) (spp-macro-def 14698 . 14720) (spp-macro-def 14631 . 14644) (spp-macro-def 14567 . 14584) (spp-macro-def 14489 . 14511) (spp-macro-def 14431 . 14440) (spp-macro-def 14371 . 14388) (spp-macro-def 14298 . 14317) (spp-macro-def 14228 . 14245) (spp-macro-def 14156 . 14175) (spp-macro-def 14084 . 14102) (spp-macro-def 14008 . 14028) (spp-macro-def 13948 . 13959) (spp-macro-def 13889 . 13904) (spp-macro-def 13826 . 13841) (spp-macro-def 13760 . 13777) (spp-macro-def 13694 . 13710) (spp-macro-def 13621 . 13641) (spp-macro-def 13565 . 13574) (spp-macro-def 13505 . 13522) (spp-macro-def 13440 . 13455) (spp-macro-def 13361 . 13385) (spp-macro-def 13295 . 13307) (spp-macro-def 13224 . 13245) (spp-macro-def 13148 . 13167) (spp-macro-def 13061 . 13087) (spp-macro-def 12980 . 12999) (spp-macro-def 12925 . 12934) (spp-macro-def 12876 . 12887) (spp-macro-def 12829 . 12838) (spp-macro-def 12769 . 12786) (spp-macro-def 12714 . 12724) (spp-macro-def 12658 . 12672) (spp-macro-def 12581 . 12604) (spp-macro-def 12512 . 12526) (spp-macro-def 12445 . 12463) (spp-macro-def 12376 . 12393) (spp-macro-def 12304 . 12323) (spp-macro-def 12237 . 12252) (spp-macro-def 12173 . 12189) (spp-macro-def 12102 . 12121) (spp-macro-def 12049 . 12057) (spp-macro-def 12007 . 12015) (spp-macro-def 11959 . 11970) (spp-macro-def 11889 . 11910) (spp-macro-def 11813 . 11832) (spp-macro-def 11750 . 11763) (spp-macro-def 11684 . 11702) (spp-macro-def 11626 . 11637) (spp-macro-def 11560 . 11579) (spp-macro-def 11484 . 11504) (spp-macro-def 11411 . 11429) (spp-macro-def 11359 . 11367) (spp-macro-def 11309 . 11321) (spp-macro-def 11246 . 11263) (spp-macro-def 11160 . 11186) (spp-macro-def 11081 . 11099) (spp-macro-def 11014 . 11030) (spp-macro-def 10938 . 10959) (spp-macro-def 10862 . 10881) (spp-macro-def 10784 . 10805) (spp-macro-def 10706 . 10726) (spp-macro-def 10639 . 10653) (spp-macro-def 10581 . 10594) (spp-macro-def 10528 . 10539) (spp-macro-def 10473 . 10486) (spp-macro-def 10414 . 10428) (spp-macro-def 10356 . 10369) (spp-macro-def 10298 . 10311) (spp-macro-def 10241 . 10254) (spp-macro-def 10186 . 10198) (spp-macro-def 10130 . 10143) (spp-macro-def 10075 . 10087) (spp-macro-def 10021 . 10033) (spp-macro-def 9965 . 9978) (spp-macro-def 9908 . 9921) (spp-macro-def 9851 . 9864) (spp-macro-def 9802 . 9811) (spp-macro-def 9747 . 9761) (spp-macro-def 9691 . 9703) (spp-macro-def 9637 . 9649) (spp-macro-def 9585 . 9596) (spp-macro-def 9534 . 9545) (spp-macro-def 9481 . 9493) (spp-macro-def 9427 . 9439) (spp-macro-def 9373 . 9385) (spp-macro-def 9314 . 9328) (spp-macro-def 9254 . 9268) (spp-macro-def 9194 . 9208) (spp-macro-def 9143 . 9152) (spp-macro-def 9086 . 9101) (spp-macro-def 9023 . 9038) (spp-macro-def 8963 . 8976) (spp-macro-def 8897 . 8915) (spp-macro-def 8831 . 8846) (spp-macro-def 8770 . 8784) (spp-macro-def 8697 . 8718) (spp-macro-def 8625 . 8642) (spp-macro-def 8565 . 8577) (spp-macro-def 8507 . 8521) (spp-macro-def 8444 . 8460) (spp-macro-def 8382 . 8396) (spp-macro-def 8311 . 8331) (spp-macro-def 8234 . 8254) (spp-macro-def 8147 . 8172) (spp-macro-def 8059 . 8082) (spp-macro-def 7973 . 7996) (spp-macro-def 7874 . 7904) (spp-macro-def 7778 . 7803) (spp-macro-def 7687 . 7712) (spp-macro-def 7601 . 7623) (spp-macro-def 7522 . 7542) (spp-macro-def 7447 . 7466) (spp-macro-def 7348 . 7380) (spp-macro-def 7267 . 7283) (spp-macro-def 7198 . 7216) (spp-macro-def 7123 . 7143) (spp-macro-def 7046 . 7066) (spp-macro-def 6960 . 6985) (spp-macro-def 6895 . 6906) (spp-macro-def 6777 . 6790) (spp-macro-def 6720 . 6733) (spp-macro-def 6658 . 6674) (spp-macro-def 6593 . 6609) (spp-macro-def 6516 . 6538) (spp-macro-def 6431 . 6454) (spp-macro-def 6368 . 6379) (spp-macro-def 6294 . 6308) (spp-macro-def 6242 . 6252) (spp-macro-def 6198 . 6206) (spp-macro-def 6150 . 6161) (spp-macro-def 6090 . 6106) (spp-macro-def 6028 . 6042) (spp-macro-def 5974 . 5985) (spp-macro-def 5930 . 5937) (spp-macro-def 5874 . 5889) (spp-macro-def 5817 . 5829) (spp-macro-def 5759 . 5773) (spp-macro-def 5699 . 5713) (spp-macro-def 5645 . 5656) (spp-macro-def 5592 . 5604) (spp-macro-def 5536 . 5549) (spp-macro-def 5461 . 5483) (spp-macro-def 5393 . 5407) (spp-macro-def 5337 . 5349) (spp-macro-def 5274 . 5291) (spp-macro-def 5202 . 5221) (spp-macro-def 5126 . 5146) (spp-macro-def 5055 . 5072) (spp-macro-def 4989 . 5005) (spp-macro-def 4927 . 4941) (spp-macro-def 4865 . 4880) (spp-macro-def 4714 . 4727) (spp-macro-def 4652 . 4668) (spp-macro-def 4585 . 4602) (spp-macro-def 4517 . 4534) (spp-macro-def 4456 . 4469) (spp-macro-def 4400 . 4413) (spp-macro-def 4364 . 4376) (spp-macro-def 4312 . 4323) (spp-macro-def 4253 . 4268) (spp-macro-def 4190 . 4205) (spp-macro-def 4122 . 4140) (spp-macro-def 4043 . 4065) (spp-macro-def 3981 . 3992) (spp-macro-def 3917 . 3935) (spp-macro-def 3833 . 3858) (spp-macro-def 3762 . 3776) (spp-macro-def 3693 . 3712) (spp-macro-def 3615 . 3636) (spp-macro-def 3543 . 3560) (spp-macro-def 3486 . 3497) (spp-macro-def 3426 . 3442) (spp-macro-def 3374 . 3383) (spp-macro-def 3310 . 3329) (spp-macro-def 3238 . 3256) (spp-macro-def 3165 . 3184) (spp-macro-def 3108 . 3118) (spp-macro-def 3035 . 3058) (spp-macro-def 2955 . 2975) (spp-macro-def 2891 . 2904) (spp-macro-def 2830 . 2845) (spp-macro-def 2769 . 2783) (spp-macro-def 2709 . 2723) (spp-macro-def 2653 . 2665) (spp-macro-def 2593 . 2608) (spp-macro-def 2538 . 2549) (spp-macro-def 2483 . 2496) (spp-macro-def 2430 . 2441) (spp-macro-def 2313 . 2327) (spp-macro-def 2252 . 2267) (spp-macro-def 2184 . 2202) (spp-macro-def 2113 . 2131) (spp-macro-def 2036 . 2057) (spp-macro-def 1956 . 1977) (spp-macro-def 1874 . 1896) (spp-macro-def 1803 . 1819) (spp-macro-def 1739 . 1754) (spp-macro-def 1684 . 1695) (spp-macro-def 1631 . 1643) (spp-macro-def 1579 . 1590) (spp-macro-def 1526 . 1538) (spp-macro-def 1472 . 1484) (spp-macro-def 1403 . 1423) (spp-macro-def 1341 . 1353) (spp-macro-def 1287 . 1299) (spp-macro-def 1233 . 1245) (spp-macro-def 1177 . 1190) (spp-macro-def 1120 . 1133) (spp-macro-def 1065 . 1077) (string 887 . 954) (symbol 881 . 886) (punctuation 879 . 880))
       :lexical-table 
         '(("_PC_LINK_MAX" . ((symbol "_PC_LINK_MAX" 1080 . 1092)))
@@ -1916,7 +1916,7 @@
       :file "sigset.h"
       :pointmax 4554
       :fsize 4553
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17632 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SIGSET_NWORDS" . ((semantic-list "(1024 / (8 * sizeof (unsigned long int)))" 1015 . 1056)))
@@ -1929,7 +1929,7 @@
       :file "signum.h"
       :pointmax 3398
       :fsize 3397
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17632 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -1941,7 +1941,7 @@
       :file "time.h"
       :pointmax 3466
       :fsize 3465
-      :lastmodtime '(22737 34417 0 0)
+      :lastmodtime '(22852 17638 0 0)
       :unmatched-syntax '((punctuation 2022 . 2023) (semantic-list 2017 . 2022) (symbol 2007 . 2016) (INT 2003 . 2006) (LONG 1998 . 2002) (EXTERN 1991 . 1997) (symbol 1813 . 1826) (symbol 1805 . 1812) (punctuation 1804 . 1805) (punctuation 1802 . 1803) (punctuation 1801 . 1802))
       :lexical-table 
         '(("CLOCKS_PER_SEC" . ((semantic-list "((clock_t) 1000000)" 1719 . 1738)))
@@ -1981,7 +1981,7 @@
       :file "pthreadtypes.h"
       :pointmax 6742
       :fsize 6741
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((LONG 4268 . 4272) (symbol 4254 . 4267) (LONG 4091 . 4095) (UNSIGNED 4082 . 4090) (symbol 4068 . 4081) (LONG 4036 . 4040) (UNSIGNED 4027 . 4035) (symbol 4013 . 4026) (LONG 3982 . 3986) (UNSIGNED 3973 . 3981) (symbol 3959 . 3972) (punctuation "." 3358 . 3367) (symbol "__elision_data" 3358 . 3367) (SHORT 3352 . 3357) (symbol 3287 . 3300))
       :lexical-table 
         '(("__SIZEOF_PTHREAD_MUTEX_T" . ((number "24" 1724 . 1726)))
@@ -2012,7 +2012,7 @@
       :file "setjmp.h"
       :pointmax 1287
       :fsize 1286
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17632 0 0)
       :unmatched-syntax '((string 963 . 1028) (symbol 957 . 962) (punctuation 955 . 956))
       :lexical-table 
         '(("_BITS_SETJMP_H" . ((number "1" 906 . 907)))
@@ -2025,7 +2025,7 @@
       :file "endian.h"
       :pointmax 177
       :fsize 176
-      :lastmodtime '(22737 34416 0 0)
+      :lastmodtime '(22852 17637 0 0)
       :unmatched-syntax '((string 66 . 131) (symbol 60 . 65) (punctuation 58 . 59))
       :lexical-table 
         '(("__BYTE_ORDER" . ((symbol "__LITTLE_ENDIAN" 161 . 176)))
@@ -2044,7 +2044,7 @@
       :file "sched.h"
       :pointmax 7494
       :fsize 7493
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((symbol 3617 . 3628) (symbol 3153 . 3166) (string 937 . 1000) (symbol 931 . 936) (punctuation 929 . 930))
       :lexical-table 
         '(("SCHED_RR" . ((number "2" 1103 . 1104)))
@@ -2059,7 +2059,7 @@
       :file "math-vector.h"
       :pointmax 2308
       :fsize 2307
-      :lastmodtime '(22737 34385 0 0)
+      :lastmodtime '(22852 17629 0 0)
       :unmatched-syntax '((string 872 . 946) (symbol 866 . 871) (punctuation 864 . 865)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -2073,7 +2073,7 @@
       :file "huge_val.h"
       :pointmax 1841
       :fsize 1840
-      :lastmodtime '(22737 34385 0 0)
+      :lastmodtime '(22852 17629 0 0)
       :unmatched-syntax '((string 942 . 1007) (symbol 936 . 941) (punctuation 934 . 935))
       :lexical-table 
         '(("__HUGE_VAL_bytes" . ((semantic-list "{ 0, 0, 0, 0, 0, 0, 0xf0, 0x7f }" 1689 . 1721)))
@@ -2086,7 +2086,7 @@
       :file "mathdef.h"
       :pointmax 2190
       :fsize 2189
-      :lastmodtime '(22737 34385 0 0)
+      :lastmodtime '(22852 17629 0 0)
       :unmatched-syntax '((string 842 . 905) (symbol 836 . 841) (punctuation 834 . 835)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -2110,7 +2110,7 @@
       :file "mathcalls.h"
       :pointmax 12082
       :fsize 12081
-      :lastmodtime '(22737 34385 0 0)
+      :lastmodtime '(22852 17629 0 0)
       :unmatched-syntax '((semantic-list 7309 . 7320) (semantic-list 7258 . 7293) (symbol 7245 . 7257) (semantic-list 7273 . 7292) (symbol 6081 . 6103) (semantic-list 7273 . 7292) (semantic-list 6067 . 6078) (semantic-list 6015 . 6051) (symbol 6002 . 6014) (semantic-list 6031 . 6050) (semantic-list 5933 . 5944) (semantic-list 5882 . 5917) (symbol 5869 . 5881) (semantic-list 5897 . 5916) (punctuation 5773 . 5774) (semantic-list 5734 . 5773) (symbol 5723 . 5733) (semantic-list 5742 . 5772) (punctuation 5673 . 5674) (semantic-list 5635 . 5673) (symbol 5623 . 5634) (semantic-list 5661 . 5672) (semantic-list 5644 . 5659) (punctuation 5577 . 5578) (semantic-list 5540 . 5577) (symbol 5528 . 5539) (semantic-list 5565 . 5576) (semantic-list 5548 . 5563) (punctuation 5497 . 5498) (semantic-list 5460 . 5497) (symbol 5448 . 5459) (semantic-list 5485 . 5496) (semantic-list 5468 . 5483) (symbol 5375 . 5399) (semantic-list 5485 . 5496) (semantic-list 5468 . 5483) (symbol 4922 . 4944) (punctuation 4920 . 4921) (semantic-list 4896 . 4920) (symbol 4885 . 4895) (semantic-list 4904 . 4919) (punctuation 4846 . 4847) (semantic-list 4808 . 4846) (symbol 4793 . 4807) (semantic-list 4815 . 4845) (symbol 4736 . 4760) (semantic-list 4815 . 4845) (symbol 3919 . 3941) (semantic-list 3913 . 3916) (semantic-list 3858 . 3901) (symbol 3847 . 3857) (semantic-list 3866 . 3900) (punctuation 3789 . 3790) (semantic-list 3764 . 3789) (symbol 3753 . 3763) (semantic-list 3773 . 3788) (punctuation 3718 . 3719) (semantic-list 3695 . 3718) (symbol 3680 . 3694) (semantic-list 3702 . 3717) (punctuation 3646 . 3647) (semantic-list 3605 . 3646) (symbol 3594 . 3604) (semantic-list 3614 . 3645) (punctuation 3552 . 3553) (semantic-list 3510 . 3552) (symbol 3499 . 3509) (semantic-list 3519 . 3551) (punctuation 3422 . 3423) (semantic-list 3399 . 3422) (symbol 3384 . 3398) (semantic-list 3406 . 3421) (symbol 3325 . 3349) (semantic-list 3406 . 3421) (symbol 2787 . 2809) (punctuation 2785 . 2786) (semantic-list 2761 . 2785) (symbol 2750 . 2760) (semantic-list 2769 . 2784) (punctuation 2716 . 2717) (semantic-list 2692 . 2716) (symbol 2681 . 2691) (semantic-list 2700 . 2715) (punctuation 2650 . 2651) (semantic-list 2626 . 2650) (symbol 2615 . 2625) (semantic-list 2634 . 2649) (punctuation 2551 . 2552) (semantic-list 2528 . 2551) (symbol 2517 . 2527) (semantic-list 2535 . 2550) (punctuation 2494 . 2495) (semantic-list 2471 . 2494) (symbol 2456 . 2470) (semantic-list 2478 . 2493) (punctuation 2436 . 2437) (semantic-list 2413 . 2436) (symbol 2398 . 2412) (semantic-list 2420 . 2435) (punctuation 2375 . 2376) (semantic-list 2335 . 2375) (symbol 2324 . 2334) (semantic-list 2344 . 2374) (punctuation 2295 . 2296) (semantic-list 2271 . 2295) (symbol 2260 . 2270) (semantic-list 2279 . 2294) (punctuation 2233 . 2234) (semantic-list 2209 . 2233) (symbol 2198 . 2208) (semantic-list 2217 . 2232) (punctuation 2174 . 2175) (semantic-list 2150 . 2174) (symbol 2139 . 2149) (semantic-list 2158 . 2173) (symbol 2090 . 2114) (semantic-list 2158 . 2173) (string 1977 . 2047) (symbol 1971 . 1976) (punctuation 1969 . 1970)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -2118,7 +2118,7 @@
       :file "errno.h"
       :pointmax 2146
       :fsize 2145
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17633 0 0)
       :unmatched-syntax nil)
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -2145,7 +2145,7 @@
       :file "libm-simd-decl-stubs.h"
       :pointmax 1819
       :fsize 1818
-      :lastmodtime '(22737 34385 0 0)
+      :lastmodtime '(22852 17629 0 0)
       :unmatched-syntax '((string 889 . 972) (symbol 883 . 888) (punctuation 881 . 882))
       :lexical-table 
         '(("__DECL_SIMD_sincos")
@@ -2181,7 +2181,7 @@
       :file "select.h"
       :pointmax 2106
       :fsize 2105
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax '((string 820 . 889) (symbol 814 . 819) (punctuation 812 . 813))
       :lexical-table 
         '(("__FD_ZERO_STOS" . ((string "\"stosl\"" 1053 . 1060)))
@@ -2244,7 +2244,7 @@
       :file "posix1_lim.h"
       :pointmax 4923
       :fsize 4922
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_POSIX_LINK_MAX" . ((number "8" 1771 . 1772)))
@@ -2311,7 +2311,7 @@
       :file "posix2_lim.h"
       :pointmax 2867
       :fsize 2866
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_BITS_POSIX2_LIM_H" . ((number "1" 917 . 918)))
@@ -2354,7 +2354,7 @@
       :file "xopen_lim.h"
       :pointmax 3758
       :fsize 3757
-      :lastmodtime '(22737 34350 0 0)
+      :lastmodtime '(22852 17610 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_XOPEN_LIM_H" . ((number "1" 1221 . 1222)))
@@ -2395,7 +2395,7 @@
       :file "local_lim.h"
       :pointmax 3185
       :fsize 3184
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("PTHREAD_KEYS_MAX" . ((number "1024" 2082 . 2086)))
@@ -2442,7 +2442,7 @@
       :file "fcntl.h"
       :pointmax 2246
       :fsize 2245
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax '((string 859 . 922) (symbol 853 . 858) (punctuation 851 . 852))
       :lexical-table 
         '(("F_SETLK64" . ((number "6" 1125 . 1126)))
@@ -2549,7 +2549,7 @@
       :file "stat.h"
       :pointmax 7620
       :fsize 7619
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax '((string 844 . 909) (symbol 838 . 843) (punctuation 836 . 837))
       :lexical-table 
         '(("__S_ISUID" . ((number "04000" 7185 . 7190)))
@@ -2873,7 +2873,7 @@
       :file "fcntl-linux.h"
       :pointmax 13880
       :fsize 13879
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax '((string 855 . 924) (symbol 849 . 854) (punctuation 847 . 848))
       :lexical-table 
         '(("O_NDELAY" . ((symbol "O_NONBLOCK" 1909 . 1919)))
@@ -3014,7 +3014,7 @@
       :file "uio.h"
       :pointmax 2462
       :fsize 2461
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax '((string 843 . 906) (symbol 837 . 842) (punctuation 835 . 836))
       :lexical-table 
         '(("UIO_MAXIOV" . ((number "1024" 1594 . 1598)))
@@ -3335,7 +3335,7 @@
       :file "resource.h"
       :pointmax 9435
       :fsize 9435
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17642 0 0)
       :unmatched-syntax '((spp-macro-def 8639 . 8648) (spp-macro-def 8568 . 8577) (spp-macro-def 8482 . 8494) (symbol 8008 . 8021) (symbol 7759 . 7772) (symbol 7478 . 7491) (symbol 7339 . 7352) (symbol 7196 . 7209) (symbol 7055 . 7068) (symbol 6894 . 6907) (symbol 6660 . 6673) (symbol 6488 . 6501) (symbol 6319 . 6332) (symbol 6088 . 6101) (symbol 5932 . 5945) (symbol 5769 . 5782) (symbol 5517 . 5530) (spp-macro-def 4858 . 4868) (spp-macro-def 4768 . 4781) (spp-macro-def 4656 . 4671) (spp-macro-def 4552 . 4563) (spp-macro-def 3534 . 3546) (spp-macro-def 3494 . 3508) (spp-macro-def 3394 . 3407) (spp-macro-def 3143 . 3156) (spp-macro-def 3005 . 3016) (spp-macro-def 2803 . 2818) (spp-macro-def 2682 . 2699) (spp-macro-def 2573 . 2585) (spp-macro-def 2470 . 2484) (spp-macro-def 2368 . 2380) (spp-macro-def 2287 . 2296) (spp-macro-def 2203 . 2215) (spp-macro-def 2167 . 2180) (spp-macro-def 2022 . 2032) (spp-macro-def 1771 . 1782) (spp-macro-def 1659 . 1671) (spp-macro-def 1556 . 1567) (spp-macro-def 1453 . 1465) (spp-macro-def 1349 . 1359) (string 886 . 959) (symbol 880 . 885) (punctuation 878 . 879))
       :lexical-table 
         '(("PRIO_MIN" . ((punctuation "-" 8150 . 8151) (number "20" 8151 . 8153)))
@@ -3381,7 +3381,7 @@
       :file "syslog-path.h"
       :pointmax 1061
       :fsize 1060
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax '((string 868 . 931) (symbol 862 . 867) (punctuation 860 . 861))
       :lexical-table 
         '(("_BITS_SYSLOG_PATH_H" . ((number "1" 996 . 997)))
@@ -3422,7 +3422,7 @@
       :file "dirent.h"
       :pointmax 1729
       :fsize 1728
-      :lastmodtime '(22737 34417 0 0)
+      :lastmodtime '(22852 17639 0 0)
       :unmatched-syntax '((string 816 . 881) (symbol 810 . 815) (punctuation 808 . 809))
       :lexical-table 
         '(("_DIRENT_HAVE_D_RECLEN")
@@ -3769,7 +3769,7 @@
       :file "socket.h"
       :pointmax 12798
       :fsize 12797
-      :lastmodtime '(22737 34427 0 0)
+      :lastmodtime '(22852 17649 0 0)
       :unmatched-syntax '((spp-macro-def 10865 . 10880) (spp-macro-def 10760 . 10770) (spp-macro-def 7629 . 7645) (spp-macro-def 7470 . 7482) (spp-macro-def 7372 . 7386) (spp-macro-def 7271 . 7279) (spp-macro-def 7182 . 7194) (spp-macro-def 7089 . 7101) (spp-macro-def 6998 . 7005) (spp-macro-def 6943 . 6954) (spp-macro-def 6862 . 6869) (spp-macro-def 6815 . 6822) (spp-macro-def 6761 . 6772) (spp-macro-def 6678 . 6685) (spp-macro-def 6601 . 6613) (spp-macro-def 6525 . 6534) (spp-macro-def 6474 . 6483) (spp-macro-def 6384 . 6394) (spp-macro-def 6277 . 6288) (spp-macro-def 6148 . 6161) (spp-macro-def 6064 . 6072) (spp-macro-def 5983 . 5990) (string 932 . 1001) (symbol 926 . 931) (punctuation 924 . 925))
       :lexical-table 
         '(("PF_ROSE" . ((number "11" 2022 . 2024)))
@@ -4081,7 +4081,7 @@
       :file "in.h"
       :pointmax 8765
       :fsize 8764
-      :lastmodtime '(22737 34434 0 0)
+      :lastmodtime '(22852 17660 0 0)
       :unmatched-syntax '((string 843 . 908) (symbol 837 . 842) (punctuation 835 . 836))
       :lexical-table 
         '(("MCAST_LEAVE_SOURCE_GROUP" . ((number "47" 3521 . 3523)))
@@ -4216,7 +4216,7 @@
       :file "byteswap.h"
       :pointmax 5665
       :fsize 5664
-      :lastmodtime '(22737 34416 0 0)
+      :lastmodtime '(22852 17637 0 0)
       :unmatched-syntax '((close-paren 5625 . 5626) (punctuation 5623 . 5624) (semantic-list #("((((x) & 0xff00000000000000ull) >> 56)				      \\
       | (((x) & 0x00ff000000000000ull) >> 40)				      \\
       | (((x) & 0x0000ff0000000000ull) >> 24)				      \\
@@ -4254,7 +4254,7 @@
       :file "siginfo.h"
       :pointmax 10782
       :fsize 10781
-      :lastmodtime '(22737 34387 0 0)
+      :lastmodtime '(22852 17632 0 0)
       :unmatched-syntax '((string 947 . 1006) (symbol 941 . 946) (punctuation 939 . 940) (symbol 921 . 938) (symbol 913 . 920) (punctuation 912 . 913) (punctuation 910 . 911) (punctuation 909 . 910)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -4276,7 +4276,7 @@
       :file "netdb.h"
       :pointmax 1264
       :fsize 1263
-      :lastmodtime '(22737 34435 0 0)
+      :lastmodtime '(22852 17660 0 0)
       :unmatched-syntax '((string 815 . 878) (symbol 809 . 814) (punctuation 807 . 808)))
     (semanticdb-table "semanticdb-table"
       :major-mode c-mode
@@ -4454,7 +4454,7 @@
       :file "termios.h"
       :pointmax 5336
       :fsize 5335
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax '((string 872 . 939) (symbol 866 . 871) (punctuation 864 . 865))
       :lexical-table 
         '(("VEOF" . ((number "4" 1617 . 1618)))
@@ -4623,7 +4623,7 @@
       :file "semaphore.h"
       :pointmax 1238
       :fsize 1237
-      :lastmodtime '(22737 34431 0 0)
+      :lastmodtime '(22852 17654 0 0)
       :unmatched-syntax '((string 880 . 951) (symbol 874 . 879) (punctuation 872 . 873))
       :lexical-table 
         '(("SEM_FAILED" . ((semantic-list "((sem_t *) 0)" 1146 . 1159)))
@@ -4685,7 +4685,7 @@
       :file "socket_type.h"
       :pointmax 2216
       :fsize 2215
-      :lastmodtime '(22737 34420 0 0)
+      :lastmodtime '(22852 17645 0 0)
       :unmatched-syntax '((spp-macro-def 2185 . 2198) (spp-macro-def 2063 . 2075) (spp-macro-def 1802 . 1813) (spp-macro-def 1615 . 1624) (spp-macro-def 1514 . 1528) (spp-macro-def 1377 . 1385) (spp-macro-def 1297 . 1305) (spp-macro-def 1218 . 1228) (spp-macro-def 1091 . 1102) (string 868 . 942) (symbol 862 . 867) (punctuation 860 . 861))
       :lexical-table 
         '(("SOCK_CLOEXEC" . ((symbol "SOCK_CLOEXEC" 2076 . 2088)))
@@ -4713,7 +4713,7 @@
       :file "sockaddr.h"
       :pointmax 1514
       :fsize 1513
-      :lastmodtime '(22737 34427 0 0)
+      :lastmodtime '(22852 17649 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__SOCKADDR_COMMON" (spp-arg-list ("sa_prefix") 1314 . 1325) . ((symbol "sa_family_t" 1330 . 1341) (spp-symbol-merge ((symbol "sa_prefix" 1342 . 1351) (symbol "family" 1353 . 1359)) 1342 . 1359)))
@@ -4729,7 +4729,7 @@
       :file "byteswap-16.h"
       :pointmax 1732
       :fsize 1731
-      :lastmodtime '(22737 34416 0 0)
+      :lastmodtime '(22852 17637 0 0)
       :unmatched-syntax '((string 886 . 958) (symbol 880 . 885) (punctuation 878 . 879))
       :lexical-table 
         '(("__bswap_16" (spp-arg-list ("x") 1022 . 1025) . ((semantic-list "(__extension__							      \\
@@ -4763,7 +4763,7 @@
       :file "poll.h"
       :pointmax 2076
       :fsize 2075
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax '((string 818 . 883) (symbol 812 . 817) (punctuation 810 . 811))
       :lexical-table 
         '(("POLLOUT" . ((number "0x004" 1225 . 1230)))
@@ -4801,7 +4801,7 @@
       :file "locale.h"
       :pointmax 1368
       :fsize 1367
-      :lastmodtime '(22737 34353 0 0)
+      :lastmodtime '(22852 17611 0 0)
       :unmatched-syntax '((string 893 . 958) (symbol 887 . 892) (punctuation 885 . 886))
       :lexical-table 
         '(("__LC_ALL" . ((number "6" 1182 . 1183)))
@@ -4818,6 +4818,158 @@
           ("__LC_CTYPE" . ((number "0" 1037 . 1038)))
           ("__LC_TIME" . ((number "2" 1084 . 1085)))
           ("__LC_NAME" . ((number "8" 1227 . 1228)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("__WEXITSTATUS" variable (:constant-flag t) nil [1103 1116])
+            ("__WTERMSIG" variable (:constant-flag t) nil [1216 1226])
+            ("__WSTOPSIG" variable (:constant-flag t) nil [1327 1337])
+            ("__WIFEXITED" variable (:constant-flag t) nil [1432 1443])
+            ("__WIFSIGNALED" variable (:constant-flag t) nil [1547 1560])
+            ("__WIFSTOPPED" variable (:constant-flag t) nil [1690 1702])
+            ("__WCOREDUMP" variable (:constant-flag t) nil [2041 2052])
+            ("__W_EXITCODE" variable (:constant-flag t) nil [2141 2153])
+            ("__W_STOPCODE" variable (:constant-flag t) nil [2193 2205])
+            ("__W_CONTINUED" variable (:constant-flag t) nil [2239 2252])
+            ("__WCOREFLAG" variable (:constant-flag t) nil [2269 2280])
+            ("endian.h" include (:system-flag t) nil [2308 2328])
+            ("wait" type
+               (:members 
+                  ( ("w_status" variable (:type "int") (reparse-symbol classsubparts) [2349 2362])
+                    ("__wait_terminated" variable (:type ("" type
+                         (:members 
+                            ( ("__w_termsig" variable
+                                 (:suffix ":7"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2420 2447])
+                              ("__w_coredump" variable
+                                 (:suffix ":1"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2476 2504])
+                              ("__w_retcode" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2533 2560])
+                              ("__w_retcode" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2704 2731])
+                              ("__w_coredump" variable
+                                 (:suffix ":1"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2733 2761])
+                              ("__w_termsig" variable
+                                 (:suffix ":7"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2763 2790]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2367 2847])
+                    ("__wait_stopped" variable (:type ("" type
+                         (:members 
+                            ( ("__w_stopval" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2905 2932])
+                              ("__w_stopsig" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [2963 2990])
+                              ("__w_stopsig" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [3119 3146])
+                              ("__w_stopval" variable
+                                 (:suffix ":8"
+                                  :type "unsigned int")
+                                  (reparse-symbol classsubparts) [3172 3199]))                            
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [2852 3282]))                  
+                :type "union")
+                nil [2330 3287])
+            ("w_termsig" variable (:constant-flag t) nil [3298 3307])
+            ("w_coredump" variable (:constant-flag t) nil [3347 3357])
+            ("w_retcode" variable (:constant-flag t) nil [3398 3407])
+            ("w_stopsig" variable (:constant-flag t) nil [3447 3456])
+            ("w_stopval" variable (:constant-flag t) nil [3493 3502]))          
+      :file "waitstatus.h"
+      :pointmax 3555
+      :fsize 3554
+      :lastmodtime '(22852 17640 0 0)
+      :unmatched-syntax '((punctuation 3116 . 3117) (number 3114 . 3116) (punctuation 3113 . 3114) (INT 3110 . 3113) (UNSIGNED 3101 . 3109) (punctuation 3031 . 3032) (number 3029 . 3031) (punctuation 3028 . 3029) (INT 3025 . 3028) (UNSIGNED 3016 . 3024) (punctuation 2701 . 2702) (number 2699 . 2701) (punctuation 2698 . 2699) (INT 2695 . 2698) (UNSIGNED 2686 . 2694) (punctuation 2616 . 2617) (number 2614 . 2616) (punctuation 2613 . 2614) (INT 2610 . 2613) (UNSIGNED 2601 . 2609) (string 893 . 964) (symbol 887 . 892) (punctuation 885 . 886))
+      :lexical-table 
+        '(("__WTERMSIG" (spp-arg-list ("status") 1226 . 1234) . ((semantic-list "((status) & 0x7f)" 1235 . 1252)))
+          ("w_coredump" . 
+              ((symbol "__wait_terminated" 3358 . 3375) (punctuation "." 3375 . 3376) (symbol "__w_coredump" 3376 . 3388)))
+          ("__W_CONTINUED" . ((number "0xffff" 2254 . 2260)))
+          ("w_retcode" . 
+              ((symbol "__wait_terminated" 3408 . 3425) (punctuation "." 3425 . 3426) (symbol "__w_retcode" 3426 . 3437)))
+          ("w_stopval" . 
+              ((symbol "__wait_stopped" 3503 . 3517) (punctuation "." 3517 . 3518) (symbol "__w_stopval" 3518 . 3529)))
+          ("__WCOREFLAG" . ((number "0x80" 2282 . 2286)))
+          ("w_stopsig" . 
+              ((symbol "__wait_stopped" 3457 . 3471) (punctuation "." 3471 . 3472) (symbol "__w_stopsig" 3472 . 3483)))
+          ("__WIFSTOPPED" (spp-arg-list ("status") 1702 . 1710) . ((semantic-list "(((status) & 0xff) == 0x7f)" 1711 . 1738)))
+          ("__W_EXITCODE" (spp-arg-list ("ret" "sig") 2153 . 2163) . ((semantic-list "((ret) << 8 | (sig))" 2164 . 2184)))
+          ("w_termsig" . 
+              ((symbol "__wait_terminated" 3308 . 3325) (punctuation "." 3325 . 3326) (symbol "__w_termsig" 3326 . 3337)))
+          ("__WEXITSTATUS" (spp-arg-list ("status") 1116 . 1124) . ((semantic-list "(((status) & 0xff00) >> 8)" 1125 . 1151)))
+          ("__WIFEXITED" (spp-arg-list ("status") 1443 . 1451) . ((semantic-list "(__WTERMSIG(status) == 0)" 1452 . 1477)))
+          ("__WCOREDUMP" (spp-arg-list ("status") 2052 . 2060) . ((semantic-list "((status) & __WCOREFLAG)" 2061 . 2085)))
+          ("__W_STOPCODE" (spp-arg-list ("sig") 2205 . 2210) . ((semantic-list "((sig) << 8 | 0x7f)" 2211 . 2230)))
+          ("__WSTOPSIG" (spp-arg-list ("status") 1337 . 1345) . ((symbol "__WEXITSTATUS" 1346 . 1359) (semantic-list "(status)" 1359 . 1367)))
+          ("__WIFSIGNALED" (spp-arg-list ("status") 1560 . 1568) . ((semantic-list "(((signed char) (((status) & 0x7f) + 1) >> 1) > 0)" 1573 . 1623)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("WNOHANG" variable (:constant-flag t) nil [1030 1037])
+            ("WUNTRACED" variable (:constant-flag t) nil [1077 1086])
+            ("WSTOPPED" variable (:constant-flag t) nil [1188 1196])
+            ("WEXITED" variable (:constant-flag t) nil [1255 1262])
+            ("WCONTINUED" variable (:constant-flag t) nil [1300 1310])
+            ("WNOWAIT" variable (:constant-flag t) nil [1352 1359])
+            ("__WNOTHREAD" variable (:constant-flag t) nil [1418 1429])
+            ("__WALL" variable (:constant-flag t) nil [1523 1529])
+            ("__WCLONE" variable (:constant-flag t) nil [1577 1585])
+            ("__ENUM_IDTYPE_T" variable (:constant-flag t) nil [1777 1792])
+            ("idtype_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("P_ALL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [1982 1988])
+                          ("P_PID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2019 2025])
+                          ("P_PGID" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [2064 2115]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [1965 2125]))          
+      :file "waitflags.h"
+      :pointmax 2141
+      :fsize 2140
+      :lastmodtime '(22852 17640 0 0)
+      :unmatched-syntax '((string 894 . 964) (symbol 888 . 893) (punctuation 886 . 887))
+      :lexical-table 
+        '(("WCONTINUED" . ((number "8" 1311 . 1312)))
+          ("__ENUM_IDTYPE_T" . ((number "1" 1793 . 1794)))
+          ("WUNTRACED" . ((number "2" 1087 . 1088)))
+          ("WSTOPPED" . ((number "2" 1197 . 1198)))
+          ("__WNOTHREAD" . ((number "0x20000000" 1434 . 1444)))
+          ("WEXITED" . ((number "4" 1264 . 1265)))
+          ("__WALL" . ((number "0x40000000" 1531 . 1541)))
+          ("__WCLONE" . ((number "0x80000000" 1586 . 1596)))
+          ("WNOHANG" . ((number "1" 1039 . 1040)))
+          ("WNOWAIT" . ((number "0x01000000" 1361 . 1371)))
           )
 ))
   :file "!usr!include!x86_64-linux-gnu!bits!semantic.cache"

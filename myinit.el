@@ -40,9 +40,15 @@
           (if (and (not (null word)) (stringp word))
               (eww (format "http://cn.bing.com/search?q=%s" word))
               (eww "www.bing.com")))))
-
+(defun eclear ()
+  (interactive)
+  (setq inhibit-read-only t)
+  (erase-buffer))
 (global-set-key (kbd "C-c s") 'search-web)
 (global-set-key (kbd "<f5>") 'revert-buffer)
+
+(use-package ztree
+    :ensure t)
 
 (use-package chinese-fonts-setup
     :ensure t)
@@ -101,7 +107,7 @@
     		    ("\\.pdf\\'" . "evince %s")
     		    ) org-file-apps ))
 
-        (global-set-key "\C-ca" 'org-agenda)
+        (global-set-key "\C-c a" 'org-agenda)
 
         (use-package org-ac
     	    :ensure t
@@ -220,8 +226,10 @@
 
 (use-package autopair
     :ensure t
-    :config
-    (autopair-global-mode))
+    :config (autopair-global-mode 1))
+
+(use-package projectile
+    :ensure t)
 
 (defun my:ac-c-header-init()
     (require 'ac-c-headers)
@@ -261,7 +269,32 @@
 (defun cedet-hook()
     (semantic-mode 1)
     (add-to-list 'ac-sources 'ac-source-semantic))
+
 (add-hook 'c-mode-common-hook 'cedet-hook)
+
+(use-package semantic
+    :ensure t)
+(use-package semantic/bovine/gcc)
+(use-package semantic/ia)
+(defun c-semantic-hook()
+    (setq semanticdb-default-save-directory (concat  "~/.emacs.d/semanticdb"))
+    (add-to-list 'semantic-default-submodes 'global-semantic-mru-bookmark-mode)
+    (add-to-list 'semantic-default-submodes 'global-semanticdb-minor-mode)
+    (add-to-list 'semantic-default-submodes 'global-semantic-idle-scheduler-mode)
+    (add-to-list 'semantic-default-submodes 'global-semantic-highlight-func-mode)
+    (semantic-mode t)
+    (semantic-gcc-setup)
+    (add-to-list 'ac-sources 'ac-source-functions)
+    (add-to-list 'ac-sources 'ac-source-semantic))
+(add-hook 'c-mode-common-hook 'c-semantic-hook)
+
+(use-package irony
+    :ensure t)
+
+(add-hook 'c++-mode-hook 'iron-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
 (use-package php-mode
     :ensure t)
@@ -277,6 +310,7 @@
     (setq php-template-compatibilite nil)
     (subword-mode 1))
 (add-hook 'php-mode-hook 'bs-php-mode-hook)
+
 (defun bs-web-mode-hook()
     (local-set-key '[backtab] 'indent-relative)
     (setq indent-tabs-mode nil)
@@ -321,15 +355,37 @@
         (setq cal-china-x-important-holidays cal-china-x-chinese-holidays)
         (setq calendar-holidays cal-china-x-important-holidays)))
 
-;(use-package slime
-;    :ensure t
-;    :config 
-;    (progn
-;        (setq inferior-lisp-program "/usr/local/bin/sbcl")
-;        (setq slime-contribs '(slime-fancy)))
-;        (require 'slime-autoloads)
-;        (add-hook 'slime-load-hook
-;            #'(lambda () (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup))))
+(use-package slime
+    :ensure t
+    :config 
+    (progn
+        (setq inferior-lisp-program "/usr/local/bin/sbcl")
+        (setq slime-contribs '(slime-fancy))
+        (require 'slime-autoloads)
+        (require 'paredit)
+        (add-hook 'slime-load-hook
+            #'(lambda () (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)))))
+
+(use-package ac-slime
+    :ensure t)
+
+(defun lisp-hook ()
+  (paredit-mode t)
+  (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)
+  (make-variable-buffer-local 'show-paren-mode)
+  (show-paren-mode 1))
+(add-hook 'emacs-lisp-mode-hook 'lisp-hook)
+(add-hook 'lisp-interaction-mode-hook 'lisp-hook)
+(add-hook 'lisp-mode-hook 'lisp-hook)
+
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'slime-repl-mode))
+(global-set-key (kbd "C-c C-h") 'slime-documentation)
+
+(use-package paredit
+    :ensure t)
 
 (use-package ox-reveal
 :ensure ox-reveal)
@@ -427,6 +483,10 @@ narrowed."
 	       '(("css" . (ac-source-css-property))
 		 ("html" . (ac-source-words-in-buffer ac-source-abbrev))))
 
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html\\.twig\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 
 (setq web-mode-enable-auto-closing t))
 (setq web-mode-enable-auto-quoting t) ; this fixes the quote problem I mentioned

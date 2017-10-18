@@ -1,128 +1,128 @@
-rmbak
+mdkir echo-server
+mkdir echo-server
+cd echo-server/
 ls
+cd ../
 ls
-rmbak
-rmbak
-l
-rmbak
-ls
-rmbak
+cd echo-server/
 ls
 rmbak
 ls
 ls
+cd ..
 ls
-rmbak
+rm -rf echo-server/
 ls
-clear
-
-ls
-ls
-cd workspace/php/
-ls
-cd runoob/
-ls
-rmbak
-php throw.php 
-ls
-rmbak
-ls
-cd workspace/php/
-ls
-cd runoob/
-ls
-fg
-ls
-rmbak
-ls
-rmbak
+cd
 ls
 ls
-rmbak
+ls
 cd workspace/
-ls
-cd c
 ls
 cd test/
 ls
 rmbak
 ls
 ls
-gcc gethostbyname.c 
-./a.out www.baidu.com
-./a.out www.taobao.com
-./a.out www.douyu.com
+cd workspace/
 ls
+cd c/
 ls
-php test.php 
+cd test/
+ls
+rmbak
+ls
+gcc iov.c 
+ls
+gcc iov.c 
+./a.out
+ls
+gcc iov.c 
+./a.out
+ls
+llsiue
 ls
 ls
 rmbak
 ls
-cd .emacs.d/elpa/php-mode-20170722.1205/
+man strncpy
+man waipid
+man waitpid
+ls
+gcc unix_echo.c 
 ls
 ls
+gcc unix_echoc.c 
+ls
+man sockaddr_un
+man socket
+ls
+gcc unix_echoc.c 
+ls
+./a.out
+ls
+gcc unix_echoc.c
+ls
+./a.out
+gcc unix_echo.c
+gcc unix_echo.c -o serv
+gcc unix_echoc.c -o cli
+gcc unix_echoc.c 
+ls
+gcc unix_echoc.c 
+gcc unix_echoc.c -o cli
+ls
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./ser
+./serv
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+ls
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+gcc unix_echo.c -o serv
+./serv
+./serv
+ls
+clear
+
 ls
 rmbak
-rm \#php-mode.el\# 
+ls
+rm ser
+rm serv
+rm cli
+ls
+./a.out
+rm a.out
+ls
+ls
+cd 
+ls
+ls
 ls
 cd Documents/
-ls
-cd notes/
-ls
-cd Documents/
-ls
-cd notes/
-ls
-ls
-cat README.org 
-ls
-mkdir redis-runoob
-cd redis-runoob/
-ls
-ls
-git add *
-git commit -m ""
-git commit -m "new"
-git push -u origin master
-ls
-git add redis.org 
-git commin -m "update redis.org"
-git commit -m "update redis.org"
-git push -u origin master
-ls
-rmbak
-git add redis.org 
-git commit -m "update redis.org"
-git push -u origin master
-ls
-rm dump.rdb 
-ls
-cat test.php 
-ls
-ls
-rm test.php 
-ls
-ls
-cd Downloads/
-cd ../Documents/
-ls
 ls
 cd ..
 ls
-cd Downloads/
+l
+cd workspace/
 ls
-mv Head\ First\ jQuery.pdf HeadFirst-AJAX【中】.pdf OpenResty-Best-Practices.pdf ~/Documents/
-ls
-rm -rf curl_7.35.0.orig.tar.gz
-rm -rf curl-7.35.0/
-ls
-cd 
-cd Documents/
-ls
-ls
-cd 
-cd .emacs.d/
+cd lisp/
 ls
 rmbak
-git add *

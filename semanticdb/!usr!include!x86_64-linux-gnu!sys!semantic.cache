@@ -65,7 +65,7 @@
       :file "cdefs.h"
       :pointmax 15413
       :fsize 15412
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__LEAF_ATTR")
@@ -213,7 +213,7 @@
       :file "types.h"
       :pointmax 6688
       :fsize 6687
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17640 0 0)
       :unmatched-syntax '((symbol 6650 . 6661) (semantic-list 4693 . 4714) (symbol 931 . 944))
       :lexical-table 
         '(("__pid_t_defined")
@@ -508,7 +508,7 @@
       :file "time.h"
       :pointmax 6674
       :fsize 6673
-      :lastmodtime '(22737 34417 0 0)
+      :lastmodtime '(22852 17638 0 0)
       :unmatched-syntax '((spp-macro-def 3420 . 3431) (spp-macro-def 3244 . 3258) (spp-macro-def 3130 . 3141))
       :lexical-table 
         '(("TIMEVAL_TO_TIMESPEC" (spp-arg-list ("tv" "ts") 1234 . 1242) . ((semantic-list "{                                   \\
@@ -665,7 +665,7 @@
       :file "select.h"
       :pointmax 4198
       :fsize 4197
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("FD_ZERO" (spp-arg-list ("fdsetp") 2847 . 2855) . ((symbol "__FD_ZERO" 2857 . 2866) (semantic-list "(fdsetp)" 2867 . 2875)))
@@ -804,7 +804,7 @@
       :file "resource.h"
       :pointmax 3646
       :fsize 3645
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17642 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SYS_RESOURCE_H" . ((number "1" 838 . 839)))
@@ -1512,7 +1512,7 @@
       :file "stat.h"
       :pointmax 16295
       :fsize 16294
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("S_IWUSR" . ((symbol "__S_IWRITE" 4451 . 4461)))
@@ -1671,7 +1671,7 @@
       :file "syslog.h"
       :pointmax 7703
       :fsize 7702
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("LOG_LOCAL7" . ((semantic-list "(23<<3)" 4586 . 4593)))
@@ -2128,7 +2128,7 @@
       :file "socket.h"
       :pointmax 10450
       :fsize 10449
-      :lastmodtime '(22737 34427 0 0)
+      :lastmodtime '(22852 17649 0 0)
       :unmatched-syntax '((spp-macro-def 1843 . 1852) (spp-macro-def 1761 . 1768) (spp-macro-def 1694 . 1701))
       :lexical-table 
         '(("SHUT_RD" . ((symbol "SHUT_RD" 1703 . 1710)))
@@ -2255,7 +2255,7 @@
       :file "uio.h"
       :pointmax 4695
       :fsize 4694
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17644 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_SYS_UIO_H" . ((number "1" 828 . 829)))
@@ -2295,7 +2295,7 @@
       :file "ttydefaults.h"
       :pointmax 3569
       :fsize 3568
-      :lastmodtime '(22737 34419 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("CEOL" . ((string "'\\0'" 2550 . 2554)))
@@ -2393,13 +2393,258 @@
       :file "poll.h"
       :pointmax 2617
       :fsize 2616
-      :lastmodtime '(22737 34418 0 0)
+      :lastmodtime '(22852 17641 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("__need_timespec")
           ("_SYS_POLL_H" . ((number "1" 890 . 891)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SYS_WAIT_H" variable (:constant-flag t) nil [893 904])
+            ("features.h" include (:system-flag t) nil [908 929])
+            ("wait4" function
+               (:type ("__pid_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__pid" variable (:type ("__pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6061 6075])
+                    ("__stat_loc" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6076 6101])
+                    ("__options" variable (:type "int") (reparse-symbol arg-sub-list) [6102 6116])
+                    ("__usage" variable
+                       (:pointer 1
+                        :type ("rusage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6125 6148]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [6039 6159])
+            ("wait3" function
+               (:type ("__pid_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__stat_loc" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [5872 5897])
+                    ("__options" variable (:type "int") (reparse-symbol arg-sub-list) [5898 5912])
+                    ("__usage" variable
+                       (:pointer 1
+                        :type ("rusage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5921 5945]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5850 5956])
+            ("rusage" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :prototype t)
+                (reparse-symbol extern-c-contents) [5513 5527])
+            ("waitid" function
+               (:type "int"
+                :arguments 
+                  ( ("__idtype" variable (:type ("idtype_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5240 5258])
+                    ("__id" variable (:type ("__id_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5259 5271])
+                    ("__infop" variable
+                       (:pointer 1
+                        :type ("siginfo_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5272 5291])
+                    ("__options" variable (:type "int") (reparse-symbol arg-sub-list) [5297 5311]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [5221 5312])
+            ("bits/siginfo.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [4650 4676])
+            ("__need_siginfo_t" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4633 4649])
+            ("__id_t_defined" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [4600 4614])
+            ("id_t" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "typedef"
+                :typedef ("__id_t" type (:type "class") nil nil))
+                (reparse-symbol extern-c-contents) [4569 4589])
+            ("bits/types.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [4543 4568])
+            ("waitpid" function
+               (:type ("__pid_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__pid" variable (:type ("__pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4420 4434])
+                    ("__stat_loc" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [4435 4451])
+                    ("__options" variable (:type "int") (reparse-symbol arg-sub-list) [4452 4466]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4396 4467])
+            ("WAIT_MYPGRP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3589 3600])
+            ("WAIT_ANY" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3546 3554])
+            ("wait" function
+               (:type ("__pid_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__stat_loc" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [3422 3447]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3401 3448])
+            ("W_STOPCODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3136 3146])
+            ("W_EXITCODE" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3082 3092])
+            ("WCOREDUMP" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [3021 3030])
+            ("WCOREFLAG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2989 2998])
+            ("WIFSTOPPED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2769 2779])
+            ("WIFSIGNALED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2704 2715])
+            ("WIFEXITED" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2643 2652])
+            ("WSTOPSIG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2584 2592])
+            ("WTERMSIG" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2525 2533])
+            ("WEXITSTATUS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [2460 2471])
+            ("bits/waitstatus.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [2420 2449])
+            ("__WAIT_STATUS_DEFN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1971 1989])
+            ("__WAIT_STATUS" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1939 1952])
+            ("__WAIT_INT" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1565 1575])
+            ("bits/waitflags.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1197 1225])
+            ("signal.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [946 965]))          
+      :file "wait.h"
+      :pointmax 6224
+      :fsize 6223
+      :lastmodtime '(22852 17640 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("__need_siginfo_t")
+          ("W_STOPCODE" (spp-arg-list ("sig") 3146 . 3151) . ((symbol "__W_STOPCODE" 3152 . 3164) (semantic-list "(sig)" 3165 . 3170)))
+          ("WAIT_ANY" . ((semantic-list "(-1)" 3555 . 3559)))
+          ("__WAIT_STATUS_DEFN" . ((VOID "void" 1990 . 1994) (punctuation "*" 1995 . 1996)))
+          ("__WAIT_INT" (spp-arg-list ("status") 1575 . 1583) . ((semantic-list "(*(const int *) &(status))" 1584 . 1610)))
+          ("__WAIT_STATUS" . ((VOID "void" 1953 . 1957) (punctuation "*" 1958 . 1959)))
+          ("WIFEXITED" (spp-arg-list ("status") 2652 . 2660) . ((symbol "__WIFEXITED" 2661 . 2672) (semantic-list "(__WAIT_INT (status))" 2673 . 2694)))
+          ("WCOREDUMP" (spp-arg-list ("status") 3030 . 3038) . ((symbol "__WCOREDUMP" 3039 . 3050) (semantic-list "(__WAIT_INT (status))" 3051 . 3072)))
+          ("WAIT_MYPGRP" . ((number "0" 3601 . 3602)))
+          ("WEXITSTATUS" (spp-arg-list ("status") 2471 . 2479) . ((symbol "__WEXITSTATUS" 2480 . 2493) (semantic-list "(__WAIT_INT (status))" 2494 . 2515)))
+          ("WSTOPSIG" (spp-arg-list ("status") 2592 . 2600) . ((symbol "__WSTOPSIG" 2601 . 2611) (semantic-list "(__WAIT_INT (status))" 2612 . 2633)))
+          ("_SYS_WAIT_H" . ((number "1" 905 . 906)))
+          ("WIFSIGNALED" (spp-arg-list ("status") 2715 . 2723) . ((symbol "__WIFSIGNALED" 2724 . 2737) (semantic-list "(__WAIT_INT (status))" 2738 . 2759)))
+          ("WIFSTOPPED" (spp-arg-list ("status") 2779 . 2787) . ((symbol "__WIFSTOPPED" 2788 . 2800) (semantic-list "(__WAIT_INT (status))" 2801 . 2822)))
+          ("WTERMSIG" (spp-arg-list ("status") 2533 . 2541) . ((symbol "__WTERMSIG" 2542 . 2552) (semantic-list "(__WAIT_INT (status))" 2553 . 2574)))
+          ("WCOREFLAG" . ((symbol "__WCOREFLAG" 3000 . 3011)))
+          ("W_EXITCODE" (spp-arg-list ("ret" "sig") 3092 . 3102) . ((symbol "__W_EXITCODE" 3103 . 3115) (semantic-list "(ret, sig)" 3116 . 3126)))
+          ("__id_t_defined")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_SYS_UN_H" variable (:constant-flag t) nil [816 825])
+            ("sys/cdefs.h" include (:system-flag t) nil [829 851])
+            ("bits/sockaddr.h" include (:system-flag t) nil [931 957])
+            ("SUN_LEN" variable
+               (:typemodifiers ("extern" "\"C\"")
+                :constant-flag t)
+                (reparse-symbol extern-c-contents) [1303 1310])
+            ("string.h" include
+               (:typemodifiers ("extern" "\"C\"")
+                :system-flag t)
+                (reparse-symbol extern-c-contents) [1172 1192])
+            ("sockaddr_un" type
+               (:typemodifiers ("extern" "\"C\"")
+                :type "struct"
+                :members 
+                  ( ("__SOCKADDR_COMMON" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type ("sun_" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1097 1102]))                          
+                        :type "int")
+                        (reparse-symbol classsubparts) [1078 1103])
+                    ("sun_path" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1108 1127]))                  )
+                (reparse-symbol extern-c-contents) [1051 1151]))          
+      :file "un.h"
+      :pointmax 1453
+      :fsize 1452
+      :lastmodtime '(22852 17649 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("SUN_LEN" (spp-arg-list ("ptr") 1310 . 1315) . ((semantic-list "((size_t) (((struct sockaddr_un *) 0)->sun_path)	      \\
+		      + strlen ((ptr)->sun_path))" 1316 . 1408)))
+          ("_SYS_UN_H" . ((number "1" 826 . 827)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "signal.h"
+      :fsize 20
+      :lastmodtime '(22852 17632 0 0)))
   :file "!usr!include!x86_64-linux-gnu!sys!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

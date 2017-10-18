@@ -1,10 +1,10 @@
-;; Object seqs/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "seqs/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "bmap.h"
-      :major-mode 'c-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
       :tags 
         '( ("C4BMAP_H" variable (:constant-flag t) nil [26 34])
             ("stdbool.h" include (:system-flag t) nil [36 56])
@@ -279,7 +279,7 @@
       :file "bmap.h"
       :pointmax 1559
       :fsize 1558
-      :lastmodtime '(22739 23398 242758 422000)
+      :lastmodtime '(22739 23398 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("_C4DO_BMAP" (spp-arg-list ("map" "it" "_pos") 175 . 190) . 
@@ -292,12 +292,392 @@
           ("C4BMAP_KEY" (spp-arg-list ("map" "it") 439 . 448) . ((semantic-list "((void *)it + (map)->val_size)" 455 . 485)))
           )
 )
-    (semanticdb-table "bset.h"
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("C4BSET_H" variable (:constant-flag t) nil [26 34])
+            ("stdbool.h" include (:system-flag t) nil [36 56])
+            ("stddef.h" include (:system-flag t) nil [57 76])
+            ("c4life/seqs/dyna.h" include nil nil [77 106])
+            ("c4life/seqs/seq.h" include nil nil [107 135])
+            ("C4DO_BSET" variable (:constant-flag t) nil [145 154])
+            ("c4cmp_t" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [227 235])
+                    ("y" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [236 244])
+                    ("data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [245 256]))                  
+                :type "int")
+                nil [212 257])
+            ("c4bset_key_fnt" function
+               (:prototype-flag t
+                :pointer 1
+                :function-pointer t
+                :arguments 
+                  ( ("it" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [290 299]))                  
+                :type "void")
+                nil [266 300])
+            ("c4bset" type
+               (:members 
+                  ( ("key_cmp" variable (:type ("c4cmp_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [320 345])
+                    ("val_cmp" variable (:type ("c4cmp_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [320 345])
+                    ("key_offs" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [348 365])
+                    ("its" variable (:type ("c4dyna" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [368 386])
+                    ("cmp_data" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [389 404]))                  
+                :type "struct")
+                nil [302 407])
+            ("c4bset_seq" type
+               (:members 
+                  ( ("seq" variable (:type ("c4seq" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [431 448])
+                    ("bset" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [451 471]))                  
+                :type "struct")
+                nil [409 474])
+            ("c4bset_match" type
+               (:members 
+                  ( ("i" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [500 513])
+                    ("j" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [500 513])
+                    ("a" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [516 537])
+                    ("b" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [516 537])
+                    ("seq" variable (:type ("c4seq" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [540 557])
+                    ("iit" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [560 576])
+                    ("jit" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [560 576])
+                    ("inc" variable (:type "bool") (reparse-symbol classsubparts) [579 588]))                  
+                :type "struct")
+                nil [476 591])
+            ("c4bset_init" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [620 640])
+                    ("key_size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [648 665])
+                    ("key_cmp" variable (:type ("c4cmp_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [673 689]))                  
+                :type ("c4bset" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [593 690])
+            ("c4bset_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [709 729]))                  
+                :type "void")
+                nil [692 730])
+            ("c4bset_add" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [749 769])
+                    ("key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [770 780])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [781 791]))                  
+                :type "void")
+                nil [732 792])
+            ("c4bset_at" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [809 829])
+                    ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [830 842]))                  
+                :type "void")
+                nil [793 843])
+            ("c4bset_del" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [860 880])
+                    ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [881 893]))                  
+                :type "void")
+                nil [844 894])
+            ("c4bset_clear" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [913 933]))                  
+                :type "void")
+                nil [895 934])
+            ("c4bset_find" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [953 973])
+                    ("key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [979 989])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [990 1000])
+                    ("min" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1006 1018])
+                    ("max" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1019 1031])
+                    ("pos" variable
+                       (:pointer 1
+                        :type ("int64_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1037 1050]))                  
+                :type "void")
+                nil [935 1051])
+            ("c4bset_get" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1069 1089])
+                    ("key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1090 1100]))                  
+                :type "void")
+                nil [1052 1101])
+            ("c4bset_ins" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1119 1139])
+                    ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1140 1152]))                  
+                :type "void")
+                nil [1102 1153])
+            ("c4bset_join" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1181 1201])
+                    ("other" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1202 1223]))                  
+                :type ("c4bset" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1154 1224])
+            ("c4bset_match" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1252 1272])
+                    ("i" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1273 1283])
+                    ("other" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1291 1312])
+                    ("j" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1313 1323])
+                    ("out" variable
+                       (:pointer 1
+                        :type ("c4bset_match" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1330 1355]))                  
+                :type ("c4seq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1225 1356])
+            ("c4bset_len" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1376 1396]))                  
+                :type ("int64_t" type (:type "class") nil nil))
+                nil [1357 1397])
+            ("c4bset_rem" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1414 1434])
+                    ("key" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1435 1445])
+                    ("val" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [1446 1456]))                  
+                :type "bool")
+                nil [1398 1457])
+            ("c4bset_seq" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1483 1503])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("c4bset_seq" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1504 1527]))                  
+                :type ("c4seq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1458 1528])
+            ("c4bset_swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4bset" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1546 1566])
+                    ("x" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1567 1577])
+                    ("y" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1578 1588])
+                    ("len" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1589 1601]))                  
+                :type "void")
+                nil [1529 1602]))          
       :file "bset.h"
+      :pointmax 1611
       :fsize 1610
-      :lastmodtime '(22739 23398 242758 422000))
-    (semanticdb-table "seq.h"
-      :major-mode 'c-mode
+      :lastmodtime '(22739 23398 0 0)
+      :unmatched-syntax '((TYPEDEF 258 . 265) (TYPEDEF 204 . 211))
+      :lexical-table 
+        '(("C4DO_BSET" (spp-arg-list ("set" "it") 154 . 163) . ((symbol "C4DO_DYNA" 170 . 179) (semantic-list "(&(set)->its, it)" 179 . 196)))
+          ("C4BSET_H")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
       :tags 
         '( ("C4SEQ_H" variable (:constant-flag t) nil [25 32])
             ("stddef.h" include (:system-flag t) nil [34 53])
@@ -379,14 +759,14 @@
       :file "seq.h"
       :pointmax 336
       :fsize 335
-      :lastmodtime '(22790 45452 139703 455000)
+      :lastmodtime '(22790 45452 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("C4SEQ_H")
           )
 )
-    (semanticdb-table "ls.h"
-      :major-mode 'c-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
       :tags 
         '( ("C4LS_H" variable (:constant-flag t) nil [24 30])
             ("stdbool.h" include (:system-flag t) nil [32 52])
@@ -546,7 +926,7 @@
       :file "ls.h"
       :pointmax 779
       :fsize 778
-      :lastmodtime '(22739 23398 242758 422000)
+      :lastmodtime '(22739 23398 0 0)
       :unmatched-syntax nil
       :lexical-table 
         '(("C4LS_H")
@@ -556,8 +936,8 @@
           ("C4DO_LS" (spp-arg-list ("ls" "var") 294 . 303) . ((symbol "_C4DO_LS" 311 . 319) (semantic-list "((ls), var, C4GSYM(root), C4GSYM(next))" 319 . 358)))
           )
 )
-    (semanticdb-table "ls.c"
-      :major-mode 'c-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
       :tags 
         '( ("c4life/seqs/ls.h" include nil nil [1 28])
             ("c4ls_init" function
@@ -688,8 +1068,231 @@
       :file "ls.c"
       :pointmax 913
       :fsize 912
-      :lastmodtime '(22739 23398 242758 422000)
-      :unmatched-syntax nil))
+      :lastmodtime '(22739 23398 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("C4DYNA_H" variable (:constant-flag t) nil [26 34])
+            ("stdint.h" include (:system-flag t) nil [36 55])
+            ("c4life/seqs/seq.h" include nil nil [56 84])
+            ("c4life/utils.h" include nil nil [85 110])
+            ("_C4DO_DYNA" variable (:constant-flag t) nil [120 130])
+            ("C4DO_DYNA" variable (:constant-flag t) nil [294 303])
+            ("c4dyna" type
+               (:members 
+                  ( ("capac" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [378 406])
+                    ("it_size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [378 406])
+                    ("len" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [378 406])
+                    ("its" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [409 419]))                  
+                :type "struct")
+                nil [360 422])
+            ("c4dyna_seq" type
+               (:members 
+                  ( ("seq" variable (:type ("c4seq" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [446 463])
+                    ("dyna" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [466 486]))                  
+                :type "struct")
+                nil [424 489])
+            ("c4dyna_init" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [518 538])
+                    ("it_size" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [539 555]))                  
+                :type ("c4dyna" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [491 556])
+            ("c4dyna_free" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [574 594]))                  
+                :type "void")
+                nil [557 595])
+            ("c4dyna_at" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [613 633])
+                    ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [634 646]))                  
+                :type "void")
+                nil [597 647])
+            ("c4dyna_clear" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [666 686]))                  
+                :type "void")
+                nil [648 687])
+            ("c4dyna_del" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [704 724])
+                    ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [725 737]))                  
+                :type "void")
+                nil [688 738])
+            ("c4dyna_grow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [756 776])
+                    ("capac" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [777 791]))                  
+                :type "void")
+                nil [739 792])
+            ("c4dyna_ins" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [810 830])
+                    ("pos" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [831 843]))                  
+                :type "void")
+                nil [793 844])
+            ("c4dyna_move" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [862 882])
+                    ("dest" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [883 896])
+                    ("src" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [897 909])
+                    ("len" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [910 922]))                  
+                :type "void")
+                nil [845 923])
+            ("c4dyna_pop" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [941 961]))                  
+                :type "void")
+                nil [924 962])
+            ("c4dyna_push" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [981 1001]))                  
+                :type "void")
+                nil [963 1002])
+            ("c4dyna_seq" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1028 1048])
+                    ("seq" variable
+                       (:pointer 1
+                        :type ("c4dyna_seq" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1049 1072]))                  
+                :type ("c4seq" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1003 1073])
+            ("c4dyna_swap" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("self" variable
+                       (:pointer 1
+                        :type ("c4dyna" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1091 1111])
+                    ("x" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1112 1122])
+                    ("y" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1123 1133])
+                    ("len" variable (:type ("int64_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1134 1146]))                  
+                :type "void")
+                nil [1074 1147]))          
+      :file "dyna.h"
+      :pointmax 1156
+      :fsize 1155
+      :lastmodtime '(22739 23398 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("C4DO_DYNA" (spp-arg-list ("dyna" "it") 303 . 313) . ((symbol "_C4DO_DYNA" 320 . 330) (semantic-list "((dyna), it, C4GSYM(pos))" 330 . 355)))
+          ("_C4DO_DYNA" (spp-arg-list ("dyna" "it" "_pos") 130 . 146) . 
+              ((symbol "int64_t" 154 . 161) (symbol "_pos" 162 . 166) (punctuation "=" 167 . 168) (number "0" 169 . 170) (punctuation ";" 170 . 171) (FOR "for" 181 . 184) (semantic-list "(void *it;						\\
+       _pos < dyna->len && (it = c4dyna_at(dyna, _pos));	\\
+       _pos++)" 185 . 276)))
+          ("C4DYNA_H")
+          )
+))
   :file "!home!wlisper!Documents!code-analysis!libc4life!src!c4life!seqs!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

@@ -163,7 +163,163 @@
       :pointmax 874
       :fsize 873
       :lastmodtime '(22924 36613 55924 185000)
-      :unmatched-syntax nil))
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [15 33])
+            ("sys/socket.h" include (:system-flag t) nil [34 57])
+            ("unistd.h" include (:system-flag t) nil [58 77])
+            ("strings.h" include (:system-flag t) nil [78 98])
+            ("arpa/inet.h" include (:system-flag t) nil [99 121])
+            ("IPADDR" variable (:constant-flag t) nil [131 137])
+            ("PORT" variable (:constant-flag t) nil [157 161])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [177 186])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [187 200]))                  
+                :type "int")
+                nil [168 1158]))          
+      :file "udpechoserv.c"
+      :pointmax 1159
+      :fsize 1158
+      :lastmodtime '(23006 12412 356086 676000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("IPADDR" . ((symbol "INADDR_ANY" 138 . 148)))
+          ("PORT" . ((number "8989" 162 . 166)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [14 32])
+            ("sys/socket.h" include (:system-flag t) nil [33 56])
+            ("unistd.h" include (:system-flag t) nil [57 76])
+            ("arpa/inet.h" include (:system-flag t) nil [77 99])
+            ("string.h" include (:system-flag t) nil [100 119])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [130 139])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [140 153]))                  
+                :type "int")
+                nil [121 1002]))          
+      :file "udpechocli.c"
+      :pointmax 1003
+      :fsize 1002
+      :lastmodtime '(23006 12109 514673 475000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [15 33])
+            ("sys/uio.h" include (:system-flag t) nil [34 54])
+            ("unistd.h" include (:system-flag t) nil [55 74])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [85 94])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [95 108]))                  
+                :type "int")
+                nil [76 364]))          
+      :file "iov.c"
+      :pointmax 365
+      :fsize 364
+      :lastmodtime '(23010 51696 86819 248000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [15 33])
+            ("unistd.h" include (:system-flag t) nil [34 53])
+            ("sys/un.h" include (:system-flag t) nil [54 73])
+            ("sys/socket.h" include (:system-flag t) nil [74 97])
+            ("string.h" include (:system-flag t) nil [98 117])
+            ("sys/wait.h" include (:system-flag t) nil [118 139])
+            ("signal.h" include (:system-flag t) nil [140 159])
+            ("errno.h" include (:system-flag t) nil [160 178])
+            ("stdlib.h" include (:system-flag t) nil [179 198])
+            ("UNIXSTR_PATH" variable (:constant-flag t) nil [208 220])
+            ("sig_cld" function
+               (:arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [252 262]))                  
+                :type "void")
+                nil [239 304])
+            ("str_echo" function
+               (:arguments 
+                  ( ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [320 327]))                  
+                :type "void")
+                nil [306 581])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [592 601])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [602 615]))                  
+                :type "int")
+                nil [583 1559]))          
+      :file "unix_echo.c"
+      :pointmax 1561
+      :fsize 1560
+      :lastmodtime '(23010 62437 120307 329000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UNIXSTR_PATH" . ((string "\"/tmp/echo.unix\"" 221 . 237)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [15 33])
+            ("stdlib.h" include (:system-flag t) nil [34 53])
+            ("sys/socket.h" include (:system-flag t) nil [54 77])
+            ("sys/types.h" include (:system-flag t) nil [78 100])
+            ("sys/un.h" include (:system-flag t) nil [101 120])
+            ("unistd.h" include (:system-flag t) nil [121 140])
+            ("strings.h" include (:system-flag t) nil [141 161])
+            ("string.h" include (:system-flag t) nil [162 181])
+            ("UNIXSTR_PATH" variable (:constant-flag t) nil [190 202])
+            ("str_cli" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [234 243])
+                    ("fd" variable (:type "int") (reparse-symbol arg-sub-list) [244 251]))                  
+                :type "void")
+                nil [221 566])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [577 586])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [587 600]))                  
+                :type "int")
+                nil [568 1029]))          
+      :file "unix_echoc.c"
+      :pointmax 1030
+      :fsize 1029
+      :lastmodtime '(23010 62162 823526 127000)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UNIXSTR_PATH" . ((string "\"/tmp/echo.unix\"" 203 . 219)))
+          )
+))
   :file "!home!wlisper!workspace!c!test!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

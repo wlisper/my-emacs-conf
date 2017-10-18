@@ -1,55 +1,84 @@
-;; Object test/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "test/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "tsgmp.c"
-      :major-mode 'c-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
       :tags 
-        '( ("stdio.h" include (:system-flag t) nil [17 35])
-            ("gmp.h" include (:system-flag t) nil [36 52])
-            ("main" function
-               (:arguments 
-                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [63 72])
-                    ("argv" variable
-                       (:pointer 1
-                        :dereference 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [73 86]))                  
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("unistd.h" include (:system-flag t) nil [41 60])
+            ("sys/socket.h" include (:system-flag t) nil [61 84])
+            ("signal.h" include (:system-flag t) nil [85 104])
+            ("MAXLINE" variable (:constant-flag t) nil [114 121])
+            ("recvfrom_int" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [152 156]))                  
+                :type "void")
+                nil [127 157])
+            ("count" variable
+               (:typemodifiers ("static")
                 :type "int")
-                nil [54 131]))          
-      :file "tsgmp.c"
-      :pointmax 132
-      :fsize 131
-      :lastmodtime '(22619 19037 788248 968000)
-      :unmatched-syntax '((symbol 54 . 58) (symbol 34 . 35) (punctuation 33 . 34) (symbol 30 . 33) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (punctuation 33 . 34) (symbol 30 . 33) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (symbol 30 . 33) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (symbol 30 . 32) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (symbol 34 . 35) (punctuation 33 . 34) (symbol 30 . 33) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (symbol 34 . 35) (punctuation 33 . 34) (symbol 30 . 33) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21) (punctuation 33 . 34) (symbol 30 . 33) (punctuation 29 . 30) (symbol 21 . 28) (punctuation 20 . 21)))
-    (semanticdb-table "macro.c"
-      :major-mode 'c-mode
-      :tags 
-        '( ("set_to_dummy_if_null" variable (:constant-flag t) nil [22 42])
-            ("Xsm_ops" type
-               (:members 
-                  ( ("test_function" variable
+                nil [158 175])
+            ("dg_echo" function
+               (:arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [190 201])
+                    ("pcliaddr" variable
                        (:pointer 1
-                        :type "void")
-                        (reparse-symbol classsubparts) [272 292]))                  
-                :type "struct")
-                nil [253 295])
-            ("main" function (:type "int") nil [297 390]))          
-      :file "macro.c"
-      :pointmax 391
-      :fsize 390
-      :lastmodtime '(22631 32159 973463 233000)
-      :unmatched-syntax '((punctuation 249 . 250) (semantic-list 246 . 249) (WHILE 240 . 245) (semantic-list 64 . 239) (DO 61 . 63) (semantic-list 42 . 57) (semantic-list 268 . 274) (symbol 260 . 267) (STRUCT 253 . 259) (semantic-list 268 . 274) (symbol 260 . 267) (STRUCT 253 . 259) (punctuation 249 . 250) (semantic-list 246 . 249) (WHILE 240 . 245) (semantic-list 64 . 239) (DO 61 . 63) (semantic-list 42 . 57) (STRUCT 253 . 259) (punctuation 173 . 174) (close-paren 172 . 173) (number 171 . 172) (open-paren 170 . 171) (WHILE 164 . 169) (close-paren 162 . 163) (close-paren 154 . 155) (symbol 141 . 149) (punctuation 140 . 141) (punctuation 139 . 140) (symbol 136 . 139) (punctuation 169 . 170) (close-paren 168 . 169) (number 167 . 168) (open-paren 166 . 167) (WHILE 160 . 165) (close-paren 158 . 159) (close-paren 150 . 151) (symbol 141 . 145) (punctuation 140 . 141) (punctuation 139 . 140) (symbol 136 . 139) (punctuation 168 . 169) (close-paren 167 . 168) (number 166 . 167) (open-paren 165 . 166) (WHILE 159 . 164) (close-paren 157 . 158) (close-paren 149 . 150) (symbol 141 . 144) (punctuation 140 . 141) (punctuation 139 . 140) (symbol 136 . 139) (punctuation 167 . 168) (close-paren 166 . 167) (number 165 . 166) (open-paren 164 . 165) (WHILE 158 . 163) (close-paren 156 . 157) (close-paren 148 . 149) (symbol 141 . 143) (punctuation 140 . 141) (punctuation 139 . 140) (symbol 136 . 139) (punctuation 165 . 166) (close-paren 164 . 165) (number 163 . 164) (open-paren 162 . 163) (WHILE 156 . 161) (close-paren 154 . 155) (close-paren 146 . 147) (punctuation 140 . 141) (punctuation 139 . 140) (symbol 136 . 139) (punctuation 161 . 162) (semantic-list 158 . 161) (WHILE 152 . 157) (semantic-list 61 . 151) (DO 58 . 60) (punctuation 135 . 136) (close-paren 134 . 135) (number 133 . 134) (open-paren 132 . 133) (WHILE 126 . 131) (close-paren 124 . 125))
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [202 228])
+                    ("clilen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [229 246]))                  
+                :type "void")
+                nil [177 512])
+            ("recvfrom_int" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("signo" variable (:type "int") (reparse-symbol arg-sub-list) [539 549]))                  
+                :type "void")
+                nil [514 610]))          
+      :file "ex822.c"
+      :pointmax 611
+      :fsize 610
+      :lastmodtime '(23007 38648 946015 162000)
+      :unmatched-syntax '((number 122 . 126))
       :lexical-table 
-        '(("set_to_dummy_if_null" (spp-arg-list ("ops" "function") 42 . 57) . 
-              ((DO "do" 61 . 63) (semantic-list "{                                     \\
-    if (!ops->function) {                 \\
-      ops->function = xsm_##function;     \\
-    }                                     \\
-  }" 64 . 239) (WHILE "while" 240 . 245) (semantic-list "(0)" 246 . 249) (punctuation ";" 249 . 250)))
+        '(("MAXLINE" . ((number "2048" 122 . 126)))
           )
-))
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("sys/socket.h" include (:system-flag t) nil [21 44])
+            ("dg_cli" function
+               (:arguments 
+                  ( ("fp" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [58 67])
+                    ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [68 79])
+                    ("pservaddr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("sockaddr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [80 113])
+                    ("servlen" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [114 132]))                  
+                :type "void")
+                nil [46 720]))          
+      :file "ex14.5.c"
+      :pointmax 721
+      :fsize 720
+      :lastmodtime '(23010 8984 69675 341000)
+      :unmatched-syntax nil))
   :file "!home!wlisper!workspace!test!semantic.cache"
   :semantic-tag-version "2.0"
   :semanticdb-version "2.2")

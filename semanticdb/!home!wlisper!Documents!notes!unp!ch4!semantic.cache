@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("stdlib.h" include (:system-flag t) nil [21 40])
+            ("errno.h" include (:system-flag t) nil [41 59])
+            ("sys/socket.h" include (:system-flag t) nil [60 83])
+            ("Listen" function
+               (:arguments 
+                  ( ("sockfd" variable (:type "int") (reparse-symbol arg-sub-list) [96 107])
+                    ("backlog" variable (:type "int") (reparse-symbol arg-sub-list) [108 120]))                  
+                :type "int")
+                nil [85 306]))          
+      :file "Listen.c"
+      :pointmax 307
+      :fsize 306
+      :lastmodtime '(23000 60938 206863 616000)
+      :unmatched-syntax nil))
+  :file "!home!wlisper!Documents!notes!unp!ch4!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
