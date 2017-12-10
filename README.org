@@ -1,1 +1,24 @@
-*my-emacs-conf
+* my-emacs-conf
+
+Hi, This is my emacs config directory. 
+
+Hope this repo will be a good start for your emacs experience.
+
+To use this repo, just clone it and rename it to .emacs.d to your home directory. Enjoy!
+
+* Some features
+
+** english-chinese dictionary
+
+hit <ctrl+x t enter> to translate the word at your cursor from english to chinese or from chinese to english.
+
+** search engine support
+
+hit <ctrl+c s> to open bing search.  if your cursor is currently at a word or you have selected a region, the word or region selected will be searched.
+
+** pdf support
+
+pdf-tools enables your to view pdf in emacs, just <ctrl+x f> to open it.
+
+** common lisp programming support
+
