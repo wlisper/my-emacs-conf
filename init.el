@@ -16,7 +16,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(cfs--current-profile "profile1" t)
- '(cfs--profiles-steps (quote (("profile2" . 7) ("profile1" . 6))) t)
+ '(cfs--profiles-steps (quote (("profile2" . 7) ("profile1" . 4))) t)
  '(custom-safe-themes
    (quote
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" "bffa9739ce0752a37d9b1eee78fc00ba159748f50dc328af4be661484848e476" "4e753673a37c71b07e3026be75dc6af3efbac5ce335f3707b7d6a110ecb636a3" "0e219d63550634bc5b0c214aced55eb9528640377daf486e13fb18a32bf39856" default)))
@@ -33,7 +33,7 @@
  '(org-startup-indented t)
  '(package-selected-packages
    (quote
-    (irony ac-slime paredit projectile helm ztree zpresent org-tree-slide org-present epresent eide bpe blog-minimal ac-php php-mode smartparens web-mode spacemacs-theme iedit aggressive-indent expand-region aggresive-indent hungry-delete beacon htmlize ox-reveal zenburn-theme which-key use-package try org-bullets elfeed-org counsel color-theme auto-complete ace-window)))
+    (magit psvn multi-term cmake-mode cider command-log-mode irony ac-slime paredit projectile helm ztree zpresent org-tree-slide org-present epresent eide bpe blog-minimal ac-php php-mode smartparens web-mode spacemacs-theme iedit aggressive-indent expand-region aggresive-indent hungry-delete beacon htmlize ox-reveal zenburn-theme which-key use-package try org-bullets elfeed-org counsel color-theme auto-complete ace-window)))
  '(pdf-view-before-change-page-hook nil)
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pdf-view-resize-factor 1.1)

@@ -50,6 +50,10 @@
 (use-package ztree
     :ensure t)
 
+(use-package command-log-mode
+    :ensure t)
+(add-hook 'prog-mode-hook 'command-log-mode)
+
 (use-package chinese-fonts-setup
     :ensure t)
 (chinese-fonts-setup-enable)
@@ -231,6 +235,16 @@
 (use-package projectile
     :ensure t)
 
+(use-package psvn
+    :ensure t)
+
+(use-package magit
+    :ensure t
+    :config (global-set-key (kbd "C-c m") 'magit-status))
+
+(use-package cmake-mode
+    :ensure)
+
 (defun my:ac-c-header-init()
     (require 'ac-c-headers)
     (add-to-list 'ac-sources 'ac-source-c-headers)
@@ -326,6 +340,39 @@
 ;        tab-width 4
 ;        c-basic-offset 4))
 
+(use-package slime
+    :ensure t
+    :config 
+    (progn
+        (setq inferior-lisp-program "/usr/local/bin/sbcl")
+        (setq slime-contribs '(slime-fancy))
+        (require 'slime-autoloads)
+        (require 'paredit)
+        (add-hook 'slime-load-hook
+            #'(lambda () (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)))))
+
+(use-package ac-slime
+    :ensure t)
+
+(defun lisp-hook ()
+  (paredit-mode t)
+  (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)
+  (make-variable-buffer-local 'show-paren-mode)
+  (show-paren-mode 1))
+
+(add-hook 'emacs-lisp-mode-hook 'lisp-hook)
+(add-hook 'lisp-interaction-mode-hook 'lisp-hook)
+(add-hook 'lisp-mode-hook 'lisp-hook)
+
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'slime-repl-mode))
+(global-set-key (kbd "C-c C-h") 'slime-documentation)
+
+(use-package paredit
+    :ensure t)
+
 (use-package nasm-mode
     :ensure t
     :config 
@@ -354,38 +401,6 @@
         (setq mark-holidays-in-calendar t)
         (setq cal-china-x-important-holidays cal-china-x-chinese-holidays)
         (setq calendar-holidays cal-china-x-important-holidays)))
-
-(use-package slime
-    :ensure t
-    :config 
-    (progn
-        (setq inferior-lisp-program "/usr/local/bin/sbcl")
-        (setq slime-contribs '(slime-fancy))
-        (require 'slime-autoloads)
-        (require 'paredit)
-        (add-hook 'slime-load-hook
-            #'(lambda () (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)))))
-
-(use-package ac-slime
-    :ensure t)
-
-(defun lisp-hook ()
-  (paredit-mode t)
-  (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)
-  (make-variable-buffer-local 'show-paren-mode)
-  (show-paren-mode 1))
-(add-hook 'emacs-lisp-mode-hook 'lisp-hook)
-(add-hook 'lisp-interaction-mode-hook 'lisp-hook)
-(add-hook 'lisp-mode-hook 'lisp-hook)
-
-(require 'ac-slime)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'slime-repl-mode))
-(global-set-key (kbd "C-c C-h") 'slime-documentation)
-
-(use-package paredit
-    :ensure t)
 
 (use-package ox-reveal
 :ensure ox-reveal)

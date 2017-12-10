@@ -78,6 +78,25 @@
       :pointmax 721
       :fsize 720
       :lastmodtime '(23010 8984 69675 341000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("SDL2/SDL.h" include (:system-flag t) nil [2 23])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [34 43])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [44 57]))                  
+                :type "int")
+                nil [25 370]))          
+      :file "main.c"
+      :pointmax 371
+      :fsize 370
+      :lastmodtime '(23028 36844 133580 376000)
       :unmatched-syntax nil))
   :file "!home!wlisper!workspace!test!semantic.cache"
   :semantic-tag-version "2.0"

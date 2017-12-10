@@ -55,6 +55,12 @@
 (use-package ztree
     :ensure t)
 #+END_SRC
+* command-log-mode
+#+BEGIN_SRC emacs-lisp
+(use-package command-log-mode
+    :ensure t)
+(add-hook 'prog-mode-hook 'command-log-mode)
+#+END_SRC
 * Chinese Support
 #+BEGIN_SRC emacs-lisp
 (use-package chinese-fonts-setup
@@ -281,7 +287,23 @@ and Ivy / Counsel replace a lot of ido or helms completion functionality
 (use-package projectile
     :ensure t)
 #+END_SRC
+** svn
+#+BEGIN_SRC emacs-lisp
+(use-package psvn
+    :ensure t)
+#+END_SRC
+* magit
+#+BEGIN_SRC emacs-lisp
+(use-package magit
+    :ensure t
+    :config (global-set-key (kbd "C-c m") 'magit-status))
+#+END_SRC
 * C Programming Support
+** cmake support
+#+BEGIN_SRC emacs-lisp
+(use-package cmake-mode
+    :ensure)
+#+END_SRC
 ** auto-complete-c-headers
 #+BEGIN_SRC emacs-lisp
 (defun my:ac-c-header-init()
@@ -391,6 +413,46 @@ google coding style check
 ;        tab-width 4
 ;        c-basic-offset 4))
 #+END_SRC
+* Common lisp Programming
+** slime
+A development env for common lisp.
+#+BEGIN_SRC emacs-lisp
+(use-package slime
+    :ensure t
+    :config 
+    (progn
+        (setq inferior-lisp-program "/usr/local/bin/sbcl")
+        (setq slime-contribs '(slime-fancy))
+        (require 'slime-autoloads)
+        (require 'paredit)
+        (add-hook 'slime-load-hook
+            #'(lambda () (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)))))
+
+(use-package ac-slime
+    :ensure t)
+
+(defun lisp-hook ()
+  (paredit-mode t)
+  (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)
+  (make-variable-buffer-local 'show-paren-mode)
+  (show-paren-mode 1))
+
+(add-hook 'emacs-lisp-mode-hook 'lisp-hook)
+(add-hook 'lisp-interaction-mode-hook 'lisp-hook)
+(add-hook 'lisp-mode-hook 'lisp-hook)
+
+(require 'ac-slime)
+(add-hook 'slime-mode-hook 'set-up-slime-ac)
+(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
+(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'slime-repl-mode))
+(global-set-key (kbd "C-c C-h") 'slime-documentation)
+#+END_SRC
+** paredit
+DEADLINE: <2017-09-27 Wed>
+#+BEGIN_SRC emacs-lisp
+(use-package paredit
+    :ensure t)
+#+END_SRC
 * nasm Mode
 #+BEGIN_SRC emacs-lisp
 (use-package nasm-mode
@@ -434,45 +496,7 @@ bing english-chinese dictionary.
         (setq cal-china-x-important-holidays cal-china-x-chinese-holidays)
         (setq calendar-holidays cal-china-x-important-holidays)))
 #+END_SRC
-* Common lisp Programming
-** slime
-A development env for common lisp.
-#+BEGIN_SRC emacs-lisp
-(use-package slime
-    :ensure t
-    :config 
-    (progn
-        (setq inferior-lisp-program "/usr/local/bin/sbcl")
-        (setq slime-contribs '(slime-fancy))
-        (require 'slime-autoloads)
-        (require 'paredit)
-        (add-hook 'slime-load-hook
-            #'(lambda () (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)))))
 
-(use-package ac-slime
-    :ensure t)
-
-(defun lisp-hook ()
-  (paredit-mode t)
-  (define-key slime-prefix-map (kbd "M-h") 'slime-documentation-lookup)
-  (make-variable-buffer-local 'show-paren-mode)
-  (show-paren-mode 1))
-(add-hook 'emacs-lisp-mode-hook 'lisp-hook)
-(add-hook 'lisp-interaction-mode-hook 'lisp-hook)
-(add-hook 'lisp-mode-hook 'lisp-hook)
-
-(require 'ac-slime)
-(add-hook 'slime-mode-hook 'set-up-slime-ac)
-(add-hook 'slime-repl-mode-hook 'set-up-slime-ac)
-(eval-after-load "auto-complete" '(add-to-list 'ac-modes 'slime-repl-mode))
-(global-set-key (kbd "C-c C-h") 'slime-documentation)
-#+END_SRC
-** paredit
-DEADLINE: <2017-09-27 Wed>
-#+BEGIN_SRC emacs-lisp
-(use-package paredit
-    :ensure t)
-#+END_SRC
 * Reveal.js
 
 #+BEGIN_SRC emacs-lisp

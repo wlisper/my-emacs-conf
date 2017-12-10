@@ -1,128 +1,128 @@
-mdkir echo-server
-mkdir echo-server
-cd echo-server/
+mvn package
+mvn package
+mvn package
+mvn package
+mvn package
+mvn package
 ls
-cd ../
+cd target/
 ls
-cd echo-server/
+java -jar hzshare.war 
 ls
-rmbak
+cd ..
+ls
+cd src/
+ls
+cd ..
+cd target/
 ls
 ls
 cd ..
 ls
-rm -rf echo-server/
-ls
-cd
-ls
-ls
-ls
-cd workspace/
-ls
-cd test/
-ls
-rmbak
-ls
-ls
-cd workspace/
-ls
-cd c/
-ls
-cd test/
-ls
-rmbak
-ls
-gcc iov.c 
-ls
-gcc iov.c 
-./a.out
-ls
-gcc iov.c 
-./a.out
-ls
-llsiue
-ls
-ls
-rmbak
-ls
-man strncpy
-man waipid
-man waitpid
-ls
-gcc unix_echo.c 
-ls
-ls
-gcc unix_echoc.c 
-ls
-man sockaddr_un
-man socket
-ls
-gcc unix_echoc.c 
-ls
-./a.out
-ls
-gcc unix_echoc.c
-ls
-./a.out
-gcc unix_echo.c
-gcc unix_echo.c -o serv
-gcc unix_echoc.c -o cli
-gcc unix_echoc.c 
-ls
-gcc unix_echoc.c 
-gcc unix_echoc.c -o cli
-ls
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./ser
-./serv
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-ls
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-gcc unix_echo.c -o serv
-./serv
-./serv
-ls
-clear
-
-ls
-rmbak
-ls
-rm ser
-rm serv
-rm cli
-ls
-./a.out
-rm a.out
-ls
-ls
-cd 
-ls
-ls
-ls
-cd Documents/
+cd ..
 ls
 cd ..
 ls
-l
-cd workspace/
+git clone https://github.com/javaclinic/forum-springboot.git
 ls
-cd lisp/
+cd forum-springboot/
 ls
-rmbak
+mvn package
+ls
+cd target/
+ls
+java -jar forum-springboot-1.0.0-SNAPSHOT.jar.
+java -jar forum-springboot-1.0.0-SNAPSHOT.jar
+java -jar forum-springboot-1.0.0-SNAPSHOT.jar
+ls
+cd ..
+ls
+cd src/
+ls
+cd main/
+ls
+cd java/
+ls
+cd example/
+ls
+cd forum/
+ls
+cd run/
+ls
+cd Application/
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+cd domain/
+ls
+ls
+ls
+ls
+cd ..
+ls
+cd jpa/
+ls
+ls
+cd ..
+ls
+cd domain/
+ls
+cd ..
+cd ..
+ls
+cd forum/
+ls
+cd run/
+ls
+cd Application/
+ls
+cd ../../..
+ls
+cd ..
+ls
+cd ..
+ls
+cd resources/
+ls
+ls
+cd ..
+ls
+ls
+cd ..
+ls
+cd ..
+ls
+ls
+cd ..
+ls
+ls
+cd forum-springboot/
+ls
+cd src/ja
+cd src/
+ls
+cd main/
+ls
+cd java/
+ls
+cd example/
+ls
+cd forum/
+ls
+cd jpa/
+ls
+cd ../..//..
+ls
+cd ../../..
+ls
+cd ..
+ls
+rm -rf forum-springboot/
+ls
+cd ..
+ls
+ibus
+ibus restart
