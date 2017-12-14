@@ -1,128 +1,128 @@
-mvn package
-mvn package
-mvn package
-mvn package
-mvn package
-mvn package
+rmbak
 ls
-cd target/
+git add lispy_syntactic_sugar.org  tmp.lisp 
 ls
-java -jar hzshare.war 
+mv lispy_syntactic_sugar.md ../_posts/
+ls
+cd ../_posts/
+ls
+mv lispy_syntactic_sugar.md 2017-12-5-lispy_syntactic_sugar.md
+ls
+rmbak
+git add 2017-12-5-lispy_syntactic_sugar.md
+cd ..
+ls
+git commmit -m "add article lisp syntactic sugar" -a
+git commit -m "add article lisp syntactic sugar" -a
+cd _org/
+ls
+php_has_a_pipe.org
+mv php_has_a_pipe.md ../_posts/
+ls
+cd ../_posts/
+ls
+mv php_has_a_pipe.md 2017-12-5- php_has_a_pipe.md
+mv php_has_a_pipe.md 2017-12-5-php_has_a_pipe.md
+ls
+git add  2017-12-5-php_has_a_pipe.md
+git commit -m "test" 2017-12-5-php_has_a_pipe.md
+git commit -m "test" 2017-12-5-php_has_a_pipe.md
+cd ../_org/
+mv php_has_a_pipe.md ../_posts/
+ls
+cd ../_posts/
+ls
+mv php_has_a_pipe.md 2017-12-5-php_has_a_pipe.md
+git commit -m "test" -a
+ls
+cd ../..
+ls
+cd wlisper.github.io/
+ls
+cd _org/
+ls
+rmbak
+cd ../gameserver/
+php start_swoole_server.php start
+php start_swoole_server.php stop
+php start_swoole_server.php start
+php start_swoole_server.php start
+php start_swoole_server.php start
+whereis php
+cd /data/sr
+ls
+cd /data
+ls
+cd usr/
+ls
+cd local/
+ls
+cd php7/bin/
+ls
+pwd
+man php
+php -h
+php -r "print time()"
+php -r "print time();"
+ls
+cd /data/littleGame/
+ls
+cd server/
+ls
+cd trunk/
+ls
+cd gameserver/
 ls
 cd ..
 ls
-cd src/
+cd script/import/
 ls
-cd ..
-cd target/
+python parser.py && php buildStaticFile.php 
+cd Documents/wlisper.github.io/
 ls
+cd _por
+cd _posts/
 ls
-cd ..
+git push -u origin master
+git commit -m "test" -a
+git push -u origin master
 ls
-cd ..
+git push -u origin master
+git commit -m "test" -a
+git push -u origin master
 ls
-cd ..
+git commit -m "php pipe" -a
+git push -u origin master
+git push -u origin master
+git push -u origin master
+git push -u origin master
+git push -u origin master
+git push -u origin master
+git status
+git add ../_org/php_has_a_pipe.org 
+git commit -m "test" -a
+git push -u origin master
+git push -u origin master
+git push -u origin master
+git push -u origin master
+git push -u origin master
 ls
-git clone https://github.com/javaclinic/forum-springboot.git
+cd .emacs.d/
 ls
-cd forum-springboot/
+git pull
 ls
-mvn package
-ls
-cd target/
-ls
-java -jar forum-springboot-1.0.0-SNAPSHOT.jar.
-java -jar forum-springboot-1.0.0-SNAPSHOT.jar
-java -jar forum-springboot-1.0.0-SNAPSHOT.jar
-ls
-cd ..
-ls
-cd src/
-ls
-cd main/
-ls
-cd java/
-ls
-cd example/
-ls
-cd forum/
-ls
-cd run/
-ls
-cd Application/
-ls
-ls
+c d..
 cd ..
 ls
-cd ..
+cd Documents/wlisper.github.io/
 ls
-cd domain/
+cd _posts/
 ls
+mongo
 ls
+cd /data/sb
+cd /data/db
 ls
-ls
-cd ..
-ls
-cd jpa/
-ls
-ls
-cd ..
-ls
-cd domain/
-ls
-cd ..
-cd ..
-ls
-cd forum/
-ls
-cd run/
-ls
-cd Application/
-ls
-cd ../../..
-ls
-cd ..
-ls
-cd ..
-ls
-cd resources/
-ls
-ls
-cd ..
-ls
-ls
-cd ..
-ls
-cd ..
-ls
-ls
-cd ..
-ls
-ls
-cd forum-springboot/
-ls
-cd src/ja
-cd src/
-ls
-cd main/
-ls
-cd java/
-ls
-cd example/
-ls
-cd forum/
-ls
-cd jpa/
-ls
-cd ../..//..
-ls
-cd ../../..
-ls
-cd ..
-ls
-rm -rf forum-springboot/
-ls
-cd ..
-ls
-ibus
-ibus restart
+rm mongod.lock 
+cd ../..
+mongod --fork --logpath /tmp/mongod.log
