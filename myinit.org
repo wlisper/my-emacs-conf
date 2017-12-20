@@ -320,6 +320,7 @@ and Ivy / Counsel replace a lot of ido or helms completion functionality
 #+BEGIN_SRC emacs-lisp
 (use-package psvn
     :ensure t)
+(setq svn-status-verbose nil)
 #+END_SRC
 * magit
 #+BEGIN_SRC emacs-lisp
