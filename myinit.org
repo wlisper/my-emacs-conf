@@ -78,6 +78,16 @@
   (erase-buffer))
 (global-set-key (kbd "C-c s") 'search-web)
 (global-set-key (kbd "<f5>") 'revert-buffer)
+
+(defun kill-other-buffers()
+  (interactive)
+  (mapc 'kill-buffer 
+    (delq (current-buffer)
+        (remove-if-not 'buffer-file-name (buffer-list)))))
+
+(defun kill-all-buffers()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
 #+END_SRC
 * ztree
 #+BEGIN_SRC emacs-lisp
