@@ -1,0 +1,44 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode python-mode
+      :tags 
+        '( ("os" include nil nil [26 35])
+            ("os.path" include nil nil [36 50])
+            ("sys" include nil nil [51 61])
+            ("xlrd" include nil nil [62 73])
+            ("pymongo" include nil nil [74 105])
+            ("reload" code nil nil [107 118])
+            ("sys" code nil nil [119 150])
+            ("rootdir" variable nil nil [152 164])
+            ("rootdirstr" variable nil nil [165 180])
+            ("rootdir" code nil nil [181 217])
+            ("rootdirstr" variable nil nil [218 253])
+            ("rootdir" code nil nil [254 293])
+            ("rootdirstr" variable nil nil [294 332])
+            ("if" code nil nil [334 987])
+            ("if" code nil nil [1001 1686])
+            ("exclude_file" variable nil nil [1687 1715])
+            ("os" code nil nil [1717 1771])
+            ("con" variable nil nil [1773 1810])
+            ("db" variable nil nil [1920 1940])
+            ("db" code nil nil [1941 2007])
+            ("read_table" function (:arguments 
+              ( ("table" variable nil (reparse-symbol function_parameters) [2025 2030])
+                ("col" variable nil (reparse-symbol function_parameters) [2032 2035])
+                ("language" variable nil (reparse-symbol function_parameters) [2037 2045]))              ) nil [2010 5407])
+            ("read_xlsx" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [5422 5430])
+                ("filepath" variable nil (reparse-symbol function_parameters) [5432 5440]))              ) nil [5408 6384])
+            ("for" code nil nil [6385 6834]))          
+      :file "parser.py"
+      :pointmax 6834
+      :fsize 6937
+      :lastmodtime '(23135 2437 0 0)
+      :unmatched-syntax nil))
+  :file "!data!www!trunk_data!gameserver!data!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

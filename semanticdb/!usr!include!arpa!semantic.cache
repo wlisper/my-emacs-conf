@@ -1,225 +1,225 @@
-;; Object arpa/
+;; Object semanticdb-project-database-file
 ;; SEMANTICDB Tags save file
-(semanticdb-project-database-file "arpa/"
+(semanticdb-project-database-file "semanticdb-project-database-file"
   :tables
   (list
-    (semanticdb-table "inet.h"
-      :major-mode 'c-mode
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
       :tags 
-        '( ("_ARPA_INET_H" variable (:constant-flag t) nil [819 831])
-            ("features.h" include (:system-flag t) nil [835 856])
-            ("netinet/in.h" include (:system-flag t) nil [857 880])
+        '( ("_ARPA_INET_H" variable (:constant-flag t) nil [905 917])
+            ("features.h" include (:system-flag t) nil [921 942])
+            ("netinet/in.h" include (:system-flag t) nil [943 966])
             ("socklen_t" type
                (:typedef ("__socklen_t" type (:type "class") nil nil)
                 :type "typedef")
-                nil [996 1026])
-            ("__socklen_t_defined" variable (:constant-flag t) nil [1036 1055])
-            ("inet_addr" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
+                nil [1082 1112])
+            ("__socklen_t_defined" variable (:constant-flag t) nil [1122 1141])
+            ("inet_nsap_ntoa" function
+               (:type "char"
+                :arguments 
+                  ( ("__len" variable (:type "int") (reparse-symbol arg-sub-list) [4262 4272])
+                    ("__cp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4273 4301])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4310 4322]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4233 4331])
+            ("inet_nsap_addr" function
+               (:type "unsigned int"
                 :arguments 
                   ( ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [1224 1241]))                  
-                :type ("in_addr_t" type (:type "class") nil nil))
-                nil [1196 1250])
-            ("inet_lnaof" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
-                :arguments 
-                  ( ("__in" variable (:type ("in_addr" type
-                         (:prototype t
-                          :type "struct")
-                          nil nil)) (reparse-symbol arg-sub-list) [1354 1374]))                  
-                :type ("in_addr_t" type (:type "class") nil nil))
-                nil [1325 1383])
-            ("inet_makeaddr" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
-                :arguments 
-                  ( ("__net" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1546 1562])
-                    ("__host" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1563 1580]))                  
-                :type ("in_addr" type
-                     (:prototype t
-                      :type "struct")
-                      nil nil))
-                nil [1509 1594])
-            ("inet_netof" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
-                :arguments 
-                  ( ("__in" variable (:type ("in_addr" type
-                         (:prototype t
-                          :type "struct")
-                          nil nil)) (reparse-symbol arg-sub-list) [1687 1707]))                  
-                :type ("in_addr_t" type (:type "class") nil nil))
-                nil [1658 1716])
-            ("inet_network" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
-                :arguments 
-                  ( ("__cp" variable
+                        (reparse-symbol arg-sub-list) [4039 4058])
+                    ("__buf" variable
                        (:pointer 1
-                        :constant-flag t
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [1870 1887]))                  
-                :type ("in_addr_t" type (:type "class") nil nil))
-                nil [1839 1896])
-            ("inet_ntoa" function
-               (:prototype-flag t
-                :pointer 1
-                :typemodifiers ("extern")
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [4067 4088])
+                    ("__len" variable (:type "int") (reparse-symbol arg-sub-list) [4089 4099]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [4003 4108])
+            ("inet_net_pton" function
+               (:type "int"
                 :arguments 
-                  ( ("__in" variable (:type ("in_addr" type
-                         (:prototype t
-                          :type "struct")
-                          nil nil)) (reparse-symbol arg-sub-list) [2062 2082]))                  
-                :type "char")
-                nil [2038 2091])
-            ("inet_pton" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
-                :arguments 
-                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [2303 2312])
+                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [3772 3781])
                     ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [2313 2341])
+                        (reparse-symbol arg-sub-list) [3782 3801])
                     ("__buf" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [2350 2373]))                  
-                :type "int")
-                nil [2281 2382])
-            ("inet_ntop" function
-               (:prototype-flag t
-                :pointer 1
-                :typemodifiers ("extern")
-                :constant-flag t
+                        (reparse-symbol arg-sub-list) [3807 3819])
+                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3820 3833]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3746 3842])
+            ("inet_net_ntop" function
+               (:type "char"
                 :arguments 
-                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [2606 2615])
+                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [3484 3493])
                     ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "void")
-                        (reparse-symbol arg-sub-list) [2616 2644])
+                        (reparse-symbol arg-sub-list) [3494 3513])
+                    ("__bits" variable (:type "int") (reparse-symbol arg-sub-list) [3514 3525])
                     ("__buf" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [2654 2677])
-                    ("__len" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2678 2694]))                  
-                :type "char")
-                nil [2576 2708])
+                        (reparse-symbol arg-sub-list) [3533 3545])
+                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3546 3559]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3456 3568])
+            ("inet_neta" function
+               (:type "char"
+                :arguments 
+                  ( ("__net" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3244 3260])
+                    ("__buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3261 3273])
+                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3274 3287]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3220 3296])
             ("inet_aton" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
+               (:type "int"
                 :arguments 
                   ( ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [2944 2961])
+                        (reparse-symbol arg-sub-list) [3035 3054])
                     ("__inp" variable
                        (:pointer 1
                         :type ("in_addr" type
                              (:prototype t
                               :type "struct")
                               nil nil))
-                        (reparse-symbol arg-sub-list) [2962 2984]))                  
-                :type "int")
-                nil [2922 2993])
-            ("inet_neta" function
-               (:prototype-flag t
-                :pointer 1
-                :typemodifiers ("extern")
+                        (reparse-symbol arg-sub-list) [3055 3077]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [3013 3086])
+            ("inet_ntop" function
+               (:type "char"
                 :arguments 
-                  ( ("__net" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3151 3167])
-                    ("__buf" variable
-                       (:pointer 1
-                        :type "char")
-                        (reparse-symbol arg-sub-list) [3168 3180])
-                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3181 3194]))                  
-                :type "char")
-                nil [3127 3203])
-            ("inet_net_ntop" function
-               (:prototype-flag t
-                :pointer 1
-                :typemodifiers ("extern")
-                :arguments 
-                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [3391 3400])
+                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [2700 2709])
                     ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "void")
-                        (reparse-symbol arg-sub-list) [3401 3418])
-                    ("__bits" variable (:type "int") (reparse-symbol arg-sub-list) [3419 3430])
+                        (reparse-symbol arg-sub-list) [2710 2740])
                     ("__buf" variable
                        (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [3438 3450])
-                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3451 3464]))                  
-                :type "char")
-                nil [3363 3473])
-            ("inet_net_pton" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
+                        (reparse-symbol arg-sub-list) [2745 2768])
+                    ("__len" variable (:type ("socklen_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2769 2785]))                  
+                :constant-flag t
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2668 2799])
+            ("inet_pton" function
+               (:type "int"
                 :arguments 
-                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [3677 3686])
+                  ( ("__af" variable (:type "int") (reparse-symbol arg-sub-list) [2393 2402])
                     ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [3687 3704])
+                        (reparse-symbol arg-sub-list) [2403 2433])
                     ("__buf" variable
                        (:pointer 1
                         :type "void")
-                        (reparse-symbol arg-sub-list) [3710 3722])
-                    ("__len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3723 3736]))                  
-                :type "int")
-                nil [3651 3745])
-            ("inet_nsap_addr" function
-               (:prototype-flag t
-                :typemodifiers ("extern")
+                        (reparse-symbol arg-sub-list) [2442 2465]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2371 2474])
+            ("inet_ntoa" function
+               (:type "char"
+                :arguments 
+                  ( ("__in" variable (:type ("in_addr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [2152 2172]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :pointer 1
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [2128 2181])
+            ("inet_network" function
+               (:type ("in_addr_t" type (:type "class") nil nil)
                 :arguments 
                   ( ("__cp" variable
                        (:pointer 1
                         :constant-flag t
                         :type "char")
-                        (reparse-symbol arg-sub-list) [3942 3959])
-                    ("__buf" variable
-                       (:pointer 1
-                        :type "unsigned char")
-                        (reparse-symbol arg-sub-list) [3968 3989])
-                    ("__len" variable (:type "int") (reparse-symbol arg-sub-list) [3990 4000]))                  
-                :type "unsigned int")
-                nil [3906 4009])
-            ("inet_nsap_ntoa" function
-               (:prototype-flag t
-                :pointer 1
-                :typemodifiers ("extern")
+                        (reparse-symbol arg-sub-list) [1958 1977]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1927 1986])
+            ("inet_netof" function
+               (:type ("in_addr_t" type (:type "class") nil nil)
                 :arguments 
-                  ( ("__len" variable (:type "int") (reparse-symbol arg-sub-list) [4163 4173])
-                    ("__cp" variable
+                  ( ("__in" variable (:type ("in_addr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1775 1795]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1746 1804])
+            ("inet_makeaddr" function
+               (:type ("in_addr" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :arguments 
+                  ( ("__net" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1634 1650])
+                    ("__host" variable (:type ("in_addr_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1651 1668]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1597 1682])
+            ("inet_lnaof" function
+               (:type ("in_addr_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__in" variable (:type ("in_addr" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [1442 1462]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1413 1471])
+            ("inet_addr" function
+               (:type ("in_addr_t" type (:type "class") nil nil)
+                :arguments 
+                  ( ("__cp" variable
                        (:pointer 1
                         :constant-flag t
-                        :type "unsigned char")
-                        (reparse-symbol arg-sub-list) [4174 4200])
-                    ("__buf" variable
-                       (:pointer 1
                         :type "char")
-                        (reparse-symbol arg-sub-list) [4209 4221]))                  
-                :type "char")
-                nil [4134 4230]))          
+                        (reparse-symbol arg-sub-list) [1310 1329]))                  
+                :typemodifiers ("extern" "\"C\"" "extern")
+                :prototype-flag t)
+                (reparse-symbol extern-c-contents) [1282 1338]))          
       :file "inet.h"
-      :pointmax 4277
-      :fsize 4276
-      :lastmodtime '(22572 57651 0 0)
+      :pointmax 4378
+      :fsize 4377
+      :lastmodtime '(22856 38261 0 0)
       :unmatched-syntax nil
       :lexical-table 
-        '(("_ARPA_INET_H" . ((number "1" 832 . 833)))
+        '(("_ARPA_INET_H" . ((number "1" 918 . 919)))
           ("__socklen_t_defined")
           )
 ))

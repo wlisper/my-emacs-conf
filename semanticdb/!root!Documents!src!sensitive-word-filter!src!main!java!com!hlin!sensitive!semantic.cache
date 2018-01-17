@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode java-mode
+      :tags 
+        '( ("com.hlin.sensitive" package nil nil [1 28])
+            ("java.util.HashMap" include nil nil [30 55])
+            ("java.util.HashSet" include nil nil [56 81])
+            ("java.util.Map" include nil nil [82 103])
+            ("java.util.Map.Entry" include nil nil [104 131])
+            ("java.util.Set" include nil nil [132 153])
+            ("com.hlin.sensitive.conf.Config" include nil nil [155 193])
+            ("SimpleKWSeekerProcessor" type
+               (:typemodifiers ("public")
+                :superclasses "KWSeekerManage"
+                :members 
+                  ( ("instance" variable
+                       (:typemodifiers ("private" "static" "volatile")
+                        :type "SimpleKWSeekerProcessor")
+                        (reparse-symbol class_member_declaration) [421 478])
+                    ("newInstance" function
+                       (:typemodifiers ("public" "static")
+                        :type "SimpleKWSeekerProcessor")
+                        (reparse-symbol class_member_declaration) [535 854])
+                    ("SimpleKWSeekerProcessor" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [889 952])
+                    ("initialize" function
+                       (:typemodifiers ("private")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [988 1610]))                  
+                :type "class")
+                nil [354 1612]))          
+      :file "SimpleKWSeekerProcessor.java"
+      :pointmax 1613
+      :fsize 1728
+      :lastmodtime '(23107 17366 283269 143000)
+      :unmatched-syntax nil))
+  :file "!root!Documents!src!sensitive-word-filter!src!main!java!com!hlin!sensitive!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

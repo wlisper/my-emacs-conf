@@ -2,6 +2,13 @@
 (setq package-enable-at-startup nil)
 (add-to-list 'package-archives
 	     '("melpa" . "https://melpa.org/packages/"))
+
+(add-to-list 'package-archives
+             '("tromey" . "http://tromey.com/elpa/") t)
+
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
 (package-initialize)
 
 ;; Bootstrap `use-package'
@@ -33,7 +40,7 @@
  '(org-startup-indented t)
  '(package-selected-packages
    (quote
-    (magit psvn multi-term cmake-mode cider command-log-mode irony ac-slime paredit projectile helm ztree zpresent org-tree-slide org-present epresent eide bpe blog-minimal ac-php php-mode smartparens web-mode spacemacs-theme iedit aggressive-indent expand-region aggresive-indent hungry-delete beacon htmlize ox-reveal zenburn-theme which-key use-package try org-bullets elfeed-org counsel color-theme auto-complete ace-window)))
+    (tagedit rainbow-delimiters smex ido-ubiquitous clojure-mode-extra-font-locking clojure-mode magit psvn multi-term cmake-mode cider command-log-mode irony ac-slime paredit projectile helm ztree zpresent org-tree-slide org-present epresent eide bpe blog-minimal ac-php php-mode smartparens web-mode spacemacs-theme iedit aggressive-indent expand-region aggresive-indent hungry-delete beacon htmlize ox-reveal zenburn-theme which-key use-package try org-bullets elfeed-org counsel color-theme auto-complete ace-window)))
  '(pdf-view-before-change-page-hook nil)
  '(pdf-view-midnight-colors (quote ("#DCDCCC" . "#383838")))
  '(pdf-view-resize-factor 1.1)

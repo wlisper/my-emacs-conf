@@ -1,7 +1,4 @@
 (setq inhibit-startup-message t)
-(tool-bar-mode -1)
-(menu-bar-mode -1)
-(toggle-scroll-bar -1)
 (display-time-mode 1)
 (setq-default mode-line-format nil) ;; mode line
 (fset 'yes-or-no-p 'y-or-n-p)
@@ -13,6 +10,38 @@
 (global-set-key (kbd "<C-down>") 'enlarge-window)
 (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
+
+(defun show-toolbar()
+  (interactive)
+  (tool-bar-mode 1))
+(defun hide-toolbar()
+  (interactive)
+  (tool-bar-mode -1))
+(hide-toolbar)
+
+(defun show-menu()
+  (interactive)
+  (menu-bar-mode 1))
+(defun hide-menu()
+  (interactive)
+  (menu-bar-mode -1))
+(hide-menu)
+
+(defun show-scroll-bar()
+  (interactive)
+  (toggle-scroll-bar 1))
+(defun hide-scroll-bar()
+  (interactive)
+  (toggle-scroll-bar -1))
+(hide-scroll-bar)
+
+(defun show-mode-line()
+  (interactive)
+  (setq-default mode-line-format t))
+(defun hide-mode-line()
+  (interactive)
+  (setq-default mode-line-format nil))
+(hide-mode-line)
 
 (defun show-linum()
   (interactive)
@@ -46,6 +75,16 @@
   (erase-buffer))
 (global-set-key (kbd "C-c s") 'search-web)
 (global-set-key (kbd "<f5>") 'revert-buffer)
+
+(defun kill-other-buffers()
+  (interactive)
+  (mapc 'kill-buffer 
+    (delq (current-buffer)
+        (remove-if-not 'buffer-file-name (buffer-list)))))
+
+(defun kill-all-buffers()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
 
 (use-package ztree
     :ensure t)
@@ -237,6 +276,7 @@
 
 (use-package psvn
     :ensure t)
+(setq svn-status-verbose nil)
 
 (use-package magit
     :ensure t
@@ -371,6 +411,25 @@
 (global-set-key (kbd "C-c C-h") 'slime-documentation)
 
 (use-package paredit
+    :ensure t)
+
+(use-package clojure-mode
+    :ensure t)
+(use-package clojure-mode-extra-font-locking
+    :ensure t)
+(use-package cider
+    :ensure t)
+
+(use-package ido-completing-read+
+    :ensure t)
+
+(use-package smex
+    :ensure t)
+
+(use-package rainbow-delimiters
+    :ensure t)
+
+(use-package tagedit
     :ensure t)
 
 (use-package nasm-mode

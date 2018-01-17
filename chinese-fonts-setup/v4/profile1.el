@@ -5,7 +5,7 @@
 (setq cfs--custom-set-fontnames
       '(
         ("Courier 10 Pitch" "Comic Sans MS" "Courier New" "Consolas" "Ubuntu Mono" "Lucida Console" "DejaVu Sans Mono" "Free Mono" "Inconsolata" "Lucida Sans Typewriter" "Liberation Mono" "Andale Mono" "Courier" "Monaco" "Droid Sans Mono" "PragmataPro" "MonacoB" "MonacoB2" "MonacoBSemi" "Droid Sans Mono Pro" "Source Code Pro" "Envy Code R" "monoOne" "Lucida Typewriter" "Panic Sans" "Hack" "Bitstream Vera Sans Mono" "HyperFont" "PT Mono" "Ti92Pluspc" "Excalibur Monospace" "Menlof" "Cousine" "Fira Mono" "Lekton" "M+ 1mn" "BPmono" "Anonymous Pro" "ProFont" "ProFontWindows" "Latin Modern Mono" "Code 2002" "ProggyCleanTT" "ProggyTinyTT")
-        ("KaiTi" "song ti" "fangsong ti" "Comic Sans MS" "文泉驿等宽微米黑" "FangSong" "Microsoft Yahei" "黑体" "微软雅黑" "WenQuanYi Micro Hei" "Ubuntu Mono" "WenQuanYi Micro Hei Mono" "STKaiti" "STCaiyun" "FZYaoti" "FZShuTi" "STFangsong" "STZhongsong" "STSong" "STXihei" "隶书" "STHupo" "STLiti" "STXingkai" "STXinwei" "方正姚体" "方正舒体" "华文仿宋" "华文中宋" "华文彩云" "华文新魏" "华文行楷" "华文细黑" "SimHei" "SimSun" "宋体" "新宋体" "LiSu" "幼圆" "YouYuan" "NSimSun" "Noto Sans S Chinese Regular" "Microsoft_Yahei" "文泉驿等宽正黑" "Hiragino Sans GB" "文泉驿正黑" "文泉驿点阵正黑" "FangSong_GB2312" "KaiTi_GB2312" "楷体_GB2312" "仿宋_GB2312" "方正粗圆_GBK")
+        ("fangsong ti" "文泉驿点阵正黑" "文泉驿正黑" "文泉驿等宽正黑" "KaiTi" "song ti" "Comic Sans MS" "文泉驿等宽微米黑" "FangSong" "Microsoft Yahei" "黑体" "微软雅黑" "WenQuanYi Micro Hei" "Ubuntu Mono" "WenQuanYi Micro Hei Mono" "STKaiti" "STCaiyun" "FZYaoti" "FZShuTi" "STFangsong" "STZhongsong" "STSong" "STXihei" "隶书" "STHupo" "STLiti" "STXingkai" "STXinwei" "方正姚体" "方正舒体" "华文仿宋" "华文中宋" "华文彩云" "华文新魏" "华文行楷" "华文细黑" "SimHei" "SimSun" "宋体" "新宋体" "LiSu" "幼圆" "YouYuan" "NSimSun" "Noto Sans S Chinese Regular" "Microsoft_Yahei" "Hiragino Sans GB" "FangSong_GB2312" "KaiTi_GB2312" "楷体_GB2312" "仿宋_GB2312" "方正粗圆_GBK")
         ("HanaMinB" "SimSun-ExtB" "MingLiU-ExtB" "PMingLiU-ExtB" "MingLiU_HKSCS-ExtB")
         ))
 
@@ -14,12 +14,12 @@
 ;;; 按 C-<up> 增大光标处字号，按 C-<down> 减小光标处字号。
 (setq cfs--custom-set-fontsizes
       '(
-        (9    10.5 10.5)
+        (9    8.5  9.5 )
         (10   12.0 12.0)
         (11.5 13.0 13.5)
         (12.5 15.0 15.0)
-        (14   16.5 16.5)
-        (15   18.0 18.0)
+        (14   18.5 15.0)
+        (15   18.0 16.5)
         (16   19.5 19.5)
         (18   21.0 21.0)
         (20   24.0 24.0)

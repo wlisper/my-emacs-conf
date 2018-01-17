@@ -1,0 +1,674 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("ngx_config.h" include (:system-flag t) nil [69 92])
+            ("ngx_core.h" include (:system-flag t) nil [93 114])
+            ("nginx.h" include (:system-flag t) nil [115 133])
+            ("ngx_add_inherited_sockets" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [179 198]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [136 199])
+            ("ngx_get_options" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [233 242])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [243 261]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [200 262])
+            ("ngx_process_options" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [300 319]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [263 320])
+            ("ngx_save_argv" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [352 371])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [372 381])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [382 400]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [321 401])
+            ("ngx_core_module_create_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [443 462]))                  
+                :type "void")
+                nil [402 463])
+            ("ngx_core_module_init_conf" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [503 522])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [523 534]))                  
+                :type "char")
+                nil [464 535])
+            ("ngx_set_user" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [562 577])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [578 597])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [598 609]))                  
+                :type "char")
+                nil [536 610])
+            ("ngx_set_env" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [636 651])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [652 671])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [672 683]))                  
+                :type "char")
+                nil [611 684])
+            ("ngx_set_priority" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [715 730])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [731 750])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [751 762]))                  
+                :type "char")
+                nil [685 763])
+            ("ngx_set_cpu_affinity" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [798 813])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [814 833])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [838 849]))                  
+                :type "char")
+                nil [764 850])
+            ("ngx_set_worker_processes" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [889 904])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [905 924])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [929 940]))                  
+                :type "char")
+                nil [851 941])
+            ("ngx_debug_points" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    { ngx_string(\"stop\"), NGX_DEBUG_POINTS_STOP },
+    { ngx_string(\"abort\"), NGX_DEBUG_POINTS_ABORT },
+    { ngx_null_string, 0 }
+}"
+                :type ("ngx_conf_enum_t" type (:type "class") nil nil))
+                nil [944 1124])
+            ("ngx_core_commands" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+
+    { ngx_string(\"daemon\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_FLAG,
+      ngx_conf_set_flag_slot,
+      0,
+      offsetof(ngx_core_conf_t, daemon),
+      NULL },
+
+    { ngx_string(\"master_process\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_FLAG,
+      ngx_conf_set_flag_slot,
+      0,
+      offsetof(ngx_core_conf_t, master),
+      NULL },
+
+    { ngx_string(\"timer_resolution\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_msec_slot,
+      0,
+      offsetof(ngx_core_conf_t, timer_resolution),
+      NULL },
+
+    { ngx_string(\"pid\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_str_slot,
+      0,
+      offsetof(ngx_core_conf_t, pid),
+      NULL },
+
+    { ngx_string(\"lock_file\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_str_slot,
+      0,
+      offsetof(ngx_core_conf_t, lock_file),
+      NULL },
+
+    { ngx_string(\"worker_processes\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_set_worker_processes,
+      0,
+      0,
+      NULL },
+
+    { ngx_string(\"debug_points\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_enum_slot,
+      0,
+      offsetof(ngx_core_conf_t, debug_points),
+      &ngx_debug_points },
+
+    { ngx_string(\"user\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE12,
+      ngx_set_user,
+      0,
+      0,
+      NULL },
+
+    { ngx_string(\"worker_priority\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_set_priority,
+      0,
+      0,
+      NULL },
+
+    { ngx_string(\"worker_cpu_affinity\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_1MORE,
+      ngx_set_cpu_affinity,
+      0,
+      0,
+      NULL },
+
+    { ngx_string(\"worker_rlimit_nofile\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_num_slot,
+      0,
+      offsetof(ngx_core_conf_t, rlimit_nofile),
+      NULL },
+
+    { ngx_string(\"worker_rlimit_core\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_off_slot,
+      0,
+      offsetof(ngx_core_conf_t, rlimit_core),
+      NULL },
+
+    { ngx_string(\"worker_rlimit_sigpending\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_num_slot,
+      0,
+      offsetof(ngx_core_conf_t, rlimit_sigpending),
+      NULL },
+
+    { ngx_string(\"working_directory\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_str_slot,
+      0,
+      offsetof(ngx_core_conf_t, working_directory),
+      NULL },
+
+    { ngx_string(\"env\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_set_env,
+      0,
+      0,
+      NULL },
+
+#if (NGX_OLD_THREADS)
+
+    { ngx_string(\"worker_threads\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_num_slot,
+      0,
+      offsetof(ngx_core_conf_t, worker_threads),
+      NULL },
+
+    { ngx_string(\"thread_stack_size\"),
+      NGX_MAIN_CONF|NGX_DIRECT_CONF|NGX_CONF_TAKE1,
+      ngx_conf_set_size_slot,
+      0,
+      offsetof(ngx_core_conf_t, thread_stack_size),
+      NULL },
+
+#endif
+
+      ngx_null_command
+}"
+                :type ("ngx_command_t" type (:type "class") nil nil))
+                nil [1127 4217])
+            ("ngx_core_module_ctx" variable
+               (:typemodifiers ("static")
+                :default-value "{
+    ngx_string(\"core\"),
+    ngx_core_module_create_conf,
+    ngx_core_module_init_conf
+}"
+                :type ("ngx_core_module_t" type (:type "class") nil nil))
+                nil [4220 4359])
+            ("ngx_core_module" variable
+               (:default-value "{
+    NGX_MODULE_V1,
+    &ngx_core_module_ctx,                  /* module context */
+    ngx_core_commands,                     /* module directives */
+    NGX_CORE_MODULE,                       /* module type */
+    NULL,                                  /* init master */
+    NULL,                                  /* init module */
+    NULL,                                  /* init process */
+    NULL,                                  /* init thread */
+    NULL,                                  /* exit thread */
+    NULL,                                  /* exit process */
+    NULL,                                  /* exit master */
+    NGX_MODULE_V1_PADDING
+}"
+                :type ("ngx_module_t" type (:type "class") nil nil))
+                nil [4362 5064])
+            ("ngx_max_module" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) nil [5067 5102])
+            ("ngx_show_help" variable
+               (:typemodifiers ("static")
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [5104 5138])
+            ("ngx_show_version" variable
+               (:typemodifiers ("static")
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [5139 5176])
+            ("ngx_show_configure" variable
+               (:typemodifiers ("static")
+                :type ("ngx_uint_t" type (:type "class") nil nil))
+                nil [5177 5216])
+            ("ngx_prefix" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("u_char" type (:type "class") nil nil))
+                nil [5217 5248])
+            ("ngx_conf_file" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("u_char" type (:type "class") nil nil))
+                nil [5249 5283])
+            ("ngx_conf_params" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type ("u_char" type (:type "class") nil nil))
+                nil [5284 5320])
+            ("ngx_signal" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :type "char")
+                nil [5321 5352])
+            ("ngx_os_environ" variable
+               (:pointer 2
+                :typemodifiers ("static")
+                :type "char")
+                nil [5355 5384])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5406 5415])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5416 5434]))                  
+                :type ("ngx_cdecl" type (:type "class") nil nil))
+                nil [5391 11210])
+            ("ngx_add_inherited_sockets" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11256 11275]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [11213 12547])
+            ("ngx_set_environment" function
+               (:pointer 2
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12578 12597])
+                    ("last" variable
+                       (:pointer 1
+                        :type ("ngx_uint_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12598 12615]))                  
+                :type "char")
+                nil [12550 14491])
+            ("ngx_exec_new_binary" function
+               (:arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14524 14543])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [14544 14562]))                  
+                :type ("ngx_pid_t" type (:type "class") nil nil))
+                nil [14494 17224])
+            ("ngx_get_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [17260 17269])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17270 17288]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [17227 20260])
+            ("ngx_save_argv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20294 20313])
+                    ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [20314 20323])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [20324 20342]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [20263 21047])
+            ("ngx_process_options" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21087 21106]))                  
+                :type ("ngx_int_t" type (:type "class") nil nil))
+                nil [21050 23251])
+            ("ngx_core_module_create_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23296 23315]))                  
+                :type "void")
+                nil [23254 24361])
+            ("ngx_core_module_init_conf" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cycle" variable
+                       (:pointer 1
+                        :type ("ngx_cycle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24404 24423])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [24424 24435]))                  
+                :type "char")
+                nil [24364 28056])
+            ("ngx_set_user" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28086 28101])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28102 28121])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [28122 28133]))                  
+                :type "char")
+                nil [28059 29584])
+            ("ngx_set_env" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29613 29628])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [29629 29648])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [29649 29660]))                  
+                :type "char")
+                nil [29587 30080])
+            ("ngx_set_priority" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30114 30129])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30130 30149])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30150 30161]))                  
+                :type "char")
+                nil [30083 30793])
+            ("ngx_set_cpu_affinity" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30831 30846])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [30847 30866])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [30867 30878]))                  
+                :type "char")
+                nil [30796 32430])
+            ("ngx_get_cpu_affinity" function
+               (:arguments 
+                  ( ("n" variable (:type ("ngx_uint_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32463 32476]))                  
+                :type ("uint64_t" type (:type "class") nil nil))
+                nil [32433 32830])
+            ("ngx_set_worker_processes" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("cf" variable
+                       (:pointer 1
+                        :type ("ngx_conf_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32872 32887])
+                    ("cmd" variable
+                       (:pointer 1
+                        :type ("ngx_command_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32888 32907])
+                    ("conf" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [32908 32919]))                  
+                :type "char")
+                nil [32833 33453]))          
+      :file "nginx.c"
+      :pointmax 33454
+      :fsize 33453
+      :lastmodtime '(21814 23215 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("_NGX_CONFIG_H_INCLUDED_" variable (:constant-flag t) nil [109 132])
+            ("ngx_auto_headers.h" include (:system-flag t) nil [135 164])
+            ("ngx_posix_config.h" include (:system-flag t) nil [565 594])
+            ("NGX_HAVE_SO_SNDLOWAT" variable (:constant-flag t) nil [642 662])
+            ("ngx_signal_helper" variable (:constant-flag t) nil [704 721])
+            ("ngx_signal_value" variable (:constant-flag t) nil [744 760])
+            ("ngx_random" variable (:constant-flag t) nil [799 809])
+            ("NGX_SHUTDOWN_SIGNAL" variable (:constant-flag t) nil [860 879])
+            ("NGX_TERMINATE_SIGNAL" variable (:constant-flag t) nil [898 918])
+            ("NGX_NOACCEPT_SIGNAL" variable (:constant-flag t) nil [936 955])
+            ("NGX_RECONFIGURE_SIGNAL" variable (:constant-flag t) nil [975 997])
+            ("NGX_REOPEN_SIGNAL" variable (:constant-flag t) nil [1118 1135])
+            ("NGX_CHANGEBIN_SIGNAL" variable (:constant-flag t) nil [1156 1176])
+            ("ngx_cdecl" variable (:constant-flag t) nil [1202 1211])
+            ("ngx_libc_cdecl" variable (:constant-flag t) nil [1220 1234])
+            ("ngx_int_t" type
+               (:typedef ("intptr_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1244 1278])
+            ("ngx_uint_t" type
+               (:typedef ("uintptr_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1279 1314])
+            ("ngx_flag_t" type
+               (:typedef ("intptr_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [1315 1350])
+            ("NGX_INT32_LEN" variable (:constant-flag t) nil [1361 1374])
+            ("NGX_INT64_LEN" variable (:constant-flag t) nil [1413 1426])
+            ("NGX_INT_T_LEN" variable (:constant-flag t) nil [1584 1597])
+            ("NGX_MAX_INT_T_VALUE" variable (:constant-flag t) nil [1622 1641])
+            ("NGX_ALIGNMENT" variable (:constant-flag t) nil [1702 1715])
+            ("ngx_align" variable (:constant-flag t) nil [1779 1788])
+            ("ngx_align_ptr" variable (:constant-flag t) nil [1836 1849])
+            ("ngx_abort" variable (:constant-flag t) nil [1998 2007])
+            ("NGX_INVALID_ARRAY_INDEX" variable (:constant-flag t) nil [2111 2134])
+            ("ngx_inline" variable (:constant-flag t) nil [2238 2248])
+            ("INADDR_NONE" variable (:constant-flag t) nil [2312 2323])
+            ("NGX_MAXHOSTNAMELEN" variable (:constant-flag t) nil [2432 2450])
+            ("NGX_MAX_UINT32_VALUE" variable (:constant-flag t) nil [2578 2598])
+            ("NGX_MAX_INT32_VALUE" variable (:constant-flag t) nil [2638 2657]))          
+      :file "ngx_config.h"
+      :pointmax 2721
+      :fsize 2720
+      :lastmodtime '(21814 23215 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("NGX_INT64_LEN" . ((semantic-list "(sizeof(\"-9223372036854775808\") - 1)" 1429 . 1465)))
+          ("ngx_align_ptr" (spp-arg-list ("p" "a") 1849 . 1855) . ((semantic-list "(u_char *)" 1912 . 1922) (semantic-list "(((uintptr_t) (p) + ((uintptr_t) a - 1)) & ~((uintptr_t) a - 1))" 1923 . 1987)))
+          ("ngx_inline" . ((INLINE "inline" 2254 . 2260)))
+          ("NGX_INVALID_ARRAY_INDEX" . ((number "0x80000000" 2135 . 2145)))
+          ("NGX_MAXHOSTNAMELEN" . ((number "256" 2452 . 2455)))
+          ("NGX_HAVE_SO_SNDLOWAT" . ((number "1" 667 . 668)))
+          ("NGX_MAX_UINT32_VALUE" . ((semantic-list "(uint32_t)" 2600 . 2610) (number "0xffffffff" 2611 . 2621)))
+          ("NGX_MAX_INT32_VALUE" . ((semantic-list "(uint32_t)" 2660 . 2670) (number "0x7fffffff" 2671 . 2681)))
+          ("NGX_SHUTDOWN_SIGNAL" . ((symbol "QUIT" 885 . 889)))
+          ("NGX_ALIGNMENT" . ((SIZEOF "sizeof" 1718 . 1724) (semantic-list "(unsigned long)" 1724 . 1739)))
+          ("ngx_signal_value" (spp-arg-list ("n") 760 . 763) . ((symbol "ngx_signal_helper" 769 . 786) (semantic-list "(n)" 786 . 789)))
+          ("_NGX_CONFIG_H_INCLUDED_")
+          ("NGX_INT32_LEN" . ((semantic-list "(sizeof(\"-2147483648\") - 1)" 1377 . 1404)))
+          ("INADDR_NONE" . ((semantic-list "((unsigned int) -1)" 2325 . 2344)))
+          ("ngx_cdecl")
+          ("ngx_align" (spp-arg-list ("d" "a") 1788 . 1794) . ((semantic-list "(((d) + (a - 1)) & ~(a - 1))" 1799 . 1827)))
+          ("NGX_TERMINATE_SIGNAL" . ((symbol "TERM" 923 . 927)))
+          ("NGX_NOACCEPT_SIGNAL" . ((symbol "WINCH" 961 . 966)))
+          ("ngx_random" . ((symbol "random" 824 . 830)))
+          ("NGX_CHANGEBIN_SIGNAL" . ((symbol "USR2" 1181 . 1185)))
+          ("NGX_INT_T_LEN" . ((symbol "NGX_INT64_LEN" 1600 . 1613)))
+          ("ngx_signal_helper" (spp-arg-list ("n") 721 . 724) . ((spp-symbol-merge ((symbol "SIG" 729 . 732) (symbol "n" 734 . 735)) 729 . 735)))
+          ("NGX_RECONFIGURE_SIGNAL" . ((symbol "HUP" 1000 . 1003)))
+          ("NGX_REOPEN_SIGNAL" . ((symbol "USR1" 1143 . 1147)))
+          ("ngx_libc_cdecl")
+          ("NGX_MAX_INT_T_VALUE" . ((number "9223372036854775807" 1643 . 1662)))
+          ("ngx_abort" . ((symbol "abort" 2014 . 2019)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :file "ngx_core.h"
+      :fsize 2623
+      :lastmodtime '(21814 23215 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "nginx.h"
+      :fsize 475
+      :lastmodtime '(21814 23215 0 0)))
+  :file "!root!Documents!nginx-1.8.0!src!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,128 +1,128 @@
-rmbak
+php -m | grep xdebug
 ls
-git add lispy_syntactic_sugar.org  tmp.lisp 
+cd bin/
 ls
-mv lispy_syntactic_sugar.md ../_posts/
+service php-fpm7 restart
+pph -m | grep redis
+php -m | grep redis
 ls
-cd ../_posts/
+cd /data
+cd 
 ls
-mv lispy_syntactic_sugar.md 2017-12-5-lispy_syntactic_sugar.md
-ls
-rmbak
-git add 2017-12-5-lispy_syntactic_sugar.md
-cd ..
-ls
-git commmit -m "add article lisp syntactic sugar" -a
-git commit -m "add article lisp syntactic sugar" -a
-cd _org/
-ls
-php_has_a_pipe.org
-mv php_has_a_pipe.md ../_posts/
-ls
-cd ../_posts/
-ls
-mv php_has_a_pipe.md 2017-12-5- php_has_a_pipe.md
-mv php_has_a_pipe.md 2017-12-5-php_has_a_pipe.md
-ls
-git add  2017-12-5-php_has_a_pipe.md
-git commit -m "test" 2017-12-5-php_has_a_pipe.md
-git commit -m "test" 2017-12-5-php_has_a_pipe.md
-cd ../_org/
-mv php_has_a_pipe.md ../_posts/
-ls
-cd ../_posts/
-ls
-mv php_has_a_pipe.md 2017-12-5-php_has_a_pipe.md
-git commit -m "test" -a
-ls
-cd ../..
-ls
-cd wlisper.github.io/
-ls
-cd _org/
-ls
-rmbak
-cd ../gameserver/
-php start_swoole_server.php start
-php start_swoole_server.php stop
-php start_swoole_server.php start
-php start_swoole_server.php start
-php start_swoole_server.php start
-whereis php
-cd /data/sr
+cd /data/db
 ls
 cd /data
 ls
-cd usr/
+mkdir mongodb
+cd mongodb/
 ls
-cd local/
+mkdir goal
+mkdir account
+mkdir static
 ls
-cd php7/bin/
+ps aux | grep mongo
+kill 31650
+mongodb --fork --dbpath /data/mongodb/account/ --port 27018 --logpath /data/mongodb/account/mongo.log
+mongod --fork --dbpath /data/mongodb/account/ --port 27018 --logpath /data/mongodb/account/mongo.log
+mongod --fork --dbpath /data/mongodb/goal/ --port 27019 --logpath /data/mongodb/goal/mongo.log
+mongod --fork --dbpath /data/mongodb/static/ --port 27015 --logpath /data/mongodb/static/mongo.log
+service php-fpm7 restart
+service nginx restart
+ps aux | grep redis
+php -m | grep redis
+cd
 ls
-pwd
-man php
-php -h
-php -r "print time()"
-php -r "print time();"
+cd Downloads/
 ls
-cd /data/littleGame/
+cd redis-3.1.1/
 ls
-cd server/
+phpize 
+./configure --with-php-config=/data/usr/local/php7/bin/php-config 
+make -j8
+make install
+cd  /data/usr/local/php7/lib/php/extensions/no-debug-non-zts-20151012/
 ls
-cd trunk/
+ls -l
+chown nginx:nginx ./*
+service php-fpm7 restart
+ls
+php -m | grep redis
+service nginx restart
+service php-fpm7 restart
+ls
+clear
+
+whereis php
+cd
+ls
+mv php7/ /usr/local/
+service php-fpm7 restart
+ls
+ps aux | grep mongo
+mongo --port 27018
+ls
+cd
+ls
+cleaer
+ls
+cd /data/www/trunk_sea/
+ls
+ps aux | grep mongo
+mongo --port 27018
+ls
+cd 
+ls
+ls
+rmbak
+rmbak
+ls
+cd /data/www/
+ls
+cd trunk_data/
 ls
 cd gameserver/
 ls
+cd data/
+ls
+python parser.py tcn
+ls
 cd ..
 ls
-cd script/import/
+cd ../json/
 ls
-python parser.py && php buildStaticFile.php 
-cd Documents/wlisper.github.io/
+cd tcn/
 ls
-cd _por
-cd _posts/
+ls -la
+ls -lh
 ls
-git push -u origin master
-git commit -m "test" -a
-git push -u origin master
+clear
+
 ls
-git push -u origin master
-git commit -m "test" -a
-git push -u origin master
-ls
-git commit -m "php pipe" -a
-git push -u origin master
-git push -u origin master
-git push -u origin master
-git push -u origin master
-git push -u origin master
-git push -u origin master
-git status
-git add ../_org/php_has_a_pipe.org 
-git commit -m "test" -a
-git push -u origin master
-git push -u origin master
-git push -u origin master
-git push -u origin master
-git push -u origin master
-ls
-cd .emacs.d/
-ls
-git pull
-ls
-c d..
 cd ..
 ls
-cd Documents/wlisper.github.io/
+cd ..
 ls
-cd _posts/
+cd gameserver/data/
 ls
-mongo
+php buildStaticFile.php  tcn
+php buildStaticFile.php  tcn
+php buildStaticFile.php  tcn
 ls
-cd /data/sb
-cd /data/db
 ls
-rm mongod.lock 
-cd ../..
-mongod --fork --logpath /tmp/mongod.log
+php buildStaticFile.php tcn
+ls
+python parser.py tcn
+ls
+php buildStaticFile.php tcn
+ls
+php buildStaticFile.php tcn
+ls
+sh buildStaticFile.sh tcn
+ls
+php buildStaticFile.php  tcn
+php buildStaticFile.php  tcn
+cd ../.emacs.d/
+ls
+clear
+
+ls

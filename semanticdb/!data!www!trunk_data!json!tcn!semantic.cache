@@ -1,0 +1,16 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode js-mode
+      :tags nil
+      :file "LeagueTeam.json"
+      :pointmax 12052
+      :fsize 12051
+      :lastmodtime '(23135 2664 0 0)
+      :unmatched-syntax nil))
+  :file "!data!www!trunk_data!json!tcn!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

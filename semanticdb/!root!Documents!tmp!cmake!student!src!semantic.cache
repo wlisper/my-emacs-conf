@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [2 20])
+            ("../include/student.h" include nil nil [21 52])
+            ("print_student" function
+               (:arguments 
+                  ( ("pstr" variable
+                       (:pointer 1
+                        :type ("student" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [72 93]))                  
+                :type "void")
+                nil [53 161]))          
+      :file "student.c"
+      :pointmax 162
+      :fsize 161
+      :lastmodtime '(23115 31962 677835 823000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("../include/student.h" include nil nil [60 91])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [102 111])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [112 125]))                  
+                :type "int")
+                nil [93 246]))          
+      :file "main.c"
+      :pointmax 247
+      :fsize 246
+      :lastmodtime '(23115 32350 875835 618000)
+      :unmatched-syntax nil))
+  :file "!root!Documents!tmp!cmake!student!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

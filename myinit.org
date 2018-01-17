@@ -89,6 +89,7 @@
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
 #+END_SRC
+* shell integration
 * ztree
 #+BEGIN_SRC emacs-lisp
 (use-package ztree
@@ -491,6 +492,27 @@ A development env for common lisp.
 DEADLINE: <2017-09-27 Wed>
 #+BEGIN_SRC emacs-lisp
 (use-package paredit
+    :ensure t)
+#+END_SRC
+* Clojure Programming
+#+BEGIN_SRC emacs-lisp
+(use-package clojure-mode
+    :ensure t)
+(use-package clojure-mode-extra-font-locking
+    :ensure t)
+(use-package cider
+    :ensure t)
+
+(use-package ido-completing-read+
+    :ensure t)
+
+(use-package smex
+    :ensure t)
+
+(use-package rainbow-delimiters
+    :ensure t)
+
+(use-package tagedit
     :ensure t)
 #+END_SRC
 * nasm Mode

@@ -1,0 +1,453 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("UV_UNIX_H" variable (:constant-flag t) nil [1183 1192])
+            ("ngx-queue.h" include nil nil [1194 1216])
+            ("sys/types.h" include (:system-flag t) nil [1218 1240])
+            ("sys/stat.h" include (:system-flag t) nil [1241 1262])
+            ("fcntl.h" include (:system-flag t) nil [1263 1281])
+            ("sys/socket.h" include (:system-flag t) nil [1283 1306])
+            ("netinet/in.h" include (:system-flag t) nil [1307 1330])
+            ("netinet/tcp.h" include (:system-flag t) nil [1331 1355])
+            ("arpa/inet.h" include (:system-flag t) nil [1356 1378])
+            ("netdb.h" include (:system-flag t) nil [1379 1397])
+            ("termios.h" include (:system-flag t) nil [1399 1419])
+            ("pwd.h" include (:system-flag t) nil [1420 1436])
+            ("semaphore.h" include (:system-flag t) nil [1438 1460])
+            ("pthread.h" include (:system-flag t) nil [1461 1481])
+            ("signal.h" include (:system-flag t) nil [1482 1501])
+            ("uv-linux.h" include nil nil [1526 1548])
+            ("UV_IO_PRIVATE_PLATFORM_FIELDS" variable (:constant-flag t) nil [1849 1878])
+            ("UV_IO_PRIVATE_FIELDS" variable (:constant-flag t) nil [1907 1927])
+            ("uv__io_s" type
+               (:prototype t
+                :type "struct")
+                nil [2060 2076])
+            ("uv__async" type
+               (:prototype t
+                :type "struct")
+                nil [2077 2094])
+            ("uv_loop_s" type
+               (:prototype t
+                :type "struct")
+                nil [2095 2112])
+            ("uv__io_cb" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("uv_loop_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2140 2163])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("uv__io_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2190 2209])
+                    ("events" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2236 2256]))                  
+                :type "void")
+                nil [2122 2257])
+            ("uv__io_t" type
+               (:typedef ("uv__io_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2258 2291])
+            ("uv__io_s" type
+               (:members 
+                  ( ("cb" variable (:type ("uv__io_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2313 2326])
+                    ("pending_queue" variable (:type ("ngx_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2329 2355])
+                    ("watcher_queue" variable (:type ("ngx_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2358 2384])
+                    ("pevents" variable (:type "unsigned int") (reparse-symbol classsubparts) [2387 2408])
+                    ("events" variable (:type "unsigned int") (reparse-symbol classsubparts) [2460 2480])
+                    ("fd" variable (:type "int") (reparse-symbol classsubparts) [2510 2517]))                  
+                :type "struct")
+                nil [2293 2543])
+            ("uv__async_cb" function
+               (:prototype-flag t
+                :function-pointer t
+                :arguments 
+                  ( ("loop" variable
+                       (:pointer 1
+                        :type ("uv_loop_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2574 2597])
+                    ("w" variable
+                       (:pointer 1
+                        :type ("uv__async" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2627 2647])
+                    ("nevents" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2677 2698]))                  
+                :type "void")
+                nil [2553 2699])
+            ("uv__async" type
+               (:members 
+                  ( ("cb" variable (:type ("uv__async_cb" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2722 2738])
+                    ("io_watcher" variable (:type ("uv__io_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2741 2761])
+                    ("wfd" variable (:type "int") (reparse-symbol classsubparts) [2764 2772]))                  
+                :type "struct")
+                nil [2701 2775])
+            ("uv__work" type
+               (:members 
+                  ( ("work" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :type ("uv__work" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2810 2829]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2797 2830])
+                    ("done" function
+                       (:prototype-flag t
+                        :function-pointer t
+                        :arguments 
+                          ( ("w" variable
+                               (:pointer 1
+                                :type ("uv__work" type
+                                     (:prototype t
+                                      :type "struct")
+                                      nil nil))
+                                (reparse-symbol arg-sub-list) [2846 2865])
+                            ("status" variable (:type "int") (reparse-symbol arg-sub-list) [2866 2877]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2833 2878])
+                    ("loop" variable
+                       (:pointer 1
+                        :type ("uv_loop_s" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2881 2904])
+                    ("wq" variable (:type ("ngx_queue_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2907 2922]))                  
+                :type "struct")
+                nil [2777 2925])
+            ("UV_PLATFORM_SEM_T" variable (:constant-flag t) nil [2962 2979])
+            ("UV_PLATFORM_LOOP_FIELDS" variable (:constant-flag t) nil [3035 3058])
+            ("UV_PLATFORM_FS_EVENT_FIELDS" variable (:constant-flag t) nil [3124 3151])
+            ("UV_STREAM_PRIVATE_PLATFORM_FIELDS" variable (:constant-flag t) nil [3223 3256])
+            ("uv_buf_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("base" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [3352 3363])
+                          ("len" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3366 3377]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3333 3389])
+            ("uv_file" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [3391 3411])
+            ("uv_os_sock_t" type
+               (:typedef ("int")
+                :type "typedef")
+                nil [3412 3437])
+            ("uv_statbuf_t" type
+               (:typedef ("stat" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [3438 3471])
+            ("UV_ONCE_INIT" variable (:constant-flag t) nil [3481 3493])
+            ("uv_once_t" type
+               (:typedef ("pthread_once_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3513 3546])
+            ("uv_thread_t" type
+               (:typedef ("pthread_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3547 3577])
+            ("uv_mutex_t" type
+               (:typedef ("pthread_mutex_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3578 3613])
+            ("uv_rwlock_t" type
+               (:typedef ("pthread_rwlock_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3614 3651])
+            ("uv_sem_t" type
+               (:typedef ("sem_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3652 3687])
+            ("uv_cond_t" type
+               (:typedef ("pthread_cond_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3688 3721])
+            ("uv_barrier_t" type
+               (:typedef ("pthread_barrier_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [3962 4001])
+            ("uv_gid_t" type
+               (:typedef ("gid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4115 4138])
+            ("uv_uid_t" type
+               (:typedef ("uid_t" type (:type "class") nil nil)
+                :type "typedef")
+                nil [4139 4162])
+            ("UV_DYNAMIC" variable (:constant-flag t) nil [4231 4241])
+            ("uv_lib_t" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("handle" variable
+                             (:pointer 1
+                              :type "void")
+                              (reparse-symbol classsubparts) [4274 4287])
+                          ("errmsg" variable
+                             (:pointer 1
+                              :type "char")
+                              (reparse-symbol classsubparts) [4290 4303]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [4255 4315])
+            ("UV_LOOP_PRIVATE_FIELDS" variable (:constant-flag t) nil [4325 4347])
+            ("UV_REQ_TYPE_PRIVATE" variable (:constant-flag t) nil [6646 6665])
+            ("UV_REQ_PRIVATE_FIELDS" variable (:constant-flag t) nil [6687 6708])
+            ("UV_PRIVATE_REQ_TYPES" variable (:constant-flag t) nil [6731 6751])
+            ("UV_WRITE_PRIVATE_FIELDS" variable (:constant-flag t) nil [6773 6796])
+            ("UV_CONNECT_PRIVATE_FIELDS" variable (:constant-flag t) nil [7334 7359])
+            ("UV_SHUTDOWN_PRIVATE_FIELDS" variable (:constant-flag t) nil [7495 7521])
+            ("UV_UDP_SEND_PRIVATE_FIELDS" variable (:constant-flag t) nil [7543 7569])
+            ("UV_HANDLE_PRIVATE_FIELDS" variable (:constant-flag t) nil [8184 8208])
+            ("UV_STREAM_PRIVATE_FIELDS" variable (:constant-flag t) nil [8425 8449])
+            ("UV_TCP_PRIVATE_FIELDS" variable (:constant-flag t) nil [9226 9247])
+            ("UV_UDP_PRIVATE_FIELDS" variable (:constant-flag t) nil [9269 9290])
+            ("UV_PIPE_PRIVATE_FIELDS" variable (:constant-flag t) nil [9750 9772])
+            ("UV_POLL_PRIVATE_FIELDS" variable (:constant-flag t) nil [9873 9895])
+            ("UV_PREPARE_PRIVATE_FIELDS" variable (:constant-flag t) nil [9977 10002])
+            ("UV_CHECK_PRIVATE_FIELDS" variable (:constant-flag t) nil [10159 10182])
+            ("UV_IDLE_PRIVATE_FIELDS" variable (:constant-flag t) nil [10341 10363])
+            ("UV_ASYNC_PRIVATE_FIELDS" variable (:constant-flag t) nil [10523 10546])
+            ("UV_TIMER_PRIVATE_FIELDS" variable (:constant-flag t) nil [10844 10867])
+            ("UV_GETADDRINFO_PRIVATE_FIELDS" variable (:constant-flag t) nil [11746 11775])
+            ("UV_PROCESS_PRIVATE_FIELDS" variable (:constant-flag t) nil [12322 12347])
+            ("UV_FS_PRIVATE_FIELDS" variable (:constant-flag t) nil [12563 12583])
+            ("UV_WORK_PRIVATE_FIELDS" variable (:constant-flag t) nil [13604 13626])
+            ("UV_TTY_PRIVATE_FIELDS" variable (:constant-flag t) nil [13713 13734])
+            ("UV_SIGNAL_PRIVATE_FIELDS" variable (:constant-flag t) nil [13886 13910])
+            ("UV_FS_EVENT_PRIVATE_FIELDS" variable (:constant-flag t) nil [14722 14748]))          
+      :file "uv-unix.h"
+      :pointmax 14978
+      :fsize 14977
+      :lastmodtime '(21741 3076 0 0)
+      :unmatched-syntax '((TYPEDEF 2545 . 2552) (TYPEDEF 2114 . 2121))
+      :lexical-table 
+        '(("UV_CONNECT_PRIVATE_FIELDS" . 
+              ((symbol "ngx_queue_t" 7408 . 7419) (symbol "queue" 7420 . 7425) (punctuation ";" 7425 . 7426)))
+          ("UV_UDP_SEND_PRIVATE_FIELDS" . 
+              ((symbol "ngx_queue_t" 7617 . 7628) (symbol "queue" 7629 . 7634) (punctuation ";" 7634 . 7635) (STRUCT "struct" 7697 . 7703) (symbol "sockaddr_in6" 7704 . 7716) (symbol "addr" 7717 . 7721) (punctuation ";" 7721 . 7722) (INT "int" 7777 . 7780) (symbol "bufcnt" 7781 . 7787) (punctuation ";" 7787 . 7788) (symbol "uv_buf_t" 7857 . 7865) (punctuation "*" 7865 . 7866) (symbol "bufs" 7867 . 7871) (punctuation ";" 7871 . 7872) (symbol "ssize_t" 7937 . 7944) (symbol "status" 7945 . 7951) (punctuation ";" 7951 . 7952) (symbol "uv_udp_send_cb" 8017 . 8031) (symbol "send_cb" 8032 . 8039) (punctuation ";" 8039 . 8040) (symbol "uv_buf_t" 8097 . 8105) (symbol "bufsml" 8106 . 8112) (semantic-list "[4]" 8112 . 8115) (punctuation ";" 8115 . 8116)))
+          ("UV_PRIVATE_REQ_TYPES")
+          ("UV_WRITE_PRIVATE_FIELDS" . 
+              ((symbol "ngx_queue_t" 6847 . 6858) (symbol "queue" 6859 . 6864) (punctuation ";" 6864 . 6865) (INT "int" 6927 . 6930) (symbol "write_index" 6931 . 6942) (punctuation ";" 6942 . 6943) (symbol "uv_buf_t" 7007 . 7015) (punctuation "*" 7015 . 7016) (symbol "bufs" 7017 . 7021) (punctuation ";" 7021 . 7022) (INT "int" 7087 . 7090) (symbol "bufcnt" 7091 . 7097) (punctuation ";" 7097 . 7098) (INT "int" 7167 . 7170) (symbol "error" 7171 . 7176) (punctuation ";" 7176 . 7177) (symbol "uv_buf_t" 7247 . 7255) (symbol "bufsml" 7256 . 7262) (semantic-list "[4]" 7262 . 7265) (punctuation ";" 7265 . 7266)))
+          ("UV_STREAM_PRIVATE_FIELDS" . 
+              ((symbol "uv_connect_t" 8499 . 8511) (punctuation "*" 8512 . 8513) (symbol "connect_req" 8513 . 8524) (punctuation ";" 8524 . 8525) (symbol "uv_shutdown_t" 8579 . 8592) (punctuation "*" 8593 . 8594) (symbol "shutdown_req" 8594 . 8606) (punctuation ";" 8606 . 8607) (symbol "uv__io_t" 8659 . 8667) (symbol "io_watcher" 8668 . 8678) (punctuation ";" 8678 . 8679) (symbol "ngx_queue_t" 8739 . 8750) (symbol "write_queue" 8751 . 8762) (punctuation ";" 8762 . 8763) (symbol "ngx_queue_t" 8819 . 8830) (symbol "write_completed_queue" 8831 . 8852) (punctuation ";" 8852 . 8853) (symbol "uv_connection_cb" 8899 . 8915) (symbol "connection_cb" 8916 . 8929) (punctuation ";" 8929 . 8930) (INT "int" 8979 . 8982) (symbol "delayed_error" 8983 . 8996) (punctuation ";" 8996 . 8997) (INT "int" 9059 . 9062) (symbol "accepted_fd" 9063 . 9074) (punctuation ";" 9074 . 9075) (symbol "UV_STREAM_PRIVATE_PLATFORM_FIELDS" 9139 . 9172)))
+          ("UV_IO_PRIVATE_PLATFORM_FIELDS")
+          ("UV_DYNAMIC")
+          ("UV_SHUTDOWN_PRIVATE_FIELDS")
+          ("UV_POLL_PRIVATE_FIELDS" . 
+              ((symbol "uv__io_t" 9947 . 9955) (symbol "io_watcher" 9956 . 9966) (punctuation ";" 9966 . 9967)))
+          ("UV_ASYNC_PRIVATE_FIELDS" . 
+              ((symbol "uv_async_cb" 10597 . 10608) (symbol "async_cb" 10609 . 10617) (punctuation ";" 10617 . 10618) (symbol "ngx_queue_t" 10677 . 10688) (symbol "queue" 10689 . 10694) (punctuation ";" 10694 . 10695) (INT "int" 10757 . 10760) (symbol "pending" 10761 . 10768) (punctuation ";" 10768 . 10769)))
+          ("UV_TIMER_PRIVATE_FIELDS" . 
+              ((STRUCT "struct" 10998 . 11004) (semantic-list "{                                                                    \\
+    struct uv_timer_s* rbe_left;                                              \\
+    struct uv_timer_s* rbe_right;                                             \\
+    struct uv_timer_s* rbe_parent;                                            \\
+    int rbe_color;                                                            \\
+  }" 11005 . 11399) (symbol "tree_entry" 11400 . 11410) (punctuation ";" 11410 . 11411) (symbol "uv_timer_cb" 11478 . 11489) (symbol "timer_cb" 11490 . 11498) (punctuation ";" 11498 . 11499) (symbol "uint64_t" 11558 . 11566) (symbol "timeout" 11567 . 11574) (punctuation ";" 11574 . 11575) (symbol "uint64_t" 11638 . 11646) (symbol "repeat" 11647 . 11653) (punctuation ";" 11653 . 11654) (symbol "uint64_t" 11718 . 11726) (symbol "start_id" 11727 . 11735) (punctuation ";" 11735 . 11736)))
+          ("UV_REQ_PRIVATE_FIELDS")
+          ("UV_PROCESS_PRIVATE_FIELDS" . 
+              ((symbol "ngx_queue_t" 12396 . 12407) (symbol "queue" 12408 . 12413) (punctuation ";" 12413 . 12414) (INT "int" 12476 . 12479) (symbol "errorno" 12480 . 12487) (punctuation ";" 12487 . 12488)))
+          ("UV_IDLE_PRIVATE_FIELDS" . 
+              ((symbol "uv_idle_cb" 10415 . 10425) (symbol "idle_cb" 10426 . 10433) (punctuation ";" 10433 . 10434) (symbol "ngx_queue_t" 10495 . 10506) (symbol "queue" 10507 . 10512) (punctuation ";" 10512 . 10513)))
+          ("UV_WORK_PRIVATE_FIELDS" . 
+              ((STRUCT "struct" 13678 . 13684) (symbol "uv__work" 13685 . 13693) (symbol "work_req" 13694 . 13702) (punctuation ";" 13702 . 13703)))
+          ("UV_STREAM_PRIVATE_PLATFORM_FIELDS")
+          ("UV_ONCE_INIT" . ((symbol "PTHREAD_ONCE_INIT" 3494 . 3511)))
+          ("UV_HANDLE_PRIVATE_FIELDS" . 
+              ((INT "int" 8258 . 8261) (symbol "flags" 8262 . 8267) (punctuation ";" 8267 . 8268) (symbol "uv_handle_t" 8338 . 8349) (punctuation "*" 8349 . 8350) (symbol "next_closing" 8351 . 8363) (punctuation ";" 8363 . 8364)))
+          ("UV_IO_PRIVATE_FIELDS" . ((symbol "UV_IO_PRIVATE_PLATFORM_FIELDS" 1981 . 2010)))
+          ("UV_TCP_PRIVATE_FIELDS")
+          ("UV_GETADDRINFO_PRIVATE_FIELDS" . 
+              ((STRUCT "struct" 11820 . 11826) (symbol "uv__work" 11827 . 11835) (symbol "work_req" 11836 . 11844) (punctuation ";" 11844 . 11845) (symbol "uv_getaddrinfo_cb" 11900 . 11917) (symbol "cb" 11918 . 11920) (punctuation ";" 11920 . 11921) (STRUCT "struct" 11980 . 11986) (symbol "addrinfo" 11987 . 11995) (punctuation "*" 11995 . 11996) (symbol "hints" 11997 . 12002) (punctuation ";" 12002 . 12003) (CHAR "char" 12060 . 12064) (punctuation "*" 12064 . 12065) (symbol "hostname" 12066 . 12074) (punctuation ";" 12074 . 12075) (CHAR "char" 12140 . 12144) (punctuation "*" 12144 . 12145) (symbol "service" 12146 . 12153) (punctuation ";" 12153 . 12154) (STRUCT "struct" 12220 . 12226) (symbol "addrinfo" 12227 . 12235) (punctuation "*" 12235 . 12236) (symbol "res" 12237 . 12240) (punctuation ";" 12240 . 12241) (INT "int" 12300 . 12303) (symbol "retcode" 12304 . 12311) (punctuation ";" 12311 . 12312)))
+          ("UV_TTY_PRIVATE_FIELDS" . 
+              ((STRUCT "struct" 13787 . 13793) (symbol "termios" 13794 . 13801) (symbol "orig_termios" 13802 . 13814) (punctuation ";" 13814 . 13815) (INT "int" 13867 . 13870) (symbol "mode" 13871 . 13875) (punctuation ";" 13875 . 13876)))
+          ("UV_PREPARE_PRIVATE_FIELDS" . 
+              ((symbol "uv_prepare_cb" 10051 . 10064) (symbol "prepare_cb" 10065 . 10075) (punctuation ";" 10075 . 10076) (symbol "ngx_queue_t" 10131 . 10142) (symbol "queue" 10143 . 10148) (punctuation ";" 10148 . 10149)))
+          ("UV_FS_PRIVATE_FIELDS" . 
+              ((CONST "const" 12637 . 12642) (CHAR "char" 12643 . 12647) (punctuation "*" 12648 . 12649) (symbol "new_path" 12649 . 12657) (punctuation ";" 12657 . 12658) (symbol "uv_file" 12717 . 12724) (symbol "file" 12725 . 12729) (punctuation ";" 12729 . 12730) (INT "int" 12797 . 12800) (symbol "flags" 12801 . 12806) (punctuation ";" 12806 . 12807) (symbol "mode_t" 12877 . 12883) (symbol "mode" 12884 . 12888) (punctuation ";" 12888 . 12889) (VOID "void" 12957 . 12961) (punctuation "*" 12961 . 12962) (symbol "buf" 12963 . 12966) (punctuation ";" 12966 . 12967) (symbol "size_t" 13037 . 13043) (symbol "len" 13044 . 13047) (punctuation ";" 13047 . 13048) (symbol "off_t" 13117 . 13122) (symbol "off" 13123 . 13126) (punctuation ";" 13126 . 13127) (symbol "uv_uid_t" 13197 . 13205) (symbol "uid" 13206 . 13209) (punctuation ";" 13209 . 13210) (symbol "uv_gid_t" 13277 . 13285) (symbol "gid" 13286 . 13289) (punctuation ";" 13289 . 13290) (DOUBLE "double" 13357 . 13363) (symbol "atime" 13364 . 13369) (punctuation ";" 13369 . 13370) (DOUBLE "double" 13437 . 13443) (symbol "mtime" 13444 . 13449) (punctuation ";" 13449 . 13450) (STRUCT "struct" 13517 . 13523) (symbol "uv__work" 13524 . 13532) (symbol "work_req" 13533 . 13541) (punctuation ";" 13541 . 13542)))
+          ("UV_SIGNAL_PRIVATE_FIELDS" . 
+              ((STRUCT "struct" 14040 . 14046) (semantic-list "{                                                                    \\
+    struct uv_signal_s* rbe_left;                                             \\
+    struct uv_signal_s* rbe_right;                                            \\
+    struct uv_signal_s* rbe_parent;                                           \\
+    int rbe_color;                                                            \\
+  }" 14047 . 14441) (symbol "tree_entry" 14442 . 14452) (punctuation ";" 14452 . 14453) (UNSIGNED "unsigned" 14600 . 14608) (INT "int" 14609 . 14612) (symbol "caught_signals" 14613 . 14627) (punctuation ";" 14627 . 14628) (UNSIGNED "unsigned" 14680 . 14688) (INT "int" 14689 . 14692) (symbol "dispatched_signals" 14693 . 14711) (punctuation ";" 14711 . 14712)))
+          ("UV_PLATFORM_SEM_T" . ((symbol "sem_t" 2980 . 2985)))
+          ("UV_PLATFORM_LOOP_FIELDS")
+          ("UV_PIPE_PRIVATE_FIELDS" . 
+              ((CONST "const" 9824 . 9829) (CHAR "char" 9830 . 9834) (punctuation "*" 9834 . 9835) (symbol "pipe_fname" 9836 . 9846) (punctuation ";" 9846 . 9847)))
+          ("UV_CHECK_PRIVATE_FIELDS" . 
+              ((symbol "uv_check_cb" 10233 . 10244) (symbol "check_cb" 10245 . 10253) (punctuation ";" 10253 . 10254) (symbol "ngx_queue_t" 10313 . 10324) (symbol "queue" 10325 . 10330) (punctuation ";" 10330 . 10331)))
+          ("UV_UNIX_H")
+          ("UV_PLATFORM_FS_EVENT_FIELDS")
+          ("UV_UDP_PRIVATE_FIELDS" . 
+              ((symbol "uv_alloc_cb" 9343 . 9354) (symbol "alloc_cb" 9355 . 9363) (punctuation ";" 9363 . 9364) (symbol "uv_udp_recv_cb" 9423 . 9437) (symbol "recv_cb" 9438 . 9445) (punctuation ";" 9445 . 9446) (symbol "uv__io_t" 9503 . 9511) (symbol "io_watcher" 9512 . 9522) (punctuation ";" 9522 . 9523) (symbol "ngx_queue_t" 9583 . 9594) (symbol "write_queue" 9595 . 9606) (punctuation ";" 9606 . 9607) (symbol "ngx_queue_t" 9663 . 9674) (symbol "write_completed_queue" 9675 . 9696) (punctuation ";" 9696 . 9697)))
+          ("UV_FS_EVENT_PRIVATE_FIELDS" . 
+              ((symbol "uv_fs_event_cb" 14796 . 14810) (symbol "cb" 14811 . 14813) (punctuation ";" 14813 . 14814) (symbol "UV_PLATFORM_FS_EVENT_FIELDS" 14876 . 14903)))
+          ("UV_LOOP_PRIVATE_FIELDS" . 
+              ((UNSIGNED "unsigned" 4399 . 4407) (LONG "long" 4408 . 4412) (symbol "flags" 4413 . 4418) (punctuation ";" 4418 . 4419) (INT "int" 4479 . 4482) (symbol "backend_fd" 4483 . 4493) (punctuation ";" 4493 . 4494) (symbol "ngx_queue_t" 4559 . 4570) (symbol "pending_queue" 4571 . 4584) (punctuation ";" 4584 . 4585) (symbol "ngx_queue_t" 4639 . 4650) (symbol "watcher_queue" 4651 . 4664) (punctuation ";" 4664 . 4665) (symbol "uv__io_t" 4719 . 4727) (punctuation "*" 4727 . 4728) (punctuation "*" 4728 . 4729) (symbol "watchers" 4730 . 4738) (punctuation ";" 4738 . 4739) (UNSIGNED "unsigned" 4799 . 4807) (INT "int" 4808 . 4811) (symbol "nwatchers" 4812 . 4821) (punctuation ";" 4821 . 4822) (UNSIGNED "unsigned" 4879 . 4887) (INT "int" 4888 . 4891) (symbol "nfds" 4892 . 4896) (punctuation ";" 4896 . 4897) (symbol "ngx_queue_t" 4959 . 4970) (symbol "wq" 4971 . 4973) (punctuation ";" 4973 . 4974) (symbol "uv_mutex_t" 5039 . 5049) (symbol "wq_mutex" 5050 . 5058) (punctuation ";" 5058 . 5059) (symbol "uv_async_t" 5119 . 5129) (symbol "wq_async" 5130 . 5138) (punctuation ";" 5138 . 5139) (symbol "uv_handle_t" 5199 . 5210) (punctuation "*" 5210 . 5211) (symbol "closing_handles" 5212 . 5227) (punctuation ";" 5227 . 5228) (symbol "ngx_queue_t" 5279 . 5290) (symbol "process_handles" 5291 . 5306) (semantic-list "[1]" 5306 . 5309) (punctuation ";" 5309 . 5310) (symbol "ngx_queue_t" 5359 . 5370) (symbol "prepare_handles" 5371 . 5386) (punctuation ";" 5386 . 5387) (symbol "ngx_queue_t" 5439 . 5450) (symbol "check_handles" 5451 . 5464) (punctuation ";" 5464 . 5465) (symbol "ngx_queue_t" 5519 . 5530) (symbol "idle_handles" 5531 . 5543) (punctuation ";" 5543 . 5544) (symbol "ngx_queue_t" 5599 . 5610) (symbol "async_handles" 5611 . 5624) (punctuation ";" 5624 . 5625) (STRUCT "struct" 5679 . 5685) (symbol "uv__async" 5686 . 5695) (symbol "async_watcher" 5696 . 5709) (punctuation ";" 5709 . 5710) (STRUCT "struct" 5839 . 5845) (symbol "uv__timers" 5846 . 5856) (semantic-list "{                                                         \\
+    struct uv_timer_s* rbh_root;                                              \\
+  }" 5857 . 6000) (symbol "timer_handles" 6001 . 6014) (punctuation ";" 6014 . 6015) (symbol "uint64_t" 6079 . 6087) (symbol "time" 6088 . 6092) (punctuation ";" 6092 . 6093) (INT "int" 6159 . 6162) (symbol "signal_pipefd" 6163 . 6176) (semantic-list "[2]" 6176 . 6179) (punctuation ";" 6179 . 6180) (symbol "uv__io_t" 6239 . 6247) (symbol "signal_io_watcher" 6248 . 6265) (punctuation ";" 6265 . 6266) (symbol "uv_signal_t" 6319 . 6330) (symbol "child_watcher" 6331 . 6344) (punctuation ";" 6344 . 6345) (INT "int" 6399 . 6402) (symbol "emfile_fd" 6403 . 6412) (punctuation ";" 6412 . 6413) (symbol "uint64_t" 6479 . 6487) (symbol "timer_counter" 6488 . 6501) (punctuation ";" 6501 . 6502) (symbol "UV_PLATFORM_LOOP_FIELDS" 6559 . 6582)))
+          ("UV_REQ_TYPE_PRIVATE")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("NGX_QUEUE_H_INCLUDED_" variable (:constant-flag t) nil [78 99])
+            ("ngx_queue_t" type
+               (:typedef ("ngx_queue_s" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [102 142])
+            ("ngx_queue_s" type
+               (:members 
+                  ( ("prev" variable
+                       (:pointer 1
+                        :type ("ngx_queue_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [169 188])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("ngx_queue_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [193 212]))                  
+                :type "struct")
+                nil [144 215])
+            ("ngx_queue_init" variable (:constant-flag t) nil [226 240])
+            ("ngx_queue_empty" variable (:constant-flag t) nil [640 655])
+            ("ngx_queue_insert_head" variable (:constant-flag t) nil [743 764])
+            ("ngx_queue_insert_after" variable (:constant-flag t) nil [1317 1339])
+            ("ngx_queue_insert_tail" variable (:constant-flag t) nil [1374 1395])
+            ("ngx_queue_head" variable (:constant-flag t) nil [1948 1962])
+            ("ngx_queue_last" variable (:constant-flag t) nil [2044 2058])
+            ("ngx_queue_sentinel" variable (:constant-flag t) nil [2140 2158])
+            ("ngx_queue_next" variable (:constant-flag t) nil [2230 2244])
+            ("ngx_queue_prev" variable (:constant-flag t) nil [2326 2340])
+            ("ngx_queue_remove" variable (:constant-flag t) nil [3026 3042])
+            ("ngx_queue_split" variable (:constant-flag t) nil [3448 3463])
+            ("ngx_queue_add" variable (:constant-flag t) nil [4182 4195])
+            ("ngx_queue_data" variable (:constant-flag t) nil [4756 4770])
+            ("ngx_queue_foreach" variable (:constant-flag t) nil [4898 4915]))          
+      :file "ngx-queue.h"
+      :pointmax 5201
+      :fsize 5200
+      :lastmodtime '(21741 3076 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("ngx_queue_insert_head" (spp-arg-list ("h" "x") 764 . 770) . 
+              ((DO "do" 817 . 819) (semantic-list "{                                                                        \\
+    (x)->next = (h)->next;                                                    \\
+    (x)->next->prev = x;                                                      \\
+    (x)->prev = h;                                                            \\
+    (h)->next = x;                                                            \\
+  }" 820 . 1218) (WHILE "while" 1297 . 1302) (semantic-list "(0)" 1303 . 1306)))
+          ("ngx_queue_last" (spp-arg-list ("h") 2058 . 2061) . 
+              ((semantic-list "(h)" 2120 . 2123) (punctuation "-" 2123 . 2124) (punctuation ">" 2124 . 2125) (symbol "prev" 2125 . 2129)))
+          ("ngx_queue_prev" (spp-arg-list ("q") 2340 . 2343) . 
+              ((semantic-list "(q)" 2402 . 2405) (punctuation "-" 2405 . 2406) (punctuation ">" 2406 . 2407) (symbol "prev" 2407 . 2411)))
+          ("ngx_queue_foreach" (spp-arg-list ("q" "h") 4915 . 4921) . ((FOR "for" 4974 . 4977) (semantic-list "((q) = ngx_queue_head(h);                                             \\
+         (q) != ngx_queue_sentinel(h) && !ngx_queue_empty(h);                 \\
+         (q) = ngx_queue_next(q))" 4978 . 5163)))
+          ("ngx_queue_head" (spp-arg-list ("h") 1962 . 1965) . 
+              ((semantic-list "(h)" 2024 . 2027) (punctuation "-" 2027 . 2028) (punctuation ">" 2028 . 2029) (symbol "next" 2029 . 2033)))
+          ("ngx_queue_next" (spp-arg-list ("q") 2244 . 2247) . 
+              ((semantic-list "(q)" 2306 . 2309) (punctuation "-" 2309 . 2310) (punctuation ">" 2310 . 2311) (symbol "next" 2311 . 2315)))
+          ("ngx_queue_data" (spp-arg-list ("q" "type" "link") 4770 . 4785) . ((semantic-list "((type *) ((unsigned char *) q - offsetof(type, link)))" 4832 . 4887)))
+          ("ngx_queue_add" (spp-arg-list ("h" "n") 4195 . 4201) . 
+              ((DO "do" 4256 . 4258) (semantic-list "{                                                                        \\
+    (h)->prev->next = (n)->next;                                              \\
+    (n)->next->prev = (h)->prev;                                              \\
+    (h)->prev = (n)->prev;                                                    \\
+    (h)->prev->next = h;                                                      \\
+  }" 4259 . 4657) (WHILE "while" 4736 . 4741) (semantic-list "(0)" 4742 . 4745)))
+          ("ngx_queue_init" (spp-arg-list ("q") 240 . 243) . 
+              ((DO "do" 300 . 302) (semantic-list "{                                                                        \\
+    (q)->prev = q;                                                            \\
+    (q)->next = q;                                                            \\
+  }" 303 . 541) (WHILE "while" 620 . 625) (semantic-list "(0)" 626 . 629)))
+          ("ngx_queue_split" (spp-arg-list ("h" "q" "n") 3463 . 3472) . 
+              ((DO "do" 3522 . 3524) (semantic-list "{                                                                        \\
+    (n)->prev = (h)->prev;                                                    \\
+    (n)->prev->next = n;                                                      \\
+    (n)->next = q;                                                            \\
+    (h)->prev = (q)->prev;                                                    \\
+    (h)->prev->next = h;                                                      \\
+    (q)->prev = n;                                                            \\
+  }" 3525 . 4083) (WHILE "while" 4162 . 4167) (semantic-list "(0)" 4168 . 4171)))
+          ("NGX_QUEUE_H_INCLUDED_")
+          ("ngx_queue_insert_tail" (spp-arg-list ("h" "x") 1395 . 1401) . 
+              ((DO "do" 1448 . 1450) (semantic-list "{                                                                        \\
+    (x)->prev = (h)->prev;                                                    \\
+    (x)->prev->next = x;                                                      \\
+    (x)->next = h;                                                            \\
+    (h)->prev = x;                                                            \\
+  }" 1451 . 1849) (WHILE "while" 1928 . 1933) (semantic-list "(0)" 1934 . 1937)))
+          ("ngx_queue_empty" (spp-arg-list ("h") 655 . 658) . ((semantic-list "(h == (h)->prev)" 716 . 732)))
+          ("ngx_queue_remove" (spp-arg-list ("x") 3042 . 3045) . 
+              ((DO "do" 3100 . 3102) (semantic-list "{                                                                        \\
+    (x)->next->prev = (x)->prev;                                              \\
+    (x)->prev->next = (x)->next;                                              \\
+  }" 3103 . 3341) (WHILE "while" 3420 . 3425) (semantic-list "(0)" 3426 . 3429)))
+          ("ngx_queue_sentinel" (spp-arg-list ("h") 2158 . 2161) . ((semantic-list "(h)" 2216 . 2219)))
+          ("ngx_queue_insert_after" . ((symbol "ngx_queue_insert_head" 1342 . 1363)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("UV_LINUX_H" variable (:constant-flag t) nil [1184 1194])
+            ("UV_PLATFORM_LOOP_FIELDS" variable (:constant-flag t) nil [1204 1227])
+            ("UV_PLATFORM_FS_EVENT_FIELDS" variable (:constant-flag t) nil [1525 1552]))          
+      :file "uv-linux.h"
+      :pointmax 1782
+      :fsize 1781
+      :lastmodtime '(21741 3076 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("UV_LINUX_H")
+          ("UV_PLATFORM_LOOP_FIELDS" . 
+              ((symbol "uv__io_t" 1278 . 1286) (symbol "inotify_read_watcher" 1287 . 1307) (punctuation ";" 1307 . 1308) (VOID "void" 1358 . 1362) (punctuation "*" 1362 . 1363) (symbol "inotify_watchers" 1364 . 1380) (punctuation ";" 1380 . 1381) (INT "int" 1438 . 1441) (symbol "inotify_fd" 1442 . 1452) (punctuation ";" 1452 . 1453)))
+          ("UV_PLATFORM_FS_EVENT_FIELDS" . 
+              ((symbol "ngx_queue_t" 1599 . 1610) (symbol "watchers" 1611 . 1619) (punctuation ";" 1619 . 1620) (INT "int" 1679 . 1682) (symbol "wd" 1683 . 1685) (punctuation ";" 1685 . 1686)))
+          )
+))
+  :file "!usr!include!uv-private!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

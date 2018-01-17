@@ -20,8 +20,6 @@
  ("bing.com"
   [url-cookie "MUID" "177646136B4B6D7A0DF64FF56AEA6CD5" "09-Dec-2018 07:25:44.00 GMT" "/" "bing.com" nil]
   [url-cookie "_EDGE_V" "1" "09-Dec-2018 07:25:44.00 GMT" "/" "bing.com" nil])
- (".163.com"
-  [url-cookie "usertrack" "c+5+hlhY5fetkgpyA8X3Ag==" "20 Dec 17 08:04:07 [GMT]" "/" ".163.com" nil])
  ("www.lynda.com"
   [url-cookie "bcookie" "026505cfe56b47b28b245f13ab8de7ef7955a3712321476d9b10519c94a4b886" "24-Dec-2018 18:39:41.00 GMT" "/" "www.lynda.com" nil])
  (".lynda.com"
@@ -33,10 +31,11 @@
  (".tuicool.com"
   [url-cookie "_tuicool_session" "BAh7B0kiD3Nlc3Npb25faWQGOgZFRkkiJTNkNGIwM2VlNjQ0YTU5NjdhOWE0MTU0ZjUzYzE5ZTdhBjsAVEkiEF9jc3JmX3Rva2VuBjsARkkiMWJOR1VSM0trRjY3eUxEc2VITlF2QUxHYk9mUU0yclVoVmZmQjQ2bVEvR1E9BjsARg%3D%3D--9d6d2e96066b1bcf2783dabd33efb37a3010fee7" "19-Aug-2018 03:44:45.00 GMT" "/" ".tuicool.com" nil]
   [url-cookie "HttpOnly" nil "19-Aug-2018 03:44:45.00 GMT" "/" ".tuicool.com" nil])
- (".baidu.com"
-  [url-cookie "BAIDUID" "060EE0663B94C29A59456182891F9B1E:FG=1" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "max-age" "31536000" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil]
-  [url-cookie "version" "1" "04 Jan 18 07:03:40 [GMT]" "/" ".baidu.com" nil])
+ ("www.microsofttranslator.com"
+  [url-cookie "csId" "712eb8ab-9b46-478a-ad66-3d078f19ef9e" "01-Dec-2116 06:23:18.00 GMT" "/" "www.microsofttranslator.com" nil])
+ (".spring.io"
+  [url-cookie "__cfduid" "dbc00848d701f22bf5043d5ac942796071514183036" "25 Dec 18 06:23:56 [GMT]" "/" ".spring.io" nil]
+  [url-cookie "HttpOnly" nil "25 Dec 18 06:23:56 [GMT]" "/" ".spring.io" nil])
  ("cn.bing.com"
   [url-cookie "httponly" nil "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]
   [url-cookie "MUIDB" "177646136B4B6D7A0DF64FF56AEA6CD5" "09-Dec-2018 07:25:44.00 GMT" "/" "cn.bing.com" nil]
