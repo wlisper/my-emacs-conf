@@ -503,12 +503,23 @@ DEADLINE: <2017-09-27 Wed>
 #+END_SRC
 * Clojure Programming
 #+BEGIN_SRC emacs-lisp
+(setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api)(start-figwheel)(cljs-repl))")
+(autoload 'enable-paredit-mode "paredit" "turn on pseudo-structural editing of lisp code." t)
+(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook #'enable-paredit-mode)
+(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook #'enable-paredit-mode)
+
+(global-company-mode)
 (use-package clojure-mode
     :ensure t)
 (use-package clojure-mode-extra-font-locking
     :ensure t)
 (use-package cider
-    :ensure t)
+    :ensure t
+    )
 
 (use-package ido-completing-read+
     :ensure t)
