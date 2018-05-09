@@ -1,60 +1,96 @@
 #+STARTUP: overview
 * Interface Tweaks
 #+BEGIN_SRC emacs-lisp
+
+;; 关闭启动消息
 (setq inhibit-startup-message t)
+
+;; 不显示时间
 (display-time-mode 1)
+
+;; 不显示状态栏
 (setq-default mode-line-format nil) ;; mode line
+
+;; y/n 选择和yes/no选择等效
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; 初始最大化窗口
 (add-to-list 'default-frame-alist '(fullscreen . maximized)) ; maximize window
 ;(set-face-attribute 'default nil :family "Courier 10 Pitch" :height 140)
+
+;; 不用tab，使用空格填充
 (setq-default indent-tabs-mode nil)  ;; no tabs
 
+;; 调整窗口快捷键
 (global-set-key (kbd "<C-up>") 'shrink-window)
 (global-set-key (kbd "<C-down>") 'enlarge-window)
 (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
 
 (defun show-toolbar()
+  "用于显示工具栏"
   (interactive)
   (tool-bar-mode 1))
+
 (defun hide-toolbar()
+  "隐藏工具栏"
   (interactive)
   (tool-bar-mode -1))
+
 (hide-toolbar)
 
 (defun show-menu()
+  "显示菜单栏"
   (interactive)
   (menu-bar-mode 1))
+
 (defun hide-menu()
+  "隐藏菜单栏"
   (interactive)
   (menu-bar-mode -1))
+
 (hide-menu)
 
 (defun show-scroll-bar()
+  "显示滚动条"
   (interactive)
   (toggle-scroll-bar 1))
+
 (defun hide-scroll-bar()
+  "隐藏滚动条"
   (interactive)
   (toggle-scroll-bar -1))
+
 (hide-scroll-bar)
 
 (defun show-mode-line()
+  "显示状态栏"
   (interactive)
   (setq-default mode-line-format t))
+
 (defun hide-mode-line()
+  "隐藏状态栏"
   (interactive)
   (setq-default mode-line-format nil))
+
 (hide-mode-line)
 
 (defun show-linum()
+  "显示行号"
   (interactive)
   (global-linum-mode t))
+
 (defun hide-linum()
+  "隐藏行号"
   (interactive)
   (global-linum-mode -1))
+
+;; 可以全局拷贝
 (setq x-select-enable-clipboard t) ; global copy and paste
 
+
 (defun nshell()
+  "创建一个新的eshell"
   (interactive)
   (let ((currentbuf (get-buffer-window (current-buffer)))
 	(newbuf     (generate-new-buffer-name "*shell*")))
@@ -64,6 +100,7 @@
     (eshell newbuf)))
 
 (defun search-web()
+  "网络搜索，使用bing"
   (interactive)
   (if (and mark-active (/= (point) (mark)))
       (let ((word (buffer-substring-no-properties (region-beginning) (region-end))))
@@ -72,24 +109,30 @@
           (if (and (not (null word)) (stringp word))
               (eww (format "http://cn.bing.com/search?q=%s" word))
               (eww "www.bing.com")))))
+
 (defun eclear ()
+  "清空当前缓冲区"
   (interactive)
   (setq inhibit-read-only t)
   (erase-buffer))
+
 (global-set-key (kbd "C-c s") 'search-web)
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
 (defun kill-other-buffers()
+  "删除当前缓冲意外的所有缓冲区"
   (interactive)
   (mapc 'kill-buffer 
     (delq (current-buffer)
         (remove-if-not 'buffer-file-name (buffer-list)))))
 
 (defun kill-all-buffers()
+  "删除所有缓冲区"
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
 
 (defun set-proxy()
+　"设置代理地址"
   (interactive)
   (let ((url (read-string "Please input your proxy Server Address[ip:port]: ")))
     (setf url-proxy-services
@@ -97,6 +140,7 @@
     (message "Proxy Server set to %s" url)))
 
 (defun unset-proxy()
+ 　"取消代理"
   (interactive)
   (setf url-proxy-services nil)
   (message "Proxy Server Disabled"))
