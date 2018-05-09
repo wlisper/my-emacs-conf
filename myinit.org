@@ -423,12 +423,13 @@ and Ivy / Counsel replace a lot of ido or helms completion functionality
 #+END_SRC
 ** flymake-google-cpplint
 google coding style check
+
 #+BEGIN_SRC emacs-lisp
 ;; flymake-google-cpplint hook function
 (defun my:flymake-google-init()
     (require 'flymake-google-cpplint)
     (custom-set-variables
-        '(flymake-google-cpplint-command "/opt/cpplint-1.3.0/cpplint.py"))
+        '(flymake-google-cpplint-command "/opt/cpplint-master/cpplint.py"))
     (flymake-google-cpplint-load))   
 
 ;; install flymake-google-cpplint package
