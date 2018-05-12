@@ -147,6 +147,12 @@
 
 #+END_SRC
 * shell integration
+* wolfram support
+** wolfram mode
+#+BEGIN_SRC emacs-lisp
+  (use-package wolfram-mode
+    :ensure t)
+#+END_SRC
 * ztree
 #+BEGIN_SRC emacs-lisp
 (use-package ztree
