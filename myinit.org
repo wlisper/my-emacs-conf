@@ -147,6 +147,20 @@
 
 #+END_SRC
 * shell integration
+#+BEGIN_SRC emacs-lisp
+  (use-package validate
+    :ensure t)
+
+  (use-package exec-path-from-shell
+    :ensure t
+    :if (display-graphic-p)
+    :config
+    (validate-setq exec-path-from-shell-variables
+                   '("PATH" "FULLNAME" "EMAIL" "JAVA_OPTS" "INFOPATH")))
+
+  (validate-setq user-full-name (getenv "FULLNAME"))
+  (validate-setq user-mail-address (getenv "EMAIL"))
+#+END_SRC
 * wolfram support
 ** wolfram mode
 #+BEGIN_SRC emacs-lisp
