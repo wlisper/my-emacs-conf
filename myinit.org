@@ -1,3 +1,4 @@
+
 #+STARTUP: overview
 * Interface Tweaks
 #+BEGIN_SRC emacs-lisp
@@ -144,7 +145,13 @@
   (interactive)
   (setf url-proxy-services nil)
   (message "Proxy Server Disabled"))
-
+#+END_SRC
+* environment variable  setup
+#+BEGIN_SRC emacs-lisp
+  (setenv "PATH"
+          (concat   (getenv "PATH") ":"
+                    "~/App/maven/bin" ":"
+                    "/Applications/Mathematica.app/Contents/MacOS"))
 #+END_SRC
 * shell integration
 #+BEGIN_SRC emacs-lisp
@@ -158,8 +165,9 @@
     (validate-setq exec-path-from-shell-variables
                    '("PATH" "FULLNAME" "EMAIL" "JAVA_OPTS" "INFOPATH")))
 
-  (validate-setq user-full-name (getenv "FULLNAME"))
-  (validate-setq user-mail-address (getenv "EMAIL"))
+                   
+  ;(validate-setq user-full-name (getenv "FULLNAME"))
+  ;(validate-setq user-mail-address (getenv "EMAIL"))
 #+END_SRC
 * wolfram support
 ** wolfram mode
