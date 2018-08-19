@@ -7,11 +7,30 @@ This repo will be a good start for your emacs experience.
 To use this repo, just clone it and rename it to .emacs.d to your home directory.  Enjoy!
 
 * Some features
+
+** interface adjust
+
+|--------------------------+-----------------------------------|
+| M+x show-linum           | show line number                  |
+| M+x hide-linum           | hide line number                  |
+| M+x show-menu            | show menu                         |
+| M+x show-toolbar         | show tool bar                     |
+| M+x hide-toolbar         | hide tool bar                     |
+| C+c d                    | open neotree or close neotree     |
+| M+x light-out            | enable dark theme                 |
+| M+x light-on             | enable light theme                |
+| M+x load-theme           | load emacs theme                  |
+| M+x cnfonts-edit-profile | set chinese font and english font |
+|--------------------------+-----------------------------------|
+
 ** create a new shell in emacs
-just input M+x nshell
+
+M+x nshell
 
 ** invoke magit for managing git project
-hit command: C+c m   or M+x magit-status
+
+command: C+c m   or  M+x magit-status
+
 ** english-chinese dictionary
 
 hit <ctrl+x t enter> to translate the word at your cursor from english to chinese or from chinese to english.
@@ -25,9 +44,16 @@ hit <ctrl+c s> to open bing search.  if your cursor is currently at a word or yo
 pdf-tools enables your to view pdf in emacs, just <ctrl+x f> to open it.
 
 ** common lisp programming support
+
 set common lisp interpretor to your local interpretor in myinit.org, slime section.
+
+<M+x slime > to enable slime development environment.
+
 ** clojure programming support
 
+<M+x cider-jack-in> to open cider development environment.
+
 ** org-mode html template 
+
 org-mode html template is included in .emacs.d/setup directory.  This directory is copied from
 original repo: https://github.com/fniessen/org-html-themes.git
