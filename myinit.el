@@ -1,57 +1,92 @@
+;; 关闭启动消息
 (setq inhibit-startup-message t)
+
+;; 不显示时间
 (display-time-mode 1)
+
+;; 不显示状态栏
 (setq-default mode-line-format nil) ;; mode line
+
+;; y/n 选择和yes/no选择等效
 (fset 'yes-or-no-p 'y-or-n-p)
+
+;; 初始最大化窗口
 (add-to-list 'default-frame-alist '(fullscreen . maximized)) ; maximize window
 ;(set-face-attribute 'default nil :family "Courier 10 Pitch" :height 140)
+
+;; 不用tab，使用空格填充
 (setq-default indent-tabs-mode nil)  ;; no tabs
 
+;; 调整窗口快捷键
 (global-set-key (kbd "<C-up>") 'shrink-window)
 (global-set-key (kbd "<C-down>") 'enlarge-window)
 (global-set-key (kbd "<C-left>") 'shrink-window-horizontally)
 (global-set-key (kbd "<C-right>") 'enlarge-window-horizontally)
 
 (defun show-toolbar()
+  "用于显示工具栏"
   (interactive)
   (tool-bar-mode 1))
+
 (defun hide-toolbar()
+  "隐藏工具栏"
   (interactive)
   (tool-bar-mode -1))
+
 (hide-toolbar)
 
 (defun show-menu()
+  "显示菜单栏"
   (interactive)
   (menu-bar-mode 1))
+
 (defun hide-menu()
+  "隐藏菜单栏"
   (interactive)
   (menu-bar-mode -1))
+
 (hide-menu)
 
 (defun show-scroll-bar()
+  "显示滚动条"
   (interactive)
   (toggle-scroll-bar 1))
+
 (defun hide-scroll-bar()
+  "隐藏滚动条"
   (interactive)
   (toggle-scroll-bar -1))
+
 (hide-scroll-bar)
 
 (defun show-mode-line()
+  "显示状态栏"
   (interactive)
   (setq-default mode-line-format t))
+
 (defun hide-mode-line()
+  "隐藏状态栏"
   (interactive)
   (setq-default mode-line-format nil))
+
 (hide-mode-line)
 
 (defun show-linum()
+  "显示行号"
   (interactive)
   (global-linum-mode t))
+
 (defun hide-linum()
+  "隐藏行号"
   (interactive)
   (global-linum-mode -1))
+
+;; 可以全局拷贝
 (setq x-select-enable-clipboard t) ; global copy and paste
 
+
 (defun nshell()
+  "创建一个新的eshell"
   (interactive)
   (let ((currentbuf (get-buffer-window (current-buffer)))
 	(newbuf     (generate-new-buffer-name "*shell*")))
@@ -61,6 +96,7 @@
     (eshell newbuf)))
 
 (defun search-web()
+  "网络搜索，使用bing"
   (interactive)
   (if (and mark-active (/= (point) (mark)))
       (let ((word (buffer-substring-no-properties (region-beginning) (region-end))))
@@ -69,22 +105,63 @@
           (if (and (not (null word)) (stringp word))
               (eww (format "http://cn.bing.com/search?q=%s" word))
               (eww "www.bing.com")))))
+
 (defun eclear ()
+  "清空当前缓冲区"
   (interactive)
   (setq inhibit-read-only t)
   (erase-buffer))
+
 (global-set-key (kbd "C-c s") 'search-web)
 (global-set-key (kbd "<f5>") 'revert-buffer)
 
 (defun kill-other-buffers()
+  "删除当前缓冲意外的所有缓冲区"
   (interactive)
   (mapc 'kill-buffer 
     (delq (current-buffer)
         (remove-if-not 'buffer-file-name (buffer-list)))))
 
 (defun kill-all-buffers()
+  "删除所有缓冲区"
   (interactive)
   (mapc 'kill-buffer (buffer-list)))
+
+(defun set-proxy()
+　"设置代理地址"
+  (interactive)
+  (let ((url (read-string "Please input your proxy Server Address[ip:port]: ")))
+    (setf url-proxy-services
+    `(("http" . ,url) ("https" . ,url)))
+    (message "Proxy Server set to %s" url)))
+
+(defun unset-proxy()
+ 　"取消代理"
+  (interactive)
+  (setf url-proxy-services nil)
+  (message "Proxy Server Disabled"))
+
+(setenv "PATH"
+        (concat   (getenv "PATH") ":"
+                  "~/App/maven/bin" ":"
+                  "/Applications/Mathematica.app/Contents/MacOS"))
+
+(use-package validate
+  :ensure t)
+
+(use-package exec-path-from-shell
+  :ensure t
+  :if (display-graphic-p)
+  :config
+  (validate-setq exec-path-from-shell-variables
+                 '("PATH" "FULLNAME" "EMAIL" "JAVA_OPTS" "INFOPATH")))
+
+
+;(validate-setq user-full-name (getenv "FULLNAME"))
+;(validate-setq user-mail-address (getenv "EMAIL"))
+
+(use-package wolfram-mode
+  :ensure t)
 
 (use-package ztree
     :ensure t)
@@ -93,9 +170,9 @@
     :ensure t)
 (add-hook 'prog-mode-hook 'command-log-mode)
 
-(use-package chinese-fonts-setup
+(use-package cnfonts
     :ensure t)
-(chinese-fonts-setup-enable)
+(cnfonts-enable)
 
 (use-package color-theme
   :ensure t)
@@ -113,8 +190,9 @@
 
 (light-out)
 
-(pdf-tools-install)
-(add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
+; to enable pdf support, refer to : https://github.com/politza/pdf-tools
+;(pdf-tools-install)
+;(add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
 
 (use-package try
 	:ensure t)
@@ -278,6 +356,14 @@
     :ensure t)
 (setq svn-status-verbose nil)
 
+(use-package company
+    :ensure t
+    :bind (("C-c /" . company-complete))
+    :config (global-company-mode))
+
+(use-package json-mode
+  :ensure t)
+
 (use-package magit
     :ensure t
     :config (global-set-key (kbd "C-c m") 'magit-status))
@@ -299,7 +385,7 @@
 (defun my:flymake-google-init()
     (require 'flymake-google-cpplint)
     (custom-set-variables
-        '(flymake-google-cpplint-command "/opt/cpplint-1.3.0/cpplint.py"))
+        '(flymake-google-cpplint-command "/opt/cpplint-master/cpplint.py"))
     (flymake-google-cpplint-load))   
 
 ;; install flymake-google-cpplint package
@@ -413,12 +499,25 @@
 (use-package paredit
     :ensure t)
 
+(setq cider-cljs-lein-repl "(do (use 'figwheel-sidecar.repl-api)(start-figwheel)(cljs-repl))")
+(autoload 'enable-paredit-mode "paredit" "turn on pseudo-structural editing of lisp code." t)
+(add-hook 'emacs-lisp-mode-hook 'enable-paredit-mode)
+(add-hook 'eval-expression-minibuffer-setup-hook #'enable-paredit-mode)
+(add-hook 'ielm-mode-hook #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook #'enable-paredit-mode)
+(add-hook 'lisp-mode-hook #'rainbow-delimiters-mode)
+(add-hook 'lisp-interaction-mode-hook #'enable-paredit-mode)
+(add-hook 'scheme-mode-hook #'enable-paredit-mode)
+
+(global-company-mode)
+
 (use-package clojure-mode
     :ensure t)
 (use-package clojure-mode-extra-font-locking
     :ensure t)
 (use-package cider
-    :ensure t)
+    :ensure t
+    )
 
 (use-package ido-completing-read+
     :ensure t)
@@ -462,13 +561,13 @@
         (setq calendar-holidays cal-china-x-important-holidays)))
 
 (use-package ox-reveal
-:ensure ox-reveal)
+  :load-path "./local-repo/org-reveal/")
 
 (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
 (setq org-reveal-mathjax t)
 
 (use-package htmlize
-:ensure t)
+  :ensure t)
 
 (use-package undo-tree
   :ensure t

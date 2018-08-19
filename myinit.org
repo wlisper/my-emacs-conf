@@ -188,9 +188,9 @@
 #+END_SRC
 * Chinese Support
 #+BEGIN_SRC emacs-lisp
-(use-package chinese-fonts-setup
+(use-package cnfonts
     :ensure t)
-(chinese-fonts-setup-enable)
+(cnfonts-enable)
 #+END_SRC
 * Themes
 #+BEGIN_SRC emacs-lisp
@@ -212,8 +212,9 @@
 #+END_SRC
 * pdf-tools
 #+BEGIN_SRC emacs-lisp
-(pdf-tools-install)
-(add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
+; to enable pdf support, refer to : https://github.com/politza/pdf-tools
+;(pdf-tools-install)
+;(add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
 #+END_SRC
 * Try Package
 #+BEGIN_SRC emacs-lisp
@@ -674,13 +675,13 @@ bing english-chinese dictionary.
 * Reveal.js
 
 #+BEGIN_SRC emacs-lisp
-    (use-package ox-reveal
-    :ensure ox-reveal)
+  (use-package ox-reveal
+    :load-path "./local-repo/org-reveal/")
 
-    (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
-    (setq org-reveal-mathjax t)
+  (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+  (setq org-reveal-mathjax t)
 
-    (use-package htmlize
+  (use-package htmlize
     :ensure t)
 #+END_SRC
 
