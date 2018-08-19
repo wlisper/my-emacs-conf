@@ -4,7 +4,7 @@ Hi, This is my emacs config directory.
 
 This repo will be a good start for your emacs experience.
 
-To use this repo, just clone it and rename it to .emacs.d to your home directory. Enjoy!
+To use this repo, just clone it and rename it to .emacs.d to your home directory.  Enjoy!
 
 * Some features
 ** create a new shell in emacs
@@ -28,3 +28,6 @@ pdf-tools enables your to view pdf in emacs, just <ctrl+x f> to open it.
 set common lisp interpretor to your local interpretor in myinit.org, slime section.
 ** clojure programming support
 
+** org-mode html template 
+org-mode html template is included in .emacs.d/setup directory.  This directory is copied from
+original repo: https://github.com/fniessen/org-html-themes.git
