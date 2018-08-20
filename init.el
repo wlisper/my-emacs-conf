@@ -13,8 +13,11 @@
 
 ;; Bootstrap `use-package'
 (unless (package-installed-p 'use-package)
-	(package-refresh-contents)
-	(package-install 'use-package))
+  (package-refresh-contents)
+  (package-install 'use-package))
+
+(eval-when-compile
+  (require 'use-package))
 
 (org-babel-load-file (expand-file-name "~/.emacs.d/myinit.org"))
 (custom-set-variables
