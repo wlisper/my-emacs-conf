@@ -675,10 +675,11 @@ bing english-chinese dictionary.
 * Reveal.js
 
 #+BEGIN_SRC emacs-lisp
+  (when (not (file-exists-p "./local-repo/org-reveal/")) 
+	(message "git cloning ...")
+            (shell-command "git clone https://github.com/yjwen/org-reveal.git ./local-repo/org-reveal"))
+
   (use-package ox-reveal
-    :init (when-not (file-exists-p "./local-repo/org-reveal/")
-                    (magit-clone "https://github.com/yjwen/org-reveal.git"
-                                 "./local-repo/org-reveal"))
     :load-path "./local-repo/org-reveal/")
 
   (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
