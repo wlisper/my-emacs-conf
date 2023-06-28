@@ -194,11 +194,11 @@
 #+END_SRC
 * Themes
 #+BEGIN_SRC emacs-lisp
-(use-package color-theme
-  :ensure t)
-  (use-package zenburn-theme
-  :ensure t
-  :config (load-theme 'zenburn t))
+;(use-package color-theme
+;  :ensure t)
+;  (use-package zenburn-theme
+;  :ensure t
+;  :config (load-theme 'zenburn t))
 
 (defun light-on()
   (interactive)
@@ -208,7 +208,7 @@
   (interactive)
   (load-theme 'tsdh-dark t))
 
-(light-out)
+(light-on)
 #+END_SRC
 * pdf-tools
 #+BEGIN_SRC emacs-lisp
@@ -233,10 +233,10 @@ Brings up some help
 
 * org-password-manager
 #+BEGIN_SRC emacs-lisp
-(use-package org-password-manager
-    :ensure t
-    :config
-    (add-hook 'org-mode-hook 'org-password-manager-key-bindings))
+;(use-package org-password-manager
+ ;   :ensure t
+  ;  :config
+   ; (add-hook 'org-mode-hook 'org-password-manager-key-bindings))
 #+END_SRC
 * Org mode
 Org bullets makes things look pretty
@@ -404,9 +404,9 @@ and Ivy / Counsel replace a lot of ido or helms completion functionality
 #+END_SRC
 ** Auto-pair
 #+BEGIN_SRC emacs-lisp
-(use-package autopair
-    :ensure t
-    :config (autopair-global-mode 1))
+;(use-package autopair
+ ;   :ensure t
+  ;  :config (autopair-global-mode 1))
 #+END_SRC
 ** projectile
 #+BEGIN_SRC emacs-lisp
@@ -415,9 +415,9 @@ and Ivy / Counsel replace a lot of ido or helms completion functionality
 #+END_SRC
 ** svn
 #+BEGIN_SRC emacs-lisp
-(use-package psvn
-    :ensure t)
-(setq svn-status-verbose nil)
+;(use-package psvn
+;    :ensure t)
+;(setq svn-status-verbose nil)
 #+END_SRC
 ** company
 #+BEGIN_SRC emacs-lisp
@@ -460,18 +460,18 @@ google coding style check
 
 #+BEGIN_SRC emacs-lisp
 ;; flymake-google-cpplint hook function
-(defun my:flymake-google-init()
-    (require 'flymake-google-cpplint)
-    (custom-set-variables
-        '(flymake-google-cpplint-command "/opt/cpplint-master/cpplint.py"))
-    (flymake-google-cpplint-load))   
+;(defun my:flymake-google-init()
+ ;   (require 'flymake-google-cpplint)
+  ;  (custom-set-variables
+   ;     '(flymake-google-cpplint-command "/opt/cpplint-master/cpplint.py"))
+    ;(flymake-google-cpplint-load))   
 
 ;; install flymake-google-cpplint package
-(use-package flymake-google-cpplint
-    :ensure t
-    :config
-    (add-hook 'c-mode-hook 'my:flymake-google-init)
-    (add-hook 'c++-mode-hook 'my:flymake-google-init))
+;(use-package flymake-google-cpplint
+ ;   :ensure t
+  ;  :config
+   ; (add-hook 'c-mode-hook 'my:flymake-google-init)
+    ;(add-hook 'c++-mode-hook 'my:flymake-google-init))
 
 ;; install flymake-cursor package
 (use-package flymake-cursor
@@ -675,15 +675,15 @@ bing english-chinese dictionary.
 * Reveal.js
 
 #+BEGIN_SRC emacs-lisp
-  (when (not (file-exists-p "~/.emacs.d/local-repo/org-reveal/")) 
-	(message "git cloning reveal..")
-            (shell-command "git clone https://github.com/yjwen/org-reveal.git ~/.emacs.d/local-repo/org-reveal"))
+;  (when (not (file-exists-p "~/.emacs.d/local-repo/org-reveal/")) 
+;	(message "git cloning reveal..")
+ ;           (shell-command "git clone https://github.com/yjwen/org-reveal.git ~/.emacs.d/local-repo/org-reveal"))
 
-  (use-package ox-reveal
-    :load-path "~/.emacs.d/local-repo/org-reveal/")
+;  (use-package ox-reveal
+ ;   :load-path "~/.emacs.d/local-repo/org-reveal/")
 
-  (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
-  (setq org-reveal-mathjax t)
+;  (setq org-reveal-root "http://cdn.jsdelivr.net/reveal.js/3.0.0/")
+ ; (setq org-reveal-mathjax t)
 
   (use-package htmlize
     :ensure t)
