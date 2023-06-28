@@ -152,6 +152,13 @@
           (concat   (getenv "PATH") ":"
                     "~/App/maven/bin" ":"
                     "/Applications/Mathematica.app/Contents/MacOS"))
+
+(require 'subr-x)
+
+(defun generate-random-uuid ()
+  "Generate a random UUID."
+  (let ((uuid (string-trim (shell-command-to-string "uuidgen"))))
+    uuid))
 #+END_SRC
 * shell integration
 #+BEGIN_SRC emacs-lisp
